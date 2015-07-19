@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block head %}
+<meta name="keywords" content="{{ article.tags|join(', ')  }}">
+{% endblock %}
+
+{% block title %}&ndash; {{ article.title }}{% endblock %}
+
+{% block content %}
+<article>
+  <header>
+    <h2 id="{{ article.slug }}">{{ article.title }}</h2>
+    <p>Posted on {{ article.locale_date }} in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></p>
+  </header>
+  <div>
+    {{ article.content }}
+  </div>
+  <div class="tag-cloud">
+    <p>
+      {% if article.tags %}
+      {% for tag in article.tags %}
+      <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+      {% endfor %}
+      {% endif %}
+    </p>
+  </div>
+  {% include "partial/disqus.html" %}
+</article>
+{% endblock %}

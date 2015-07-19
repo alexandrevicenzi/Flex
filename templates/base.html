@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+  {% if USE_LESS %}
+  <link rel="stylesheet/less" type="text/css" href="{{ SITEURL }}/theme/css/style.less">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js" type="text/javascript"></script>
+  {% else %}
+  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.min.css">
+  {% endif %}
+  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/pygments.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/font-awesome.min.css">
+  {% if FEED_ALL_ATOM %}
+  <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom" />
+  {% endif %}
+  {% if FEED_ALL_RSS %}
+  <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS" />
+  {% endif %}
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="{{ AUTHOR }}">
+  <meta name="description" content="{{ AUTHOR }}'s Thoughts and Writings">
+  <title>{{ SITENAME }}{% block title %}{% endblock %}</title>
+  {% block head %}
+  {% endblock %}
+</head>
+<body>
+  {% include "partial/gtm.html" %}
+  <aside>
+    <div class="profile">
+      <a href="{{ SITEURL }}">
+        {% if AUTHOR_IMG_URL %}
+        <img src="{{ AUTHOR_IMG_URL }}" alt="{{ AUTHOR }}" title="{{ AUTHOR }}">
+        {% else %}
+        <img src="{{ SITEURL }}/theme/img/profile.png" alt="{{ AUTHOR }}" title="{{ AUTHOR }}">
+        {% endif %}
+      </a>
+      <h1><a href="{{ SITEURL }}">{{ AUTHOR }}</a></h1>
+      {% if AUTHOR_SHORT_DESC %}
+      <p>{{ AUTHOR_SHORT_DESC }}</p>
+      {% endif %}
+      <nav>
+        <ul class="list">
+          {% for page in pages|sort %}
+          <li><a href="{{ SITEURL }}/{{ page.url }}#{{ page.slug }}">{{ page.title }}</a></li>
+          {% endfor %}
+          {% for name, link in LINKS %}
+          <li><a href="{{ link }}" target="_blank">{{ name }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+      <ul class="social">
+        {% for name, link in SOCIAL %}
+        <li><a class="sc-{{ name }}" href="{{ link }}" target="_blank"><i class="fa fa-{{ name }}"></i></a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </aside>
+  <main>
+    {% if MAIN_MENU %}
+    <nav>
+      <a href="{{ SITEURL }}">Home</a>
+      {% for title, link in MENUITEMS %}
+      <a href="{{ link }}">{{ title }}</a>
+      {% endfor %}
+      {% if FEED_ALL_ATOM %}
+      <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">Atom</a>
+      {% endif %}
+      {% if FEED_ALL_RSS %}
+      <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}">RSS</a>
+      {% endif %}
+    </nav>
+    {% endif %}
+
+    {% block content %}
+    {% endblock %}
+
+    <footer>
+      {% if CC_LICENSE %}
+      <p>
+        &copy; {{ AUTHOR }} {{ COPYRIGHT_YEAR }} - This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/{{ CC_LICENSE['slug'] }}/{{ CC_LICENSE['version'] }}/">{{ CC_LICENSE['name'] }} {{ CC_LICENSE['version'] }} International License</a>
+      </p>
+      {% include "partial/flex.html" %}
+      <p>
+        <a rel="license"
+           href="http://creativecommons.org/licenses/{{ CC_LICENSE['slug'] }}/{{ CC_LICENSE['version'] }}/"
+           target="_blank">
+          <img alt="Creative Commons License"
+               title="Creative Commons License"
+               style="border-width:0"
+               src="https://i.creativecommons.org/l/{{ CC_LICENSE['slug'] }}/{{ CC_LICENSE['version'] }}/80x15.png"
+               width="80"
+               height="15"/></a>
+          {% include "partial/statuscake.html" %}
+      </p>
+      {% else %}
+      <p>&copy; {{ AUTHOR }} {{ COPYRIGHT_YEAR }}</p>
+      {% include "partial/flex.html" %}
+      {% include "partial/statuscake.html" %}
+      {% endif %}
+    </footer>
+  </main>
+  {% include "partial/ga.html" %}
+  {% block additional_js %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% for article in articles_page.object_list %}
+<article>
+  <header>
+    <h2><a href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}">{{ article.title }}</a></h2>
+    <p>
+      Posted on {{ article.locale_date }} in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a> &#8226;
+      {% if article.tags %}Tagged with
+      {% for tag in article.tags %}
+      <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if not loop.last %},{% endif %}
+      {% endfor %}
+      {% endif %}
+      {% if DISQUS_SITENAME %}
+      &#8226; <a href="{{ SITEURL }}/{{ article.url }}#disqus_thread">Leave a comment</a>
+      {% endif %}
+    </p>
+  </header>
+  <div>
+    {% if summarise or article.metadata['summary'] or article.metadata['summarise'] %}
+      {{ article.summary }}
+      <a class="btn" href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}">Continue reading</a>
+    {% else %}
+      {{ article.content }}
+    {% endif %}
+  </div>
+  {% if not loop.last %}
+  <hr />
+  {% endif %}
+</article>
+{% endfor %}
+
+{% include "partial/pagination.html" %}
+{% endblock %}
+
+{% block additional_js %}
+  {% include "partial/disqus_count.html" %}
+{% endblock %}
