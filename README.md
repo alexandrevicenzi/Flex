@@ -7,7 +7,7 @@ A minimalist [Pelican](http://blog.getpelican.com/) theme.
 - Mobile First
 - Responsive
 - Semantic
-- SEO Best practices
+- SEO Best Practices
 
 ## Integrations
 
@@ -23,6 +23,7 @@ See what you can customize.
 Maybe some Pelican settings not work properly.
 
 | Name | What does it do? | Code |
+|:----:|------------------|:----:|
 | AUTHOR_SHORT_DESC | Short description to show below author name. | `AUTHOR_SHORT_DESC = 'Web Developer` |
 | AUTHOR_IMG_URL | Profile picture to show above author name. | `AUTHOR_IMG_URL = '/static/img/me.png'` |
 | COPYRIGHT_YEAR | Copyright year to display on footer. | `COPYRIGHT_YEAR = 2015` |
@@ -72,7 +73,8 @@ If you need more icons, you will need to add a custom background to keep all ico
 
 ## Custom File Metadata
 
-| Name | What does it do? | Show me |
+| Name | What does it do? | Code |
+|:----:|------------------|:----:|
 | Summarise | Enable Home summarry | `Summarise: True` |
 
 By default, all article content is shown on Home.
