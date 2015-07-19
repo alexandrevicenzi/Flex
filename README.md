@@ -35,7 +35,7 @@ Maybe some Pelican settings not work properly.
 | DISQUS_SITENAME | Disqus website's shortname to activate Disqus comment system. | `DISQUS_SITENAME = 'yoursite'` |
 | GOOGLE_ANALYTICS | Set to ‘UA-XXXX-YYYY’ to activate Google Analytics. | `GOOGLE_ANALYTICS = 'UA-1234-5678'` |
 | GOOGLE_TAG_MANAGER | Set to ‘GTM-XXXXXX’ to activate Google Tag Manager. | `GOOGLE_TAG_MANAGER = GTM-ABCDEF` |
-| STATUSCAKE | Show StatusCake Uptime badge on footer. | STATUSCAKE = { 'trackid': 'your-id', 'days': 7 } |
+| STATUSCAKE | Show StatusCake Uptime badge on footer. | `STATUSCAKE = { 'trackid': 'your-id', 'days': 7 }` |
 
 ### How main menu works?
 
@@ -75,7 +75,7 @@ If you need more icons, you will need to add a custom background to keep all ico
 
 | Name | What does it do? | Code |
 |:----:|------------------|:----:|
-| Summarise | Enable Home summarry | `Summarise: True` |
+| Summarise | Enable Home summary | `Summarise: True` |
 
 By default, all article content is shown on Home.
 If the article has a custom Summary, the custom summary is shown.
