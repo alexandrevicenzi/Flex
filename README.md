@@ -85,6 +85,8 @@ If the article has Summarise metadata, the default article summary is shown.
 
 You can find a demo [here](http://blog.alexandrevicenzi.com/).
 
+![Screenshot](https://github.com/alexandrevicenzi/Flex/blob/master/screenshot.png)
+
 ## License
 
 MIT
