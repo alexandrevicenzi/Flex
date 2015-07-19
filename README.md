@@ -47,7 +47,7 @@ CC_LICENSE = { 'name': 'Creative Commons Attribution-ShareAlike', 'version':'4.0
 MAIN_MENU = True
 DISQUS_SITENAME = 'yoursite'
 GOOGLE_ANALYTICS = 'UA-1234-5678'
-GOOGLE_TAG_MANAGER = GTM-ABCDEF
+GOOGLE_TAG_MANAGER = 'GTM-ABCDEF'
 STATUSCAKE = { 'trackid': 'your-id', 'days': 7 }
 ```
 
