@@ -62,6 +62,8 @@ GOOGLE_TAG_MANAGER = 'GTM-ABCDEF'
 STATUSCAKE = { 'trackid': 'your-id', 'days': 7 }
 ```
 
+If you want a full working example take a look [here](https://github.com/alexandrevicenzi/blog/blob/master/pelicanconf.py).
+
 ### How main menu works?
 
 If `MAIN_MENU = True`, the order is: Home, `MENUITEMS`, Atom and RSS if available.
@@ -102,7 +104,7 @@ If you need more icons, you will need to add a custom background to keep all ico
 |:----:|------------------|
 | Summarise | Enable Home summary. |
 | Cover | Cover image for social sharing (absolute url). |
-| og_locale | Open graph locale. |
+| og_locale | Open graph locale for article. |
 
 By default, all article content is shown on Home.
 If the article has a custom Summary, the custom summary is shown.
