@@ -1,6 +1,10 @@
 {% extends "base.html" %}
-{% block head %}
-<meta name="keywords" content="{{ article.tags|join(', ')  }}">
+
+{% block meta %}
+<meta name="author" content="{{ article.author.name }}" />
+<meta name="description" content="{{ article.summary|striptags }}" />
+<meta name="keywords" content="{{ article.tags|join(', ') }}">
+{% include "partial/og_article.html" %}
 {% endblock %}
 
 {% block title %}&ndash; {{ article.title }}{% endblock %}
@@ -25,4 +29,8 @@
   </div>
   {% include "partial/disqus.html" %}
 </article>
+{% endblock %}
+
+{% block additional_js %}
+  {% include "partial/jsonld_article.html" %}
 {% endblock %}

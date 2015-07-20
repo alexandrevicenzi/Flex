@@ -8,6 +8,8 @@ A minimalist [Pelican](http://blog.getpelican.com/) theme.
 - Responsive
 - Semantic
 - SEO Best Practices
+- Open Graph
+- Rich Snippets (JSON-LD)
 
 ## Integrations
 
@@ -24,14 +26,17 @@ See what you can customize.
 
 | Name | What does it do? |
 |:----:|------------------|
-| AUTHOR_SHORT_DESC | Short description to show below author name. |
-| AUTHOR_IMG_URL | Profile picture to show above author name. |
+| SITETITLE | Site title to show in sidebar. |
+| SITESUBTITLE | Short description to show below subtitle. |
+| SITELOGO | Profile picture to show above author name (absolute url). |
+| SITEDESCRIPTION | Site description to use in meta tags. |
 | COPYRIGHT_YEAR | Copyright year to display on footer. |
 | CC_LICENSE | Creative Commons License to show on footer. |
 | MENUITEMS | A list of tuples (Title, URL) for additional menu items to appear on main menu. |
 | LINKS | A list of tuples (Title, URL) for links to appear on the sidebar menu. |
 | SOCIAL | A list of tuples (name, URL) to appear in the "social" section. |
 | MAIN_MENU | Show main menu. |
+| ROBOTS | Robots meta tag value. |
 | DISQUS_SITENAME | Disqus website's shortname to activate Disqus. |
 | GOOGLE_ANALYTICS | Activate Google Analytics. |
 | GOOGLE_TAG_MANAGER | Activate Google Tag Manager. |
@@ -40,8 +45,13 @@ See what you can customize.
 ### Example
 
 ```python
-AUTHOR_SHORT_DESC = 'Web Developer
-AUTHOR_IMG_URL = '/static/img/me.png'
+SITENAME = 'Foo Bar's Blog'
+SITETITLE = 'Foo Bar'
+SITESUBTITLE = 'Web Developer'
+SITEDESCRIPTION = 'Foo Bar\'s Thoughts and Writings'
+SITELOGO = 'http://yoursite.com/img/profile.png'
+
+ROBOTS = 'index, follow'
 COPYRIGHT_YEAR = 2015
 CC_LICENSE = { 'name': 'Creative Commons Attribution-ShareAlike', 'version':'4.0', 'slug': 'by-sa') }
 MAIN_MENU = True
@@ -89,7 +99,8 @@ If you need more icons, you will need to add a custom background to keep all ico
 
 | Name | What does it do? |
 |:----:|------------------|
-| Summarise | Enable Home summary |
+| Summarise | Enable Home summary. |
+| Cover | Cover image for social sharing (absolute url). |
 
 By default, all article content is shown on Home.
 If the article has a custom Summary, the custom summary is shown.
