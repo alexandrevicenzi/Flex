@@ -30,6 +30,7 @@ See what you can customize.
 | SITESUBTITLE | Short description to show below subtitle. |
 | SITELOGO | Profile picture to show above author name (absolute url). |
 | SITEDESCRIPTION | Site description to use in meta tags. |
+| OG_LOCALE | language_TERRITORY for Open Graph. Default is `en_US`. |
 | COPYRIGHT_YEAR | Copyright year to display on footer. |
 | CC_LICENSE | Creative Commons License to show on footer. |
 | MENUITEMS | A list of tuples (Title, URL) for additional menu items to appear on main menu. |
@@ -101,6 +102,7 @@ If you need more icons, you will need to add a custom background to keep all ico
 |:----:|------------------|
 | Summarise | Enable Home summary. |
 | Cover | Cover image for social sharing (absolute url). |
+| OgLocale | Open graph locale. |
 
 By default, all article content is shown on Home.
 If the article has a custom Summary, the custom summary is shown.
