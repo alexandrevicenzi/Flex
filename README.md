@@ -46,7 +46,7 @@ See what you can customize.
 ### Example
 
 ```python
-SITENAME = 'Foo Bar's Blog'
+SITENAME = 'Foo Bar\'s Blog'
 SITETITLE = 'Foo Bar'
 SITESUBTITLE = 'Web Developer'
 SITEDESCRIPTION = 'Foo Bar\'s Thoughts and Writings'
@@ -102,7 +102,7 @@ If you need more icons, you will need to add a custom background to keep all ico
 |:----:|------------------|
 | Summarise | Enable Home summary. |
 | Cover | Cover image for social sharing (absolute url). |
-| OgLocale | Open graph locale. |
+| og_locale | Open graph locale. |
 
 By default, all article content is shown on Home.
 If the article has a custom Summary, the custom summary is shown.
