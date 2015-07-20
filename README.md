@@ -46,12 +46,14 @@ See what you can customize.
 ### Example
 
 ```python
+AUTHOR = 'Foo Bar'
+SITEURL = 'http://yoursite.com'
 SITENAME = 'Foo Bar's Blog'
 SITETITLE = 'Foo Bar'
 SITESUBTITLE = 'Web Developer'
 SITEDESCRIPTION = 'Foo Bar\'s Thoughts and Writings'
 SITELOGO = 'http://yoursite.com/img/profile.png'
-
+FAVICON = SITEURL + '/images/favicon.ico'
 ROBOTS = 'index, follow'
 COPYRIGHT_YEAR = 2015
 CC_LICENSE = { 'name': 'Creative Commons Attribution-ShareAlike', 'version':'4.0', 'slug': 'by-sa') }
