@@ -39,6 +39,7 @@ See what you can customize.
 | SOCIAL | A list of tuples (name, URL) to appear in the "social" section. |
 | MAIN_MENU | Show main menu. |
 | ROBOTS | Robots meta tag value. |
+| ADD_THIS_ID | AddThis public id. |
 | DISQUS_SITENAME | Disqus website's shortname to activate Disqus. |
 | GOOGLE_ANALYTICS | Activate Google Analytics. |
 | GOOGLE_TAG_MANAGER | Activate Google Tag Manager. |
@@ -54,11 +55,16 @@ SITETITLE = 'Foo Bar'
 SITESUBTITLE = 'Web Developer'
 SITEDESCRIPTION = 'Foo Bar\'s Thoughts and Writings'
 SITELOGO = 'http://yoursite.com/img/profile.png'
+
 FAVICON = SITEURL + '/images/favicon.ico'
 ROBOTS = 'index, follow'
+
 COPYRIGHT_YEAR = 2015
 CC_LICENSE = { 'name': 'Creative Commons Attribution-ShareAlike', 'version':'4.0', 'slug': 'by-sa') }
+
 MAIN_MENU = True
+
+ADD_THIS_ID = 'ra-77hh6723hhjd'
 DISQUS_SITENAME = 'yoursite'
 GOOGLE_ANALYTICS = 'UA-1234-5678'
 GOOGLE_TAG_MANAGER = 'GTM-ABCDEF'
