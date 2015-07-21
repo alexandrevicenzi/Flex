@@ -48,7 +48,7 @@ See what you can customize.
 ```python
 AUTHOR = 'Foo Bar'
 SITEURL = 'http://yoursite.com'
-SITENAME = 'Foo Bar's Blog'
+SITENAME = 'Foo Bar\'s Blog'
 SITETITLE = 'Foo Bar'
 SITESUBTITLE = 'Web Developer'
 SITEDESCRIPTION = 'Foo Bar\'s Thoughts and Writings'
@@ -63,6 +63,8 @@ GOOGLE_ANALYTICS = 'UA-1234-5678'
 GOOGLE_TAG_MANAGER = 'GTM-ABCDEF'
 STATUSCAKE = { 'trackid': 'your-id', 'days': 7 }
 ```
+
+If you want a full working example take a look [here](https://github.com/alexandrevicenzi/blog/blob/master/pelicanconf.py).
 
 ### How main menu works?
 
@@ -104,7 +106,7 @@ If you need more icons, you will need to add a custom background to keep all ico
 |:----:|------------------|
 | Summarise | Enable Home summary. |
 | Cover | Cover image for social sharing (absolute url). |
-| OgLocale | Open graph locale. |
+| og_locale | Open graph locale for article. |
 
 By default, all article content is shown on Home.
 If the article has a custom Summary, the custom summary is shown.
