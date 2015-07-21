@@ -13,6 +13,7 @@ A minimalist [Pelican](http://blog.getpelican.com/) theme.
 
 ## Integrations
 
+- AddThis
 - Disqus
 - Google Analytics
 - Google Tag Manager
@@ -111,6 +112,10 @@ If you need more icons, you will need to add a custom background to keep all ico
 By default, all article content is shown on Home.
 If the article has a custom Summary, the custom summary is shown.
 If the article has `Summarise: True` metadata, the default article summary is shown.
+
+## Code Highlight
+
+If you want to replace Pygments theme (default is GitHub) take a look at [Pygments Docs](http://pygments.org/) and replace `pygments.min.css`.
 
 ## Live example
 
