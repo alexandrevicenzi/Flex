@@ -36,15 +36,15 @@ h3 {
 }
 
 h4 {
-  font-size: 1.2em
+  font-size: 1.36em
 }
 
 h5 {
-  font-size: 0.9em
+  font-size: 1.2em
 }
 
 h6 {
-  font-size: 0.8em
+  font-size: 1.1em
 }
 
 body {
@@ -92,7 +92,7 @@ aside {
     color: @light-grey;
   }
 
-  .profile {
+  div {
     padding: 18px;
     margin: 0;
 
@@ -107,7 +107,7 @@ aside {
 
     p {
       margin: 0 0 15px 0;
-      font-size: .85em;
+      font-size: .92em;
     }
   }
 
@@ -117,7 +117,7 @@ aside {
         padding: 0 8px 0 8px;
         display: inline;
         line-height: 1.6em;
-        font-size: 1.2em;
+        font-size: 1.28em;
         text-transform: lowercase;
       }
     }
@@ -128,7 +128,7 @@ main {
   nav {
     text-align: center;
     text-transform: uppercase;
-    font-size: .7em;
+    font-size: .72em;
     padding: 14px 0 14px 0;
     border-bottom: @light-grey 1px solid;
 
@@ -146,17 +146,23 @@ main {
     margin: 4% 8% 2% 8%;
   }
 
+  .social-share {
+    p {
+      font-size: .8em;
+    }
+  }
+
   article {
     margin: 0 8% 2% 8%;
 
     header {
-      h2 {
+      h1, h2 {
         margin-bottom: 0;
       }
 
       p {
         color: @med-grey;
-        font-size: 11px;
+        font-size: 0.82em;
       }
     }
 
@@ -184,6 +190,10 @@ main {
       font-size: .9em;
     }
 
+    samp {
+      white-space: pre;
+    }
+
     kbd {
       padding: .1em .6em;
       border: 1px solid rgba(63,63,63,0.25);
@@ -198,8 +208,7 @@ main {
     }
 
     code {
-      font-size: .72rem;
-      line-height: .72rem;
+      font-size: .8em;
       white-space: normal;
       color: #c25;
       padding: 1px 3px;
@@ -307,6 +316,10 @@ a.btn {
 
 a.btn:hover {
   background-color: @light-orange;
+}
+
+.center {
+  text-align: center;
 }
 
 .float-right {

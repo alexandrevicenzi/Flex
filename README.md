@@ -111,13 +111,13 @@ If you need more icons, you will need to add a custom background to keep all ico
 
 | Name | What does it do? |
 |:----:|------------------|
-| Summarise | Enable Home summary. |
+| Summarize | Enable Home summary. |
 | Cover | Cover image for social sharing (absolute url). |
 | og_locale | Open graph locale for article. |
 
 By default, all article content is shown on Home.
 If the article has a custom Summary, the custom summary is shown.
-If the article has `Summarise: True` metadata, the default article summary is shown.
+If the article has `Summarize: True` metadata, the default article summary is shown.
 
 ## Code Highlight
 

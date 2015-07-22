@@ -12,12 +12,9 @@
 {% block content %}
 <article>
   <header>
-    <h2 id="{{ article.slug }}">{{ article.title }}</h2>
+    <h1 id="{{ article.slug }}">{{ article.title }}</h1>
     <p>Posted on {{ article.locale_date }} in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></p>
   </header>
-  {% if ADD_THIS_ID %}
-  <div class="addthis_sharing_toolbox"></div>
-  {% endif %}
   <div>
     {{ article.content }}
   </div>
@@ -30,6 +27,13 @@
       {% endif %}
     </p>
   </div>
+  {% if ADD_THIS_ID %}
+  <div class="center social-share">
+    <p>Like this article? Share it with your friends!</p>
+    <div class="addthis_native_toolbox"></div>
+    <div class="addthis_sharing_toolbox"></div>
+  </div>
+  {% endif %}
   {% include "partial/disqus.html" %}
 </article>
 {% endblock %}
