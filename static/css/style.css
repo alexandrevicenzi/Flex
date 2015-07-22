@@ -22,13 +22,13 @@ h3 {
   font-size: 1.6em;
 }
 h4 {
-  font-size: 1.2em;
+  font-size: 1.36em;
 }
 h5 {
-  font-size: 0.9em;
+  font-size: 1.2em;
 }
 h6 {
-  font-size: 0.8em;
+  font-size: 1.1em;
 }
 body {
   margin: 0;
@@ -68,32 +68,32 @@ aside a {
 aside a:hover {
   color: #eeeeee;
 }
-aside .profile {
+aside div {
   padding: 18px;
   margin: 0;
 }
-aside .profile img {
+aside div img {
   border-radius: 50%;
   max-width: 140px;
 }
-aside .profile h1 {
+aside div h1 {
   margin: 15px 0 5px 0;
 }
-aside .profile p {
+aside div p {
   margin: 0 0 15px 0;
-  font-size: .85em;
+  font-size: .92em;
 }
 aside nav ul li {
   padding: 0 8px 0 8px;
   display: inline;
   line-height: 1.6em;
-  font-size: 1.2em;
+  font-size: 1.28em;
   text-transform: lowercase;
 }
 main nav {
   text-align: center;
   text-transform: uppercase;
-  font-size: .7em;
+  font-size: .72em;
   padding: 14px 0 14px 0;
   border-bottom: #eeeeee 1px solid;
 }
@@ -107,15 +107,19 @@ main nav :first-child {
 main .pagination {
   margin: 4% 8% 2% 8%;
 }
+main .social-share p {
+  font-size: .8em;
+}
 main article {
   margin: 0 8% 2% 8%;
 }
+main article header h1,
 main article header h2 {
   margin-bottom: 0;
 }
 main article header p {
   color: #999999;
-  font-size: 11px;
+  font-size: 0.82em;
 }
 main article code,
 main article kbd,
@@ -141,6 +145,9 @@ main article pre {
   overflow-x: auto;
   font-size: .9em;
 }
+main article samp {
+  white-space: pre;
+}
 main article kbd {
   padding: .1em .6em;
   border: 1px solid rgba(63, 63, 63, 0.25);
@@ -154,8 +161,7 @@ main article kbd {
   font-size: .78em;
 }
 main article code {
-  font-size: .72rem;
-  line-height: .72rem;
+  font-size: .8em;
   white-space: normal;
   color: #c25;
   padding: 1px 3px;
@@ -200,7 +206,7 @@ main footer p {
     left: 0;
     overflow-y: auto;
   }
-  aside .profile {
+  aside div {
     padding: 36px 18px;
   }
   aside nav ul li {
@@ -242,6 +248,9 @@ a.btn {
 }
 a.btn:hover {
   background-color: #ff5a09;
+}
+.center {
+  text-align: center;
 }
 .float-right {
   float: right;
