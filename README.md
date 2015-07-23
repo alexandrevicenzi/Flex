@@ -125,7 +125,9 @@ If you want to replace Pygments theme (default is GitHub) take a look at [Pygmen
 
 ## Live example
 
-You can find a demo [here](http://blog.alexandrevicenzi.com/).
+You can see how things looks like [here](https://blog.alexandrevicenzi.com/flex-pelican-theme.html).
+
+I'm using Flex in my [personal blog](http://blog.alexandrevicenzi.com/).
 
 ![Screenshot](https://github.com/alexandrevicenzi/Flex/blob/master/screenshot.png)
 
