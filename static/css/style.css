@@ -69,7 +69,7 @@ aside a:hover {
   color: #eeeeee;
 }
 aside div {
-  padding: 18px;
+  padding: 20px;
   margin: 0;
 }
 aside div img {
@@ -84,7 +84,6 @@ aside div p {
   font-size: .92em;
 }
 aside nav ul li {
-  padding: 0 8px 0 8px;
   display: inline;
   line-height: 1.6em;
   font-size: 1.28em;
@@ -142,11 +141,13 @@ main article blockquote {
 }
 main article pre {
   padding: 4px;
-  overflow-x: auto;
   font-size: .9em;
+  overflow-x: auto;
 }
 main article samp {
   white-space: pre;
+  display: block;
+  overflow-x: auto;
 }
 main article kbd {
   padding: .1em .6em;
@@ -162,7 +163,7 @@ main article kbd {
 }
 main article code {
   font-size: .8em;
-  white-space: normal;
+  white-space: nowrap;
   color: #c25;
   padding: 1px 3px;
   background-color: #f7f7f9;
@@ -196,30 +197,6 @@ main footer p {
   padding: 0 40px 0 40px;
   color: #999999;
   font-size: 11px;
-}
-@media screen and (min-width: 768px) {
-  aside {
-    width: 25%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow-y: auto;
-  }
-  aside div {
-    padding: 36px 18px;
-  }
-  aside nav ul li {
-    display: block;
-  }
-  main {
-    width: 75%;
-    position: absolute;
-    top: 0;
-    left: 25%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
 }
 .tag-cloud a {
   background-color: #d9411e;
@@ -261,9 +238,15 @@ ul.social {
   margin: 0;
   padding: 0;
 }
+ul.list {
+  padding: 1em 0 1em 0;
+}
+ul.list li {
+  padding: 4px;
+}
 ul.social {
-  padding-top: 32px;
-  font-size: 1.8em;
+  font-size: 1.6em;
+  padding-top: 20px;
 }
 ul.social li {
   display: inline;
@@ -309,4 +292,35 @@ ul.social a.sc-github-alt {
 }
 ul.social a.sc-email {
   background-color: #578AD6;
+}
+@media screen and (min-width: 768px) {
+  aside {
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+  }
+  aside div {
+    padding: 36px 18px;
+  }
+  aside div nav ul li {
+    padding: 0 !important;
+    display: block;
+  }
+  aside div ul.social {
+    padding-top: 32px;
+  }
+  main {
+    width: 75%;
+    position: absolute;
+    top: 0;
+    left: 25%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  main article ul.list li {
+    padding: 2px;
+  }
 }

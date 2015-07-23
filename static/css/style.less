@@ -93,7 +93,7 @@ aside {
   }
 
   div {
-    padding: 18px;
+    padding: 20px;
     margin: 0;
 
     img {
@@ -114,7 +114,6 @@ aside {
   nav {
     ul {
       li {
-        padding: 0 8px 0 8px;
         display: inline;
         line-height: 1.6em;
         font-size: 1.28em;
@@ -186,12 +185,14 @@ main {
 
     pre {
       padding: 4px;
-      overflow-x: auto;
       font-size: .9em;
+      overflow-x: auto;
     }
 
     samp {
       white-space: pre;
+      display: block;
+      overflow-x: auto;
     }
 
     kbd {
@@ -209,7 +210,7 @@ main {
 
     code {
       font-size: .8em;
-      white-space: normal;
+      white-space: nowrap;
       color: #c25;
       padding: 1px 3px;
       background-color: #f7f7f9;
@@ -249,38 +250,6 @@ main {
       color: @med-grey;
       font-size: 11px;
     }
-  }
-}
-
-@media screen and (min-width: 768px) {
-  aside {
-    width: 25%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow-y: auto;
-
-    div {
-      padding: 36px 18px;
-    }
-
-    nav {
-      ul {
-        li {
-          display: block;
-        }
-      }
-    }
-  }
-
-  main {
-    width: 75%;
-    position: absolute;
-    top: 0;
-    left: 25%;
-    overflow-x: hidden;
-    overflow-y: hidden;
   }
 }
 
@@ -332,9 +301,17 @@ ul.list, ul.social {
   padding: 0;
 }
 
+ul.list {
+  padding: 1em 0 1em 0;
+
+  li {
+    padding: 4px;
+  }
+}
+
 ul.social {
-  padding-top: 32px;
-  font-size: 1.8em;
+  font-size: 1.6em;
+  padding-top: 20px;
 
   li {
     display: inline;
@@ -390,5 +367,54 @@ ul.social {
 
   a.sc-email {
     background-color: #578AD6;
+  }
+}
+
+//
+// Desktop
+//
+
+@media screen and (min-width: 768px) {
+  aside {
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+
+    div {
+      padding: 36px 18px;
+
+      nav {
+        ul {
+          li {
+            padding: 0 !important;
+            display: block;
+          }
+        }
+      }
+
+      ul.social {
+        padding-top: 32px;
+      }
+    }
+  }
+
+  main {
+    width: 75%;
+    position: absolute;
+    top: 0;
+    left: 25%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    article {
+      ul.list {
+        li {
+          padding: 2px;
+        }
+      }
+    }
   }
 }
