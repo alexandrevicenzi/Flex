@@ -85,9 +85,9 @@ The order is Pages and `LINKS`. `LINKS` are shown in a new page.
 
 All icons are provided by [Font Awesome](http://fortawesome.github.io/Font-Awesome/).
 
-A set of icons have custom background, for this you must follow the names above:
+A set of icons have custom background, for this you must follow the names below:
 
-- email
+- envelope-o (for email)
 - facebook
 - github
 - github-alt
