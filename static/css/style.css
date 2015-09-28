@@ -35,7 +35,7 @@ body {
   padding: 0;
   background-color: #ffffff;
   color: #242121;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro', 'Verdana', sans-serif;
   font-size: 1.02em;
   line-height: 1.2em;
 }
@@ -124,7 +124,7 @@ main article code,
 main article kbd,
 main article samp,
 main article pre {
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Source Code Pro', 'Consolas', monospace;
 }
 main article blockquote,
 main article pre {
@@ -279,6 +279,9 @@ ul.social a.sc-linkedin {
 }
 ul.social a.sc-rss {
   background-color: #f26109;
+}
+ul.social a.sc-stack-overflow {
+  background-color: #ff9900;
 }
 ul.social a.sc-twitter {
   background-color: #4da7de;

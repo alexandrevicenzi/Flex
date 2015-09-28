@@ -95,6 +95,7 @@ A set of icons have custom background, for this you must follow the names below:
 - linkedin
 - pinterest
 - rss
+- stack-overflow
 - twitter
 - youtube
 
