@@ -10,6 +10,9 @@
   {% endif %}
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/pygments.min.css">
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/font-awesome.min.css">
+  {% if CUSTOM_CSS %}
+  <link href="{{ SITEURL }}/{{ CUSTOM_CSS }}" rel="stylesheet">
+  {% endif %}
   {% if FEED_ALL_ATOM %}
   <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom">
   {% endif %}
