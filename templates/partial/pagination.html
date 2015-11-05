@@ -1,20 +1,14 @@
 {% if DEFAULT_PAGINATION %}
   <div class="pagination">
   {% if articles_page.has_next() %}
-    <a class="btn" href="{{ SITEURL }}/{{ page_name }}{{ articles_page.next_page_number() }}.html">
+    <a class="btn" href="{{ SITEURL }}/{{ articles_next_page.url }}">
       <i class="fa fa-angle-left"></i> Older Posts
     </a>
   {% endif %}
   {% if articles_page.has_previous() %}
-    {% if articles_page.previous_page_number() == 1 %}
-      <a class="btn float-right" href="{{ SITEURL }}/{{ page_name }}.html">
-        Newer Posts <i class="fa fa-angle-right"></i>
-      </a>
-    {% else %}
-      <a class="btn float-right" href="{{ SITEURL }}/{{ page_name }}{{ articles_page.previous_page_number() }}.html">
-        Newer Posts <i class="fa fa-angle-right"></i>
-      </a>
-    {% endif %}
+    <a class="btn float-right" href="{{ SITEURL }}/{{ articles_previous_page.url }}">
+      Newer Posts <i class="fa fa-angle-right"></i>
+    </a>
   {% endif %}
   </div>
 {% endif %}
