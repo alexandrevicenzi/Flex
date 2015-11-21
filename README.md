@@ -17,6 +17,7 @@ A minimalist [Pelican](http://blog.getpelican.com/) theme.
 - Disqus
 - Google Analytics
 - Google Tag Manager
+- Piwik
 - StatusCake
 
 ## Need Docs?
