@@ -35,7 +35,9 @@
   <title>{{ SITENAME }}{% block title %}{% endblock %}</title>
 </head>
 <body>
-  {% include "partial/gtm.html" %}
+  {% if GOOGLE_TAG_MANAGER %}
+    {% include "partial/gtm.html" %}
+  {% endif %}
   <aside>
     <div>
       <a href="{{ SITEURL }}">
@@ -87,37 +89,31 @@
       {% if CC_LICENSE %}
         {% include "partial/cc_license.html" %}
       {% else %}
-      <p>&copy; {{ AUTHOR }} {{ COPYRIGHT_YEAR }}</p>
-      {% include "partial/flex.html" %}
-      {% include "partial/statuscake.html" %}
+        <p>&copy; {{ AUTHOR }} {{ COPYRIGHT_YEAR }}</p>
+        {% include "partial/flex.html" %}
+        {% if STATUSCAKE %}
+          {% include "partial/statuscake.html" %}
+        {% endif %}
       {% endif %}
     </footer>
   </main>
-  {% include "partial/ga.html" %}
+
+  {% if GOOGLE_ANALYTICS %}
+    {% include "partial/ga.html" %}
+  {% endif %}
+
   {% if GUAGES %}
-  {% include "partial/guages.html" %}
+    {% include "partial/guages.html" %}
   {% endif %}
+
   {% if ADD_THIS_ID %}
-  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{ ADD_THIS_ID }}" async="async"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{ ADD_THIS_ID }}" async="async"></script>
   {% endif %}
-  {% block additional_js %}{% endblock %}
 
   {% if PIWIK_URL and PIWIK_SITE_ID %}
-  <!-- Piwik -->
-  <script type="text/javascript">
-    var _paq = _paq || [];
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-      var u="//{{ PIWIK_URL }}/";
-      _paq.push(['setTrackerUrl', u+'piwik.php']);
-      _paq.push(['setSiteId', {{ PIWIK_SITE_ID }}]);
-      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-    })();
-  </script>
-  <noscript><p><img src="//bnjbvr.alwaysdata.net/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
-  <!-- End Piwik Code -->
+    {% include "partial/piwik.html" %}
   {% endif %}
+
+  {% block additional_js %}{% endblock %}
 </body>
 </html>

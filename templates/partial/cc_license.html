@@ -13,5 +13,7 @@
          width="80"
          height="15"/>
   </a>
-  {% include "partial/statuscake.html" %}
+  {% if STATUSCAKE %}
+    {% include "partial/statuscake.html" %}
+  {% endif %}
 </p>
