@@ -13,12 +13,13 @@ A minimalist [Pelican](http://blog.getpelican.com/) theme.
 
 ## Integrations
 
-- AddThis
-- Disqus
-- Google Analytics
-- Google Tag Manager
-- Piwik
-- StatusCake
+- [AddThis](http://www.addthis.com/)
+- [Disqus](https://disqus.com/)
+- [Gauges](http://get.gaug.es/)
+- [Google Analytics](https://www.google.com/analytics/web/)
+- [Google Tag Manager](https://www.google.com/tagmanager/)
+- [Piwik](http://piwik.org/)
+- [StatusCake](https://www.statuscake.com/)
 
 ## Need Docs?
 
@@ -35,6 +36,12 @@ I'm using Flex in my [personal blog](http://blog.alexandrevicenzi.com/).
 ## Changelog
 
 [Click here](./CHANGELOG.md)
+
+## Donate
+
+Did you liked? Buy me a coffe.
+
+[![Gratipay](https://img.shields.io/gratipay/JSFiddle.svg?style=flat-square)](https://gratipay.com/~alexandrevicenzi/)
 
 ## License
 
