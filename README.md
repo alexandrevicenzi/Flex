@@ -28,6 +28,7 @@ A minimalist [Pelican](http://blog.getpelican.com/) theme.
 ## Live example
 
 You can see how things looks like [here](https://blog.alexandrevicenzi.com/flex-pelican-theme.html).
+Or you can take a look at [Flex users](https://github.com/alexandrevicenzi/Flex/wiki/Flex-users).
 
 I'm using Flex in my [personal blog](http://blog.alexandrevicenzi.com/).
 
