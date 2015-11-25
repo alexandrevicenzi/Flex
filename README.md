@@ -39,7 +39,7 @@ I'm using Flex in my [personal blog](http://blog.alexandrevicenzi.com/).
 
 ## Donate
 
-Did you liked? Buy me a coffe.
+Did you liked? Buy me a coffee.
 
 [![Gratipay](https://img.shields.io/gratipay/JSFiddle.svg?style=flat-square)](https://gratipay.com/~alexandrevicenzi/)
 
