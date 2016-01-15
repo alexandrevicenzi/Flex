@@ -42,6 +42,7 @@ htmlcov/
 nosetests.xml
 coverage.xml
 *,cover
+tests/output
 
 # Translations
 *.mo
@@ -55,6 +56,8 @@ docs/_build/
 
 # PyBuilder
 target/
+
+venv
 
 # NPM
 node_modules
