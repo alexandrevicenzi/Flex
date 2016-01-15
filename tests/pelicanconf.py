@@ -14,7 +14,7 @@ FAVICON = SITEURL + '/images/favicon.ico'
 
 ROBOTS = u'index, follow'
 
-THEME = u'../flex'
+THEME = u'../'
 PATH = u'content'
 TIMEZONE = u'America/Sao_Paulo'
 DEFAULT_LANG = u'en'
