@@ -1,4 +1,4 @@
-# Flex
+# Flex [![Build Status](https://travis-ci.org/alexandrevicenzi/Flex.svg?branch=master)](https://travis-ci.org/alexandrevicenzi/Flex)
 
 A minimalist [Pelican](http://blog.getpelican.com/) theme.
 
