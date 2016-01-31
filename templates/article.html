@@ -7,7 +7,7 @@
 {% include "partial/og_article.html" %}
 {% endblock %}
 
-{% block title %} &ndash; {{ article.title }}{% endblock %}
+{% block title %} &ndash; {{ article.title|striptags }}{% endblock %}
 
 {% block content %}
 <article>
