@@ -7,8 +7,8 @@
 {
   "@context": "http://schema.org",
   "@type": "BlogPosting",
-  "name": "{{ article.title }}",
-  "headline": "{{ article.title }}",
+  "name": "{{ article.title|striptags }}",
+  "headline": "{{ article.title|striptags }}",
   "datePublished": "{{ article.date }}",
   "dateModified": "{{ article.modified }}",
   "author": {
