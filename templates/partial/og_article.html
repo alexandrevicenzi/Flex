@@ -4,7 +4,7 @@
   {% set default_locale = 'en_US' %}
 {% endif %}
 <meta property="og:site_name" content="{{ SITENAME }}"/>
-<meta property="og:title" content="{{ article.title }}"/>
+<meta property="og:title" content="{{ article.title|striptags }}"/>
 <meta property="og:description" content="{{ article.summary|striptags }}"/>
 <meta property="og:locale" content="{{ article.metadata.get('og_locale', default_locale) }}"/>
 <meta property="og:url" content="{{ SITEURL }}/{{ article.url }}"/>
