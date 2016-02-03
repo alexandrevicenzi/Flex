@@ -21,7 +21,7 @@ A minimalist [Pelican](http://blog.getpelican.com/) theme.
 - [Piwik](http://piwik.org/)
 - [StatusCake](https://www.statuscake.com/)
 
-## Need Docs?
+## Docs
 
 [Go to Wiki](https://github.com/alexandrevicenzi/Flex/wiki)
 
@@ -33,10 +33,6 @@ Or you can take a look at [Flex users](https://github.com/alexandrevicenzi/Flex/
 I'm using Flex in my [personal blog](http://blog.alexandrevicenzi.com/).
 
 ![Screenshot](https://github.com/alexandrevicenzi/Flex/blob/master/screenshot.png)
-
-## Changelog
-
-[Click here](./CHANGELOG.md)
 
 ## Donate
 

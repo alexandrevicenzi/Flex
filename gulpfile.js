@@ -1,7 +1,7 @@
 var gulp = require('gulp'),
     less = require('gulp-less'),
     rename = require('gulp-rename'),
-    minify = require('gulp-minify-css');
+    minify = require('gulp-cssnano');
 
 gulp.task('less', function () {
     return gulp.src('./static/css/style.less')
