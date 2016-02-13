@@ -34,6 +34,16 @@
     <div class="addthis_sharing_toolbox"></div>
   </div>
   {% endif %}
+  {% if article.related_posts %}
+  <footer>
+    <h4>Related posts:</h4>
+    <ul>
+    {% for related_post in article.related_posts %}
+      <li><a href="{{ SITEURL }}/{{ related_post.url }}">{{ related_post.title }}</a></li>
+    {% endfor %}
+    </ul>
+  </footer>
+  {% endif %}
   {% include "partial/disqus.html" %}
 </article>
 {% endblock %}
