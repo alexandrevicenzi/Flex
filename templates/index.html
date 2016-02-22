@@ -19,7 +19,7 @@
     </p>
   </header>
   <div>
-    {% if summarise or article.metadata['summary'] or article.metadata['summarize'] %}
+    {% if summarise or article.metadata['summary'] or SUMMARY_MAX_LENGTH %}
       {{ article.summary }}
       <a class="btn" href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}">Continue reading</a>
     {% else %}
