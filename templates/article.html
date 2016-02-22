@@ -35,14 +35,14 @@
   </div>
   {% endif %}
   {% if article.related_posts %}
-  <footer>
+  <div class="related-posts">
     <h4>Related posts:</h4>
     <ul>
     {% for related_post in article.related_posts %}
       <li><a href="{{ SITEURL }}/{{ related_post.url }}">{{ related_post.title }}</a></li>
     {% endfor %}
     </ul>
-  </footer>
+  </div>
   {% endif %}
   {% include "partial/disqus.html" %}
 </article>
