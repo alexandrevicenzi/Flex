@@ -1,13 +1,14 @@
 {
   "name": "flex",
-  "version": "1.2",
+  "version": "1.1.1",
   "description": "A minimalist Pelican theme",
   "main": "gulpfile.js",
   "directories": {
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "source venv/bin/activate && pip install pelican markdown && pelican -s tests/pelicanconf.py && deactivate",
+    "build": "node_modules/gulp/bin/gulp.js default"
   },
   "repository": {
     "type": "git",

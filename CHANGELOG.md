@@ -1,4 +1,11 @@
-## 1.1
+## 1.1.1
+
+- [Bug in CSS with placement of "Newer Posts" button](https://github.com/alexandrevicenzi/Flex/issues/21)
+- [Posts preview on main page](https://github.com/alexandrevicenzi/Flex/issues/14)
+- [Strip HTML tags from title](https://github.com/alexandrevicenzi/Flex/pull/25)
+- [Added style for reddit social link](https://github.com/alexandrevicenzi/Flex/pull/23)
+
+## 1.1.0
 
 - [Allow custom CSS stylesheets to override the default one](https://github.com/alexandrevicenzi/Flex/pull/9)
 - [Add Windows-specific font variants](https://github.com/alexandrevicenzi/Flex/pull/8)
@@ -8,6 +15,6 @@
 - [show summary for articles in index.html](https://github.com/alexandrevicenzi/Flex/pull/4)
 - [Fixed email icon bug](https://github.com/alexandrevicenzi/Flex/pull/3)
 
-## 1.0
+## 1.0.0
 
 First release.
