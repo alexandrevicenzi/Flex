@@ -18,4 +18,14 @@ gulp.task('cp', function () {
         .pipe(gulp.dest('./static/font-awesome'));
 });
 
-gulp.task('default', ['less', 'cp']);
+gulp.task('pygments', function () {
+    return gulp.src(['./static/pygments/*.css', '!./static/pygments/*min.css'])
+        .pipe(minify())
+        .pipe(rename({
+            extname: '.min.css'
+        }))
+        .pipe(gulp.dest('./static/pygments'));
+});
+
+
+gulp.task('default', ['less', 'cp', 'pygments']);

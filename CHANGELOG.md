@@ -1,3 +1,10 @@
+## 1.2.0-dev
+
+- [Update font-awesome](https://github.com/alexandrevicenzi/Flex/issues/31)
+- [Added browser color configuration](https://github.com/alexandrevicenzi/Flex/pull/34)
+- [Related posts](https://github.com/alexandrevicenzi/Flex/pull/27)
+- [More Pygments Styles](https://github.com/alexandrevicenzi/Flex/issues/38)
+
 ## 1.1.1
 
 - [Bug in CSS with placement of "Newer Posts" button](https://github.com/alexandrevicenzi/Flex/issues/21)
