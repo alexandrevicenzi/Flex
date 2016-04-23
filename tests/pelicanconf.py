@@ -11,6 +11,7 @@ SITESUBTITLE = u'Test'
 SITEDESCRIPTION = u'%s\'s Thoughts and Writings' % AUTHOR
 SITELOGO = u'https://www.example.com/img/profile.png'
 FAVICON = SITEURL + '/images/favicon.ico'
+BROWSER_COLOR = '#333'
 
 ROBOTS = u'index, follow'
 

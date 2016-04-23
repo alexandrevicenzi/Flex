@@ -33,6 +33,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="{{ ROBOTS }}" />
+  {% if BROWSER_COLOR %}
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="{{ BROWSER_COLOR }}">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="{{ BROWSER_COLOR }}">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  {% endif %}
 
   {% block meta %}
     <meta name="author" content="{{ AUTHOR }}" />
