@@ -13,4 +13,9 @@ gulp.task('less', function () {
         .pipe(gulp.dest('./static/stylesheet'));
 });
 
-gulp.task('default', ['less']);
+gulp.task('cp', function () {
+    return gulp.src('./node_modules/font-awesome/**/*.{min.css,otf,eot,svg,ttf,woff,woff2}')
+        .pipe(gulp.dest('./static/font-awesome'));
+});
+
+gulp.task('default', ['less', 'cp']);
