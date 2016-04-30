@@ -67,7 +67,7 @@
       </a>
       <h1><a href="{{ SITEURL }}">{{ SITETITLE }}</a></h1>
       {% if SITESUBTITLE %}<p>{{ SITESUBTITLE }}</p>{% endif %}
-      {% if pages %}
+      {% if pages or LINKS %}
       <nav>
         <ul class="list">
           {% for page in pages|sort(attribute='title') %}
