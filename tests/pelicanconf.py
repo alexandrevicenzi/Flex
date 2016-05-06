@@ -53,7 +53,8 @@ DEFAULT_PAGINATION = 10
 
 STATUSCAKE = {
     'trackid': 'test-test',
-    'days': 7
+    'days': 7,
+    'rumid': 1234,
 }
 
 RELATIVE_URLS = False
