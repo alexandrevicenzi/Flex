@@ -66,7 +66,8 @@
         {% endif %}
       </a>
       <h1><a href="{{ SITEURL }}">{{ SITETITLE }}</a></h1>
-      <p>{{ SITESUBTITLE }}</p>
+      {% if SITESUBTITLE %}<p>{{ SITESUBTITLE }}</p>{% endif %}
+      {% if pages or LINKS %}
       <nav>
         <ul class="list">
           {% for page in pages|sort(attribute='title') %}
@@ -77,6 +78,7 @@
           {% endfor %}
         </ul>
       </nav>
+      {% endif %}
       <ul class="social">
         {% for name, link in SOCIAL %}
         <li><a class="sc-{{ name }}" href="{{ link }}" target="_blank"><i class="fa fa-{{ name }}"></i></a></li>
