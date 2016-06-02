@@ -1,4 +1,4 @@
-## 1.2.0-dev
+## 1.2.0
 
 - [Update font-awesome](https://github.com/alexandrevicenzi/Flex/issues/31)
 - [Added browser color configuration](https://github.com/alexandrevicenzi/Flex/pull/34)
