@@ -4,6 +4,7 @@
 - [Added browser color configuration](https://github.com/alexandrevicenzi/Flex/pull/34)
 - [Related posts](https://github.com/alexandrevicenzi/Flex/pull/27)
 - [More Pygments Styles](https://github.com/alexandrevicenzi/Flex/issues/38)
+- [Add StatusCake RUM support](https://github.com/alexandrevicenzi/Flex/issues/16)
 
 ## 1.1.1
 
