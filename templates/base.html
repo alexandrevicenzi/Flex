@@ -72,9 +72,16 @@
       {% if pages or LINKS %}
       <nav>
         <ul class="list">
+          {% if not MAIN_MENU %}
+          {% for title, link in MENUITEMS %}
+          <li><a href="{{ link }}">{{ title }}</a>
+          {% endfor %}
+          {% endif %}
+          {% if DISPLAY_PAGES_ON_MENU %}
           {% for page in pages|sort(attribute='title') %}
           <li><a href="{{ SITEURL }}/{{ page.url }}#{{ page.slug }}">{{ page.title }}</a></li>
           {% endfor %}
+          {% endif %}
           {% for name, link in LINKS %}
           <li><a href="{{ link }}" target="_blank">{{ name }}</a></li>
           {% endfor %}
