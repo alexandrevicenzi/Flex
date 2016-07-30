@@ -6,22 +6,22 @@
   <header>
     <h2><a href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}">{{ article.title }}</a></h2>
     <p>
-      Posted on {{ article.locale_date }} in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+      {% trans %}Posted on{% endtrans %} {{ article.locale_date }} {% trans %}in{% endtrans %} <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
       {% if article.tags %}
-      &#8226; Tagged with
+      &#8226; {% trans %}Tagged with{% endtrans %}
       {% for tag in article.tags %}
       <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if not loop.last %},{% endif %}
       {% endfor %}
       {% endif %}
       {% if DISQUS_SITENAME %}
-      &#8226; <a href="{{ SITEURL }}/{{ article.url }}#disqus_thread">Leave a comment</a>
+      &#8226; <a href="{{ SITEURL }}/{{ article.url }}#disqus_thread">{% trans %}Leave a comment{% endtrans %}</a>
       {% endif %}
     </p>
   </header>
   <div>
     {% if summarise or article.metadata['summary'] or SUMMARY_MAX_LENGTH %}
       {{ article.summary }}
-      <a class="btn" href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}">Continue reading</a>
+      <a class="btn" href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}">{% trans %}Continue reading{% endtrans %}</a>
     {% else %}
       {{ article.content }}
     {% endif %}

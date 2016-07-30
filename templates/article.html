@@ -13,7 +13,7 @@
 <article>
   <header>
     <h1 id="{{ article.slug }}">{{ article.title }}</h1>
-    <p>Posted on {{ article.locale_date }} in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></p>
+    <p>{% trans %}Posted on{% endtrans %} {{ article.locale_date }} {% trans %}in{% endtrans %} <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></p>
   </header>
   <div>
     {{ article.content }}
@@ -29,14 +29,14 @@
   </div>
   {% if ADD_THIS_ID %}
   <div class="center social-share">
-    <p>Like this article? Share it with your friends!</p>
+    <p>{% trans %}Like this article? Share it with your friends!{% endtrans %}</p>
     <div class="addthis_native_toolbox"></div>
     <div class="addthis_sharing_toolbox"></div>
   </div>
   {% endif %}
   {% if article.related_posts %}
   <div class="related-posts">
-    <h4>Related posts:</h4>
+    <h4>{% trans %}Related posts{% endtrans %}:</h4>
     <ul>
     {% for related_post in article.related_posts %}
       <li><a href="{{ SITEURL }}/{{ related_post.url }}">{{ related_post.title }}</a></li>
