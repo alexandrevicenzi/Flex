@@ -4,6 +4,8 @@ python:
     - "3.4"
 install:
     - pip install pelican markdown
+before_script:
+    - git clone https://github.com/getpelican/pelican-plugins plugins
 script: pelican -s tests/pelicanconf.py
 notifications:
     email: false
