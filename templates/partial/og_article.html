@@ -16,4 +16,8 @@
 {% for tag in article.tags %}
 <meta property="article:tag" content="{{ tag.name }}"/>
 {% endfor %}
-<meta property="og:image" content="{{ article.metadata.get('cover', SITELOGO) }}">
+{% if 'cover' in article.metadata %}
+<meta property="og:image" content="{{ SITEURL }}/{{ article.metadata['cover'] }}">
+{% else %}
+<meta property="og:image" content="{{ SITELOGO }}">
+{% endif %}
