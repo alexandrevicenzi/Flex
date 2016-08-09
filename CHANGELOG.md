@@ -1,3 +1,9 @@
+## 2.0.0 (dev)
+
+- [Theme translations](https://github.com/alexandrevicenzi/Flex/issues/43)
+- Updated font-awesome
+- Changed `Cover` metadata to relative path.
+
 ## 1.2.0
 
 - [Update font-awesome](https://github.com/alexandrevicenzi/Flex/issues/31)
