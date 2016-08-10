@@ -8,5 +8,11 @@
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
-<noscript>{% trans %}Please enable JavaScript to view the{% endtrans %} <a href="https://disqus.com/?ref_noscript" rel="nofollow">{% trans %}comments powered by Disqus{% endtrans %}.</a></noscript>
+<noscript>
+  {% autoescape false %}
+    {{ _('Please enable JavaScript to view the %(link)scomments powered by Disqus%(endlink)s',
+    link='<a href="https://disqus.com/?ref_noscript" rel="nofollow">',
+    endlink='</a>') }}
+  {% endautoescape %}
+</noscript>
 {% endif %}

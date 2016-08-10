@@ -1,13 +1,14 @@
 # German translations for pelican Flex theme by Alexandre Vicenzi.
 # Copyright (C) 2016 Marcel Huth
-# This file is distributed under the same license as the Flex theme by Alexandre Vicenzi project.
+# This file is distributed under the same license as the Flex theme by
+# Alexandre Vicenzi project.
 # Marcel Huth <marcelhuth@users.noreply.github.com>, 2016.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: 1.0\n"
+"Project-Id-Version:  1.1\n"
 "Report-Msgid-Bugs-To: marcelhuth@users.noreply.github.com\n"
-"POT-Creation-Date: 2016-07-30 13:55+0200\n"
+"POT-Creation-Date: 2016-08-10 18:20+0200\n"
 "PO-Revision-Date: 2016-07-30 13:56+0200\n"
 "Last-Translator: Marcel Huth <marcelhuth@users.noreply.github.com>\n"
 "Language: de\n"
@@ -22,25 +23,23 @@ msgstr ""
 msgid "Archives"
 msgstr "Archive"
 
-#: templates/article.html:16 templates/index.html:9
-msgid "Posted on"
-msgstr "Online seit"
+#: templates/article.html:18 templates/index.html:10
+#, python-format
+msgid "Posted on %(when)s in %(category)s"
+msgstr "Online seit %(when)s in %(category)s"
 
-#: templates/article.html:16 templates/index.html:9
-msgid "in"
-msgstr "in"
-
-#: templates/article.html:32
+#: templates/article.html:38
 msgid "Like this article? Share it with your friends!"
 msgstr "Gef&auml;llt dir der Artikel? Dann teile ihn mit Freunden!"
 
-#: templates/article.html:39
+#: templates/article.html:45
 msgid "Related posts"
 msgstr "&Auml;hnliche Artikel"
 
 #: templates/author.html:2
-msgid "Posts by"
-msgstr "Geschrieben von"
+#, python-format
+msgid "Posts by %(name)s"
+msgstr "Artikel von %(name)s"
 
 #: templates/authors.html:2 templates/authors.html:7
 msgid "Authors"
@@ -51,44 +50,46 @@ msgid "Categories"
 msgstr "Kategorien"
 
 #: templates/category.html:2
-msgid "Category"
-msgstr "Kategorie"
+#, python-format
+msgid "Category: %(name)s"
+msgstr "Kategorie: %(name)s"
 
-#: templates/index.html:11
-msgid "Tagged with"
-msgstr "Stichw&ouml;rter"
+#: templates/index.html:15
+msgid "Tag"
+msgid_plural "Tags"
+msgstr[0] "Stichwort"
+msgstr[1] "Stichw&ouml;rter"
 
-#: templates/index.html:17
+#: templates/index.html:21
 msgid "Leave a comment"
-msgstr "Schreib einen Kommentar"
+msgstr "Hinterlasse ein Kommentar"
 
-#: templates/index.html:24
+#: templates/index.html:28
 msgid "Continue reading"
 msgstr "Weiterlesen"
 
 #: templates/tag.html:2
-msgid "Tag"
-msgstr "Stichw&ouml;rt"
+#, python-format
+msgid "Tag: %(name)s"
+msgstr "Stichwort: %(name)s"
 
 #: templates/tags.html:2 templates/tags.html:7
 msgid "Tags"
 msgstr "Stichw&ouml;rter"
 
-#: templates/partial/disqus.html:11
-msgid "Please enable JavaScript to view the"
-msgstr "Bitte aktiviere JavaScript um die"
+#: templates/partial/disqus.html:13
+#, python-format
+msgid ""
+"Please enable JavaScript to view the %(link)scomments powered by "
+"Disqus%(endlink)s"
+msgstr ""
+"Bitte JavaScript aktivieren um die %(link)sKommentare von "
+"Disqus%(endlink)s zu lesen"
 
-#: templates/partial/disqus.html:11
-msgid "comments powered by Disqus"
-msgstr "Kommentare von Disqus anzuzeigen"
-
-#: templates/partial/flex.html:1
-msgid "Built using"
-msgstr "Erstellt mit"
-
-#: templates/partial/flex.html:1
-msgid "theme by"
-msgstr "Theme von"
+#: templates/partial/flex.html:2
+#, python-format
+msgid "Build using %(pelican)s - %(flex)s theme by %(alexandrevicenzi)s"
+msgstr "Erstellt mit %(pelican)s - %(flex)s Design von %(alexandrevicenzi)s"
 
 #: templates/partial/pagination.html:5
 msgid "Older Posts"
