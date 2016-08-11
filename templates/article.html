@@ -14,11 +14,13 @@
   <header>
     <h1 id="{{ article.slug }}">{{ article.title }}</h1>
     <p>
-      {% autoescape false %}
-      {{ _('Posted on %(when)s in %(category)s',
-        when=article.locale_date,
-        category='<a href="%s/%s">%s</a>' % (SITEURL, article.category.url, article.category)) }}
-      {% endautoescape %}
+      {% with category_url='<a href="%s/%s">%s</a>' % (SITEURL, article.category.url, article.category) %}
+        {{ _('Posted on %(when)s in %(category)s', when=article.locale_date, category=category_url|safe) }}
+      {% endwith %}
+
+      {% if 'post_stats' in PLUGINS %}
+        &#8226; {{ article.stats['read_mins'] }} min read
+      {% endif %}
     </p>
   </header>
   <div>
@@ -33,6 +35,7 @@
       {% endif %}
     </p>
   </div>
+
   {% if ADD_THIS_ID %}
   <div class="center social-share">
     <p>{{ _('Like this article? Share it with your friends!') }}</p>
@@ -40,20 +43,18 @@
     <div class="addthis_sharing_toolbox"></div>
   </div>
   {% endif %}
+
   {% if article.related_posts %}
   <div class="related-posts">
-    <h4>{{ _('Related posts') }}:</h4>
-    <ul>
+    <h4>{{ _('You might enjoy') }}</h4>
+    <ul class="related-posts">
     {% for related_post in article.related_posts %}
       <li><a href="{{ SITEURL }}/{{ related_post.url }}">{{ related_post.title }}</a></li>
     {% endfor %}
     </ul>
   </div>
   {% endif %}
+
   {% include "partial/disqus.html" %}
 </article>
-{% endblock %}
-
-{% block additional_js %}
-  {% include "partial/jsonld_article.html" %}
 {% endblock %}

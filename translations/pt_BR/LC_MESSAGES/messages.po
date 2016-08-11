@@ -1,19 +1,18 @@
-# German translations for pelican Flex theme by Alexandre Vicenzi.
-# Copyright (C) 2016 Marcel Huth
-# This file is distributed under the same license as the Flex theme by
-# Alexandre Vicenzi project.
-# Marcel Huth <marcelhuth@users.noreply.github.com>, 2016.
+# Portuguese (Brazil) translations for PROJECT.
+# Copyright (C) 2016 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version:  1.1\n"
-"Report-Msgid-Bugs-To: marcelhuth@users.noreply.github.com\n"
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2016-08-10 23:14-0300\n"
-"PO-Revision-Date: 2016-07-30 13:56+0200\n"
-"Last-Translator: Marcel Huth <marcelhuth@users.noreply.github.com>\n"
-"Language: de\n"
-"Language-Team: de <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"PO-Revision-Date: 2016-08-09 21:46-0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt_BR\n"
+"Language-Team: pt_BR <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,79 +20,80 @@ msgstr ""
 
 #: templates/archives.html:2 templates/archives.html:7
 msgid "Archives"
-msgstr "Archive"
+msgstr "Arquivos"
 
 #: templates/article.html:18 templates/index.html:10
 #, python-format
 msgid "Posted on %(when)s in %(category)s"
-msgstr "Online seit %(when)s in %(category)s"
+msgstr "Publicado em %(when)s na categoria %(category)s"
 
 #: templates/article.html:41
 msgid "Like this article? Share it with your friends!"
-msgstr "Gef&auml;llt dir der Artikel? Dann teile ihn mit Freunden!"
+msgstr "Gostou do artigo? Compartilhe com seus amigos!"
 
 #: templates/article.html:49
 msgid "You might enjoy"
-msgstr ""
+msgstr "Artigos relacionados"
 
 #: templates/author.html:2
 #, python-format
 msgid "Posts by %(name)s"
-msgstr "Artikel von %(name)s"
+msgstr "Publicações de %(name)s"
 
 #: templates/authors.html:2 templates/authors.html:7
 msgid "Authors"
-msgstr "Autoren"
+msgstr "Autores"
 
 #: templates/base.html:98
 msgid "Home"
-msgstr ""
+msgstr "Home"
 
 #: templates/base.html:105
 msgid "Atom"
-msgstr ""
+msgstr "Atom"
 
 #: templates/base.html:109
 msgid "RSS"
-msgstr ""
+msgstr "RSS"
 
 #: templates/categories.html:2 templates/categories.html:7
 msgid "Categories"
-msgstr "Kategorien"
+msgstr "Categorias"
 
 #: templates/category.html:2
 #, python-format
 msgid "Category %(name)s"
-msgstr "Kategorie %(name)s"
+msgstr "Categoria %(name)s"
 
 #: templates/index.html:22
 msgid "Continue reading"
-msgstr "Weiterlesen"
+msgstr "Continue lendo"
 
 #: templates/tag.html:2
 #, python-format
 msgid "Tag %(name)s"
-msgstr "Stichwort %(name)s"
+msgstr "Tag %(name)s"
 
 #: templates/tags.html:2 templates/tags.html:7
 msgid "Tags"
-msgstr "Stichw&ouml;rter"
+msgstr "Tags"
 
 #: templates/partial/disqus.html:12
 msgid "Please enable JavaScript to view comments."
-msgstr ""
+msgstr "Habilite JavaScript para ver os comentários."
 
 #: templates/partial/flex.html:1
 #, python-format
 msgid ""
 "Powered by %(pelican_url)s - %(flex_url)s theme by "
 "%(alexandrevicenzi_url)s"
-msgstr ""
+msgstr "Powered by %(pelican_url)s - O tema %(flex_url)s foi criado por "
+"%(alexandrevicenzi_url)s"
 
 #: templates/partial/pagination.html:5
 msgid "Older Posts"
-msgstr "&Auml;ltere Artikel"
+msgstr "Anteriores"
 
 #: templates/partial/pagination.html:10
 msgid "Newer Posts"
-msgstr "Neuere Artikel"
+msgstr "Próximos"

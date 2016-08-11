@@ -1,6 +1,4 @@
-{% autoescape false %}
-<p>{{ _('Build using %(pelican)s - %(flex)s theme by %(alexandrevicenzi)s',
-  pelican='<a href="http://getpelican.com" target="_blank">Pelican</a>',
-  flex='<a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a>',
-  alexandrevicenzi='<a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a>') }}</p>
-{% endautoescape %}
+<p>{{ _('Powered by %(pelican_url)s - %(flex_url)s theme by %(alexandrevicenzi_url)s',
+  pelican_url='<a href="http://getpelican.com" target="_blank">Pelican</a>',
+  flex_url='<a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a>'|safe,
+  alexandrevicenzi_url='<a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a>'|safe) }}</p>

@@ -9,10 +9,6 @@
     })();
 </script>
 <noscript>
-  {% autoescape false %}
-    {{ _('Please enable JavaScript to view the %(link)scomments powered by Disqus%(endlink)s',
-    link='<a href="https://disqus.com/?ref_noscript" rel="nofollow">',
-    endlink='</a>') }}
-  {% endautoescape %}
+    {{ _('Please enable JavaScript to view comments.') }}
 </noscript>
 {% endif %}

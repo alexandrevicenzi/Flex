@@ -6,25 +6,19 @@
   <header>
     <h2><a href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}">{{ article.title }}</a></h2>
     <p>
-      {% autoescape false %}
-      {{ _('Posted on %(when)s in %(category)s',
-        when=article.locale_date,
-        category='<a href="%s/%s">%s</a>' % (SITEURL, article.category.url, article.category)) }}
-      {% endautoescape %}
-      {% if article.tags %}
-      &#8226; {{ ngettext('Tag', 'Tags', article.tags|count) }}:
-      {% for tag in article.tags %}
-      <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if not loop.last %},{% endif %}
-      {% endfor %}
-      {% endif %}
-      {% if DISQUS_SITENAME %}
-      &#8226; <a href="{{ SITEURL }}/{{ article.url }}#disqus_thread">{{ _('Leave a comment') }}</a>
+      {% with category_url='<a href="%s/%s">%s</a>' % (SITEURL, article.category.url, article.category) %}
+        {{ _('Posted on %(when)s in %(category)s', when=article.locale_date, category=category_url|safe) }}
+      {% endwith %}
+
+      {% if 'post_stats' in PLUGINS %}
+        &#8226; {{ article.stats['read_mins'] }} min read
       {% endif %}
     </p>
   </header>
   <div>
     {% if summarise or article.metadata['summary'] or SUMMARY_MAX_LENGTH %}
       {{ article.summary }}
+      <br>
       <a class="btn" href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}">{{ _('Continue reading') }}</a>
     {% else %}
       {{ article.content }}
@@ -37,8 +31,4 @@
 {% endfor %}
 
 {% include "partial/pagination.html" %}
-{% endblock %}
-
-{% block additional_js %}
-  {% include "partial/disqus_count.html" %}
 {% endblock %}

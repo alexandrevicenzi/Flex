@@ -68,19 +68,23 @@
         {% endif %}
       </a>
       <h1><a href="{{ SITEURL }}">{{ SITETITLE }}</a></h1>
+
       {% if SITESUBTITLE %}<p>{{ SITESUBTITLE }}</p>{% endif %}
+
       {% if pages or LINKS %}
       <nav>
         <ul class="list">
           {% for page in pages|sort(attribute='title') %}
           <li><a href="{{ SITEURL }}/{{ page.url }}#{{ page.slug }}">{{ page.title }}</a></li>
           {% endfor %}
+
           {% for name, link in LINKS %}
           <li><a href="{{ link }}" target="_blank">{{ name }}</a></li>
           {% endfor %}
         </ul>
       </nav>
       {% endif %}
+
       <ul class="social">
         {% for name, link in SOCIAL %}
         <li><a class="sc-{{ name }}" href="{{ link }}" target="_blank"><i class="fa fa-{{ name }}"></i></a></li>
@@ -91,15 +95,18 @@
   <main>
     {% if MAIN_MENU %}
     <nav>
-      <a href="{{ SITEURL }}">Home</a>
+      <a href="{{ SITEURL }}">{{ _('Home') }}</a>
+
       {% for title, link in MENUITEMS %}
       <a href="{{ link }}">{{ title }}</a>
       {% endfor %}
+
       {% if FEED_ALL_ATOM %}
-      <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">Atom</a>
+      <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">{{ _('Atom') }}</a>
       {% endif %}
+
       {% if FEED_ALL_RSS %}
-      <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}">RSS</a>
+      <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}">{{ _('RSS') }}</a>
       {% endif %}
     </nav>
     {% endif %}
@@ -111,11 +118,7 @@
       {% if CC_LICENSE %}
         {% include "partial/cc_license.html" %}
       {% else %}
-        <p>&copy; {{ AUTHOR }} {{ COPYRIGHT_YEAR }}</p>
-        {% include "partial/flex.html" %}
-        {% if STATUSCAKE %}
-          {% include "partial/statuscake.html" %}
-        {% endif %}
+        {% include "partial/copyright.html" %}
       {% endif %}
     </footer>
   </main>
