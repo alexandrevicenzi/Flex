@@ -10,6 +10,8 @@ A minimalist [Pelican](http://blog.getpelican.com/) theme.
 - SEO Best Practices
 - Open Graph
 - Rich Snippets (JSON-LD)
+- Related Posts (via [plugin](https://github.com/getpelican/pelican-plugins/tree/master/related_posts))
+- Minute read like [Medium](https://medium.com/) (via [plugin](https://github.com/getpelican/pelican-plugins/tree/master/post_stats)) (coming in 2.0)
 - [Multiple Code Highlight Styles](https://github.com/alexandrevicenzi/Flex/wiki/Code-Highlight)
 - [Translation Support](https://github.com/alexandrevicenzi/Flex/wiki/Multi-language-support) (draft/coming in 2.0)
 
@@ -28,10 +30,6 @@ A minimalist [Pelican](http://blog.getpelican.com/) theme.
 The recommend way to install is over [pelican-themes](https://github.com/getpelican/pelican-themes).
 
 The `master` branch is the development branch. If you're happy with fresh new things and maybe sometimes (~most of time~) broken things you can clone the `master`, but I would recommend to you to clone a tag branch.
-
-## Migrate from 1.x to 2.x
-
-Release 2.0 will include [Translation Support](https://github.com/alexandrevicenzi/Flex/wiki/Multi-language-support). In order to use Flex you need to configure your `pelicanconf.py` to support i18n. See [Multi language support](https://github.com/alexandrevicenzi/Flex/wiki/Multi-language-support) for examples.
 
 ## Docs
 
@@ -54,9 +52,11 @@ I'm using Flex in my [personal blog](http://blog.alexandrevicenzi.com/).
 
 ## Donate
 
-Did you liked? Buy me a coffee.
+Did you liked this theme? Buy me a beer and support new features.
 
-[![Gratipay](https://img.shields.io/gratipay/JSFiddle.svg?style=flat-square)](https://gratipay.com/~alexandrevicenzi/)
+[![Gratipay](https://img.shields.io/gratipay/user/alexandrevicenzi.svg?maxAge=2592000)](https://gratipay.com/~alexandrevicenzi/)
+
+[![PayPal](https://img.shields.io/badge/paypal-donate-yellow.svg?maxAge=2592000)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=KZCMH3N74KKFN&lc=BR&item_name=Alexandre%20Vicenzi&item_number=flex&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
 
 ## License
 

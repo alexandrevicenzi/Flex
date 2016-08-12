@@ -1,3 +1,9 @@
+{% if 'jinja2.ext.i18n' not in JINJA_EXTENSIONS %}
+  {% macro _(msg) %}
+    {{ msg % kwargs }}
+  {% endmacro %}
+{% endif %}
+
 <!DOCTYPE html>
 <html lang="{{ DEFAULT_LANG }}">
 <head>

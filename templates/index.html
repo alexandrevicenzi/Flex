@@ -6,9 +6,9 @@
   <header>
     <h2><a href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}">{{ article.title }}</a></h2>
     <p>
-      {% with category_url='<a href="%s/%s">%s</a>' % (SITEURL, article.category.url, article.category) %}
-        {{ _('Posted on %(when)s in %(category)s', when=article.locale_date, category=category_url|safe) }}
-      {% endwith %}
+      {{ _('Posted on %(when)s in %(category)s',
+           when=article.locale_date,
+           category='<a href="%s/%s">%s</a>'|format(SITEURL, article.category.url, article.category)|safe) }}
 
       {% if 'post_stats' in PLUGINS %}
         &#8226; {{ article.stats['read_mins'] }} min read
