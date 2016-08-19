@@ -12,7 +12,7 @@ A minimalist [Pelican](http://blog.getpelican.com/) theme.
 - Rich Snippets (JSON-LD)
 - Related Posts (via [plugin](https://github.com/getpelican/pelican-plugins/tree/master/related_posts))
 - Minute read like [Medium](https://medium.com/) (via [plugin](https://github.com/getpelican/pelican-plugins/tree/master/post_stats)) (coming in 2.0)
-- [Multiple Code Highlight Styles](https://github.com/alexandrevicenzi/Flex/wiki/Code-Highlight)
+- [Multiple Code Highlight Styles](https://github.com/alexandrevicenzi/Flex/wiki/Code-highlight-support)
 - [Translation Support](https://github.com/alexandrevicenzi/Flex/wiki/Multi-language-support) (draft/coming in 2.0)
 
 ## Integrations
