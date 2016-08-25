@@ -1,6 +1,6 @@
 # Flex [![Build Status](https://travis-ci.org/alexandrevicenzi/Flex.svg?branch=master)](https://travis-ci.org/alexandrevicenzi/Flex) [![Dependency Status](https://david-dm.org/alexandrevicenzi/Flex.svg)](https://david-dm.org/alexandrevicenzi/Flex) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/alexandre-vicenzi/flex?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-A minimalist [Pelican](http://blog.getpelican.com/) theme.
+The minimalist [Pelican](http://blog.getpelican.com/) theme.
 
 ## Features
 
@@ -40,6 +40,14 @@ The `master` branch is the development branch. If you're happy with fresh new th
 Always open an issue before sending a PR. Talk about the problem/feature that you want to fix. If it's really a good thing you can submit your PR. If you send an PR without talking about before what it is, you may work for nothing.
 
 As always, if you want something that only make sense to you, just fork Flex and start a new theme.
+
+## Translate
+
+Translate this theme to new languages at [Transifex](https://www.transifex.com/alexandrevicenzi/flex-pelican/).
+
+![Translations](https://www.transifex.com/projects/p/flex-pelican/resource/messagespot/chart/image_png)
+
+Read more about [Translation Support](https://github.com/alexandrevicenzi/Flex/wiki/Translation-support).
 
 ## Live example
 
