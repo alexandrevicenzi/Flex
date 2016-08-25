@@ -1,6 +1,7 @@
 ## 2.0.0 (dev)
 
-- [Theme translations](https://github.com/alexandrevicenzi/Flex/issues/43)
+- Minute read like Medium (via plugin)
+- [Theme translations](https://github.com/alexandrevicenzi/Flex/wiki/Translation-support)
 - Updated font-awesome
 - Changed `Cover` metadata to relative path.
 
