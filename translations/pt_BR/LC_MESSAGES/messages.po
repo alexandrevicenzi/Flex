@@ -1,15 +1,15 @@
-# Portuguese (Brazil) translations for PROJECT.
-# Copyright (C) 2016 ORGANIZATION
-# This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+# Portuguese (Brazil) translations for Flex.
+# Copyright (C) 2016 Alexandre Vicenzi
+# This file is distributed under the same license as the Flex project.
+# Alexandre Vicenzi <contact@alexandrevicenzi.com>, 2016.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-08-10 23:14-0300\n"
+"Project-Id-Version: Flex 2.0\n"
+"Report-Msgid-Bugs-To: contact@alexandrevicenzi.com\n"
+"POT-Creation-Date: 2016-08-24 21:51-0300\n"
 "PO-Revision-Date: 2016-08-09 21:46-0300\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: Alexandre Vicenzi <contact@alexandrevicenzi.com>\n"
 "Language: pt_BR\n"
 "Language-Team: pt_BR <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n > 1)\n"
@@ -22,7 +22,7 @@ msgstr ""
 msgid "Archives"
 msgstr "Arquivos"
 
-#: templates/article.html:18 templates/index.html:10
+#: templates/article.html:17 templates/index.html:9
 #, python-format
 msgid "Posted on %(when)s in %(category)s"
 msgstr "Publicado em %(when)s na categoria %(category)s"
@@ -44,15 +44,15 @@ msgstr "Publicações de %(name)s"
 msgid "Authors"
 msgstr "Autores"
 
-#: templates/base.html:98
+#: templates/base.html:104
 msgid "Home"
-msgstr "Home"
+msgstr "Início"
 
-#: templates/base.html:105
+#: templates/base.html:111
 msgid "Atom"
 msgstr "Atom"
 
-#: templates/base.html:109
+#: templates/base.html:115
 msgid "RSS"
 msgstr "RSS"
 
@@ -65,7 +65,11 @@ msgstr "Categorias"
 msgid "Category %(name)s"
 msgstr "Categoria %(name)s"
 
-#: templates/index.html:22
+#: templates/index.html:14
+msgid "Tagged with"
+msgstr "Com as tags"
+
+#: templates/index.html:29
 msgid "Continue reading"
 msgstr "Continue lendo"
 
@@ -87,7 +91,8 @@ msgstr "Habilite JavaScript para ver os comentários."
 msgid ""
 "Powered by %(pelican_url)s - %(flex_url)s theme by "
 "%(alexandrevicenzi_url)s"
-msgstr "Powered by %(pelican_url)s - O tema %(flex_url)s foi criado por "
+msgstr ""
+"Powered by %(pelican_url)s - O tema %(flex_url)s foi criado por "
 "%(alexandrevicenzi_url)s"
 
 #: templates/partial/pagination.html:5
@@ -97,3 +102,4 @@ msgstr "Anteriores"
 #: templates/partial/pagination.html:10
 msgid "Newer Posts"
 msgstr "Próximos"
+
