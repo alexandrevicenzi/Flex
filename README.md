@@ -25,6 +25,16 @@ The minimalist [Pelican](http://blog.getpelican.com/) theme.
 - [Piwik](http://piwik.org/)
 - [StatusCake](https://www.statuscake.com/)
 
+## Adsense banner
+
+The theme support responsive adsense banners on the top/bottom of articles.
+To configure it create a responsive banner on your adsense account and set this on your pelicanconf.
+
+ADSENSE_AD_CLIENT = 'YOUR AD CLIENT'
+ADSENSE_AD_SLOT = 'YOUR AD SLOT'
+SHOW_ADSENSE_ARTICLE_TOP = True/False
+SHOW_ADSENSE_ARTICLE_BOTTOM = True/False
+
 ## Install
 
 The recommend way to install is over [pelican-themes](https://github.com/getpelican/pelican-themes).

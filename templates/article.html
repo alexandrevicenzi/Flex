@@ -12,6 +12,10 @@
 {% block content %}
 <article class="single">
   <header>
+
+    {% if SHOW_ADSENSE_ARTICLE_TOP %}
+      {% include "adsense-banner.html" %}
+    {% endif %}
     <h1 id="{{ article.slug }}">{{ article.title }}</h1>
     <p>
       {{ _('Posted on %(when)s in %(category)s',
@@ -26,6 +30,11 @@
   <div>
     {{ article.content }}
   </div>
+
+  {% if SHOW_ADSENSE_ARTICLE_BOTTOM %}
+    {% include "adsense-banner.html" %}
+  {% endif %}
+
   <div class="tag-cloud">
     <p>
       {% if article.tags %}
