@@ -13,9 +13,6 @@
 <article class="single">
   <header>
 
-    {% if SHOW_ADSENSE_ARTICLE_TOP %}
-      {% include "adsense-banner.html" %}
-    {% endif %}
     <h1 id="{{ article.slug }}">{{ article.title }}</h1>
     <p>
       {{ _('Posted on %(when)s in %(category)s',
@@ -31,8 +28,16 @@
     {{ article.content }}
   </div>
 
-  {% if SHOW_ADSENSE_ARTICLE_BOTTOM %}
-    {% include "adsense-banner.html" %}
+  {% if ADSENSE.adClientId and ADSENSE.adSlot.articleBottom %}
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="{{ ADSENSE.adClientId }}"
+         data-ad-slot="{{ ADSENSE.adSlot.articleBottom }}"
+         data-ad-format="auto"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
   {% endif %}
 
   <div class="tag-cloud">

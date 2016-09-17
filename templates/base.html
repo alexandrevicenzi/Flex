@@ -97,8 +97,34 @@
         {% endfor %}
       </ul>
     </div>
+
+    {% if ADSENSE.adClientId and ADSENSE.adSlot.aside %}
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="{{ ADSENSE.adClientId }}"
+           data-ad-slot="{{ ADSENSE.adSlot.aside }}"
+           data-ad-format="auto"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    {% endif %}
+
   </aside>
   <main>
+
+    {% if ADSENSE.adClientId and ADSENSE.adSlot.top %}
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="{{ ADSENSE.adClientId }}"
+           data-ad-slot="{{ ADSENSE.adSlot.top }}"
+           data-ad-format="auto"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    {% endif %}
+
     {% if MAIN_MENU %}
     <nav>
       <a href="{{ SITEURL }}">{{ _('Home') }}</a>
