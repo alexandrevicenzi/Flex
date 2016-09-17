@@ -27,13 +27,20 @@ The minimalist [Pelican](http://blog.getpelican.com/) theme.
 
 ## Adsense banner
 
-The theme supports responsive adsense banners on the top/bottom of articles.
-To configure it create a responsive banner on your adsense account and set this on your pelicanconf.
+The theme supports responsive adsense banners on the top/bottom of articles and index. And a 250x250 banner in aside.
+To configure it create a responsive banner and a 250x250 banner on your adsense account and set this on your pelicanconf.
 
-- ADSENSE_AD_CLIENT = 'YOUR AD CLIENT'
-- ADSENSE_AD_SLOT = 'YOUR AD SLOT'
-- SHOW_ADSENSE_ARTICLE_TOP = True/False
-- SHOW_ADSENSE_ARTICLE_BOTTOM = True/False
+'''json
+ADSENSE = {
+  'adClientId' : '<< YOUR AD CLIENT>>',
+  'adSlot' : {
+    'aside_250x250' : '<< AD-SLOT FOR THE 250X250 BANNER >>',
+    'articleBottom_responsible' : '<< AD-SLOT FOR THE RESPONSIBLE BANNER >>',
+    'top_responsible' : '<< AD-SLOT FOR THE RESPONSIBLE BANNER >>',
+    'homeBottom_responsible' : '<< AD-SLOT FOR THE RESPONSIBLE BANNER >>'
+  }
+}
+'''
 
 ## Install
 
