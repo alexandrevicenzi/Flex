@@ -37,12 +37,12 @@
 </article>
 {% endfor %}
 
-{% if ADSENSE.adClientId and ADSENSE.adSlot.homeBottom %}
+{% if ADSENSE.adClientId and ADSENSE.adSlot.homeBottom_responsible %}
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <ins class="adsbygoogle"
        style="display:block"
        data-ad-client="{{ ADSENSE.adClientId }}"
-       data-ad-slot="{{ ADSENSE.adSlot.homeBottom }}"
+       data-ad-slot="{{ ADSENSE.adSlot.homeBottom_responsible }}"
        data-ad-format="auto"></ins>
   <script>
   (adsbygoogle = window.adsbygoogle || []).push({});

@@ -28,12 +28,12 @@
     {{ article.content }}
   </div>
 
-  {% if ADSENSE.adClientId and ADSENSE.adSlot.articleBottom %}
+  {% if ADSENSE.adClientId and ADSENSE.adSlot.articleBottom_responsible %}
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <ins class="adsbygoogle"
          style="display:block"
          data-ad-client="{{ ADSENSE.adClientId }}"
-         data-ad-slot="{{ ADSENSE.adSlot.articleBottom }}"
+         data-ad-slot="{{ ADSENSE.adSlot.articleBottom_responsible }}"
          data-ad-format="auto"></ins>
     <script>
     (adsbygoogle = window.adsbygoogle || []).push({});
