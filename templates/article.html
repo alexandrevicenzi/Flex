@@ -12,6 +12,7 @@
 {% block content %}
 <article class="single">
   <header>
+
     <h1 id="{{ article.slug }}">{{ article.title }}</h1>
     <p>
       {{ _('Posted on %(when)s in %(category)s',
@@ -26,6 +27,19 @@
   <div>
     {{ article.content }}
   </div>
+
+  {% if ADSENSE.adClientId and ADSENSE.adSlot.articleBottom_responsible %}
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="{{ ADSENSE.adClientId }}"
+         data-ad-slot="{{ ADSENSE.adSlot.articleBottom_responsible }}"
+         data-ad-format="auto"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  {% endif %}
+
   <div class="tag-cloud">
     <p>
       {% if article.tags %}

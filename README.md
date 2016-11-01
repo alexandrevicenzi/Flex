@@ -25,6 +25,23 @@ The minimalist [Pelican](http://blog.getpelican.com/) theme.
 - [Piwik](http://piwik.org/)
 - [StatusCake](https://www.statuscake.com/)
 
+## Adsense banner
+
+The theme supports responsive adsense banners on the top/bottom of articles and index. And a 250x250 banner in aside.
+To configure it create a responsive banner and a 250x250 banner on your adsense account and set this on your pelicanconf.
+
+```javascript
+ADSENSE = {
+  'adClientId' : '<< YOUR AD CLIENT>>',
+  'adSlot' : {
+    'aside_250x250' : '<< AD-SLOT FOR THE 250X250 BANNER >>',
+    'articleBottom_responsible' : '<< AD-SLOT FOR THE RESPONSIBLE BANNER >>',
+    'top_responsible' : '<< AD-SLOT FOR THE RESPONSIBLE BANNER >>',
+    'homeBottom_responsible' : '<< AD-SLOT FOR THE RESPONSIBLE BANNER >>'
+  }
+}
+```
+
 ## Install
 
 The recommend way to install is over [pelican-themes](https://github.com/getpelican/pelican-themes).

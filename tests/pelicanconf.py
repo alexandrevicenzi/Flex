@@ -77,3 +77,13 @@ GOOGLE_ANALYTICS = "UA-XXXXXX-X"
 ADD_THIS_ID = 'ra-XX3242XX'
 
 USE_LESS = True
+
+ADSENSE = {
+  'adClientId' : 'ca-pub-XXXXXXXXXXXXXXXX',
+  'adSlot' : {
+    'aside_250x250' : 'YYYYYYYYYY',
+    'articleBottom_responsible' : 'XXXXXXXXXX',
+    'top_responsible' : 'XXXXXXXXXX',
+    'homeBottom_responsible' : 'XXXXXXXXXX'
+  }
+}
