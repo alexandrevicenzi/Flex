@@ -59,6 +59,16 @@
   {% endblock %}
 
   <title>{{ SITENAME }}{% block title %}{% endblock %}</title>
+
+  {% if GOOGLE_ADSENSE and GOOGLE_ADSENSE.page_level_ads %}
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "{{ GOOGLE_ADSENSE.ca_id }}",
+      enable_page_level_ads: true
+    });
+  </script>
+  {% endif %}
 </head>
 <body>
   {% if GOOGLE_TAG_MANAGER %}
@@ -97,8 +107,29 @@
         {% endfor %}
       </ul>
     </div>
+
+    {% if GOOGLE_ADSENSE and GOOGLE_ADSENSE.ads.aside %}
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <ins class="adsbygoogle ads-aside"
+           data-ad-client="{{ GOOGLE_ADSENSE.ca_id }}"
+           data-ad-slot="{{ GOOGLE_ADSENSE.ads.aside }}"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    {% endif %}
+
   </aside>
   <main>
+    {% if GOOGLE_ADSENSE and GOOGLE_ADSENSE.ads.main_menu %}
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <ins class="adsbygoogle ads-responsive"
+           data-ad-client="{{ GOOGLE_ADSENSE.ca_id }}"
+           data-ad-slot="{{ GOOGLE_ADSENSE.ads.main_menu }}"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    {% endif %}
+
     {% if MAIN_MENU %}
     <nav>
       <a href="{{ SITEURL }}">{{ _('Home') }}</a>

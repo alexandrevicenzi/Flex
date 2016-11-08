@@ -20,6 +20,7 @@ The minimalist [Pelican](http://blog.getpelican.com/) theme.
 - [AddThis](http://www.addthis.com/)
 - [Disqus](https://disqus.com/)
 - [Gauges](http://get.gaug.es/)
+- [Google AdSense](https://www.google.com.br/adsense/start/) (new in 2.1)
 - [Google Analytics](https://www.google.com/analytics/web/)
 - [Google Tag Manager](https://www.google.com/tagmanager/)
 - [Piwik](http://piwik.org/)
