@@ -1,0 +1,103 @@
+# Portuguese (Brazil) translations for Flex.
+# Copyright (C) 2016 Alexandre Vicenzi
+# This file is distributed under the same license as the Flex project.
+# Alexandre Vicenzi <contact@alexandrevicenzi.com>, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Flex 2.0\n"
+"Report-Msgid-Bugs-To: contact@alexandrevicenzi.com\n"
+"POT-Creation-Date: 2016-08-24 21:51-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Gareth jax <garethjax@gmail.com>, 2016\n"
+"Language-Team: Italian (https://www.transifex.com/alexandrevicenzi/teams/66327/it/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+"Language: it\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: templates/archives.html:2 templates/archives.html:7
+msgid "Archives"
+msgstr "Archivi"
+
+#: templates/article.html:17 templates/index.html:9
+#, python-format
+msgid "Posted on %(when)s in %(category)s"
+msgstr "Pubblicato il %(when)s in %(category)s"
+
+#: templates/article.html:41
+msgid "Like this article? Share it with your friends!"
+msgstr "Ti piace questo articolo? Condividilo con i tuoi amici!"
+
+#: templates/article.html:49
+msgid "You might enjoy"
+msgstr "Potrebbe interessanrti"
+
+#: templates/author.html:2
+#, python-format
+msgid "Posts by %(name)s"
+msgstr "Articoli di %(name)s"
+
+#: templates/authors.html:2 templates/authors.html:7
+msgid "Authors"
+msgstr "Autori"
+
+#: templates/base.html:104
+msgid "Home"
+msgstr "Home"
+
+#: templates/base.html:111
+msgid "Atom"
+msgstr "Atom"
+
+#: templates/base.html:115
+msgid "RSS"
+msgstr "RSS"
+
+#: templates/categories.html:2 templates/categories.html:7
+msgid "Categories"
+msgstr "Categorie"
+
+#: templates/category.html:2
+#, python-format
+msgid "Category %(name)s"
+msgstr "Categoria %(name)s"
+
+#: templates/index.html:14
+msgid "Tagged with"
+msgstr "Taggato come"
+
+#: templates/index.html:29
+msgid "Continue reading"
+msgstr "Continua lettura"
+
+#: templates/tag.html:2
+#, python-format
+msgid "Tag %(name)s"
+msgstr "Tag %(name)s"
+
+#: templates/tags.html:2 templates/tags.html:7
+msgid "Tags"
+msgstr "Tags"
+
+#: templates/partial/disqus.html:12
+msgid "Please enable JavaScript to view comments."
+msgstr "Per favore abilita Javascript per vedere i commenti."
+
+#: templates/partial/flex.html:1
+#, python-format
+msgid ""
+"Powered by %(pelican_url)s - %(flex_url)s theme by %(alexandrevicenzi_url)s"
+msgstr ""
+"Fatto con %(pelican_url)s - tema %(flex_url)s  creato da "
+"%(alexandrevicenzi_url)s"
+
+#: templates/partial/pagination.html:5
+msgid "Older Posts"
+msgstr "Post più vecchi"
+
+#: templates/partial/pagination.html:10
+msgid "Newer Posts"
+msgstr "Post più recenti"
