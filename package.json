@@ -1,6 +1,6 @@
 {
   "name": "flex",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "A minimalist Pelican theme",
   "main": "gulpfile.js",
   "directories": {
