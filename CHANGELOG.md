@@ -1,3 +1,10 @@
+## 2.1.0
+
+- Italian translation [#60](https://github.com/alexandrevicenzi/Flex/issues/60)
+- Hungarian transltion [#59](https://github.com/alexandrevicenzi/Flex/issues/59)
+- Russian transltion [#58](https://github.com/alexandrevicenzi/Flex/issues/58)
+- [Google AdSense support](https://github.com/alexandrevicenzi/Flex/issues/47)
+
 ## 2.0.0
 
 - [Minute read like Medium](https://github.com/alexandrevicenzi/Flex/issues/48) (via plugin)
