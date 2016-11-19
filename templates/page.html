@@ -5,6 +5,8 @@
 {% block content %}
 <article class="single">
   <header>
+    {% import 'partial/translations.html' as translations with context %}
+    {{ translations.translations_for(page) }}
     <h1 id="{{ page.slug }}">{{ page.title }}</h1>
   </header>
   <div>
