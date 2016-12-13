@@ -1,0 +1,105 @@
+# Translations template for PROJECT.
+# Copyright (C) 2016 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2016-08-24 21:51-0300\n"
+"PO-Revision-Date: 2016-12-13 17:19+0100\n"
+"Last-Translator: Juan A. S. <okelet@gmail.com>, 2016\n"
+"Language-Team: Spanish (Spain) (https://www.transifex.com/alexandrevicenzi/"
+"teams/66327/es_ES/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+"Language: es_ES\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.7.1\n"
+
+#: templates/archives.html:2 templates/archives.html:7
+msgid "Archives"
+msgstr "Archivos"
+
+#: templates/article.html:17 templates/index.html:9
+#, python-format
+msgid "Posted on %(when)s in %(category)s"
+msgstr "Publicado el %(when)s en %(category)s"
+
+#: templates/article.html:41
+msgid "Like this article? Share it with your friends!"
+msgstr "¿Te gusta este artículo? ¡Compártelo con tus amigos!"
+
+#: templates/article.html:49
+msgid "You might enjoy"
+msgstr "Te puede gustar"
+
+#: templates/author.html:2
+#, python-format
+msgid "Posts by %(name)s"
+msgstr "Artículos por %(name)s"
+
+#: templates/authors.html:2 templates/authors.html:7
+msgid "Authors"
+msgstr "Autores"
+
+#: templates/base.html:104
+msgid "Home"
+msgstr "Inicio"
+
+#: templates/base.html:111
+msgid "Atom"
+msgstr "Atom"
+
+#: templates/base.html:115
+msgid "RSS"
+msgstr "RSS"
+
+#: templates/categories.html:2 templates/categories.html:7
+msgid "Categories"
+msgstr "Categorías"
+
+#: templates/category.html:2
+#, python-format
+msgid "Category %(name)s"
+msgstr "Categoría %(name)s"
+
+#: templates/index.html:14
+msgid "Tagged with"
+msgstr "Etiquetado con"
+
+#: templates/index.html:29
+msgid "Continue reading"
+msgstr "Seguir leyendo"
+
+#: templates/tag.html:2
+#, python-format
+msgid "Tag %(name)s"
+msgstr "Etiqueta %(name)s"
+
+#: templates/tags.html:2 templates/tags.html:7
+msgid "Tags"
+msgstr "Etiquetas"
+
+#: templates/partial/disqus.html:12
+msgid "Please enable JavaScript to view comments."
+msgstr "Por favor, habilita JavaScript para ver los comentarios."
+
+#: templates/partial/flex.html:1
+#, python-format
+msgid ""
+"Powered by %(pelican_url)s - %(flex_url)s theme by %(alexandrevicenzi_url)s"
+msgstr ""
+"Este sitio usa %(pelican_url)s - tema %(flex_url)s por "
+"%(alexandrevicenzi_url)s"
+
+#: templates/partial/pagination.html:5
+msgid "Older Posts"
+msgstr "Artículos antiguos"
+
+#: templates/partial/pagination.html:10
+msgid "Newer Posts"
+msgstr "Artículos recientes"
