@@ -6,7 +6,7 @@ from __future__ import unicode_literals
 PLUGIN_PATHS = ['../plugins']
 PLUGINS = ['i18n_subsites']
 
-JINJA_EXTENSIONS = ['jinja2.ext.i18n', 'jinja2.ext.autoescape', 'jinja2.ext.with_']
+JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n', 'jinja2.ext.autoescape', 'jinja2.ext.with_']}
 
 AUTHOR = u'Test'
 SITEURL = u'http://localhost:8000'
