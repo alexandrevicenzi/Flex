@@ -7,7 +7,9 @@
     <h1 id="{{ page.slug }}">{{ page.title }}</h1>
   </header>
   <div>
-    {{ page.content }}
+    {% block before_content %}{% endblock %}
+    {% block page_content %}{{ page.content }}{% endblock %}
+    {% block after_content %}{% endblock %}
   </div>
 </article>
 {% endblock %}
