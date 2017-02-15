@@ -182,6 +182,9 @@
   {% include "partial/jsonld.html" %}
 
   {% block additional_js %}{% endblock %}
+  
+  {% if GITHUB_URL %}
   {% include 'partial/github.html' %}  
+  {% endif %}
 </body>
 </html>
