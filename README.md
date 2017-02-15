@@ -25,6 +25,7 @@ The minimalist [Pelican](http://blog.getpelican.com/) theme.
 - [Google Tag Manager](https://www.google.com/tagmanager/)
 - [Piwik](http://piwik.org/)
 - [StatusCake](https://www.statuscake.com/)
+- [Github Corners](https://github.com/tholman/github-corners)
 
 ## Install
 
