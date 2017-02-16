@@ -26,6 +26,7 @@ The minimalist [Pelican](http://blog.getpelican.com/) theme.
 - [Piwik](http://piwik.org/)
 - [StatusCake](https://www.statuscake.com/)
 - [Github Corners](https://github.com/tholman/github-corners)
+- [Representative image](https://github.com/getpelican/pelican-plugins/tree/master/representative_image)
 
 ## Install
 
