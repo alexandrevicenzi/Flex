@@ -15,7 +15,7 @@
 {% for article in articles_page.object_list %}
 <article>
   <header>
-    <h2><a href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}">{{ article.title }}</a></h2>
+    <h2><a href="{{ SITEURL }}/{{ article.url }}{% if not DISABLE_HASH_URL %}#{{ article.slug }}{% endif %}">{{ article.title }}</a></h2>
     <p>
       {{ _('Posted on %(when)s in %(category)s',
            when=article.locale_date,
@@ -37,7 +37,7 @@
     {% if summarise or article.metadata['summary'] or SUMMARY_MAX_LENGTH %}
       {{ article.summary }}
       <br>
-      <a class="btn" href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}">{{ _('Continue reading') }}</a>
+      <a class="btn" href="{{ SITEURL }}/{{ article.url }}{% if not DISABLE_HASH_URL %}#{{ article.slug }}{% endif %}">{{ _('Continue reading') }}</a>
     {% else %}
       {{ article.content }}
     {% endif %}

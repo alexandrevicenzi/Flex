@@ -94,7 +94,7 @@
               {% set PAGES_SORT_ATTRIBUTE = 'title' %}
           {%- endif %}
           {% for page in pages|sort(attribute=PAGES_SORT_ATTRIBUTE) %}
-          <li><a href="{{ SITEURL }}/{{ page.url }}#{{ page.slug }}">{{ page.title }}</a></li>
+          <li><a href="{{ SITEURL }}/{{ page.url }}{% if not DISABLE_HASH_URL %}#{{ page.slug }}{% endif %}">{{ page.title }}</a></li>
           {% endfor %}
 
           {% for name, link in LINKS %}
