@@ -35,6 +35,9 @@
   </header>
   <div>
     {% if summarise or article.metadata['summary'] or SUMMARY_MAX_LENGTH %}
+      {% if  article.featured_image %}
+        <img src="{{ article.featured_image }}">
+      {% endif %}
       {{ article.summary }}
       <br>
       <a class="btn" href="{{ SITEURL }}/{{ article.url }}{% if not DISABLE_URL_HASH %}#{{ article.slug }}{% endif %}">{{ _('Continue reading') }}</a>
