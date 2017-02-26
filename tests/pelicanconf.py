@@ -19,6 +19,7 @@ FAVICON = SITEURL + '/images/favicon.ico'
 BROWSER_COLOR = '#333'
 
 ROBOTS = u'index, follow'
+# ROBOTS_HIDDEN = u'noindex, nofollow'
 
 THEME = u'../'
 PATH = u'content'

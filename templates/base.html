@@ -40,7 +40,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="{{ ROBOTS }}" />
+  <meta name="robots" content="{{ ROBOTS_HIDDEN if (ROBOTS_HIDDEN and page in hidden_pages) else ROBOTS }}" />
 
   {% if BROWSER_COLOR %}
     <!-- Chrome, Firefox OS and Opera -->
@@ -182,9 +182,9 @@
   {% include "partial/jsonld.html" %}
 
   {% block additional_js %}{% endblock %}
-  
+
   {% if GITHUB_CORNER_URL %}
-  {% include 'partial/github.html' %}  
+  {% include 'partial/github.html' %}
   {% endif %}
 </body>
 </html>
