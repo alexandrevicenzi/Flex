@@ -18,8 +18,9 @@ SITELOGO = u'https://www.example.com/img/profile.png'
 FAVICON = SITEURL + '/images/favicon.ico'
 BROWSER_COLOR = '#333'
 
+# 'robots' meta tag values for normal and hidden pages.
 ROBOTS = u'index, follow'
-# ROBOTS_HIDDEN = u'noindex, nofollow'
+ROBOTS_HIDDEN = u'noindex, nofollow'
 
 THEME = u'../'
 PATH = u'content'
