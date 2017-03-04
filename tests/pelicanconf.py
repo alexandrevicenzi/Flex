@@ -4,7 +4,7 @@
 from __future__ import unicode_literals
 
 # Optional 'neighbors' plugin adds previous/next post buttons to articles.
-PLUGIN_PATHS = ['../../pelican-plugins']
+PLUGIN_PATHS = ['../plugins']
 PLUGINS = ['i18n_subsites', 'neighbors']
 
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n',
