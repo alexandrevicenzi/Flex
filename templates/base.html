@@ -40,7 +40,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="{{ ROBOTS_HIDDEN if (ROBOTS_HIDDEN and page in hidden_pages) else ROBOTS }}" />
+  {% if page in hidden_pages %}
+    <meta name="robots" content="noindex, nofollow" />
+  {% else %}
+    <meta name="robots" content="{{ ROBOTS }}" />
+  {% endif %}
 
   {% if BROWSER_COLOR %}
     <!-- Chrome, Firefox OS and Opera -->
