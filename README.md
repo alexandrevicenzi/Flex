@@ -29,8 +29,8 @@ DON'T send any questions, issues or anything related to Flex to my personal emai
 - [Google Tag Manager](https://www.google.com/tagmanager/)
 - [Piwik](http://piwik.org/)
 - [StatusCake](https://www.statuscake.com/)
-- [Github Corners](https://github.com/tholman/github-corners)
-- [Representative image](https://github.com/getpelican/pelican-plugins/tree/master/representative_image)
+- [Github Corners](https://github.com/tholman/github-corners) (new in 2.2)
+- [Representative image](https://github.com/getpelican/pelican-plugins/tree/master/representative_image) (new in 2.2)
 
 ## Install
 
@@ -47,6 +47,20 @@ The `master` branch is the development branch. If you're happy with fresh new th
 Always open an issue before sending a PR. Talk about the problem/feature that you want to fix. If it's really a good thing you can submit your PR. If you send an PR without talking about before what it is, you may work for nothing.
 
 As always, if you want something that only make sense to you, just fork Flex and start a new theme.
+
+## Donate
+
+Did you liked this theme? Buy me a beer and support new features.
+
+### PayPal
+
+[![PayPal](https://img.shields.io/badge/paypal-donate-yellow.svg?maxAge=2592000)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=KZCMH3N74KKFN&lc=BR&item_name=Alexandre%20Vicenzi&item_number=flex&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
+
+### Bitcoin
+
+![Screenshot](https://github.com/alexandrevicenzi/Flex/blob/master/btc.png)
+
+`1Heza38sS36iTtaFpWB5wziuiK9WChmwss`
 
 ## Translate
 
@@ -65,14 +79,10 @@ I'm using Flex in my [personal blog](http://blog.alexandrevicenzi.com/).
 
 ![Screenshot](https://github.com/alexandrevicenzi/Flex/blob/master/screenshot.png)
 
-## Donate
-
-Did you liked this theme? Buy me a beer and support new features.
-
-[![Gratipay](https://img.shields.io/gratipay/user/alexandrevicenzi.svg?maxAge=2592000)](https://gratipay.com/~alexandrevicenzi/)
-
-[![PayPal](https://img.shields.io/badge/paypal-donate-yellow.svg?maxAge=2592000)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=KZCMH3N74KKFN&lc=BR&item_name=Alexandre%20Vicenzi&item_number=flex&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
-
 ## License
 
 MIT
+
+## Contributors
+
+[Contributors list](https://github.com/alexandrevicenzi/Flex/graphs/contributors)
