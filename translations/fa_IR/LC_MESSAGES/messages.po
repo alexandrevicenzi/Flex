@@ -1,4 +1,4 @@
-# Italian translations for Flex.
+# Persian (Iran) translations for Flex.
 # Copyright (C) 2017 Alexandre Vicenzi
 # This file is distributed under the same license as the Flex project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
@@ -10,10 +10,10 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2017-03-14 00:10-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Gareth jax <garethjax@gmail.com>, 2016\n"
-"Language: it\n"
-"Language-Team: Italian (https://www.transifex.com/alexandrevicenzi/teams/66327/it/)\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Last-Translator: AmirMahmood <amma4ww@gmail.com>, 2017\n"
+"Language: fa_IR\n"
+"Language-Team: Persian (Iran) (https://www.transifex.com/alexandrevicenzi/teams/66327/fa_IR/)\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,82 +21,82 @@ msgstr ""
 
 #: templates/archives.html:2 templates/archives.html:7
 msgid "Archives"
-msgstr "Archivi"
+msgstr "بایگانی"
 
 #: templates/article.html:17 templates/index.html:20
 #, python-format
 msgid "Posted on %(when)s in %(category)s"
-msgstr "Pubblicato il %(when)s in %(category)s"
+msgstr "نوشته شده در تاریخ  %(when)s در  %(category)s"
 
 #: templates/article.html:52
 msgid "Like this article? Share it with your friends!"
-msgstr "Ti piace questo articolo? Condividilo con i tuoi amici!"
+msgstr "از این مقاله لذت بردید؟ آن را با دوستانتان به اشتراک بگذارید!"
 
 #: templates/article.html:61
 msgid "You might enjoy"
-msgstr "Potrebbe interessanrti"
+msgstr "ممکن است علاق‏ه‌مند باشید به"
 
 #: templates/author.html:2
 #, python-format
 msgid "Posts by %(name)s"
-msgstr "Articoli di %(name)s"
+msgstr "نوشته شده توسط  %(name)s"
 
 #: templates/authors.html:2 templates/authors.html:7
 msgid "Authors"
-msgstr "Autori"
+msgstr "نویسندگان"
 
 #: templates/base.html:142
 msgid "Home"
-msgstr "Home"
+msgstr "خانه"
 
 #: templates/base.html:149
 msgid "Atom"
-msgstr "Atom"
+msgstr "اشتراک Atom"
 
 #: templates/base.html:153
 msgid "RSS"
-msgstr "RSS"
+msgstr "اشتراک RSS"
 
 #: templates/categories.html:2 templates/categories.html:7
 msgid "Categories"
-msgstr "Categorie"
+msgstr "دسته بندی ها"
 
 #: templates/category.html:2
 #, python-format
 msgid "Category %(name)s"
-msgstr "Categoria %(name)s"
+msgstr "دسته بندی  %(name)s"
 
 #: templates/index.html:25
 msgid "Tagged with"
-msgstr "Taggato come"
+msgstr "برچسب شده توسط"
 
 #: templates/index.html:43
 msgid "Continue reading"
-msgstr "Continua lettura"
+msgstr "ادامه مطلب"
 
 #: templates/tag.html:2
 #, python-format
 msgid "Tag %(name)s"
-msgstr "Tag %(name)s"
+msgstr "برچسب %(name)s"
 
 #: templates/tags.html:2 templates/tags.html:7
 msgid "Tags"
-msgstr "Tags"
+msgstr "برچسب ها"
 
 #: templates/partial/disqus.html:12
 msgid "Please enable JavaScript to view comments."
-msgstr "Per favore abilita Javascript per vedere i commenti."
+msgstr "لطفا برای دیدن نظرات، جاوا اسکریپت را فعال کنید."
 
 #: templates/partial/flex.html:1
 #, python-format
 msgid "Powered by %(pelican_url)s - %(flex_url)s theme by %(alexandrevicenzi_url)s"
-msgstr "Fatto con %(pelican_url)s - tema %(flex_url)s  creato da %(alexandrevicenzi_url)s"
+msgstr "نیرو گرفته از  %(pelican_url)s - قالب  %(flex_url)s توسط  %(alexandrevicenzi_url)s"
 
 #: templates/partial/pagination.html:5
 msgid "Older Posts"
-msgstr "Post più vecchi"
+msgstr "نوشته‌های کهنه‌تر"
 
 #: templates/partial/pagination.html:10
 msgid "Newer Posts"
-msgstr "Post più recenti"
+msgstr "نوشته‌های تازه‌تر"
 

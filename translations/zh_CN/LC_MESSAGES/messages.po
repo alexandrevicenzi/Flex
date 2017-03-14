@@ -1,4 +1,4 @@
-# Italian translations for Flex.
+# Chinese (Simplified, China) translations for Flex.
 # Copyright (C) 2017 Alexandre Vicenzi
 # This file is distributed under the same license as the Flex project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
@@ -10,10 +10,10 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2017-03-14 00:10-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Gareth jax <garethjax@gmail.com>, 2016\n"
-"Language: it\n"
-"Language-Team: Italian (https://www.transifex.com/alexandrevicenzi/teams/66327/it/)\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Last-Translator: Shiao Qu <whisperzzzz@icloud.com>, 2016\n"
+"Language: zh_Hans_CN\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/alexandrevicenzi/teams/66327/zh_CN/)\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,82 +21,82 @@ msgstr ""
 
 #: templates/archives.html:2 templates/archives.html:7
 msgid "Archives"
-msgstr "Archivi"
+msgstr "归档"
 
 #: templates/article.html:17 templates/index.html:20
 #, python-format
 msgid "Posted on %(when)s in %(category)s"
-msgstr "Pubblicato il %(when)s in %(category)s"
+msgstr "在 %(when)s 发布于 %(category)s 分类"
 
 #: templates/article.html:52
 msgid "Like this article? Share it with your friends!"
-msgstr "Ti piace questo articolo? Condividilo con i tuoi amici!"
+msgstr "喜欢这篇文章吗？将它与您的朋友分享吧！"
 
 #: templates/article.html:61
 msgid "You might enjoy"
-msgstr "Potrebbe interessanrti"
+msgstr "您可能还喜欢"
 
 #: templates/author.html:2
 #, python-format
 msgid "Posts by %(name)s"
-msgstr "Articoli di %(name)s"
+msgstr "%(name)s 发布的文章"
 
 #: templates/authors.html:2 templates/authors.html:7
 msgid "Authors"
-msgstr "Autori"
+msgstr "作者"
 
 #: templates/base.html:142
 msgid "Home"
-msgstr "Home"
+msgstr "主页"
 
 #: templates/base.html:149
 msgid "Atom"
-msgstr "Atom"
+msgstr "Atom订阅"
 
 #: templates/base.html:153
 msgid "RSS"
-msgstr "RSS"
+msgstr "RSS订阅"
 
 #: templates/categories.html:2 templates/categories.html:7
 msgid "Categories"
-msgstr "Categorie"
+msgstr "分类"
 
 #: templates/category.html:2
 #, python-format
 msgid "Category %(name)s"
-msgstr "Categoria %(name)s"
+msgstr "%(name)s 分类"
 
 #: templates/index.html:25
 msgid "Tagged with"
-msgstr "Taggato come"
+msgstr "标签为"
 
 #: templates/index.html:43
 msgid "Continue reading"
-msgstr "Continua lettura"
+msgstr "阅读全文"
 
 #: templates/tag.html:2
 #, python-format
 msgid "Tag %(name)s"
-msgstr "Tag %(name)s"
+msgstr "%(name)s 标签"
 
 #: templates/tags.html:2 templates/tags.html:7
 msgid "Tags"
-msgstr "Tags"
+msgstr "标签"
 
 #: templates/partial/disqus.html:12
 msgid "Please enable JavaScript to view comments."
-msgstr "Per favore abilita Javascript per vedere i commenti."
+msgstr "请启用浏览器的Javascript功能以查看评论。"
 
 #: templates/partial/flex.html:1
 #, python-format
 msgid "Powered by %(pelican_url)s - %(flex_url)s theme by %(alexandrevicenzi_url)s"
-msgstr "Fatto con %(pelican_url)s - tema %(flex_url)s  creato da %(alexandrevicenzi_url)s"
+msgstr "本站由 %(pelican_url)s 驱动，并使用了 %(alexandrevicenzi_url)s 开发的 %(flex_url)s 主题。"
 
 #: templates/partial/pagination.html:5
 msgid "Older Posts"
-msgstr "Post più vecchi"
+msgstr "更旧的文章"
 
 #: templates/partial/pagination.html:10
 msgid "Newer Posts"
-msgstr "Post più recenti"
+msgstr "更新的文章"
 

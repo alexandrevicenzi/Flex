@@ -1,18 +1,18 @@
 # French translations for Flex.
-# Copyright (C) 2016 Alexandre Vicenzi
+# Copyright (C) 2017 Alexandre Vicenzi
 # This file is distributed under the same license as the Flex project.
-# Alexandre Vicenzi <contact@alexandrevicenzi.com>, 2016.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Flex 2.0\n"
-"Report-Msgid-Bugs-To: contact@alexandrevicenzi.com\n"
-"POT-Creation-Date: 2016-08-24 21:51-0300\n"
+"Project-Id-Version: Flex 2.1.0\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2017-03-14 00:10-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: François Schmidts <francois.schmidts@gmail.com>, 2016\n"
 "Language: fr\n"
-"Language-Team: French "
-"(https://www.transifex.com/alexandrevicenzi/teams/66327/fr/)\n"
+"Language-Team: French (https://www.transifex.com/alexandrevicenzi/teams/66327/fr/)\n"
 "Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -23,16 +23,16 @@ msgstr ""
 msgid "Archives"
 msgstr "Archives"
 
-#: templates/article.html:17 templates/index.html:9
+#: templates/article.html:17 templates/index.html:20
 #, python-format
 msgid "Posted on %(when)s in %(category)s"
 msgstr "Posté le %(when)s dans %(category)s"
 
-#: templates/article.html:41
+#: templates/article.html:52
 msgid "Like this article? Share it with your friends!"
 msgstr "Vous aimez cet article ? Partagez le avec vos amis !"
 
-#: templates/article.html:49
+#: templates/article.html:61
 msgid "You might enjoy"
 msgstr "Vous pourriez aimer"
 
@@ -45,15 +45,15 @@ msgstr "Posts de %(name)s"
 msgid "Authors"
 msgstr "Auteurs"
 
-#: templates/base.html:104
+#: templates/base.html:142
 msgid "Home"
 msgstr "Accueil"
 
-#: templates/base.html:111
+#: templates/base.html:149
 msgid "Atom"
 msgstr "Atom"
 
-#: templates/base.html:115
+#: templates/base.html:153
 msgid "RSS"
 msgstr "RSS"
 
@@ -66,11 +66,11 @@ msgstr "Catégories"
 msgid "Category %(name)s"
 msgstr "Catégorie %(name)s"
 
-#: templates/index.html:14
+#: templates/index.html:25
 msgid "Tagged with"
 msgstr "Taggé avec"
 
-#: templates/index.html:29
+#: templates/index.html:43
 msgid "Continue reading"
 msgstr "Continuer à lire"
 
@@ -89,12 +89,8 @@ msgstr "Veuillez activer le JavaScript pour voir les commentaires."
 
 #: templates/partial/flex.html:1
 #, python-format
-msgid ""
-"Powered by %(pelican_url)s - %(flex_url)s theme by "
-"%(alexandrevicenzi_url)s"
-msgstr ""
-"Propulsé par %(pelican_url)s - %(flex_url)s thème par "
-"%(alexandrevicenzi_url)s"
+msgid "Powered by %(pelican_url)s - %(flex_url)s theme by %(alexandrevicenzi_url)s"
+msgstr "Propulsé par %(pelican_url)s - %(flex_url)s thème par %(alexandrevicenzi_url)s"
 
 #: templates/partial/pagination.html:5
 msgid "Older Posts"

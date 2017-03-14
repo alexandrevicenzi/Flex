@@ -1,39 +1,38 @@
-# Russian translations for pelican Flex theme by Alexandre Vicenzi.
-# Copyright (C) 2016 Roman Saldygashev
-# This file is distributed under the same license as the Flex theme by
-# Alexandre Vicenzi project.
-# Roman Saldygashev <groundflyer@users.noreply.github.com>, 2016.
+# Russian translations for Flex.
+# Copyright (C) 2017 Alexandre Vicenzi
+# This file is distributed under the same license as the Flex project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: 2.0\n"
-"Report-Msgid-Bugs-To: <groundflyer@users.noreply.github.com>\n"
-"POT-Creation-Date: 2016-08-24 21:51-0300\n"
-"PO-Revision-Date: 2016-10-18 11:46+0500\n"
-"Last-Translator: Roman Saldygashev <groundflyer@users.noreply.github.com>>\n"
+"Project-Id-Version: Flex 2.1.0\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2017-03-14 00:10-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Roman Saldygashev <sldg.roman@gmail.com>, 2016\n"
 "Language: ru\n"
-"Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"Language-Team: Russian (https://www.transifex.com/alexandrevicenzi/teams/66327/ru/)\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.1.1\n"
+"Generated-By: Babel 2.3.4\n"
 
 #: templates/archives.html:2 templates/archives.html:7
 msgid "Archives"
 msgstr "Архивы"
 
-#: templates/article.html:17 templates/index.html:9
+#: templates/article.html:17 templates/index.html:20
 #, python-format
 msgid "Posted on %(when)s in %(category)s"
 msgstr "Опубликовано %(when)s в %(category)s"
 
-#: templates/article.html:41
+#: templates/article.html:52
 msgid "Like this article? Share it with your friends!"
 msgstr "Понравилась статья? Поделись с друзьями!"
 
-#: templates/article.html:49
+#: templates/article.html:61
 msgid "You might enjoy"
 msgstr "Наслаждайся"
 
@@ -46,15 +45,15 @@ msgstr "Опубликовано %(name)s"
 msgid "Authors"
 msgstr "Авторы"
 
-#: templates/base.html:104
+#: templates/base.html:142
 msgid "Home"
 msgstr "Главная"
 
-#: templates/base.html:111
+#: templates/base.html:149
 msgid "Atom"
 msgstr "Атом"
 
-#: templates/base.html:115
+#: templates/base.html:153
 msgid "RSS"
 msgstr "RSS"
 
@@ -67,11 +66,11 @@ msgstr "Категории"
 msgid "Category %(name)s"
 msgstr "Категория %(name)s"
 
-#: templates/index.html:14
+#: templates/index.html:25
 msgid "Tagged with"
 msgstr "Помечено"
 
-#: templates/index.html:29
+#: templates/index.html:43
 msgid "Continue reading"
 msgstr "Продолжить чтение"
 
@@ -90,17 +89,14 @@ msgstr "Пожалуйста включите JavaScript, чтобы просм�
 
 #: templates/partial/flex.html:1
 #, python-format
-msgid ""
-"Powered by %(pelican_url)s - %(flex_url)s theme by "
-"%(alexandrevicenzi_url)s"
-msgstr "Создано с помощью %(pelican_url)s - оформление %(flex_url)s от "
-"%(alexandrevicenzi_url)s"
+msgid "Powered by %(pelican_url)s - %(flex_url)s theme by %(alexandrevicenzi_url)s"
+msgstr "Создано с помощью %(pelican_url)s - оформление %(flex_url)s от %(alexandrevicenzi_url)s"
 
 #: templates/partial/pagination.html:5
 msgid "Older Posts"
 msgstr "Старые сообщения"
 
 #: templates/partial/pagination.html:10
-msgid "New Posts"
+msgid "Newer Posts"
 msgstr "Новые сообщения"
 
