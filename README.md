@@ -14,14 +14,14 @@ DON'T send any questions, issues or anything related to Flex to my personal emai
 - SEO Best Practices
 - Open Graph
 - Rich Snippets (JSON-LD)
-- Related Posts (via [plugin](https://github.com/getpelican/pelican-plugins/tree/master/related_posts))
+- Related Posts (via [plugin](https://github.com/getpelican/pelican-plugins/tree/master/related_posts) or AddThis)
 - Minute read (via [plugin](https://github.com/getpelican/pelican-plugins/tree/master/post_stats)) (new in 2.0)
 - [Multiple Code Highlight Styles](https://github.com/alexandrevicenzi/Flex/wiki/Code-Highlight)
 - [Translation Support](https://github.com/alexandrevicenzi/Flex/wiki/Translations) (new in 2.0)
 
 ## Integrations
 
-- [AddThis](http://www.addthis.com/)
+- [AddThis](http://www.addthis.com/) Share Buttons and Related Posts
 - [Disqus](https://disqus.com/)
 - [Gauges](http://get.gaug.es/)
 - [Google AdSense](https://www.google.com.br/adsense/start/) (new in 2.1)
@@ -30,6 +30,11 @@ DON'T send any questions, issues or anything related to Flex to my personal emai
 - [Piwik](http://piwik.org/)
 - [StatusCake](https://www.statuscake.com/)
 - [Github Corners](https://github.com/tholman/github-corners) (new in 2.2)
+
+## Plugins Support
+
+- [I18N Sub-sites](https://github.com/getpelican/pelican-plugins/tree/master/i18n_subsites) (new in 2.0)
+- [Related Posts](https://github.com/getpelican/pelican-plugins/tree/master/related_posts)
 - [Representative image](https://github.com/getpelican/pelican-plugins/tree/master/representative_image) (new in 2.2)
 
 ## Install
