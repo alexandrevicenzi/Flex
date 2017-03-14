@@ -15,9 +15,9 @@ DON'T send any questions, issues or anything related to Flex to my personal emai
 - Open Graph
 - Rich Snippets (JSON-LD)
 - Related Posts (via [plugin](https://github.com/getpelican/pelican-plugins/tree/master/related_posts))
-- Minute read like [Medium](https://medium.com/) (via [plugin](https://github.com/getpelican/pelican-plugins/tree/master/post_stats)) (new in 2.0)
-- [Multiple Code Highlight Styles](https://github.com/alexandrevicenzi/Flex/wiki/Code-highlight-support)
-- [Translation Support](https://github.com/alexandrevicenzi/Flex/wiki/Translation-support) (new in 2.0)
+- Minute read (via [plugin](https://github.com/getpelican/pelican-plugins/tree/master/post_stats)) (new in 2.0)
+- [Multiple Code Highlight Styles](https://github.com/alexandrevicenzi/Flex/wiki/Code-Highlight)
+- [Translation Support](https://github.com/alexandrevicenzi/Flex/wiki/Translations) (new in 2.0)
 
 ## Integrations
 
@@ -38,7 +38,7 @@ The recommend way to install is over [pelican-themes](https://github.com/getpeli
 
 The `master` branch is the development branch. If you're happy with fresh new things and maybe sometimes (~most of time~) broken things you can clone the `master`, but I would recommend to you to clone a tag branch.
 
-## Docs
+## Documentation
 
 [Go to Wiki](https://github.com/alexandrevicenzi/Flex/wiki)
 
