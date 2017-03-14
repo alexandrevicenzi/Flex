@@ -68,7 +68,7 @@ Translate this theme to new languages at [Transifex](https://www.transifex.com/a
 
 ![Translations](https://github.com/alexandrevicenzi/Flex/blob/master/translation_chart.png)
 
-Read more about [Translation Support](https://github.com/alexandrevicenzi/Flex/wiki/Translation-support).
+Read more about [Translation Support](https://github.com/alexandrevicenzi/Flex/wiki/Translations).
 
 ## Live example
 
