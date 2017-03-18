@@ -1,14 +1,14 @@
-# Translations template for PROJECT.
-# Copyright (C) 2016 ORGANIZATION
-# This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+# Translations template for Flex.
+# Copyright (C) 2017 Alexandre Vicenzi
+# This file is distributed under the same license as the Flex project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
+"Project-Id-Version: Flex 2.1.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-08-24 21:51-0300\n"
+"POT-Creation-Date: 2017-03-14 00:10-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,16 +21,16 @@ msgstr ""
 msgid "Archives"
 msgstr ""
 
-#: templates/article.html:17 templates/index.html:9
+#: templates/article.html:17 templates/index.html:20
 #, python-format
 msgid "Posted on %(when)s in %(category)s"
 msgstr ""
 
-#: templates/article.html:41
+#: templates/article.html:52
 msgid "Like this article? Share it with your friends!"
 msgstr ""
 
-#: templates/article.html:49
+#: templates/article.html:61
 msgid "You might enjoy"
 msgstr ""
 
@@ -43,15 +43,15 @@ msgstr ""
 msgid "Authors"
 msgstr ""
 
-#: templates/base.html:104
+#: templates/base.html:142
 msgid "Home"
 msgstr ""
 
-#: templates/base.html:111
+#: templates/base.html:149
 msgid "Atom"
 msgstr ""
 
-#: templates/base.html:115
+#: templates/base.html:153
 msgid "RSS"
 msgstr ""
 
@@ -64,11 +64,11 @@ msgstr ""
 msgid "Category %(name)s"
 msgstr ""
 
-#: templates/index.html:14
+#: templates/index.html:25
 msgid "Tagged with"
 msgstr ""
 
-#: templates/index.html:29
+#: templates/index.html:43
 msgid "Continue reading"
 msgstr ""
 
@@ -87,9 +87,7 @@ msgstr ""
 
 #: templates/partial/flex.html:1
 #, python-format
-msgid ""
-"Powered by %(pelican_url)s - %(flex_url)s theme by "
-"%(alexandrevicenzi_url)s"
+msgid "Powered by %(pelican_url)s - %(flex_url)s theme by %(alexandrevicenzi_url)s"
 msgstr ""
 
 #: templates/partial/pagination.html:5

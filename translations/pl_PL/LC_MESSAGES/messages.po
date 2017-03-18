@@ -1,4 +1,4 @@
-# Italian translations for Flex.
+# Polish (Poland) translations for Flex.
 # Copyright (C) 2017 Alexandre Vicenzi
 # This file is distributed under the same license as the Flex project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
@@ -10,10 +10,10 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2017-03-14 00:10-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Gareth jax <garethjax@gmail.com>, 2016\n"
-"Language: it\n"
-"Language-Team: Italian (https://www.transifex.com/alexandrevicenzi/teams/66327/it/)\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Last-Translator: Justyna Pawlata <justyna.pxw@gmail.com>, 2016\n"
+"Language: pl_PL\n"
+"Language-Team: Polish (Poland) (https://www.transifex.com/alexandrevicenzi/teams/66327/pl_PL/)\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>=14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,33 +21,33 @@ msgstr ""
 
 #: templates/archives.html:2 templates/archives.html:7
 msgid "Archives"
-msgstr "Archivi"
+msgstr "Archiwa"
 
 #: templates/article.html:17 templates/index.html:20
 #, python-format
 msgid "Posted on %(when)s in %(category)s"
-msgstr "Pubblicato il %(when)s in %(category)s"
+msgstr "Opublikowano %(when)s w %(category)s"
 
 #: templates/article.html:52
 msgid "Like this article? Share it with your friends!"
-msgstr "Ti piace questo articolo? Condividilo con i tuoi amici!"
+msgstr "Podoba Ci się ten wpis? Podziel się!"
 
 #: templates/article.html:61
 msgid "You might enjoy"
-msgstr "Potrebbe interessanrti"
+msgstr "Zobacz także"
 
 #: templates/author.html:2
 #, python-format
 msgid "Posts by %(name)s"
-msgstr "Articoli di %(name)s"
+msgstr "Wpisy autora %(name)s "
 
 #: templates/authors.html:2 templates/authors.html:7
 msgid "Authors"
-msgstr "Autori"
+msgstr "Autorzy"
 
 #: templates/base.html:142
 msgid "Home"
-msgstr "Home"
+msgstr "Strona główna"
 
 #: templates/base.html:149
 msgid "Atom"
@@ -59,20 +59,20 @@ msgstr "RSS"
 
 #: templates/categories.html:2 templates/categories.html:7
 msgid "Categories"
-msgstr "Categorie"
+msgstr "Kategorie"
 
 #: templates/category.html:2
 #, python-format
 msgid "Category %(name)s"
-msgstr "Categoria %(name)s"
+msgstr "Kategoria %(name)s"
 
 #: templates/index.html:25
 msgid "Tagged with"
-msgstr "Taggato come"
+msgstr "Tagi: "
 
 #: templates/index.html:43
 msgid "Continue reading"
-msgstr "Continua lettura"
+msgstr "Czytaj dalej"
 
 #: templates/tag.html:2
 #, python-format
@@ -81,22 +81,22 @@ msgstr "Tag %(name)s"
 
 #: templates/tags.html:2 templates/tags.html:7
 msgid "Tags"
-msgstr "Tags"
+msgstr "Tagi"
 
 #: templates/partial/disqus.html:12
 msgid "Please enable JavaScript to view comments."
-msgstr "Per favore abilita Javascript per vedere i commenti."
+msgstr "Włącz obsługę JavaScript, żeby zobaczyć komentarze."
 
 #: templates/partial/flex.html:1
 #, python-format
 msgid "Powered by %(pelican_url)s - %(flex_url)s theme by %(alexandrevicenzi_url)s"
-msgstr "Fatto con %(pelican_url)s - tema %(flex_url)s  creato da %(alexandrevicenzi_url)s"
+msgstr "Wspierane przez: %(pelican_url)s - %(flex_url)s, szablon: %(alexandrevicenzi_url)s "
 
 #: templates/partial/pagination.html:5
 msgid "Older Posts"
-msgstr "Post più vecchi"
+msgstr "Starsze wpisy"
 
 #: templates/partial/pagination.html:10
 msgid "Newer Posts"
-msgstr "Post più recenti"
+msgstr "Nowsze wpisy"
 

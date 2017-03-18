@@ -1,18 +1,18 @@
-# German translations for pelican Flex theme by Alexandre Vicenzi.
-# Copyright (C) 2016 Marcel Huth
-# This file is distributed under the same license as the Flex theme by
-# Alexandre Vicenzi project.
-# Marcel Huth <marcelhuth@users.noreply.github.com>, 2016.
+# German translations for Flex.
+# Copyright (C) 2017 Alexandre Vicenzi
+# This file is distributed under the same license as the Flex project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version:  1.2\n"
-"Report-Msgid-Bugs-To: marcelhuth@users.noreply.github.com\n"
-"POT-Creation-Date: 2016-08-24 21:51-0300\n"
-"PO-Revision-Date: 2016-08-13 16:49+0200\n"
-"Last-Translator: Marcel Huth <marcelhuth@users.noreply.github.com>\n"
+"Project-Id-Version: Flex 2.1.0\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2017-03-14 00:10-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Alexandre Vicenzi <alexandrevicenzi@outlook.com>, 2016\n"
 "Language: de\n"
-"Language-Team: de <LL@li.org>\n"
+"Language-Team: German (https://www.transifex.com/alexandrevicenzi/teams/66327/de/)\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -23,16 +23,16 @@ msgstr ""
 msgid "Archives"
 msgstr "Archive"
 
-#: templates/article.html:17 templates/index.html:9
+#: templates/article.html:17 templates/index.html:20
 #, python-format
 msgid "Posted on %(when)s in %(category)s"
 msgstr "Online seit %(when)s in %(category)s"
 
-#: templates/article.html:41
+#: templates/article.html:52
 msgid "Like this article? Share it with your friends!"
 msgstr "Gef&auml;llt dir der Artikel? Dann teile ihn mit Freunden!"
 
-#: templates/article.html:49
+#: templates/article.html:61
 msgid "You might enjoy"
 msgstr "Eventuell auch interessant"
 
@@ -45,15 +45,15 @@ msgstr "Artikel von %(name)s"
 msgid "Authors"
 msgstr "Autoren"
 
-#: templates/base.html:104
+#: templates/base.html:142
 msgid "Home"
 msgstr "Home"
 
-#: templates/base.html:111
+#: templates/base.html:149
 msgid "Atom"
 msgstr "Atom"
 
-#: templates/base.html:115
+#: templates/base.html:153
 msgid "RSS"
 msgstr "RSS"
 
@@ -66,11 +66,11 @@ msgstr "Kategorien"
 msgid "Category %(name)s"
 msgstr "Kategorie %(name)s"
 
-#: templates/index.html:14
+#: templates/index.html:25
 msgid "Tagged with"
 msgstr "Stichw&ouml;rter"
 
-#: templates/index.html:29
+#: templates/index.html:43
 msgid "Continue reading"
 msgstr "Weiterlesen"
 
@@ -89,12 +89,8 @@ msgstr "Bitte JavaScript aktivieren um die Kommentare zu sehen."
 
 #: templates/partial/flex.html:1
 #, python-format
-msgid ""
-"Powered by %(pelican_url)s - %(flex_url)s theme by "
-"%(alexandrevicenzi_url)s"
-msgstr ""
-"Erstellt mit %(pelican_url)s - %(flex_url)s Design von "
-"%(alexandrevicenzi_url)s"
+msgid "Powered by %(pelican_url)s - %(flex_url)s theme by %(alexandrevicenzi_url)s"
+msgstr "Erstellt mit %(pelican_url)s - %(flex_url)s Design von %(alexandrevicenzi_url)s"
 
 #: templates/partial/pagination.html:5
 msgid "Older Posts"

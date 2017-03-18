@@ -1,19 +1,19 @@
 #!/usr/bin/env bash
 
 function extract_pot() {
-    pybabel extract --mapping translations/babel.cfg --output translations/messages.pot ./
+    pybabel extract -s --no-wrap --project="Flex" --copyright-holder="Alexandre Vicenzi" --version="2.1.0" --mapping translations/babel.cfg --output translations/messages.pot ./
 }
 
 function new_translation() {
-    pybabel init --input-file translations/messages.pot --output-dir translations/ --locale $1 --domain messages
+    pybabel init --no-wrap --input-file translations/messages.pot --output-dir translations/ --locale $1 --domain messages
 }
 
 function update_translation() {
-    pybabel update --input-file translations/messages.pot --output-dir translations/ --domain messages
+    pybabel update --no-wrap --input-file translations/messages.pot --output-dir translations/ --domain messages
 }
 
 function compile_translations() {
-    pybabel compile --directory translations/ --domain messages
+    pybabel compile -f --directory translations/ --domain messages
 }
 
 function can_run() {
