@@ -91,17 +91,15 @@
 
       {% if SITESUBTITLE %}<p>{{ SITESUBTITLE }}</p>{% endif %}
 
-      {% if (pages and not DISABLE_PAGE_LINKS) or LINKS %}
+      {% if pages or LINKS %}
       <nav>
         <ul class="list">
-          {%if not DISABLE_PAGE_LINKS %}
           {% if not PAGES_SORT_ATTRIBUTE -%}
               {% set PAGES_SORT_ATTRIBUTE = 'title' %}
           {%- endif %}
           {% for page in pages|sort(attribute=PAGES_SORT_ATTRIBUTE) %}
           <li><a href="{{ SITEURL }}/{{ page.url }}{% if not DISABLE_URL_HASH %}#{{ page.slug }}{% endif %}">{{ page.title }}</a></li>
           {% endfor %}
-          {% endif %}
 
           {% for name, link in LINKS %}
           {% if DISABLE_PAGE_BLANK_TARGET %}

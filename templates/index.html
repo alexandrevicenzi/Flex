@@ -21,7 +21,7 @@
            when=article.locale_date,
            category='<a href="%s/%s">%s</a>'|format(SITEURL, article.category.url, article.category)|safe) }}
 
-      {% if DISQUS_SITENAME %}
+      {% if DISQUS_SITENAME and DISQUS_COMMENT_COUNT %}
       &#8226; <a href="{{ SITEURL }}/{{ article.url }}#disqus_thread">{{ _('View Comments') }}</a>
       {% endif %}
 
