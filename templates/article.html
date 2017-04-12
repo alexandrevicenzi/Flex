@@ -18,6 +18,11 @@
            when=article.locale_date,
            category='<a href="%s/%s">%s</a>'|format(SITEURL, article.category.url, article.category)|safe) }}
 
+      {% if DISQUS_SITENAME %}
+      &#8226; <a href="{{ SITEURL }}/{{ article.url }}#disqus_thread">{{ _('View Comments') }}</a>
+      {% endif %}
+
+
       {% if 'post_stats' in PLUGINS %}
         &#8226; {{ article.stats['read_mins'] }} min read
       {% endif %}
