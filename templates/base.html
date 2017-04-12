@@ -91,18 +91,24 @@
 
       {% if SITESUBTITLE %}<p>{{ SITESUBTITLE }}</p>{% endif %}
 
-      {% if pages or LINKS %}
+      {% if (pages and not DISABLE_PAGE_LINKS) or LINKS %}
       <nav>
         <ul class="list">
+          {%if not DISABLE_PAGE_LINKS %}
           {% if not PAGES_SORT_ATTRIBUTE -%}
               {% set PAGES_SORT_ATTRIBUTE = 'title' %}
           {%- endif %}
           {% for page in pages|sort(attribute=PAGES_SORT_ATTRIBUTE) %}
           <li><a href="{{ SITEURL }}/{{ page.url }}{% if not DISABLE_URL_HASH %}#{{ page.slug }}{% endif %}">{{ page.title }}</a></li>
           {% endfor %}
+          {% endif %}
 
           {% for name, link in LINKS %}
+          {% if DISABLE_PAGE_BLANK_TARGET %}
+          <li><a href="{{ link }}">{{ name }}</a></li>
+          {% else %}
           <li><a href="{{ link }}" target="_blank">{{ name }}</a></li>
+          {% endif %}
           {% endfor %}
         </ul>
       </nav>
@@ -190,9 +196,9 @@
   {% if GITHUB_CORNER_URL %}
   {% include 'partial/github.html' %}
   {% endif %}
-
+  
   {% if DISQUS_SITENAME %}
-
+  
   <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
     var disqus_shortname = '{{ DISQUS_SITENAME }}'; // required: replace example with your forum shortname
