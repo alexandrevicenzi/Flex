@@ -122,7 +122,9 @@ main {
     font-size: .72em;
     padding: 14px 0 14px 0;
     border-bottom: @nav-border-color 1px solid;
+  }
 
+  nav, .translations {
     a {
       padding: 0 4px 0 4px;
       border-left: @nav-border-color 1px solid;
@@ -170,9 +172,8 @@ main {
       .translations {
         float: right;
 
-        .lang-current {
-          color: @white;
-          background-color: @grey;
+        .active {
+          font-weight: 600;
         }
       }
     }
