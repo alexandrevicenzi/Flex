@@ -23,17 +23,19 @@ DON'T send any questions, issues or anything related to Flex to my personal emai
 
 - [AddThis](http://www.addthis.com/) Share Buttons and Related Posts
 - [Disqus](https://disqus.com/)
-- [Gauges](http://get.gaug.es/)
+- [duoshuo](http://duoshuo.com/) (new in 2.2)
+- [Gauges Analytics](http://get.gaug.es/)
 - [Google AdSense](https://www.google.com.br/adsense/start/) (new in 2.1)
 - [Google Analytics](https://www.google.com/analytics/web/)
 - [Google Tag Manager](https://www.google.com/tagmanager/)
-- [Piwik](http://piwik.org/)
+- [Piwik Analytics](http://piwik.org/)
 - [StatusCake](https://www.statuscake.com/)
-- [Github Corners](https://github.com/tholman/github-corners) (new in 2.2)
 
 ## Plugins Support
 
+- [Github Corners](https://github.com/tholman/github-corners) (new in 2.2)
 - [I18N Sub-sites](https://github.com/getpelican/pelican-plugins/tree/master/i18n_subsites) (new in 2.0)
+- [Minute read](https://github.com/getpelican/pelican-plugins/tree/master/post_stats)) (new in 2.0)
 - [Related Posts](https://github.com/getpelican/pelican-plugins/tree/master/related_posts)
 - [Representative image](https://github.com/getpelican/pelican-plugins/tree/master/representative_image) (new in 2.2)
 

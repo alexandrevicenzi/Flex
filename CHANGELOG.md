@@ -1,3 +1,7 @@
+## 2.2.0
+
+TODO
+
 ## 2.1.0
 
 - Italian translation [#60](https://github.com/alexandrevicenzi/Flex/issues/60)
