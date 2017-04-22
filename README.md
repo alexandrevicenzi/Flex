@@ -38,6 +38,7 @@ DON'T send any questions, issues or anything related to Flex to my personal emai
 - [Minute read](https://github.com/getpelican/pelican-plugins/tree/master/post_stats)) (new in 2.0)
 - [Related Posts](https://github.com/getpelican/pelican-plugins/tree/master/related_posts)
 - [Representative image](https://github.com/getpelican/pelican-plugins/tree/master/representative_image) (new in 2.2)
+- [Neighbors](https://github.com/getpelican/pelican-plugins/tree/master/neighbors) (new in 2.2)
 
 ## Install
 
