@@ -125,11 +125,16 @@ main {
 
     a {
       padding: 0 4px 0 4px;
+      border-left: @nav-border-color 1px solid;
       border-right: @nav-border-color 1px solid;
     }
 
     :first-child {
-      border-left: @nav-border-color 1px solid;
+      border-left: none;
+    }
+
+    :last-child {
+      border-right: none;
     }
   }
 
