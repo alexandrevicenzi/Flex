@@ -1,29 +1,44 @@
 {% extends "base.html" %}
-{% block title %}Publications{% endblock %}
+
+{% block title %} &ndash; Publications{% endblock %}
+
+{% block meta %}
+  {{ super() }}
+  <script type="text/javascript">
+  function disp(s) {
+    var win;
+    var doc;
+    win = window.open("", "WINDOWID");
+    doc = win.document;
+    doc.open("text/plain");
+    doc.write("<pre>" + s + "</pre>");
+    doc.close();
+    }
+  </script>
+{% endblock %}
+
 {% block content %}
 
-<script type="text/javascript">
-function disp(s) {
-  var win;
-  var doc;
-  win = window.open("", "WINDOWID");
-  doc = win.document;
-  doc.open("text/plain");
-  doc.write("<pre>" + s + "</pre>");
-  doc.close();
-  }
-</script>
-<section id="content" class="body">
-  <h1 class="entry-title">Publications</h1>
-  <ul>
-    {% for key, year, text, bibtex, pdf, slides, poster in publications %}
-    <li id="{{ key }}">{{ text }}
-      [&nbsp;<a href="javascript:disp('{{ bibtex|replace('\n', '\\n')|escape|forceescape }}');">Bibtex</a>&nbsp;]
-      {% for label, target in [('PDF', pdf), ('Slides', slides), ('Poster', poster)] %}
-      {{ "[&nbsp;<a href=\"%s\">%s</a>&nbsp;]" % (target, label) if target }}
+<article class="single">
+  <header>
+    {% import 'partial/translations.html' as translations with context %}
+    {{ translations.translations_for(publications) }}
+    <h1 id="publications">Publications</h1>
+  </header>
+  <div>
+    {% block before_content %}{% endblock %}
+    <ul>
+      {% for key, year, text, bibtex, pdf, slides, poster in publications %}
+      <li id="{{ key }}">{{ text }}
+        [&nbsp;<a href="javascript:disp('{{ bibtex|replace('\n', '\\n')|escape|forceescape }}');">Bibtex</a>&nbsp;]
+        {% for label, target in [('PDF', pdf), ('Slides', slides), ('Poster', poster)] %}
+        {{ "[&nbsp;<a href=\"%s\">%s</a>&nbsp;]" % (target, label) if target }}
+        {% endfor %}
+      </li>
       {% endfor %}
-    </li>
-    {% endfor %}
-  </ul>
-</section>
+    </ul>
+    {% block after_content %}{% endblock %}
+  </div>
+</article>
+
 {% endblock %}
