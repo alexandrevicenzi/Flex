@@ -57,3 +57,7 @@ venv
 
 # NPM
 node_modules
+
+# Vim
+*~
+*.swp

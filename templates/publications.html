@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block title %} &ndash; Publications{% endblock %}
+
+{% block meta %}
+  {{ super() }}
+  <script type="text/javascript">
+  function disp(s) {
+    var win;
+    var doc;
+    win = window.open("", "WINDOWID");
+    doc = win.document;
+    doc.open("text/plain");
+    doc.write("<pre>" + s + "</pre>");
+    doc.close();
+    }
+  </script>
+{% endblock %}
+
+{% block content %}
+
+<article class="single">
+  <header>
+    {% import 'partial/translations.html' as translations with context %}
+    {{ translations.translations_for(publications) }}
+    <h1 id="publications">Publications</h1>
+  </header>
+  <div>
+    {% block before_content %}
+    <p>This is a complete list of publications I have authored or co-authored.
+        You can find my h-index and i10-index information at <a
+        href="http://scholar.google.com/citations?user=pAfLhMoAAAAJ"
+        target="_blank">Google Scholar</a>.
+    </p>
+    {% endblock %}
+      {% for group in publications|groupby(1)|reverse %}
+      <h3 id="{{ group.grouper }}">{{ group.grouper }}</h3>
+      <ul>
+        {% for key, year, text, bibtex, pdf, slides, poster in group.list %}
+        <li id="{{ key }}">{{ text }}
+          [&nbsp;<a href="javascript:disp('{{ bibtex|replace('\n', '\\n')|escape|forceescape }}');">Bibtex</a>&nbsp;]
+          {% for label, target in [('PDF', pdf), ('Slides', slides), ('Poster', poster)] %}
+          {{ "[&nbsp;<a href=\"%s\">%s</a>&nbsp;]" % (target, label) if target }}
+        {% endfor %}
+        </li>
+      {% endfor %}
+      </ul>
+      {% endfor %}
+    {% block after_content %}{% endblock %}
+  </div>
+</article>
+
+{% endblock %}
