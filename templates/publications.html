@@ -27,16 +27,19 @@
   </header>
   <div>
     {% block before_content %}{% endblock %}
-    <ul>
-      {% for key, year, text, bibtex, pdf, slides, poster in publications %}
-      <li id="{{ key }}">{{ text }}
-        [&nbsp;<a href="javascript:disp('{{ bibtex|replace('\n', '\\n')|escape|forceescape }}');">Bibtex</a>&nbsp;]
-        {% for label, target in [('PDF', pdf), ('Slides', slides), ('Poster', poster)] %}
-        {{ "[&nbsp;<a href=\"%s\">%s</a>&nbsp;]" % (target, label) if target }}
+      {% for group in publications|groupby(1)|reverse %}
+      <h3 id="{{ group.grouper }}">{{ group.grouper }}</h3>
+      <ul>
+        {% for key, year, text, bibtex, pdf, slides, poster in group.list %}
+        <li id="{{ key }}">{{ text }}
+          [&nbsp;<a href="javascript:disp('{{ bibtex|replace('\n', '\\n')|escape|forceescape }}');">Bibtex</a>&nbsp;]
+          {% for label, target in [('PDF', pdf), ('Slides', slides), ('Poster', poster)] %}
+          {{ "[&nbsp;<a href=\"%s\">%s</a>&nbsp;]" % (target, label) if target }}
         {% endfor %}
-      </li>
+        </li>
       {% endfor %}
-    </ul>
+      </ul>
+      {% endfor %}
     {% block after_content %}{% endblock %}
   </div>
 </article>
