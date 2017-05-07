@@ -26,7 +26,13 @@
     <h1 id="publications">Publications</h1>
   </header>
   <div>
-    {% block before_content %}{% endblock %}
+    {% block before_content %}
+    <p>This is a complete list of publications I have authored or co-authored.
+        You can find my h-index and i10-index information at <a
+        href="http://scholar.google.com/citations?user=pAfLhMoAAAAJ"
+        target="_blank">Google Scholar</a>.
+    </p>
+    {% endblock %}
       {% for group in publications|groupby(1)|reverse %}
       <h3 id="{{ group.grouper }}">{{ group.grouper }}</h3>
       <ul>
