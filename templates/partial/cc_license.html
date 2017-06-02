@@ -9,7 +9,11 @@
     <img alt="Creative Commons License"
          title="Creative Commons License"
          style="border-width:0"
-         src="https://i.creativecommons.org/l/{{ CC_LICENSE['slug'] }}/{{ CC_LICENSE['version'] }}/80x15.png"
+         {% if CC_LICENSE['local_icons'] %}
+           src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/cc/{{ CC_LICENSE['slug'] }}.png"
+         {% else %}
+           src="https://i.creativecommons.org/l/{{ CC_LICENSE['slug'] }}/{{ CC_LICENSE['version'] }}/80x15.png"
+         {% endif %}
          width="80"
          height="15"/>
   </a>
