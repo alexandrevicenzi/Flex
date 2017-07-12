@@ -18,6 +18,8 @@
 {% endfor %}
 {% if 'cover' in article.metadata %}
 <meta property="og:image" content="{{ SITEURL }}/{{ article.metadata['cover'] }}">
+{% if OG_IMAGE %}
+<meta property="og:image" content="{{ OG_IMAGE }}">
 {% else %}
 <meta property="og:image" content="{{ SITELOGO }}">
 {% endif %}
