@@ -58,17 +58,21 @@ As always, if you want something that only make sense to you, just fork Flex and
 
 ## Donate
 
-Did you liked this theme? Buy me a beer and support new features.
+Are you using this theme? Support bug fixes and new features.
 
-### PayPal
+**PayPal** - [Click Here](http://bit.ly/flex-paypal)
 
-[![PayPal](https://img.shields.io/badge/paypal-donate-yellow.svg?maxAge=2592000)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=KZCMH3N74KKFN&lc=BR&item_name=Alexandre%20Vicenzi&item_number=flex&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
+**BTC** - `1GgoDLWS1HoCkq1HgtpFHzbi5DnDceLGfd`
 
-### Bitcoin
+![BTC](https://github.com/alexandrevicenzi/Flex/blob/master/btc.png)
 
-![Screenshot](https://github.com/alexandrevicenzi/Flex/blob/master/btc.png)
+**DOGE** - `DLXtxaMmyoe4Z8uBcnjTCheAZRsAeWSgyp`
 
-`1Heza38sS36iTtaFpWB5wziuiK9WChmwss`
+## Live example
+
+You can see how this theme looks like [here](https://blog.alexandrevicenzi.com/flex-pelican-theme.html).
+
+![Screenshot](https://github.com/alexandrevicenzi/Flex/blob/master/screenshot.png)
 
 ## Translate
 
@@ -78,19 +82,6 @@ Translate this theme to new languages at [Transifex](https://www.transifex.com/a
 
 Read more about [Translation Support](https://github.com/alexandrevicenzi/Flex/wiki/Translations).
 
-## Live example
-
-You can see how things looks like [here](https://blog.alexandrevicenzi.com/flex-pelican-theme.html).
-Or you can take a look at [Flex users](https://github.com/alexandrevicenzi/Flex/wiki/Flex-users).
-
-I'm using Flex in my [personal blog](http://blog.alexandrevicenzi.com/).
-
-![Screenshot](https://github.com/alexandrevicenzi/Flex/blob/master/screenshot.png)
-
 ## License
 
 MIT
-
-## Contributors
-
-[Contributors list](https://github.com/alexandrevicenzi/Flex/graphs/contributors)
