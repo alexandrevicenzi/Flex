@@ -36,6 +36,10 @@
     <link rel="icon" href="{{ FAVICON }}" type="image/x-icon">
   {% endif %}
 
+  {% if GOOGLE_ANALYTICS %}
+    {% include "partial/ga.html" %}
+  {% endif %}
+
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="HandheldFriendly" content="True" />
@@ -75,10 +79,13 @@
     });
   </script>
   {% endif %}
+  {% if GOOGLE_TAG_MANAGER %}
+    {% include "partial/gtm.html" %}
+  {% endif %}
 </head>
 <body>
   {% if GOOGLE_TAG_MANAGER %}
-    {% include "partial/gtm.html" %}
+    {% include "partial/gtm_noscript.html" %}
   {% endif %}
   <aside>
     <div>
@@ -168,10 +175,6 @@
       {% endif %}
     </footer>
   </main>
-
-  {% if GOOGLE_ANALYTICS %}
-    {% include "partial/ga.html" %}
-  {% endif %}
 
   {% if GUAGES %}
     {% include "partial/guages.html" %}
