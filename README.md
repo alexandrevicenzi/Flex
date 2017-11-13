@@ -23,7 +23,6 @@ DON'T send any questions, issues or anything related to Flex to my personal emai
 
 - [AddThis](http://www.addthis.com/) Share Buttons and Related Posts
 - [Disqus](https://disqus.com/)
-- [duoshuo](http://duoshuo.com/) (new in 2.2)
 - [Gauges Analytics](http://get.gaug.es/)
 - [Google AdSense](https://www.google.com.br/adsense/start/) (new in 2.1)
 - [Google Analytics](https://www.google.com/analytics/web/)
