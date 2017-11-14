@@ -7,6 +7,16 @@
 <!DOCTYPE html>
 <html lang="{{ DEFAULT_LANG }}">
 <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {% if page in hidden_pages %}
+    <meta name="robots" content="noindex, nofollow" />
+  {% else %}
+    <meta name="robots" content="{{ ROBOTS }}" />
+  {% endif %}
+
   <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
 
   {% if USE_LESS %}
@@ -38,16 +48,6 @@
 
   {% if GOOGLE_ANALYTICS %}
     {% include "partial/ga.html" %}
-  {% endif %}
-
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  {% if page in hidden_pages %}
-    <meta name="robots" content="noindex, nofollow" />
-  {% else %}
-    <meta name="robots" content="{{ ROBOTS }}" />
   {% endif %}
 
   {% if BROWSER_COLOR %}
