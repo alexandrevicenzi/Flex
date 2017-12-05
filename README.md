@@ -65,8 +65,6 @@ Are you using this theme? Support bug fixes and new features.
 
 ![BTC](https://github.com/alexandrevicenzi/Flex/blob/master/btc.png)
 
-**DOGE** - `DLXtxaMmyoe4Z8uBcnjTCheAZRsAeWSgyp`
-
 ## Live example
 
 You can see how this theme looks like [here](https://blog.alexandrevicenzi.com/flex-pelican-theme.html).
