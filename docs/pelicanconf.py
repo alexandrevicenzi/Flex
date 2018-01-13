@@ -41,7 +41,7 @@ HOME_HIDE_TAGS = True
 
 SOCIAL = (
     ('github', 'https://github.com/alexandrevicenzi/Flex'),
-    ('rss', '/feeds/all.atom.xml'),
+    ('rss', '/blog/feeds/all.atom.xml'),
 )
 
 MENUITEMS = (('Archives', '/archives.html'),
