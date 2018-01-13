@@ -34,7 +34,7 @@ DON'T send any questions, issues or anything related to Flex to my personal emai
 
 - [Github Corners](https://github.com/tholman/github-corners) (new in 2.2)
 - [I18N Sub-sites](https://github.com/getpelican/pelican-plugins/tree/master/i18n_subsites) (new in 2.0)
-- [Minute read](https://github.com/getpelican/pelican-plugins/tree/master/post_stats)) (new in 2.0)
+- [Minute read](https://github.com/getpelican/pelican-plugins/tree/master/post_stats) (new in 2.0)
 - [Related Posts](https://github.com/getpelican/pelican-plugins/tree/master/related_posts)
 - [Representative image](https://github.com/getpelican/pelican-plugins/tree/master/representative_image) (new in 2.2)
 - [Neighbors](https://github.com/getpelican/pelican-plugins/tree/master/neighbors) (new in 2.2)
@@ -43,7 +43,7 @@ DON'T send any questions, issues or anything related to Flex to my personal emai
 
 The recommend way to install is over [pelican-themes](https://github.com/getpelican/pelican-themes).
 
-The `master` branch is the development branch. If you're happy with fresh new things and maybe sometimes (~most of time~) broken things you can clone the `master`, but I would recommend to you to clone a tag branch.
+The `master` branch is the development branch. If you're happy with fresh new things and maybe broken things you can clone the `master`, but I would recommend to you to clone a tag branch.
 
 ## Documentation
 
@@ -61,15 +61,17 @@ Are you using this theme? Support bug fixes and new features.
 
 **PayPal** - [Click Here](http://bit.ly/flex-paypal)
 
-**BTC** - `1GgoDLWS1HoCkq1HgtpFHzbi5DnDceLGfd`
+**BTC** - `1FoywLAteGB8SnoCnGxQn7dmmHsNss79mR`
 
-![BTC](https://github.com/alexandrevicenzi/Flex/blob/master/btc.png)
+**ETH** - `0x433f1344e75fccb63a6f59fd8449b31a0022c62c`
+
+**DOGE** - `DNcP5Cq6z4qnrY2d7tfZQzM8wBupzBwDkb`
 
 ## Live example
 
-You can see how this theme looks like [here](https://blog.alexandrevicenzi.com/flex-pelican-theme.html).
+You can see how this theme looks like at [http://flex.alxd.me/blog/](http://flex.alxd.me/blog/).
 
-![Screenshot](https://github.com/alexandrevicenzi/Flex/blob/master/screenshot.png)
+The code is available in this project inside `docs` folder.
 
 ## Translate
 
