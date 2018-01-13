@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Flex - News</title><link href="http://flex.alxd.me/blog/" rel="alternate"></link><link href="http://flex.alxd.me/blog/feeds/news.atom.xml" rel="self"></link><id>http://flex.alxd.me/blog/</id><updated>2016-11-16T08:00:00-05:00</updated><entry><title>Flex 2.1</title><link href="http://flex.alxd.me/blog/flex-pelican-theme-update-2-1.html" rel="alternate"></link><published>2016-11-16T08:00:00-05:00</published><updated>2016-11-16T08:00:00-05:00</updated><author><name>Alexandre Vicenzi</name></author><id>tag:flex.alxd.me,2016-11-16:/blog/flex-pelican-theme-update-2-1.html</id><summary type="html">&lt;p&gt;&lt;a href="https://github.com/alexandrevicenzi/Flex"&gt;Flex theme&lt;/a&gt; 2.1 comes with a feature that I was delaying for so long.
+Flex 2.1 adds support for Google AdSense.&lt;/p&gt;
+&lt;p&gt;If you choose wisely, ads are a way to win some money, but if not, you may loose your users due to excessive use of ads.&lt;/p&gt;
+&lt;p&gt;Flex …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://github.com/alexandrevicenzi/Flex"&gt;Flex theme&lt;/a&gt; 2.1 comes with a feature that I was delaying for so long.
+Flex 2.1 adds support for Google AdSense.&lt;/p&gt;
+&lt;p&gt;If you choose wisely, ads are a way to win some money, but if not, you may loose your users due to excessive use of ads.&lt;/p&gt;
+&lt;p&gt;Flex has six places for ads. Google recommends up to 3 ads per page. There is ads page only, and banner that appears on all pages.
+Below you can see how to enable ads in your pelican configuration file.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;GOOGLE_ADSENSE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="s1"&gt;&amp;#39;ca_id&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;ca-pub-1234567890&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;    &lt;span class="c1"&gt;# Your AdSense ID&lt;/span&gt;
+    &lt;span class="s1"&gt;&amp;#39;page_level_ads&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="bp"&gt;True&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;          &lt;span class="c1"&gt;# Allow Page Level Ads (mobile)&lt;/span&gt;
+    &lt;span class="s1"&gt;&amp;#39;ads&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="s1"&gt;&amp;#39;aside&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;1234561&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;          &lt;span class="c1"&gt;# Side bar banner (all pages)&lt;/span&gt;
+        &lt;span class="s1"&gt;&amp;#39;main_menu&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;1234562&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;      &lt;span class="c1"&gt;# Banner before main menu (all pages)&lt;/span&gt;
+        &lt;span class="s1"&gt;&amp;#39;index_top&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;1234563&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;      &lt;span class="c1"&gt;# Banner after main menu (index only)&lt;/span&gt;
+        &lt;span class="s1"&gt;&amp;#39;index_bottom&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;1234564&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;   &lt;span class="c1"&gt;# Banner before footer (index only)&lt;/span&gt;
+        &lt;span class="s1"&gt;&amp;#39;article_top&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;1234565&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;    &lt;span class="c1"&gt;# Banner after article title (article only)&lt;/span&gt;
+        &lt;span class="s1"&gt;&amp;#39;article_bottom&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;1234566&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;# Banner after article content (article only)&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Version 2.1 also comes with new translations. You can see available translations &lt;a href="https://github.com/alexandrevicenzi/Flex/wiki/Translations"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Hope you enjoy this version.&lt;/p&gt;</content><category term="pelican"></category><category term="python"></category><category term="theme"></category></entry><entry><title>Flex 2.0</title><link href="http://flex.alxd.me/blog/flex-pelican-theme-update-2-0.html" rel="alternate"></link><published>2016-09-13T08:00:00-04:00</published><updated>2016-09-13T08:00:00-04:00</updated><author><name>Alexandre Vicenzi</name></author><id>tag:flex.alxd.me,2016-09-13:/blog/flex-pelican-theme-update-2-0.html</id><summary type="html">&lt;p&gt;&lt;a href="https://github.com/alexandrevicenzi/Flex"&gt;Flex theme&lt;/a&gt; 2.0 comes with new features.
+In fact there are two new features.&lt;/p&gt;
+&lt;p&gt;The biggest change is localization support.
+Yes, Flex now can be translated into your language.
+You can read about &lt;a href="https://github.com/alexandrevicenzi/Flex/wiki/Translations"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The biggest challege was to create a way to translate without breaking old versions.
+If …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://github.com/alexandrevicenzi/Flex"&gt;Flex theme&lt;/a&gt; 2.0 comes with new features.
+In fact there are two new features.&lt;/p&gt;
+&lt;p&gt;The biggest change is localization support.
+Yes, Flex now can be translated into your language.
+You can read about &lt;a href="https://github.com/alexandrevicenzi/Flex/wiki/Translations"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The biggest challege was to create a way to translate without breaking old versions.
+If you use English it changes nothing for you.
+But if you want to use translation you need to add new lines to your pelican configuration file.&lt;/p&gt;
+&lt;p&gt;Here is a small example to use Flex in another language.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Enable i18n plugin, probably you already have some others here.&lt;/span&gt;
+&lt;span class="n"&gt;PLUGINS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;i18n_subsites&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="c1"&gt;# Enable Jinja2 i18n extension used to parse translations.&lt;/span&gt;
+&lt;span class="n"&gt;JINJA_EXTENSIONS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;jinja2.ext.i18n&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="c1"&gt;# Default theme language.&lt;/span&gt;
+&lt;span class="n"&gt;I18N_TEMPLATES_LANG&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;en&amp;#39;&lt;/span&gt;
+&lt;span class="c1"&gt;# Your language.&lt;/span&gt;
+&lt;span class="n"&gt;DEFAULT_LANG&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;de&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;OG_LOCALE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;de_DE&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;LOCALE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;de_DE&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Last but not least, Flex supports the feature "X minute read", similar &lt;a href="https://medium.com/"&gt;Medium&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Hope you enjoy this version.&lt;/p&gt;</content><category term="pelican"></category><category term="python"></category><category term="theme"></category></entry><entry><title>Flex 1.2.0</title><link href="http://flex.alxd.me/blog/flex-pelican-theme-update-1-2-0.html" rel="alternate"></link><published>2016-06-10T08:00:00-04:00</published><updated>2016-06-10T08:00:00-04:00</updated><author><name>Alexandre Vicenzi</name></author><id>tag:flex.alxd.me,2016-06-10:/blog/flex-pelican-theme-update-1-2-0.html</id><summary type="html">&lt;p&gt;&lt;a href="https://github.com/alexandrevicenzi/Flex"&gt;Flex theme&lt;/a&gt; received some new features. Version 1.2.0 include new features and some updates.&lt;/p&gt;
+&lt;p&gt;For developers there are new color styles for your code. For general purpose there is RUM support, related posts and browser color configuration.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/alexandrevicenzi/Flex/issues/31"&gt;Update font-awesome&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/alexandrevicenzi/Flex/pull/34"&gt;Added browser color configuration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/alexandrevicenzi/Flex/pull/27"&gt;Related posts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/alexandrevicenzi/Flex/issues/38"&gt;More Pygments Styles …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://github.com/alexandrevicenzi/Flex"&gt;Flex theme&lt;/a&gt; received some new features. Version 1.2.0 include new features and some updates.&lt;/p&gt;
+&lt;p&gt;For developers there are new color styles for your code. For general purpose there is RUM support, related posts and browser color configuration.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/alexandrevicenzi/Flex/issues/31"&gt;Update font-awesome&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/alexandrevicenzi/Flex/pull/34"&gt;Added browser color configuration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/alexandrevicenzi/Flex/pull/27"&gt;Related posts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/alexandrevicenzi/Flex/issues/38"&gt;More Pygments Styles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/alexandrevicenzi/Flex/issues/16"&gt;Add StatusCake RUM support&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you need help or want to report a bug, please open an &lt;a href="https://github.com/alexandrevicenzi/Flex/issues"&gt;issue&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Hope you enjoy this theme.&lt;/p&gt;</content><category term="pelican"></category><category term="python"></category><category term="theme"></category></entry><entry><title>Flex 1.1.1</title><link href="http://flex.alxd.me/blog/flex-pelican-theme-update-1-1-1.html" rel="alternate"></link><published>2016-02-27T08:00:00-05:00</published><updated>2016-02-27T08:00:00-05:00</updated><author><name>Alexandre Vicenzi</name></author><id>tag:flex.alxd.me,2016-02-27:/blog/flex-pelican-theme-update-1-1-1.html</id><summary type="html">&lt;p&gt;Today, &lt;a href="https://github.com/alexandrevicenzi/Flex"&gt;Flex theme&lt;/a&gt; received a small update.&lt;/p&gt;
+&lt;p&gt;Some bugs are now fixed. I think the most important fixes are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/alexandrevicenzi/Flex/issues/21"&gt;Bug in CSS with placement of "Newer Posts" button&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/alexandrevicenzi/Flex/issues/14"&gt;Posts preview on main page&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Hope you enjoy this theme.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Today, &lt;a href="https://github.com/alexandrevicenzi/Flex"&gt;Flex theme&lt;/a&gt; received a small update.&lt;/p&gt;
+&lt;p&gt;Some bugs are now fixed. I think the most important fixes are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/alexandrevicenzi/Flex/issues/21"&gt;Bug in CSS with placement of "Newer Posts" button&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/alexandrevicenzi/Flex/issues/14"&gt;Posts preview on main page&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Hope you enjoy this theme.&lt;/p&gt;</content><category term="pelican"></category><category term="python"></category><category term="theme"></category></entry><entry><title>New version of Flex: The responsive Pelican theme</title><link href="http://flex.alxd.me/blog/flex-pelican-theme-update-1-1.html" rel="alternate"></link><published>2015-10-07T08:00:00-04:00</published><updated>2015-10-07T08:00:00-04:00</updated><author><name>Alexandre Vicenzi</name></author><id>tag:flex.alxd.me,2015-10-07:/blog/flex-pelican-theme-update-1-1.html</id><summary type="html">&lt;p&gt;I've made the &lt;a href="https://github.com/alexandrevicenzi/Flex"&gt;Flex theme&lt;/a&gt; a time ago. For my surprise, many people are using it. I feel thankful for this.&lt;/p&gt;
+&lt;p&gt;So, after some new blogs with this theme, I got issues and PRs on GitHub from these new users. This weekend I had some free time and I release …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I've made the &lt;a href="https://github.com/alexandrevicenzi/Flex"&gt;Flex theme&lt;/a&gt; a time ago. For my surprise, many people are using it. I feel thankful for this.&lt;/p&gt;
+&lt;p&gt;So, after some new blogs with this theme, I got issues and PRs on GitHub from these new users. This weekend I had some free time and I release the &lt;a href="https://github.com/alexandrevicenzi/Flex/releases/tag/v1.1"&gt;second version&lt;/a&gt; of Flex (aka v1.1).&lt;/p&gt;
+&lt;p&gt;This new version doesn't include nothing so special, just some bug fix and a new setting to allow custom CSS stylesheets.&lt;/p&gt;
+&lt;p&gt;The new custom setting can be used like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;EXTRA_PATH_METADATA&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="s1"&gt;&amp;#39;extra/custom.css&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;path&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;static/custom.css&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;},&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="n"&gt;CUSTOM_CSS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;static/custom.css&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;I would like to thank all who helped in this new version.&lt;/p&gt;</content><category term="pelican"></category><category term="python"></category><category term="theme"></category></entry><entry><title>Flex: Responsive Pelican theme</title><link href="http://flex.alxd.me/blog/flex-pelican-theme.html" rel="alternate"></link><published>2015-07-22T08:00:00-04:00</published><updated>2015-07-22T08:00:00-04:00</updated><author><name>Alexandre Vicenzi</name></author><id>tag:flex.alxd.me,2015-07-22:/blog/flex-pelican-theme.html</id><summary type="html">&lt;p&gt;I just start a new fresh blog using &lt;a href="http://getpelican.com"&gt;Pelican&lt;/a&gt;. Sometimes choosing a theme for a new site is something difficult that takes time.&lt;/p&gt;
+&lt;p&gt;In the Pelican &lt;a href="http://www.pelicanthemes.com/"&gt;theme gallery&lt;/a&gt;, I couldn't find anything that I really liked to feet all my needs. So in the first time of the history, I …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I just start a new fresh blog using &lt;a href="http://getpelican.com"&gt;Pelican&lt;/a&gt;. Sometimes choosing a theme for a new site is something difficult that takes time.&lt;/p&gt;
+&lt;p&gt;In the Pelican &lt;a href="http://www.pelicanthemes.com/"&gt;theme gallery&lt;/a&gt;, I couldn't find anything that I really liked to feet all my needs. So in the first time of the history, I choose to create my own theme. I never did this before.&lt;/p&gt;
+&lt;p&gt;Creating a theme for Pelican is quite easy, unlike Wordpress. You can take a look in the &lt;a href="https://github.com/alexandrevicenzi/Flex"&gt;Source Code of Flex&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;But how Flex looks like? Well, you can see &lt;a href="images/flex-screenshot.png"&gt;this screenshot&lt;/a&gt;, but you already know how it looks like, you're looking at it. :D&lt;/p&gt;
+&lt;p&gt;I really care about SEO and integrations with Facebook, Google Plus and other social networks, so this theme offers some features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mobile First&lt;/li&gt;
+&lt;li&gt;Responsive&lt;/li&gt;
+&lt;li&gt;Semantic&lt;/li&gt;
+&lt;li&gt;SEO Best Practices&lt;/li&gt;
+&lt;li&gt;Open Graph&lt;/li&gt;
+&lt;li&gt;Rich Snippets (JSON-LD)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Maybe these features are not fully optimized, but I'll improve.&lt;/p&gt;
+&lt;p&gt;Flex also offers integrations with multiple services.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Tip:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;You can easyly integrate with:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;AddThis&lt;/li&gt;
+&lt;li&gt;Disqus&lt;/li&gt;
+&lt;li&gt;Google Analytics&lt;/li&gt;
+&lt;li&gt;Google Tag Manager&lt;/li&gt;
+&lt;li&gt;StatusCake&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Flex is a theme built by a developer for developers, but of course, you can use for any purpose. In this scenario, Flex is able to create good styles for coding, outputs and samples.&lt;/p&gt;
+&lt;p&gt;If you need to show some program output you can use &lt;code&gt;samp&lt;/code&gt; tag to look like this:&lt;/p&gt;
+&lt;p&gt;&lt;samp&gt;Done: Processed 4 articles, 0 drafts, 2 pages and 0 hidden pages in 0.22 seconds.&lt;/samp&gt;&lt;/p&gt;
+&lt;p&gt;Or if you want multiple lines:&lt;/p&gt;
+&lt;p&gt;&lt;samp&gt;
+             total       used       free     shared    buffers     cached
+Mem:          5866       4674       1192        386          0       2404
+-/+ buffers/cache:       2269       3596
+Swap:        20480       1267      19213
+&lt;/samp&gt;&lt;/p&gt;
+&lt;p&gt;If you like to share code snippets, you can take advantage of &lt;a href="http://pygments.org/"&gt;Pygments&lt;/a&gt; syntax highlighting:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;// Foo&lt;/span&gt;
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;bar&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Foo&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;object&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="fm"&gt;__init__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;bar&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;bar&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;bar&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The code block looks like GitHub’s colors.&lt;/p&gt;
+&lt;p&gt;You can add tables too:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Item&lt;/th&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Computer&lt;/td&gt;
+&lt;td&gt;$1600&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Phone&lt;/td&gt;
+&lt;td&gt;$12&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Pipe&lt;/td&gt;
+&lt;td&gt;$1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;and how heading looks like?&lt;/p&gt;
+&lt;h1&gt;This is heading 1&lt;/h1&gt;
+&lt;h2&gt;This is heading 2&lt;/h2&gt;
+&lt;h3&gt;This is heading 3&lt;/h3&gt;
+&lt;h4&gt;This is heading 4&lt;/h4&gt;
+&lt;h5&gt;This is heading 5&lt;/h5&gt;
+&lt;h6&gt;This is heading 6&lt;/h6&gt;
+&lt;p&gt;This examples are in Markdown. I'm not sure how it will look using reStructuredText. Keep in mind that Markdown allows you to add HTML tags. If you can create the same HTML syntax produced by Markdown using reStructuredText it will work.&lt;/p&gt;
+&lt;p&gt;You can take a look in the &lt;a href="https://raw.githubusercontent.com/alexandrevicenzi/blog/master/content/News/flex-pelican-theme.md"&gt;source code of this page&lt;/a&gt; to know how to create rich examples.&lt;/p&gt;
+&lt;p&gt;Flex is my first attempt creating themes and there's no IE testing yet. You can check the &lt;a href="https://github.com/alexandrevicenzi/flex"&gt;sources here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As soon as possible I will add this project to Pelican gallery.&lt;/p&gt;
+&lt;p&gt;Drop a comment if you like this theme, or &lt;a href="https://github.com/alexandrevicenzi/Flex/issues"&gt;open an issue&lt;/a&gt; if you need a feature or found a bug.&lt;/p&gt;</content><category term="pelican"></category><category term="python"></category><category term="theme"></category></entry></feed>
