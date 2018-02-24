@@ -72,8 +72,8 @@
     {% endfor %}
     </ul>
   </div>
-  {% else %}
-    <div class="addthis_relatedposts_inline">
+  {% elif ADD_THIS_ID %}
+    <div class="addthis_relatedposts_inline"></div>
   {% endif %}
 
   {% if GOOGLE_ADSENSE and GOOGLE_ADSENSE.ads.article_bottom %}
