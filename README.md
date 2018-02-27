@@ -59,13 +59,7 @@ As always, if you want something that only make sense to you, just fork Flex and
 
 Are you using this theme? Support bug fixes and new features.
 
-**PayPal** - [Click Here](http://bit.ly/flex-paypal)
-
-**BTC** - `1FoywLAteGB8SnoCnGxQn7dmmHsNss79mR`
-
-**ETH** - `0x433f1344e75fccb63a6f59fd8449b31a0022c62c`
-
-**DOGE** - `DNcP5Cq6z4qnrY2d7tfZQzM8wBupzBwDkb`
+[Click here](https://www.alexandrevicenzi.com/donate) to donate.
 
 ## Live example
 
