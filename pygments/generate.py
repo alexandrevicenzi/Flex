@@ -19,13 +19,13 @@ def export():
 
         opts = {
             'style': style,
+            'noclasses': False,
+            'nobackground': False,
         }
 
         path = os.path.join(PYGMENTS_PATH, '%s.css' % style)
         formatter = HtmlFormatter(**opts)
-        css_content = formatter.get_style_defs()
-        # little fix because pelican doesn't append background color.
-        css_content = css_content.replace('.hll', '.highlight')
+        css_content = formatter.get_style_defs('.highlight')
 
         with open(path, 'w') as f:
             f.write(css_content)

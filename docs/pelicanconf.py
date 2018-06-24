@@ -62,10 +62,6 @@ ADD_THIS_ID = 'ra-55adbb025d4f7e55'
 
 STATIC_PATHS = ['images', 'extra']
 
-EXTRA_PATH_METADATA = {
-    'extra/custom.css': {'path': 'static/custom.css'},
-}
-
 CUSTOM_CSS = 'static/custom.css'
 
 USE_LESS = True
