@@ -1,4 +1,4 @@
-Title: Flex 2.1
+Title: Flex 2.1.0
 Date: 2016-11-16 08:00
 Modified: 2016-11-16 08:00
 Category: News
@@ -6,8 +6,9 @@ Tags: pelican, python, theme
 Slug: flex-pelican-theme-update-2-1
 Cover: images/flex-screenshot.png
 
-[Flex theme](https://github.com/alexandrevicenzi/Flex) 2.1 comes with a feature that I was delaying for so long.
-Flex 2.1 adds support for Google AdSense.
+[Flex theme](https://github.com/alexandrevicenzi/Flex) 2.1.0 comes with features that I was delaying for so long.
+
+Flex 2.1.0 adds support for Google AdSense.
 
 If you choose wisely, ads are a way to win some money, but if not, you may loose your users due to excessive use of ads.
 
@@ -29,6 +30,6 @@ GOOGLE_ADSENSE = {
 }
 ```
 
-Version 2.1 also comes with new translations. You can see available translations [here](https://github.com/alexandrevicenzi/Flex/wiki/Translations).
+Version 2.1.0 also comes with new translations. You can see available translations [here](https://github.com/alexandrevicenzi/Flex/wiki/Translations).
 
 Hope you enjoy this version.

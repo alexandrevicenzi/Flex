@@ -1,4 +1,4 @@
-Title: New version of Flex: The responsive Pelican theme
+Title: Flex 1.1.0
 Date: 2015-10-07 08:00
 Modified: 2015-10-07 08:00
 Category: News
