@@ -22,8 +22,10 @@
 .s { color: #a31515 } /* Literal.String */
 .nc { color: #2b91af } /* Name.Class */
 .ow { color: #0000ff } /* Operator.Word */
+.sa { color: #a31515 } /* Literal.String.Affix */
 .sb { color: #a31515 } /* Literal.String.Backtick */
 .sc { color: #a31515 } /* Literal.String.Char */
+.dl { color: #a31515 } /* Literal.String.Delimiter */
 .sd { color: #a31515 } /* Literal.String.Doc */
 .s2 { color: #a31515 } /* Literal.String.Double */
 .se { color: #a31515 } /* Literal.String.Escape */

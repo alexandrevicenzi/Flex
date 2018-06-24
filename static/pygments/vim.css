@@ -55,8 +55,10 @@
 .mh { color: #cd00cd } /* Literal.Number.Hex */
 .mi { color: #cd00cd } /* Literal.Number.Integer */
 .mo { color: #cd00cd } /* Literal.Number.Oct */
+.sa { color: #cd0000 } /* Literal.String.Affix */
 .sb { color: #cd0000 } /* Literal.String.Backtick */
 .sc { color: #cd0000 } /* Literal.String.Char */
+.dl { color: #cd0000 } /* Literal.String.Delimiter */
 .sd { color: #cd0000 } /* Literal.String.Doc */
 .s2 { color: #cd0000 } /* Literal.String.Double */
 .se { color: #cd0000 } /* Literal.String.Escape */
@@ -67,7 +69,9 @@
 .s1 { color: #cd0000 } /* Literal.String.Single */
 .ss { color: #cd0000 } /* Literal.String.Symbol */
 .bp { color: #cd00cd } /* Name.Builtin.Pseudo */
+.fm { color: #cccccc } /* Name.Function.Magic */
 .vc { color: #00cdcd } /* Name.Variable.Class */
 .vg { color: #00cdcd } /* Name.Variable.Global */
 .vi { color: #00cdcd } /* Name.Variable.Instance */
+.vm { color: #00cdcd } /* Name.Variable.Magic */
 .il { color: #cd00cd } /* Literal.Number.Integer.Long */

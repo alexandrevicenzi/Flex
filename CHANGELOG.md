@@ -1,6 +1,7 @@
 ## 2.2.0
 
-TODO
+- Update Pygments
+- Bug fixes
 
 ## 2.1.0
 

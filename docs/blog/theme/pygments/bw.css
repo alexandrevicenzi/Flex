@@ -23,8 +23,10 @@
 .nn { font-weight: bold } /* Name.Namespace */
 .nt { font-weight: bold } /* Name.Tag */
 .ow { font-weight: bold } /* Operator.Word */
+.sa { font-style: italic } /* Literal.String.Affix */
 .sb { font-style: italic } /* Literal.String.Backtick */
 .sc { font-style: italic } /* Literal.String.Char */
+.dl { font-style: italic } /* Literal.String.Delimiter */
 .sd { font-style: italic } /* Literal.String.Doc */
 .s2 { font-style: italic } /* Literal.String.Double */
 .se { font-weight: bold; font-style: italic } /* Literal.String.Escape */

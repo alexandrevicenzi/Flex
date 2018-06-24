@@ -141,6 +141,10 @@ Swap:        20480       1267      19213
 &lt;/pre&gt;&lt;/div&gt;
 
 
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ls *.jpg &lt;span class="p"&gt;|&lt;/span&gt; xargs -n1 -i cp &lt;span class="o"&gt;{}&lt;/span&gt; /external-hard-drive/directory
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The code block looks like GitHub’s colors.&lt;/p&gt;
 &lt;p&gt;You can add tables too:&lt;/p&gt;
 &lt;table&gt;

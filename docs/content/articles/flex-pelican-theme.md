@@ -65,6 +65,10 @@ class Foo(object):
         self.bar = bar
 ```
 
+```bash
+ls *.jpg | xargs -n1 -i cp {} /external-hard-drive/directory
+```
+
 **Note:** The code block looks like GitHub’s colors.
 
 You can add tables too:

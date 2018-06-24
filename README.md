@@ -71,7 +71,7 @@ The code is available in this project inside `docs` folder.
 
 Translate this theme to new languages at [Transifex](https://www.transifex.com/alexandrevicenzi/flex-pelican/).
 
-![Translations](https://github.com/alexandrevicenzi/Flex/blob/master/translation_chart.png)
+![Translations](https://github.com/alexandrevicenzi/Flex/blob/master/translations/translation_chart.png)
 
 Read more about [Translation Support](https://github.com/alexandrevicenzi/Flex/wiki/Translations).
 
