@@ -2,16 +2,21 @@
 
 {% block meta %}
 <meta name="author" content="{{ article.author.name }}" />
-<meta name="description" content="{{ article.summary|striptags }}" />
-<meta name="keywords" content="{{ article.tags|join(', ') }}">
+<meta name="description" content="{{ article.summary|striptags|escape }}" />
+<meta name="keywords" content="{{ article.tags|join(', ')|escape }}">
+
 {% include "partial/og_article.html" %}
 {% endblock %}
 
-{% block title %} &ndash; {{ article.title|striptags }}{% endblock %}
+{% block title %} &ndash; {{ article.title|striptags|escape }}{% endblock %}
 
 {% block content %}
 <article class="single">
   <header>
+    {% if not ARTICLE_HIDE_TRANSLATION %}
+      {% import 'partial/translations.html' as translations with context %}
+      {{ translations.translations_for(article) }}
+    {% endif %}
     <h1 id="{{ article.slug }}">{{ article.title }}</h1>
     <p>
       {{ _('Posted on %(when)s in %(category)s',
@@ -61,6 +66,8 @@
   </div>
   {% endif %}
 
+  {% include "partial/neighbors.html" %}
+
   {% if article.related_posts %}
   <div class="related-posts">
     <h4>{{ _('You might enjoy') }}</h4>
@@ -70,8 +77,8 @@
     {% endfor %}
     </ul>
   </div>
-  {% else %}
-    <div class="addthis_relatedposts_inline">
+  {% elif ADD_THIS_ID %}
+    <div class="addthis_relatedposts_inline"></div>
   {% endif %}
 
   {% if GOOGLE_ADSENSE and GOOGLE_ADSENSE.ads.article_bottom %}
@@ -85,6 +92,5 @@
   {% endif %}
 
   {% include "partial/disqus.html" %}
-  {% include "partial/duoshuo.html" %}
 </article>
 {% endblock %}

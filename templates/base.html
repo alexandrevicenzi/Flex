@@ -7,7 +7,19 @@
 <!DOCTYPE html>
 <html lang="{{ DEFAULT_LANG }}">
 <head>
-  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {% if page in hidden_pages %}
+    <meta name="robots" content="noindex, nofollow" />
+  {% else %}
+    <meta name="robots" content="{{ ROBOTS }}" />
+  {% endif %}
+
+  {% if USE_GOOGLE_FONTS != False %}
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  {% endif %}
 
   {% if USE_LESS %}
     <link rel="stylesheet/less" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stylesheet/style.less">
@@ -36,14 +48,8 @@
     <link rel="icon" href="{{ FAVICON }}" type="image/x-icon">
   {% endif %}
 
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  {% if page in hidden_pages %}
-    <meta name="robots" content="noindex, nofollow" />
-  {% else %}
-    <meta name="robots" content="{{ ROBOTS }}" />
+  {% if GOOGLE_ANALYTICS %}
+    {% include "partial/ga.html" %}
   {% endif %}
 
   {% if BROWSER_COLOR %}
@@ -54,6 +60,8 @@
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="{{ BROWSER_COLOR }}">
   {% endif %}
 
   {% block meta %}
@@ -73,10 +81,13 @@
     });
   </script>
   {% endif %}
+  {% if GOOGLE_TAG_MANAGER %}
+    {% include "partial/gtm.html" %}
+  {% endif %}
 </head>
 <body>
   {% if GOOGLE_TAG_MANAGER %}
-    {% include "partial/gtm.html" %}
+    {% include "partial/gtm_noscript.html" %}
   {% endif %}
   <aside>
     <div>
@@ -170,10 +181,6 @@
       {% endif %}
     </footer>
   </main>
-
-  {% if GOOGLE_ANALYTICS %}
-    {% include "partial/ga.html" %}
-  {% endif %}
 
   {% if GUAGES %}
     {% include "partial/guages.html" %}

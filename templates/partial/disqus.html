@@ -1,4 +1,5 @@
 {% if DISQUS_SITENAME %}
+<!-- Disqus -->
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = '{{ DISQUS_SITENAME }}';
@@ -14,5 +15,6 @@
 <noscript>
     {{ _('Please enable JavaScript to view comments.') }}
 </noscript>
+<!-- End Disqus -->
 {% endif %}
 
