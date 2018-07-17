@@ -124,12 +124,8 @@
       <ul class="social">
         {% for name, link in SOCIAL %}
           <li><a class="sc-{{ name }}" href="{{ link }}" target="_blank">
-            {% if name in ['envelope-open', 'rss'] %}
-              <i class="fas fa-{{ name }}">
-            {% else %}
-              <i class="fab fa-{{ name }}">
-            {% endif %}
-          </i></a></li>
+            <i class="fa{% if name in ['envelope-open', 'rss'] %}s{% else %}b{% endif %} fa-{{ name }}"></i>
+          </a></li>
         {% endfor %}
       </ul>
     </div>
