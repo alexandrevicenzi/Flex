@@ -40,7 +40,9 @@
       {% endif %}
       {{ article.summary }}
       <br>
-      <a class="btn" href="{{ SITEURL }}/{{ article.url }}{% if not DISABLE_URL_HASH %}#{{ article.slug }}{% endif %}">{{ _('Continue reading') }}</a>
+      {% if article.content|length > article.summary|length %}
+        <a class="btn" href="{{ SITEURL }}/{{ article.url }}{% if not DISABLE_URL_HASH %}#{{ article.slug }}{% endif %}">{{ _('Continue reading') }}</a>
+      {% endif %}
     {% else %}
       {{ article.content }}
     {% endif %}
