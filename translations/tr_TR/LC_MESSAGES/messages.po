@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Flex 2.1.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-03-14 00:10-0300\n"
+"POT-Creation-Date: 2018-10-18 12:39+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: İlker Yürüyen <i.ilker.yuruyen@gmail.com>, 2016\n"
 "Language: tr_TR\n"
@@ -17,22 +17,23 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.3.4\n"
+"Generated-By: Babel 2.5.3\n"
 
 #: templates/archives.html:2 templates/archives.html:7
+#: templates/period_archives.html:2 templates/period_archives.html:7
 msgid "Archives"
 msgstr "Arşivler"
 
-#: templates/article.html:17 templates/index.html:20
+#: templates/article.html:22 templates/index.html:20
 #, python-format
 msgid "Posted on %(when)s in %(category)s"
 msgstr "%(when)s tarihinde %(category)s kategorisinde paylaşıldı"
 
-#: templates/article.html:52
+#: templates/article.html:57
 msgid "Like this article? Share it with your friends!"
 msgstr "Bu makaleyi sevdiniz mi? Arkadaşlarınızla paylaşın!"
 
-#: templates/article.html:61
+#: templates/article.html:68
 msgid "You might enjoy"
 msgstr "Sevebilirsiniz"
 
@@ -41,23 +42,23 @@ msgstr "Sevebilirsiniz"
 msgid "Posts by %(name)s"
 msgstr "%(name)s kişisinin paylaşımları"
 
-#: templates/authors.html:2 templates/authors.html:7
+#: templates/authors.html:3 templates/authors.html:8
 msgid "Authors"
 msgstr "Yazarlar"
 
-#: templates/base.html:142
+#: templates/base.html:153
 msgid "Home"
 msgstr "Ana Sayfa"
 
-#: templates/base.html:149
+#: templates/base.html:160
 msgid "Atom"
 msgstr "Atom"
 
-#: templates/base.html:153
+#: templates/base.html:164
 msgid "RSS"
 msgstr "RSS"
 
-#: templates/categories.html:2 templates/categories.html:7
+#: templates/categories.html:3 templates/categories.html:8
 msgid "Categories"
 msgstr "Kategoriler"
 
@@ -79,11 +80,11 @@ msgstr "Okumaya devam et"
 msgid "Tag %(name)s"
 msgstr "%(name)s Etiketi"
 
-#: templates/tags.html:2 templates/tags.html:7
+#: templates/tags.html:3 templates/tags.html:8
 msgid "Tags"
 msgstr "Etiketler"
 
-#: templates/partial/disqus.html:12
+#: templates/partial/disqus.html:13
 msgid "Please enable JavaScript to view comments."
 msgstr "Yorumları görüntülemek için lütfen JavaScript'i etkinleştirin."
 
@@ -91,6 +92,14 @@ msgstr "Yorumları görüntülemek için lütfen JavaScript'i etkinleştirin."
 #, python-format
 msgid "Powered by %(pelican_url)s - %(flex_url)s theme by %(alexandrevicenzi_url)s"
 msgstr "Sponsor: %(pelican_url)s - %(flex_url)s tema: %(alexandrevicenzi_url)s"
+
+#: templates/partial/neighbors.html:5
+msgid "Previous Post"
+msgstr ""
+
+#: templates/partial/neighbors.html:10
+msgid "Next Post"
+msgstr ""
 
 #: templates/partial/pagination.html:5
 msgid "Older Posts"
