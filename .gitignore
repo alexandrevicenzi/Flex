@@ -57,3 +57,7 @@ venv
 
 # NPM
 node_modules
+
+# Pelican
+output
+plugins
