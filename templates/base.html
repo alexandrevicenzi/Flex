@@ -124,7 +124,7 @@
       <ul class="social">
         {% for name, link in SOCIAL %}
           <li>
-            <a {% if name is eq 'mastodon' %}rel="me"{% endif %} class="sc-{{ name }}" href="{{ link }}" target="_blank">
+            <a {% if name == 'mastodon' %}rel="me"{% endif %} class="sc-{{ name }}" href="{{ link }}" target="_blank">
             <i class="{% if name in ['envelope', 'rss'] %}fas{% else %}fab{% endif %} fa-{{ name }}">
             </i>
           </a></li>
