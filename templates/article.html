@@ -19,7 +19,19 @@
     {% endif %}
     <h1 id="{{ article.slug }}">{{ article.title }}</h1>
     <p>
-      {{ _('Posted on %(when)s in %(category)s',
+      {% if not SHOW_POST_AUTHOR %}
+        {% set auth_str = '' %}
+      {% else %}
+        {% set auth_str = [] %}
+        {% for auth in article.authors %}
+          {{ auth_str.append('<a href="%s/%s">%s</a>'|format(SITEURL, auth.url, auth)|safe) or ''}}
+        {% else %}
+          {{ auth_str.append('<a href="%s/%s">%s</a>'|format(SITEURL, article.author.url, article.author)|safe) or ''}}
+        {% endfor %}
+        {% set auth_str = ' by ' ~ auth_str|join(', ') %}
+      {% endif %}
+      {{ _('Posted%(auth_str)s on %(when)s in %(category)s',
+           auth_str=auth_str,
            when=article.locale_date,
            category='<a href="%s/%s">%s</a>'|format(SITEURL, article.category.url, article.category)|safe) }}
 
