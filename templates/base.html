@@ -107,6 +107,9 @@
       {% if pages or LINKS %}
       <nav>
         <ul class="list">
+          {% if PAGE_ORDER_BY -%}
+            {% set PAGES_SORT_ATTRIBUTE = PAGE_ORDER_BY %}
+          {%- endif %}
           {% if not PAGES_SORT_ATTRIBUTE -%}
               {% set PAGES_SORT_ATTRIBUTE = 'title' %}
           {%- endif %}
