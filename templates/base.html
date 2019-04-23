@@ -107,11 +107,11 @@
       {% if pages or LINKS %}
       <nav>
         <ul class="list">
-          {% if not PAGES_SORT_ATTRIBUTE -%}
-              {% set PAGES_SORT_ATTRIBUTE = 'title' %}
+          {% if PAGES_SORT_ATTRIBUTE -%}
+            {% set pages = pages|sort(attribute=PAGES_SORT_ATTRIBUTE) %}
           {%- endif %}
           {% if DISPLAY_PAGES_ON_MENU %}
-          {% for page in pages|sort(attribute=PAGES_SORT_ATTRIBUTE) %}
+          {% for page in pages %}
           <li><a href="{{ SITEURL }}/{{ page.url }}{% if not DISABLE_URL_HASH %}#{{ page.slug }}{% endif %}">{{ page.title }}</a></li>
           {% endfor %}
           {% endif %}
