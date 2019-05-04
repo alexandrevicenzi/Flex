@@ -43,8 +43,10 @@
         <img src="{{ article.featured_image }}">
       {% endif %}
       {{ article.summary }}
-      <br>
-      <a class="btn" href="{{ SITEURL }}/{{ article.url }}{% if not DISABLE_URL_HASH %}#{{ article.slug }}{% endif %}">{{ _('Continue reading') }}</a>
+      {% if article.content != article.summary %}
+        <br>
+        <a class="btn" href="{{ SITEURL }}/{{ article.url }}{% if not DISABLE_URL_HASH %}#{{ article.slug }}{% endif %}">{{ _('Continue reading') }}</a>
+      {% endif %}
     {% else %}
       {{ article.content }}
     {% endif %}
