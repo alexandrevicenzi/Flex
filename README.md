@@ -29,7 +29,7 @@ The minimalist [Pelican](http://blog.getpelican.com/) theme.
 - [Google AdSense](https://www.google.com.br/adsense/start/) (new in 2.1.0)
 - [Google Analytics](https://www.google.com/analytics/web/)
 - [Google Tag Manager](https://www.google.com/tagmanager/)
-- [Piwik Analytics](http://piwik.org/)
+- [Matomo Analytics](https://matomo.org/)
 - [StatusCake](https://www.statuscake.com/)
 
 ## Plugins Support
