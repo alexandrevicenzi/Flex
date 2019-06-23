@@ -1,15 +1,15 @@
-<!-- Piwik -->
+<!-- Matomo -->
 <script type="text/javascript">
-  var _paq = _paq || [];
+  var _paq = window._paq || [];
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
   (function() {
-    var u="//{{ PIWIK_URL }}/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', {{ PIWIK_SITE_ID }}]);
+    var u="https://{{ MATOMO_URL }}/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', {{ MATOMO_SITE_ID }}]);
     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
   })();
 </script>
-<noscript><p><img src="//{{ PIWIK_URL }}/piwik.php?idsite={{ PIWIK_SITE_ID }}" style="border:0" alt="" /></p></noscript>
-<!-- End Piwik Code -->
+<noscript><p><img src="https://{{ MATOMO_URL }}/matomo.php?idsite={{ MATOMO_SITE_ID }}&rec=1" style="border:0" alt="" /></p></noscript>
+<!-- End Matomo Code -->
