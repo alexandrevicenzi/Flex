@@ -368,8 +368,8 @@ ul.social {
 
   a:hover {
     z-index: 2;
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
   }
 
   a {
@@ -392,6 +392,10 @@ ul.social {
 
   a.sc-instagram {
     background-color: @instagram-bg-color;
+  }
+
+  a.sc-keybase {
+    background-color: @keybase-bg-color;
   }
 
   a.sc-pinterest {
@@ -454,6 +458,10 @@ ul.social {
     background-color: @bitbucket-bg-color;
   }
 
+  a.sc-mastodon {
+    background-color: @mastodon-bg-color;
+  }
+
 }
 
 .ads-aside {
@@ -476,8 +484,8 @@ ul.social {
 
 @media screen and (min-width: 768px) {
   aside {
-    width: 25%;
-    height: 100%;
+    width: 25vw;
+    height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -502,16 +510,17 @@ ul.social {
   }
 
   main {
-    width: 75%;
-    height: 100%;
+    width: 75vw;
+    height: 100vh;
     position: absolute;
     top: 0;
-    left: 25%;
+    left: 25vw;
+    overflow-x: hidden;
 
     article {
 
       &.single {
-        min-height: 80%;
+        min-height: 80vh;
       }
 
       ul.list {
