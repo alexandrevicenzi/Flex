@@ -1,13 +1,8 @@
 language: python
 python:
-    - "2.7"
-    - "3.4"
-    - "3.5"
     - "3.6"
 install:
-    - pip install -U pelican markdown
-before_script:
-    - git clone https://github.com/getpelican/pelican-plugins plugins
-script: pelican -s tests/pelicanconf.py
+    - pip install -r docs/requirements.txt
+script: pelican -s docs/pelicanconf.py
 notifications:
     email: false
