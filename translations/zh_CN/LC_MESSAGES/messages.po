@@ -1,38 +1,43 @@
-# Chinese (Simplified, China) translations for Flex.
-# Copyright (C) 2017 Alexandre Vicenzi
+# Translations template for Flex.
+# Copyright (C) 2019 Alexandre Vicenzi
 # This file is distributed under the same license as the Flex project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
-#
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+# 
+# Translators:
+# Shiao Qu <whisperzzzz@icloud.com>, 2016
+# Casey Tsui <cuikaidong@foxmail.com>, 2019
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flex 2.1.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-03-14 00:10-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Shiao Qu <whisperzzzz@icloud.com>, 2016\n"
-"Language: zh_Hans_CN\n"
+"POT-Creation-Date: 2019-01-03 00:10+0100\n"
+"PO-Revision-Date: 2016-08-25 02:15+0000\n"
+"Last-Translator: Casey Tsui <cuikaidong@foxmail.com>, 2019\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/alexandrevicenzi/teams/66327/zh_CN/)\n"
-"Plural-Forms: nplurals=1; plural=0\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.3.4\n"
+"Generated-By: Babel 2.6.0\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: templates/archives.html:2 templates/archives.html:7
+#: templates/period_archives.html:2 templates/period_archives.html:7
 msgid "Archives"
 msgstr "归档"
 
-#: templates/article.html:17 templates/index.html:20
+#: templates/article.html:22 templates/index.html:20
 #, python-format
 msgid "Posted on %(when)s in %(category)s"
 msgstr "在 %(when)s 发布于 %(category)s 分类"
 
-#: templates/article.html:52
+#: templates/article.html:57
 msgid "Like this article? Share it with your friends!"
 msgstr "喜欢这篇文章吗？将它与您的朋友分享吧！"
 
-#: templates/article.html:61
+#: templates/article.html:68
 msgid "You might enjoy"
 msgstr "您可能还喜欢"
 
@@ -41,23 +46,23 @@ msgstr "您可能还喜欢"
 msgid "Posts by %(name)s"
 msgstr "%(name)s 发布的文章"
 
-#: templates/authors.html:2 templates/authors.html:7
+#: templates/authors.html:3 templates/authors.html:8
 msgid "Authors"
 msgstr "作者"
 
-#: templates/base.html:142
+#: templates/base.html:159
 msgid "Home"
 msgstr "主页"
 
-#: templates/base.html:149
+#: templates/base.html:166
 msgid "Atom"
 msgstr "Atom订阅"
 
-#: templates/base.html:153
+#: templates/base.html:170
 msgid "RSS"
 msgstr "RSS订阅"
 
-#: templates/categories.html:2 templates/categories.html:7
+#: templates/categories.html:3 templates/categories.html:8
 msgid "Categories"
 msgstr "分类"
 
@@ -70,7 +75,7 @@ msgstr "%(name)s 分类"
 msgid "Tagged with"
 msgstr "标签为"
 
-#: templates/index.html:43
+#: templates/index.html:44
 msgid "Continue reading"
 msgstr "阅读全文"
 
@@ -79,18 +84,26 @@ msgstr "阅读全文"
 msgid "Tag %(name)s"
 msgstr "%(name)s 标签"
 
-#: templates/tags.html:2 templates/tags.html:7
+#: templates/tags.html:3 templates/tags.html:8
 msgid "Tags"
 msgstr "标签"
 
-#: templates/partial/disqus.html:12
+#: templates/partial/disqus.html:13
 msgid "Please enable JavaScript to view comments."
 msgstr "请启用浏览器的Javascript功能以查看评论。"
 
 #: templates/partial/flex.html:1
 #, python-format
-msgid "Powered by %(pelican_url)s - %(flex_url)s theme by %(alexandrevicenzi_url)s"
-msgstr "本站由 %(pelican_url)s 驱动，并使用了 %(alexandrevicenzi_url)s 开发的 %(flex_url)s 主题。"
+msgid "Built with %(pelican_url)s using %(flex_url)s theme"
+msgstr "本站由%(pelican_url)s驱动，并使用%(flex_url)s主题"
+
+#: templates/partial/neighbors.html:5
+msgid "Previous Post"
+msgstr "上一篇文章"
+
+#: templates/partial/neighbors.html:10
+msgid "Next Post"
+msgstr "下一篇文章"
 
 #: templates/partial/pagination.html:5
 msgid "Older Posts"
@@ -99,4 +112,3 @@ msgstr "更旧的文章"
 #: templates/partial/pagination.html:10
 msgid "Newer Posts"
 msgstr "更新的文章"
-
