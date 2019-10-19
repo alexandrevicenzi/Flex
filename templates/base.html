@@ -118,7 +118,7 @@
 
           {% for name, link in LINKS %}
             {# Open external links in new window, relative links in the same window #}
-            <li><a href="{{ link }}" {% if link[:4] == 'http' %}target="_blank"{% endif %}>{{ name }}</a></li>
+            <li><a href="{{ link }}" {% if link[0] != '/' and not link.startswith(SITEURL) %}target="_blank"{% endif %}>{{ name }}</a></li>
           {% endfor %}
         </ul>
       </nav>
