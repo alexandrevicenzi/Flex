@@ -116,14 +116,9 @@
           {% endfor %}
           {% endif %}
 
-          {% for link_tuple in LINKS %}
-            {% if link_tuple|length == 2 %}
-            {% set name, link = link_tuple %}
-            <li><a href="{{ link }}" target="_blank">{{ name }}</a></li>
-            {% else %}
-            {% set name, link, new_window = link_tuple %}
-            <li><a href="{{ link }}" {% if new_window %}target="_blank"{% endif %}>{{ name }}</a></li>
-            {% endif %}
+          {% for name, link in LINKS %}
+            {# Open external links in new window, relative links in the same window #}
+            <li><a href="{{ link }}" {% if link[:4] == 'http' %}target="_blank"{% endif %}>{{ name }}</a></li>
           {% endfor %}
         </ul>
       </nav>
