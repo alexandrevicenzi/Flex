@@ -1,5 +1,16 @@
 {% extends "base.html" %}
 
+{% block meta %}
+{{ super() }}
+
+{% if page.translations -%}
+<link rel="alternate" href="{{ SITEURL }}/{{ page.url }}" hreflang="{{ page.lang }}" />
+{% for p in page.translations %}
+<link rel="alternate" href="{{ SITEURL }}/{{ p.url }}" hreflang="{{ p.lang }}" />
+{% endfor %}
+{% endif %}
+{% endblock %}
+
 {% block title %} &ndash; {{ page.title }}{% endblock %}
 
 {% block content %}
