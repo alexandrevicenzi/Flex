@@ -110,7 +110,9 @@
           {# Open links in new window depending on the LINKS_IN_NEW_TAB setting #}
           {% macro get_target(link) -%}
             {% if LINKS_IN_NEW_TAB not in ('no', 'none', false, 0, 'external') or (LINKS_IN_NEW_TAB == "external" and not link.startswith("/") and not link.startswith(SITEURL)) %}
-            target="_blank"
+            _blank
+            {% else %}
+            _self
             {% endif %}
           {% endmacro %}
 
@@ -119,12 +121,12 @@
           {%- endif %}
           {% if DISPLAY_PAGES_ON_MENU %}
           {% for page in pages %}
-            <li><a {{ get_target(SITEURL) }} href="{{ SITEURL }}/{{ page.url }}{% if not DISABLE_URL_HASH %}#{{ page.slug }}{% endif %}">{{ page.title }}</a></li>
+            <li><a target="{{ get_target(SITEURL) }}" href="{{ SITEURL }}/{{ page.url }}{% if not DISABLE_URL_HASH %}#{{ page.slug }}{% endif %}">{{ page.title }}</a></li>
           {% endfor %}
           {% endif %}
 
           {% for name, link in LINKS %}
-            <li><a {{ get_target(link) }} href="{{ link }}" >{{ name }}</a></li>
+            <li><a target="{{ get_target(link) }}" href="{{ link }}" >{{ name }}</a></li>
           {% endfor %}
         </ul>
       </nav>
