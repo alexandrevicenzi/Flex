@@ -39,12 +39,6 @@ USE_FOLDER_AS_CATEGORY = False
 MAIN_MENU = True
 HOME_HIDE_TAGS = True
 
-# Valid values for LINKS_IN_NEW_TAB:
-# * Unset, None, True or any string to open all LINKS in a new window (default)
-# * 'no', 'none', False or 0 to open all LINKS in the same window
-# * 'external' to open LINKS to external sites in a new window, internal links in same window
-LINKS_IN_NEW_TAB = 'external'
-
 SOCIAL = (
     ('github', 'https://github.com/alexandrevicenzi/Flex'),
     ('rss', '/blog/feeds/all.atom.xml'),
