@@ -109,12 +109,16 @@
         <ul class="list">
           {# Open links in new window depending on the LINKS_IN_NEW_TAB setting #}
           {% macro get_target(link) -%}
-            {% if LINKS_IN_NEW_TAB not in ('no', 'none', false, 0, 'external') or (LINKS_IN_NEW_TAB == "external" and not link.startswith("/") and not link.startswith(SITEURL)) %}
+            {%- if LINKS_IN_NEW_TAB is not defined -%}
             _blank
-            {% else %}
+            {%- elif LINKS_IN_NEW_TAB in ('all', none, true) -%}
+            _blank
+            {%- elif LINKS_IN_NEW_TAB == "external" and not link.startswith("/") and not link.startswith(SITEURL) -%}
+            _blank
+            {%- else -%}
             _self
-            {% endif %}
-          {% endmacro %}
+            {%- endif -%}
+          {%- endmacro %}
 
           {% if PAGES_SORT_ATTRIBUTE -%}
             {% set pages = pages|sort(attribute=PAGES_SORT_ATTRIBUTE) %}
