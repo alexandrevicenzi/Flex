@@ -250,6 +250,26 @@ main {
         border-top: 1px solid #ddd;
       }
     }
+
+    table.highlighttable {
+      width: 100%;
+      table-layout: fixed;
+
+      td {
+        border-style: none;
+        padding: 0px;
+      }
+
+      td.linenos {
+        width: 2.5em;
+
+        pre {
+          padding-right: .8em;
+          background-color: inherit;
+          text-align: right;
+        }
+      }
+    }
   }
 
   footer {
@@ -462,6 +482,9 @@ ul.social {
     background-color: @mastodon-bg-color;
   }
 
+  a.sc-flickr {
+    background-color: @flickr-bg-color;
+  }
 }
 
 .ads-aside {

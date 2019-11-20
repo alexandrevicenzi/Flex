@@ -10,21 +10,30 @@
 
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
-    <link rel="stylesheet/less" type="text/css" href="http://localhost:8000/theme/stylesheet/style.less">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="http://flex.alxd.me/blog/theme/stylesheet/style.min.css">
 
-  <link rel="stylesheet" type="text/css" href="http://localhost:8000/theme/pygments/monokai.min.css">
-  <link rel="stylesheet" type="text/css" href="http://localhost:8000/theme/font-awesome/css/fontawesome.css">
-  <link rel="stylesheet" type="text/css" href="http://localhost:8000/theme/font-awesome/css/brands.css">
-  <link rel="stylesheet" type="text/css" href="http://localhost:8000/theme/font-awesome/css/solid.css">
+  <link rel="stylesheet" type="text/css" href="http://flex.alxd.me/blog/theme/pygments/monokai.min.css">
+  <link rel="stylesheet" type="text/css" href="http://flex.alxd.me/blog/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="http://flex.alxd.me/blog/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="http://flex.alxd.me/blog/theme/font-awesome/css/solid.css">
 
-    <link href="http://localhost:8000/static/custom.css" rel="stylesheet">
+    <link href="http://flex.alxd.me/blog/static/custom.css" rel="stylesheet">
 
-    <link href="http://localhost:8000/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Flex Atom">
-
+    <link href="http://flex.alxd.me/blog/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Flex Atom">
 
 
 
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55543164-6', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
     <!-- Chrome, Firefox OS and Opera -->
     <meta name="theme-color" content="#333333">
     <!-- Windows Phone -->
@@ -39,20 +48,21 @@
 <meta name="description" content="Flex theme 2.0 comes with new features. In fact there are two new features. The biggest change is localization support. Yes, Flex now can be translated into your language. You can read about here. The biggest challege was to create a way to translate without breaking old versions. If …" />
 <meta name="keywords" content="pelican, python, theme">
 
+
 <meta property="og:site_name" content="Flex"/>
 <meta property="og:title" content="Flex 2.0"/>
 <meta property="og:description" content="Flex theme 2.0 comes with new features. In fact there are two new features. The biggest change is localization support. Yes, Flex now can be translated into your language. You can read about here. The biggest challege was to create a way to translate without breaking old versions. If …"/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="http://localhost:8000/flex-pelican-theme-update-2-0.html"/>
+<meta property="og:url" content="http://flex.alxd.me/blog/flex-pelican-theme-update-2-0.html"/>
 <meta property="og:type" content="article"/>
 <meta property="article:published_time" content="2016-09-13 08:00:00-04:00"/>
 <meta property="article:modified_time" content="2016-09-13 08:00:00-04:00"/>
-<meta property="article:author" content="http://localhost:8000/author/alexandre-vicenzi.html">
+<meta property="article:author" content="http://flex.alxd.me/blog/author/alexandre-vicenzi.html">
 <meta property="article:section" content="News"/>
 <meta property="article:tag" content="pelican"/>
 <meta property="article:tag" content="python"/>
 <meta property="article:tag" content="theme"/>
-<meta property="og:image" content="http://localhost:8000/images/flex-screenshot.png">
+<meta property="og:image" content="http://flex.alxd.me/blog/images/flex-screenshot.png">
 
   <title>Flex &ndash; Flex 2.0</title>
 
@@ -67,16 +77,17 @@
 <body>
   <aside>
     <div>
-      <a href="http://localhost:8000">
-        <img src="http://localhost:8000/theme/img/profile.png" alt="Flex" title="Flex">
+      <a href="http://flex.alxd.me/blog">
+        <img src="http://flex.alxd.me/blog/theme/img/profile.png" alt="Flex" title="Flex">
       </a>
-      <h1><a href="http://localhost:8000">Flex</a></h1>
+      <h1><a href="http://flex.alxd.me/blog">Flex</a></h1>
 
 <p>The minimalist Pelican theme</p>
       <nav>
         <ul class="list">
-          <li><a href="http://localhost:8000/pages/about.html#about">About</a></li>
-          <li><a href="http://localhost:8000/pages/contact.html#contact">Contact</a></li>
+
+            <li><a target="_blank" href="http://flex.alxd.me/blog/pages/about.html#about">About</a></li>
+            <li><a target="_blank" href="http://flex.alxd.me/blog/pages/contact.html#contact">Contact</a></li>
 
         </ul>
       </nav>
@@ -107,14 +118,14 @@
   <main>
 
     <nav>
-      <a href="http://localhost:8000">    Home
+      <a href="http://flex.alxd.me/blog">    Home
 </a>
 
       <a href="/archives.html">Archives</a>
       <a href="/categories.html">Categories</a>
       <a href="/tags.html">Tags</a>
 
-      <a href="http://localhost:8000/feeds/all.atom.xml">    Atom
+      <a href="http://flex.alxd.me/blog/feeds/all.atom.xml">    Atom
 </a>
 
     </nav>
@@ -124,7 +135,7 @@
       
     <h1 id="flex-pelican-theme-update-2-0">Flex 2.0</h1>
     <p>
-          Posted on September 13, 2016 in <a href="http://localhost:8000/category/news.html">News</a>
+          Posted on September 13, 2016 in <a href="http://flex.alxd.me/blog/category/news.html">News</a>
 
 
     </p>
@@ -159,9 +170,9 @@ But if you want to use translation you need to add new lines to your pelican con
   </div>
   <div class="tag-cloud">
     <p>
-      <a href="http://localhost:8000/tag/pelican.html">pelican</a>
-      <a href="http://localhost:8000/tag/python.html">python</a>
-      <a href="http://localhost:8000/tag/theme.html">theme</a>
+      <a href="http://flex.alxd.me/blog/tag/pelican.html">pelican</a>
+      <a href="http://flex.alxd.me/blog/tag/python.html">python</a>
+      <a href="http://flex.alxd.me/blog/tag/theme.html">theme</a>
     </p>
   </div>
 
@@ -229,7 +240,7 @@ But if you want to use translation you need to add new lines to your pelican con
   "@context" : "http://schema.org",
   "@type" : "Blog",
   "name": " Flex ",
-  "url" : "http://localhost:8000",
+  "url" : "http://flex.alxd.me/blog",
   "image": "",
   "description": "Flex - The minimalist Pelican theme."
 }
