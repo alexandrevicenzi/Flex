@@ -581,7 +581,7 @@ div.admonition {
   }
 
   p, div {
-    border-radius: 4px;
+    border-radius: 0 0 4px 4px;
     padding: 1.25em 1.25em 0 1.25em;
     margin-top: -1.25em;
     margin-bottom: 0;
@@ -593,11 +593,6 @@ div.admonition {
 }
 
 div.admonition.attention {
-  p.admonition-title {
-    color: @admonition-attention-title-color;
-    background-color: @admonition-attention-title-bg-color;
-  }
-
   p, div {
     color: @admonition-attention-color;
     background-color: @admonition-attention-bg-color;
@@ -605,11 +600,6 @@ div.admonition.attention {
 }
 
 div.admonition.caution {
-  p.admonition-title {
-    color: @admonition-caution-title-color;
-    background-color: @admonition-caution-title-bg-color;
-  }
-
   p, div {
     color: @admonition-caution-color;
     background-color: @admonition-caution-bg-color;
@@ -617,11 +607,6 @@ div.admonition.caution {
 }
 
 div.admonition.danger {
-  p.admonition-title {
-    color: @admonition-danger-title-color;
-    background-color: @admonition-danger-title-bg-color;
-  }
-
   p, div {
     color: @admonition-danger-color;
     background-color: @admonition-danger-bg-color;
@@ -629,11 +614,6 @@ div.admonition.danger {
 }
 
 div.admonition.error {
-  p.admonition-title {
-    color: @admonition-error-title-color;
-    background-color: @admonition-error-title-bg-color;
-  }
-
   p, div {
     color: @admonition-error-color;
     background-color: @admonition-error-bg-color;
@@ -641,11 +621,6 @@ div.admonition.error {
 }
 
 div.admonition.hint {
-  p.admonition-title {
-    color: @admonition-hint-title-color;
-    background-color: @admonition-hint-title-bg-color;
-  }
-
   p, div {
     color: @admonition-hint-color;
     background-color: @admonition-hint-bg-color;
@@ -653,11 +628,6 @@ div.admonition.hint {
 }
 
 div.admonition.important {
-  p.admonition-title {
-    color: @admonition-important-title-color;
-    background-color: @admonition-important-title-bg-color;
-  }
-
   p, div {
     color: @admonition-important-color;
     background-color: @admonition-important-bg-color;
@@ -665,11 +635,6 @@ div.admonition.important {
 }
 
 div.admonition.note {
-  p.admonition-title {
-    color: @admonition-note-title-color;
-    background-color: @admonition-note-title-bg-color;
-  }
-
   p, div {
     color: @admonition-note-color;
     background-color: @admonition-note-bg-color;
@@ -677,13 +642,15 @@ div.admonition.note {
 }
 
 div.admonition.tip {
-  p.admonition-title {
-    color: @admonition-tip-title-color;
-    background-color: @admonition-tip-title-bg-color;
-  }
-
   p, div {
     color: @admonition-tip-color;
     background-color: @admonition-tip-bg-color;
+  }
+}
+
+div.admonition.warning {
+  p, div {
+    color: @admonition-warning-color;
+    background-color: @admonition-warning-bg-color;
   }
 }
