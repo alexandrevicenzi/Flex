@@ -1,3 +1,7 @@
 <p>{{ _('Built with %(pelican_url)s using %(flex_url)s theme',
   pelican_url='<a href="http://getpelican.com" target="_blank">Pelican</a>',
-  flex_url='<a href="http://bit.ly/flex-pelican" target="_blank">Flex</a>'|safe) }}</p>
+  flex_url='<a href="http://bit.ly/flex-pelican" target="_blank">Flex</a>'|safe) }}
+{% if EXTRA_FOOTER_TEXT %}
+ &centerdot; {{ _(EXTRA_FOOTER_TEXT) }}
+{% endif %}
+</p>
