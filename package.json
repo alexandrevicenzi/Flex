@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "source venv/bin/activate && pip install pelican markdown && pelican -s tests/pelicanconf.py && deactivate",
-    "build": "node_modules/gulp/bin/gulp.js default"
+    "build": "gulp default"
   },
   "repository": {
     "type": "git",
