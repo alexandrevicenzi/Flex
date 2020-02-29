@@ -1,38 +1,42 @@
-# Estonian translations for Flex.
-# Copyright (C) 2017 Alexandre Vicenzi
+# Translations template for Flex.
+# Copyright (C) 2019 Alexandre Vicenzi
 # This file is distributed under the same license as the Flex project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
-#
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+# 
+# Translators:
+# Jüri Lillemets <lillemetsj@gmail.com>, 2017
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flex 2.1.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-03-14 00:10-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2019-01-03 00:10+0100\n"
+"PO-Revision-Date: 2016-08-25 02:15+0000\n"
 "Last-Translator: Jüri Lillemets <lillemetsj@gmail.com>, 2017\n"
-"Language: et\n"
 "Language-Team: Estonian (https://www.transifex.com/alexandrevicenzi/teams/66327/et/)\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.3.4\n"
+"Generated-By: Babel 2.6.0\n"
+"Language: et\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: templates/archives.html:2 templates/archives.html:7
+#: templates/period_archives.html:2 templates/period_archives.html:7
 msgid "Archives"
 msgstr "Arhiiv"
 
-#: templates/article.html:17 templates/index.html:20
+#: templates/article.html:22 templates/index.html:20
 #, python-format
 msgid "Posted on %(when)s in %(category)s"
 msgstr "Avaldatud %(when)s kategoorias %(category)s"
 
-#: templates/article.html:52
+#: templates/article.html:57
 msgid "Like this article? Share it with your friends!"
 msgstr "Kui sulle see artikkel meeldis, siis jaga seda ka sõpradega!"
 
-#: templates/article.html:61
+#: templates/article.html:68
 msgid "You might enjoy"
 msgstr "Sulle võlb meeldida ka"
 
@@ -41,23 +45,23 @@ msgstr "Sulle võlb meeldida ka"
 msgid "Posts by %(name)s"
 msgstr "Kõik artiklid %(name)s poolt"
 
-#: templates/authors.html:2 templates/authors.html:7
+#: templates/authors.html:3 templates/authors.html:8
 msgid "Authors"
 msgstr "Autorid"
 
-#: templates/base.html:142
+#: templates/base.html:159
 msgid "Home"
 msgstr "Avaleht"
 
-#: templates/base.html:149
+#: templates/base.html:166
 msgid "Atom"
 msgstr "Atom"
 
-#: templates/base.html:153
+#: templates/base.html:170
 msgid "RSS"
 msgstr "RSS"
 
-#: templates/categories.html:2 templates/categories.html:7
+#: templates/categories.html:3 templates/categories.html:8
 msgid "Categories"
 msgstr "Kategooriad"
 
@@ -70,7 +74,7 @@ msgstr "Kategooria %(name)s"
 msgid "Tagged with"
 msgstr "Märksõnadeks"
 
-#: templates/index.html:43
+#: templates/index.html:44
 msgid "Continue reading"
 msgstr "Loe edasi"
 
@@ -79,18 +83,26 @@ msgstr "Loe edasi"
 msgid "Tag %(name)s"
 msgstr "Märksõna %(name)s"
 
-#: templates/tags.html:2 templates/tags.html:7
+#: templates/tags.html:3 templates/tags.html:8
 msgid "Tags"
 msgstr "Märksõnad"
 
-#: templates/partial/disqus.html:12
+#: templates/partial/disqus.html:13
 msgid "Please enable JavaScript to view comments."
 msgstr "Kommentaaride nägemiseks võimaldage JavaScript."
 
 #: templates/partial/flex.html:1
 #, python-format
-msgid "Powered by %(pelican_url)s - %(flex_url)s theme by %(alexandrevicenzi_url)s"
-msgstr "Lehekülg on loodud kasutades rakendust %(pelican_url)s ja %(flex_url)s teemat  %(alexandrevicenzi_url)s poolt."
+msgid "Built with %(pelican_url)s using %(flex_url)s theme"
+msgstr ""
+
+#: templates/partial/neighbors.html:5
+msgid "Previous Post"
+msgstr ""
+
+#: templates/partial/neighbors.html:10
+msgid "Next Post"
+msgstr ""
 
 #: templates/partial/pagination.html:5
 msgid "Older Posts"
@@ -99,4 +111,3 @@ msgstr "Vanemad artiklid"
 #: templates/partial/pagination.html:10
 msgid "Newer Posts"
 msgstr "Uuemad artiklid"
-

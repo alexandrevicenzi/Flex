@@ -1,38 +1,44 @@
-# French translations for Flex.
-# Copyright (C) 2017 Alexandre Vicenzi
+# Translations template for Flex.
+# Copyright (C) 2019 Alexandre Vicenzi
 # This file is distributed under the same license as the Flex project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
-#
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+# 
+# Translators:
+# François Schmidts <francois.schmidts@gmail.com>, 2016
+# Axel Haustant, 2018
+# taggaddaaaa <taggaddaaaa@outlook.com>, 2019
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Flex 2.1.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-03-14 00:10-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: François Schmidts <francois.schmidts@gmail.com>, 2016\n"
-"Language: fr\n"
+"POT-Creation-Date: 2019-01-03 00:10+0100\n"
+"PO-Revision-Date: 2016-08-25 02:15+0000\n"
+"Last-Translator: taggaddaaaa <taggaddaaaa@outlook.com>, 2019\n"
 "Language-Team: French (https://www.transifex.com/alexandrevicenzi/teams/66327/fr/)\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.3.4\n"
+"Generated-By: Babel 2.6.0\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: templates/archives.html:2 templates/archives.html:7
+#: templates/period_archives.html:2 templates/period_archives.html:7
 msgid "Archives"
 msgstr "Archives"
 
-#: templates/article.html:17 templates/index.html:20
+#: templates/article.html:22 templates/index.html:20
 #, python-format
 msgid "Posted on %(when)s in %(category)s"
 msgstr "Posté le %(when)s dans %(category)s"
 
-#: templates/article.html:52
+#: templates/article.html:57
 msgid "Like this article? Share it with your friends!"
 msgstr "Vous aimez cet article ? Partagez le avec vos amis !"
 
-#: templates/article.html:61
+#: templates/article.html:68
 msgid "You might enjoy"
 msgstr "Vous pourriez aimer"
 
@@ -41,23 +47,23 @@ msgstr "Vous pourriez aimer"
 msgid "Posts by %(name)s"
 msgstr "Posts de %(name)s"
 
-#: templates/authors.html:2 templates/authors.html:7
+#: templates/authors.html:3 templates/authors.html:8
 msgid "Authors"
 msgstr "Auteurs"
 
-#: templates/base.html:142
+#: templates/base.html:159
 msgid "Home"
 msgstr "Accueil"
 
-#: templates/base.html:149
+#: templates/base.html:166
 msgid "Atom"
 msgstr "Atom"
 
-#: templates/base.html:153
+#: templates/base.html:170
 msgid "RSS"
 msgstr "RSS"
 
-#: templates/categories.html:2 templates/categories.html:7
+#: templates/categories.html:3 templates/categories.html:8
 msgid "Categories"
 msgstr "Catégories"
 
@@ -70,7 +76,7 @@ msgstr "Catégorie %(name)s"
 msgid "Tagged with"
 msgstr "Taggé avec"
 
-#: templates/index.html:43
+#: templates/index.html:44
 msgid "Continue reading"
 msgstr "Continuer à lire"
 
@@ -79,18 +85,26 @@ msgstr "Continuer à lire"
 msgid "Tag %(name)s"
 msgstr "Tag %(name)s"
 
-#: templates/tags.html:2 templates/tags.html:7
+#: templates/tags.html:3 templates/tags.html:8
 msgid "Tags"
 msgstr "Tags"
 
-#: templates/partial/disqus.html:12
+#: templates/partial/disqus.html:13
 msgid "Please enable JavaScript to view comments."
 msgstr "Veuillez activer le JavaScript pour voir les commentaires."
 
 #: templates/partial/flex.html:1
 #, python-format
-msgid "Powered by %(pelican_url)s - %(flex_url)s theme by %(alexandrevicenzi_url)s"
-msgstr "Propulsé par %(pelican_url)s - %(flex_url)s thème par %(alexandrevicenzi_url)s"
+msgid "Built with %(pelican_url)s using %(flex_url)s theme"
+msgstr "Construit avec %(pelican_url)s utilisant le thème %(flex_url)s"
+
+#: templates/partial/neighbors.html:5
+msgid "Previous Post"
+msgstr "Post précédent"
+
+#: templates/partial/neighbors.html:10
+msgid "Next Post"
+msgstr "Post suivant"
 
 #: templates/partial/pagination.html:5
 msgid "Older Posts"
@@ -99,4 +113,3 @@ msgstr "Anciens Posts"
 #: templates/partial/pagination.html:10
 msgid "Newer Posts"
 msgstr "Nouveaux Posts"
-

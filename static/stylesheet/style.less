@@ -250,6 +250,26 @@ main {
         border-top: 1px solid #ddd;
       }
     }
+
+    table.highlighttable {
+      width: 100%;
+      table-layout: fixed;
+
+      td {
+        border-style: none;
+        padding: 0px;
+      }
+
+      td.linenos {
+        width: 2.5em;
+
+        pre {
+          padding-right: .8em;
+          background-color: inherit;
+          text-align: right;
+        }
+      }
+    }
   }
 
   footer {
@@ -462,6 +482,13 @@ ul.social {
     background-color: @mastodon-bg-color;
   }
 
+  a.sc-flickr {
+    background-color: @flickr-bg-color;
+  }
+
+  a.sc-lastfm {
+    background-color: @lastfm-bg-color;
+  }
 }
 
 .ads-aside {
@@ -537,5 +564,137 @@ ul.social {
 
   .ads-responsive {
     height: 90px;
+  }
+}
+
+// Admonition
+div.admonition {
+  margin-bottom: 2.5rem;
+
+  p.admonition-title::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    font-family: "Font Awesome 5 Free";
+  }
+
+  p.admonition-title {
+    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+    line-height: 1.25em;
+    padding: .5em 1em;
+    margin-bottom: 1.25em;
+    margin-top: inherit;
+  }
+
+  p, div {
+    border-radius: 0 0 4px 4px;
+    padding: 1.25em 1.25em 0 1.25em;
+    margin-top: -1.25em;
+    margin-bottom: 0;
+  }
+
+  p.last, div.last {
+    padding-bottom: 1.25em;
+  }
+}
+
+div.admonition.attention {
+  p.admonition-title::before {
+    content: @admonition-attention-icon;
+  }
+
+  p, div {
+    color: @admonition-attention-color;
+    background-color: @admonition-attention-bg-color;
+  }
+}
+
+div.admonition.caution {
+  p.admonition-title::before {
+    content: @admonition-caution-icon;
+  }
+
+  p, div {
+    color: @admonition-caution-color;
+    background-color: @admonition-caution-bg-color;
+  }
+}
+
+div.admonition.danger {
+  p.admonition-title::before {
+    content: @admonition-danger-icon;
+  }
+
+  p, div {
+    color: @admonition-danger-color;
+    background-color: @admonition-danger-bg-color;
+  }
+}
+
+div.admonition.error {
+  p.admonition-title::before {
+    content: @admonition-error-icon;
+  }
+
+  p, div {
+    color: @admonition-error-color;
+    background-color: @admonition-error-bg-color;
+  }
+}
+
+div.admonition.hint {
+  p.admonition-title::before {
+    content: @admonition-hint-icon;
+  }
+
+  p, div {
+    color: @admonition-hint-color;
+    background-color: @admonition-hint-bg-color;
+  }
+}
+
+div.admonition.important {
+  p.admonition-title::before {
+    content: @admonition-important-icon;
+  }
+
+  p, div {
+    color: @admonition-important-color;
+    background-color: @admonition-important-bg-color;
+  }
+}
+
+div.admonition.note {
+  p.admonition-title::before {
+    content: @admonition-note-icon;
+  }
+
+  p, div {
+    color: @admonition-note-color;
+    background-color: @admonition-note-bg-color;
+  }
+}
+
+div.admonition.tip {
+  p.admonition-title::before {
+    content: @admonition-tip-icon;
+  }
+
+  p, div {
+    color: @admonition-tip-color;
+    background-color: @admonition-tip-bg-color;
+  }
+}
+
+div.admonition.warning {
+  p.admonition-title::before {
+    content: @admonition-warning-icon;
+  }
+
+  p, div {
+    color: @admonition-warning-color;
+    background-color: @admonition-warning-bg-color;
   }
 }

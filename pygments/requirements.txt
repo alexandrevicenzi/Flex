@@ -1,2 +1,2 @@
-Pygments==2.2.0
-pygments-style-github==0.4
+Pygments
+pygments-style-github

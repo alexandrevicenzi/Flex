@@ -1,0 +1,113 @@
+# Translations template for Flex.
+# Copyright (C) 2019 Alexandre Vicenzi
+# This file is distributed under the same license as the Flex project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+# 
+# Translators:
+# Yongkie Wiyogo <yongkie.wiyogo@gmail.com>, 2018
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Flex 2.1.0\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2019-01-03 00:10+0100\n"
+"PO-Revision-Date: 2016-08-25 02:15+0000\n"
+"Last-Translator: Yongkie Wiyogo <yongkie.wiyogo@gmail.com>, 2018\n"
+"Language-Team: Indonesian (https://www.transifex.com/alexandrevicenzi/teams/66327/id/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+"Language: id\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: templates/archives.html:2 templates/archives.html:7
+#: templates/period_archives.html:2 templates/period_archives.html:7
+msgid "Archives"
+msgstr "Arsip"
+
+#: templates/article.html:22 templates/index.html:20
+#, python-format
+msgid "Posted on %(when)s in %(category)s"
+msgstr "Ditulis tanggal %(when)s di %(category)s"
+
+#: templates/article.html:57
+msgid "Like this article? Share it with your friends!"
+msgstr "Suka artikel ini? Bagikan dengan teman-teman Anda!"
+
+#: templates/article.html:68
+msgid "You might enjoy"
+msgstr "Anda mungkin menikmati"
+
+#: templates/author.html:2
+#, python-format
+msgid "Posts by %(name)s"
+msgstr "Ditulis oleh %(name)s"
+
+#: templates/authors.html:3 templates/authors.html:8
+msgid "Authors"
+msgstr "Penulis"
+
+#: templates/base.html:159
+msgid "Home"
+msgstr "Beranda"
+
+#: templates/base.html:166
+msgid "Atom"
+msgstr "Atom"
+
+#: templates/base.html:170
+msgid "RSS"
+msgstr "RSS"
+
+#: templates/categories.html:3 templates/categories.html:8
+msgid "Categories"
+msgstr "Kategori"
+
+#: templates/category.html:2
+#, python-format
+msgid "Category %(name)s"
+msgstr "Kategori %(name)s"
+
+#: templates/index.html:25
+msgid "Tagged with"
+msgstr "Kata kunci"
+
+#: templates/index.html:44
+msgid "Continue reading"
+msgstr "Lanjut membaca"
+
+#: templates/tag.html:2
+#, python-format
+msgid "Tag %(name)s"
+msgstr "Kata kunci %(name)s"
+
+#: templates/tags.html:3 templates/tags.html:8
+msgid "Tags"
+msgstr "Kata-kata kunci"
+
+#: templates/partial/disqus.html:13
+msgid "Please enable JavaScript to view comments."
+msgstr "Harap aktifkan JavaScript untuk melihat komentar."
+
+#: templates/partial/flex.html:1
+#, python-format
+msgid "Built with %(pelican_url)s using %(flex_url)s theme"
+msgstr ""
+
+#: templates/partial/neighbors.html:5
+msgid "Previous Post"
+msgstr ""
+
+#: templates/partial/neighbors.html:10
+msgid "Next Post"
+msgstr ""
+
+#: templates/partial/pagination.html:5
+msgid "Older Posts"
+msgstr "Tulisan lama"
+
+#: templates/partial/pagination.html:10
+msgid "Newer Posts"
+msgstr "Tulisan baru"
