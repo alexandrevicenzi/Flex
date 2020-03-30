@@ -1,0 +1,19 @@
+{% if ISSO_EMBED_JS_PATH %}
+<!-- Isso -->
+<section id="isso-thread" data-title="{{ article.title|e }}"></section>
+<script
+  type="text/javascript"
+  src="{{ ISSO_EMBED_JS_PATH }}"
+
+  {% if ISSO_URL %}
+    data-isso="{{ ISSO_URL }}"
+  {% endif %}
+  {% for opt, val in ISSO_OPTIONS.items() %}
+    data-isso-{{ opt }}="{{ val }}"
+  {% endfor %}
+></script>
+<noscript>
+    {{ _('Please enable JavaScript to view comments.') }}
+</noscript>
+<!-- End Isso -->
+{% endif %}
