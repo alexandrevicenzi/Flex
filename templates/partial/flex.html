@@ -1,3 +1,40 @@
 <p>{{ _('Built with %(pelican_url)s using %(flex_url)s theme',
   pelican_url='<a href="http://getpelican.com" target="_blank">Pelican</a>',
-  flex_url='<a href="http://bit.ly/flex-pelican" target="_blank">Flex</a>'|safe) }}</p>
+  flex_url='<a href="http://bit.ly/flex-pelican" target="_blank">Flex</a>'|safe) }}
+  <span class="theme-separator">|</span>
+  Switch to the
+  <a href="javascript:void(0)" onclick="switchTheme('dark')">
+    dark
+  </a>|<a href="javascript:void(0)" onclick="switchTheme('light')">
+    light
+  </a>|<a href="javascript:void(0)" onclick="switchTheme('browser')">
+    browser
+  </a>
+  theme
+</p>
+<script>
+  const darkSchemeWatch = window.matchMedia('(prefers-color-scheme: dark)');
+
+  function detectThemeAndSwitchStyle() {
+    let theme = localStorage.getItem('themeOverride') || 'browser';
+    if (theme === 'browser') {
+      theme = darkSchemeWatch.matches ? 'dark' : 'light';
+    }
+    console.log(`Switching theme to ${theme}.`)
+    if (theme === 'dark') {
+      document.body.classList.add('dark_theme');
+      document.body.classList.remove('light_theme');
+    } else {
+      document.body.classList.add('light_theme');
+      document.body.classList.remove('dark_theme');
+    }
+  }
+
+  function switchTheme(themeOverride) {
+    localStorage.setItem('themeOverride', themeOverride);
+    detectThemeAndSwitchStyle();
+  }
+
+  detectThemeAndSwitchStyle();
+  darkSchemeWatch.addListener(detectThemeAndSwitchStyle);
+</script>
