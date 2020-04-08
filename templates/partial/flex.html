@@ -16,8 +16,8 @@
   const darkSchemeWatch = window.matchMedia('(prefers-color-scheme: dark)');
 
   function detectThemeAndSwitchStyle() {
-    let theme = localStorage.getItem('themeOverride') || 'browser';
-    if (theme === 'browser') {
+    let theme = localStorage.getItem('themeOverride');
+    if (theme !== 'light' && theme !== 'dark') {
       theme = darkSchemeWatch.matches ? 'dark' : 'light';
     }
     console.log(`Switching theme to ${theme}.`)
