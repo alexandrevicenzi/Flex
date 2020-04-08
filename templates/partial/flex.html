@@ -20,7 +20,17 @@
     if (theme === 'browser') {
       theme = darkSchemeWatch.matches ? 'dark' : 'light';
     }
+    const pygmentsTheme = theme === 'light'
+      ? '{{ PYGMENTS_STYLE }}'
+      : '{{ PYGMENTS_STYLE_DARK or PYGMENTS_STYLE }}'
     console.log(`Switching theme to ${theme}.`)
+
+    Array.from(document.head.getElementsByTagName('link')).forEach(linkEl => {
+      if (linkEl.href.match(/\/theme\/pygments\/.*\.min\.css/)) {
+        linkEl.href = `/theme/pygments/${pygmentsTheme}.min.css`;
+      }
+    });
+
     if (theme === 'dark') {
       document.body.classList.add('dark_theme');
       document.body.classList.remove('light_theme');
