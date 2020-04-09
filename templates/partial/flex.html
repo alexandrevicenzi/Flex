@@ -22,8 +22,8 @@
     }
     console.log(`Switching theme to ${theme}.`)
 
-    // Find the pygments CSS file and change it to the theme specified in the
-    // config.
+    // Find the pygments CSS files (there are two, one for each theme) and
+    // change them both to the theme specified by the user.
     const pygmentsTheme = theme === 'light'
       ? '{{ PYGMENTS_STYLE }}'
       : '{{ PYGMENTS_STYLE_DARK or PYGMENTS_STYLE }}'
