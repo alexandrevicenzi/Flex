@@ -28,4 +28,4 @@ gulp.task('pygments', function () {
 });
 
 
-gulp.task('default', ['less', 'cp', 'pygments']);
+gulp.task('default', gulp.series(['less', 'cp', 'pygments']));
