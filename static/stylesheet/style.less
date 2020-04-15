@@ -119,20 +119,19 @@ main {
   nav {
     text-align: center;
     text-transform: uppercase;
-    font-size: .72em;
     padding: 14px 0 14px 0;
     border-bottom: @nav-border-color 1px solid;
+
+    // Need to use font-size of 0 so that whitespace between the <a> tags
+    // doesn't have an affect on alignment.
+    font-size: 0;
   }
 
   nav, .translations {
     a {
-      padding: 0 4px 0 4px;
-      border-left: @nav-border-color 1px solid;
+      font-size: 12px;
+      padding: 0 4px;
       border-right: @nav-border-color 1px solid;
-    }
-
-    :first-child {
-      border-left: none;
     }
 
     :last-child {
