@@ -293,7 +293,7 @@ main {
       font-size: 11px;
     }
 
-    // Flex theme and Theme selection separator
+    // Flex credits and theme selection separator
     span.footer-separator {
       margin: 0 6px;
     }
@@ -693,4 +693,18 @@ div.admonition.warning {
 
   color: @admonition-warning-color;
   background-color: @admonition-warning-bg-color;
+}
+
+//
+// Dark Theme
+//
+
+@media (prefers-color-scheme: dark) {
+  html:not(.light-theme) {
+    @import (multiple) "dark-theme.less";
+  }
+}
+
+html.dark-theme {
+  @import (multiple) "dark-theme.less";
 }
