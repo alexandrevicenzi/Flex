@@ -134,6 +134,10 @@ main {
       border-right: @nav-border-color 1px solid;
     }
 
+    :first-child {
+      border-left: none;
+    }
+
     :last-child {
       border-right: none;
     }
@@ -290,8 +294,8 @@ main {
     }
 
     // Flex theme and Theme selection separator
-    span.theme-separator {
-      margin: 0 4px;
+    span.footer-separator {
+      margin: 0 6px;
     }
   }
 }
@@ -560,10 +564,6 @@ ul.social {
     top: 0;
     left: 25vw;
     overflow-x: hidden;
-
-    nav {
-      text-align: right;
-    }
 
     article {
 
