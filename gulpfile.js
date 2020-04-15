@@ -4,7 +4,10 @@ var gulp = require('gulp'),
     minify = require('gulp-cssnano');
 
 gulp.task('less', function () {
-    return gulp.src('./static/stylesheet/style.less')
+    return gulp.src([
+            './static/stylesheet/style.less',
+            './static/stylesheet/dark-theme.less',
+        ])
         .pipe(less())
         .pipe(minify())
         .pipe(rename({

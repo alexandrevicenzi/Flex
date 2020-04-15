@@ -5,7 +5,11 @@
 {% endif %}
 
 <!DOCTYPE html>
-<html lang="{{ DEFAULT_LANG }}">
+<html lang="{{ DEFAULT_LANG }}"
+  {% if not THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE %}
+    class="{{ THEME_COLOR|default('light') }}-theme"
+  {% endif %}
+>
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -28,6 +32,50 @@
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stylesheet/style.min.css">
   {% endif %}
 
+  <!--
+    DARK THEME STYLES
+    The dark theme will be enabled if any of the following are true:
+    * the <html> tag has the .dark-theme class.
+    * THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE is true and the appropriate color scheme preference
+      is set in the browser and the <html> tag does not have the .light-theme class.
+  -->
+  <link rel="stylesheet" type="text/css"
+        {% if THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE %}
+          {% if THEME_COLOR|default("light") == "dark" %}
+            media="(prefers-color-scheme: dark), (prefers-color-scheme: no-preference)"
+          {% else %}
+            media="(prefers-color-scheme: dark)"
+          {% endif %}
+        {% endif %}
+        href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stylesheet/dark-theme.min.css">
+
+  <!--
+    PYGMENTS STYLES
+
+  -->
+  {% if THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE or THEME_COLOR == "dark" %}
+    <link rel="stylesheet" type="text/css"
+          {% if THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE %}
+            {% if THEME_COLOR|default("light") == "dark" %}
+              media="(prefers-color-scheme: dark), (prefers-color-scheme: no-preference)"
+            {% else %}
+              media="(prefers-color-scheme: dark)"
+            {% endif %}
+          {% endif %}
+          href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/pygments/{{ PYGMENTS_STYLE_DARK or PYGMENTS_STYLE or 'monokai' }}.min.css">
+  {% endif %}
+  {% if THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE or not THEME_COLOR or THEME_COLOR == "light" %}
+    <link rel="stylesheet" type="text/css"
+          {% if THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE %}
+            {% if THEME_COLOR|default("light") == "dark" %}
+              media="(prefers-color-scheme: light)"
+            {% else %}
+              media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+            {% endif %}
+          {% endif %}
+          href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/pygments/{{ PYGMENTS_STYLE|default('github') }}.min.css">
+  {% endif %}
+
   {% if USE_TIPUE_SEARCH %}
     <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/tipuesearch/jquery.min.js"></script>
     <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/tipuesearch/tipuesearch.min.js"></script>
@@ -36,12 +84,6 @@
     <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/tipuesearch/tipuesearch.min.css" />
   {% endif %}
 
-  <link rel="stylesheet" type="text/css"
-    media="(prefers-color-scheme: dark)"
-    href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/pygments/{{ PYGMENTS_STYLE_DARK|default('monokai') }}.min.css">
-  <link rel="stylesheet" type="text/css"
-    media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-    href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/pygments/{{ PYGMENTS_STYLE|default('github') }}.min.css">
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/font-awesome/css/fontawesome.css">
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/font-awesome/css/brands.css">
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/font-awesome/css/solid.css">
