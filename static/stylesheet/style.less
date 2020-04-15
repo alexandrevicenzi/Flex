@@ -270,6 +270,12 @@ main {
         }
       }
     }
+
+    // Add a bit of padding between each of the entry boxes in the Isso auth
+    // section. By default, they are squished together, which looks terrible.
+    section#isso-thread .auth-section .input-wrapper {
+      margin-right: 5px;
+    }
   }
 
   footer {
@@ -304,7 +310,8 @@ main {
   }
 }
 
-a.btn {
+a.btn,
+section#isso-thread section.auth-section p.post-action input {
   background-color: @btn-bg;
   padding: .6em .6em;
   font-size: .8em;
@@ -313,6 +320,7 @@ a.btn {
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
+  border: none;
   border-radius: .25em;
 }
 
