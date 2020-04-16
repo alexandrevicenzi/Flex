@@ -32,13 +32,13 @@
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stylesheet/style.min.css">
   {% endif %}
 
-  <!-- DARK THEME STYLES -->
+  {# DARK THEME STYLES #}
   {% if not THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE and not THEME_COLOR_ENABLE_USER_OVERRIDE and THEME_COLOR == "dark" %}
     <link rel="stylesheet" type="text/css"
         href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stylesheet/dark-theme-not-overridden.min.css">
   {% endif %}
   {% if THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE %}
-    <!-- Enable dark mode when media query matches and .light-theme class does not exist on <html> tag -->
+    {# Enable dark mode when media query matches and .light-theme class does not exist on <html> tag #}
     <link rel="stylesheet" type="text/css"
       {% if THEME_COLOR|default("light") == "dark" %}
         media="(prefers-color-scheme: dark), (prefers-color-scheme: no-preference)"
@@ -48,12 +48,12 @@
     href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stylesheet/dark-theme-not-overridden.min.css">
   {% endif %}
   {% if THEME_COLOR_ENABLE_USER_OVERRIDE %}
-    <!-- Enable dark mode when .dark-theme class exists on <html> tag -->
+    {# Enable dark mode when .dark-theme class exists on <html> tag #}
     <link rel="stylesheet" type="text/css"
         href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stylesheet/dark-theme-has-class.min.css">
   {% endif %}
 
-  <!-- PYGMENTS STYLES -->
+  {# PYGMENTS STYLES #}
   {% if THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE or THEME_COLOR == "dark" %}
     <link rel="stylesheet" type="text/css"
           {% if THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE %}
