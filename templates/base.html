@@ -5,11 +5,7 @@
 {% endif %}
 
 <!DOCTYPE html>
-<html lang="{{ DEFAULT_LANG }}"
-  {% if not THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE %}
-    class="{{ THEME_COLOR|default('light') }}-theme"
-  {% endif %}
->
+<html lang="{{ DEFAULT_LANG }}">
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -33,40 +29,36 @@
   {% endif %}
 
   {# DARK THEME STYLES #}
-  {% if not THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE and not THEME_COLOR_ENABLE_USER_OVERRIDE and THEME_COLOR == "dark" %}
-    <link rel="stylesheet" type="text/css"
-        href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stylesheet/dark-theme-not-overridden.min.css">
-  {% endif %}
-  {% if THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE %}
-    {# Enable dark mode when media query matches and .light-theme class does not exist on <html> tag #}
-    <link rel="stylesheet" type="text/css"
-      {% if THEME_COLOR|default("light") == "dark" %}
-        media="(prefers-color-scheme: dark), (prefers-color-scheme: no-preference)"
-      {% else %}
-        media="(prefers-color-scheme: dark)"
+  {% if THEME_COLOR == "dark" or THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE or THEME_COLOR_ENABLE_USER_OVERRIDE %}
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+      {% if THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE %}
+        {% if THEME_COLOR|default("light") == "dark" %}
+          media="(prefers-color-scheme: dark), (prefers-color-scheme: no-preference)"
+        {% else %}
+          media="(prefers-color-scheme: dark)"
+        {% endif %}
+      {% elif THEME_COLOR_ENABLE_USER_OVERRIDE and THEME_COLOR|default("light") == "light" %}
+        disabled="disabled"
       {% endif %}
-    href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stylesheet/dark-theme-not-overridden.min.css">
-  {% endif %}
-  {% if THEME_COLOR_ENABLE_USER_OVERRIDE %}
-    {# Enable dark mode when .dark-theme class exists on <html> tag #}
-    <link rel="stylesheet" type="text/css"
-        href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stylesheet/dark-theme-has-class.min.css">
+    href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stylesheet/dark-theme.min.css">
   {% endif %}
 
   {# PYGMENTS STYLES #}
-  {% if THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE or THEME_COLOR == "dark" %}
-    <link rel="stylesheet" type="text/css"
+  {% if THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE or THEME_COLOR_ENABLE_USER_OVERRIDE or THEME_COLOR == "dark" %}
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
           {% if THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE %}
             {% if THEME_COLOR|default("light") == "dark" %}
               media="(prefers-color-scheme: dark), (prefers-color-scheme: no-preference)"
             {% else %}
               media="(prefers-color-scheme: dark)"
             {% endif %}
+          {% elif THEME_COLOR_ENABLE_USER_OVERRIDE and THEME_COLOR|default("light") == "light" %}
+            disabled="disabled"
           {% endif %}
           href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/pygments/{{ PYGMENTS_STYLE_DARK or PYGMENTS_STYLE or 'monokai' }}.min.css">
   {% endif %}
   {% if THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE or not THEME_COLOR or THEME_COLOR == "light" %}
-    <link rel="stylesheet" type="text/css"
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
           {% if THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE %}
             {% if THEME_COLOR|default("light") == "dark" %}
               media="(prefers-color-scheme: light)"
@@ -143,7 +135,11 @@
     {% include "partial/gtm.html" %}
   {% endif %}
 </head>
-<body>
+<body
+  {% if not THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE %}
+    class="{{ THEME_COLOR|default('light') }}-theme"
+  {% endif %}
+>
   {% if GOOGLE_TAG_MANAGER %}
     {% include "partial/gtm_noscript.html" %}
   {% endif %}

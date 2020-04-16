@@ -12,57 +12,11 @@
       light_url='<a href="javascript:void(0)" onclick="theme.switch(`light`)">light</a>',
       browser_url='<a href="javascript:void(0)" onclick="theme.switch(`browser`)">browser</a>'|safe)
   }}
-{% endif %}
-</p>
-{% if THEME_COLOR_ENABLE_USER_OVERRIDE %}
-  <script>
-    {% if THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE %}
-      {% if THEME_COLOR|default("light") == "dark" %}
-        const darkSchemeWatch = window.matchMedia('(prefers-color-scheme: dark), (prefers-color-scheme: no-preference)');
-      {% else %}
-        const darkSchemeWatch = window.matchMedia('(prefers-color-scheme: dark)');
-      {% endif %}
-    {% endif %}
-
-    function detectThemeAndSwitchStyle() {
-      let theme = localStorage.getItem('themeOverride');
-      if (theme !== 'light' && theme !== 'dark') {
-        {% if THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE %}
-          theme = darkSchemeWatch.matches ? 'dark' : 'light';
-        {% else %}
-          theme = '{{ THEME_COLOR|default("light") }}';
-        {% endif %}
-      }
-
-      // Find the pygments CSS files (there are two, one for each theme) and
-      // change them both to the theme specified by the user.
-      const pygmentsTheme = theme === 'light'
-        ? '{{ PYGMENTS_STYLE|default('github') }}'
-        : '{{ PYGMENTS_STYLE_DARK or PYGMENTS_STYLE or 'monokai' }}';
-      Array.from(document.head.getElementsByTagName('link')).forEach(linkEl => {
-        if (linkEl.href.match(/\/theme\/pygments\/.*\.min\.css/)) {
-          linkEl.href = `/theme/pygments/${pygmentsTheme}.min.css`;
-        }
-      });
-
-      const htmlElement = document.getElementsByTagName('html')[0];
-      if (theme === 'dark') {
-        htmlElement.classList.add('dark-theme');
-        htmlElement.classList.remove('light-theme');
-      } else {
-        htmlElement.classList.add('light-theme');
-        htmlElement.classList.remove('dark-theme');
-      }
-    }
-
-    function switchTheme(themeOverride) {
-      localStorage.setItem('themeOverride', themeOverride);
-      detectThemeAndSwitchStyle();
-    }
-
-    detectThemeAndSwitchStyle();
-    {% if THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE %}
-      darkSchemeWatch.addListener(detectThemeAndSwitchStyle);
-    {% endif %}
+  <script id="dark-theme-script"
+          src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/dark_theme/dark_theme.min.js"
+          data-enable-auto-detect-theme="{{ THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE|default('false') }}"
+          data-default-theme="{{ THEME_COLOR|default('light') }}"
+          type="text/javascript">
   </script>
 {% endif %}
+</p>
