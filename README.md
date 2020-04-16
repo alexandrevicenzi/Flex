@@ -31,6 +31,7 @@ The minimalist [Pelican](http://blog.getpelican.com/) theme.
 - [Google Tag Manager](https://www.google.com/tagmanager/)
 - [Matomo Analytics (formerly Piwik)](https://matomo.org/)
 - [StatusCake](https://www.statuscake.com/)
+- [Isso](https://posativ.org/isso/)
 
 ## Plugins Support
 
