@@ -83,6 +83,7 @@ msgid "Tags"
 msgstr ""
 
 #: templates/partial/disqus.html:13
+#: templates/partial/isso.html:20
 msgid "Please enable JavaScript to view comments."
 msgstr ""
 
