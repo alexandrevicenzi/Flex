@@ -574,6 +574,8 @@ ul.social {
 // Admonition
 div.admonition {
   margin-bottom: 2.5rem;
+  border-radius: 4px;
+  padding: 0.5em 1.25em 1.25em 1.25em;
 
   p.admonition-title::before {
     display: inline-block;
@@ -584,23 +586,14 @@ div.admonition {
   }
 
   p.admonition-title {
-    border-radius: 4px 4px 0 0;
     font-weight: 600;
     line-height: 1.25em;
-    padding: .5em 1em;
     margin-bottom: 1.25em;
     margin-top: inherit;
   }
 
-  p, div {
-    border-radius: 0 0 4px 4px;
-    padding: 1.25em 1.25em 0 1.25em;
-    margin-top: -1.25em;
+  p, div, pre {
     margin-bottom: 0;
-  }
-
-  p.last, div.last {
-    padding-bottom: 1.25em;
   }
 }
 
@@ -609,10 +602,8 @@ div.admonition.attention {
     content: @admonition-attention-icon;
   }
 
-  p, div {
-    color: @admonition-attention-color;
-    background-color: @admonition-attention-bg-color;
-  }
+  color: @admonition-attention-color;
+  background-color: @admonition-attention-bg-color;
 }
 
 div.admonition.caution {
@@ -620,10 +611,8 @@ div.admonition.caution {
     content: @admonition-caution-icon;
   }
 
-  p, div {
-    color: @admonition-caution-color;
-    background-color: @admonition-caution-bg-color;
-  }
+  color: @admonition-caution-color;
+  background-color: @admonition-caution-bg-color;
 }
 
 div.admonition.danger {
@@ -631,10 +620,8 @@ div.admonition.danger {
     content: @admonition-danger-icon;
   }
 
-  p, div {
-    color: @admonition-danger-color;
-    background-color: @admonition-danger-bg-color;
-  }
+  color: @admonition-danger-color;
+  background-color: @admonition-danger-bg-color;
 }
 
 div.admonition.error {
@@ -642,10 +629,8 @@ div.admonition.error {
     content: @admonition-error-icon;
   }
 
-  p, div {
-    color: @admonition-error-color;
-    background-color: @admonition-error-bg-color;
-  }
+  color: @admonition-error-color;
+  background-color: @admonition-error-bg-color;
 }
 
 div.admonition.hint {
@@ -653,10 +638,8 @@ div.admonition.hint {
     content: @admonition-hint-icon;
   }
 
-  p, div {
-    color: @admonition-hint-color;
-    background-color: @admonition-hint-bg-color;
-  }
+  color: @admonition-hint-color;
+  background-color: @admonition-hint-bg-color;
 }
 
 div.admonition.important {
@@ -664,10 +647,8 @@ div.admonition.important {
     content: @admonition-important-icon;
   }
 
-  p, div {
-    color: @admonition-important-color;
-    background-color: @admonition-important-bg-color;
-  }
+  color: @admonition-important-color;
+  background-color: @admonition-important-bg-color;
 }
 
 div.admonition.note {
@@ -675,10 +656,8 @@ div.admonition.note {
     content: @admonition-note-icon;
   }
 
-  p, div {
-    color: @admonition-note-color;
-    background-color: @admonition-note-bg-color;
-  }
+  color: @admonition-note-color;
+  background-color: @admonition-note-bg-color;
 }
 
 div.admonition.tip {
@@ -686,10 +665,8 @@ div.admonition.tip {
     content: @admonition-tip-icon;
   }
 
-  p, div {
-    color: @admonition-tip-color;
-    background-color: @admonition-tip-bg-color;
-  }
+  color: @admonition-tip-color;
+  background-color: @admonition-tip-bg-color;
 }
 
 div.admonition.warning {
@@ -697,8 +674,6 @@ div.admonition.warning {
     content: @admonition-warning-icon;
   }
 
-  p, div {
-    color: @admonition-warning-color;
-    background-color: @admonition-warning-bg-color;
-  }
+  color: @admonition-warning-color;
+  background-color: @admonition-warning-bg-color;
 }
