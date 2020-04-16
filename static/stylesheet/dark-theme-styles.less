@@ -13,14 +13,18 @@ body {
 }
 
 hr {
-  color: @solid-dark-grey;
   background-color: @solid-dark-grey;
+  color: @solid-dark-grey;
 }
 
 aside {
   background-color: @sidebar-bg-dark-theme;
   color: @sidebar-text-color;
 
+  form.navbar-search input#tipue_search_input {
+    background-color: @very-dark-grey;
+    color: @light-grey;
+  }
 }
 
 main {
@@ -40,9 +44,19 @@ main {
       color: @light-grey;
     }
 
+    blockquote, pre {
+      border-left: 8px solid #ffffff33;
+    }
+
     *:not(pre) > code {
       background-color: #080808;
       border-color: #000;
+    }
+
+    div#tipue_search_content .tipue_search_result {
+      span.tipue_search_content_bold {
+        color: white;
+      }
     }
 
     section#isso-thread {
