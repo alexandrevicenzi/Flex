@@ -87,9 +87,14 @@ msgstr ""
 msgid "Please enable JavaScript to view comments."
 msgstr ""
 
-#: templates/partial/flex.html:1
+#: templates/partial/flex.html:3
 #, python-format
 msgid "Built with %(pelican_url)s using %(flex_url)s theme"
+msgstr ""
+
+#: templates/partial/flex.html:10
+#, python-format
+msgid "Switch to the %(dark_url)s | %(light_url)s | %(browser_url)s theme"
 msgstr ""
 
 #: templates/partial/neighbors.html:5
