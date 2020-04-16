@@ -23,7 +23,11 @@
 {% if THEME_COLOR_ENABLE_USER_OVERRIDE %}
   <script>
     {% if THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE %}
-      const darkSchemeWatch = window.matchMedia('(prefers-color-scheme: dark)');
+      {% if THEME_COLOR|default("light") == "dark" %}
+        const darkSchemeWatch = window.matchMedia('(prefers-color-scheme: dark), (prefers-color-scheme: no-preference)');
+      {% else %}
+        const darkSchemeWatch = window.matchMedia('(prefers-color-scheme: dark)');
+      {% endif %}
     {% endif %}
 
     function detectThemeAndSwitchStyle() {

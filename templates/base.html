@@ -32,27 +32,28 @@
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stylesheet/style.min.css">
   {% endif %}
 
-  <!--
-    DARK THEME STYLES
-    The dark theme will be enabled if any of the following are true:
-    * the <html> tag has the .dark-theme class.
-    * THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE is true and the appropriate color scheme preference
-      is set in the browser and the <html> tag does not have the .light-theme class.
-  -->
-  <link rel="stylesheet" type="text/css"
-        {% if THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE %}
-          {% if THEME_COLOR|default("light") == "dark" %}
-            media="(prefers-color-scheme: dark), (prefers-color-scheme: no-preference)"
-          {% else %}
-            media="(prefers-color-scheme: dark)"
-          {% endif %}
-        {% endif %}
-        href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stylesheet/dark-theme.min.css">
+  <!-- DARK THEME STYLES -->
+  {% if not THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE and not THEME_COLOR_ENABLE_USER_OVERRIDE and THEME_COLOR == "dark" %}
+    <link rel="stylesheet" type="text/css"
+        href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stylesheet/dark-theme-not-overridden.min.css">
+  {% endif %}
+  {% if THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE %}
+    <!-- Enable dark mode when media query matches and .light-theme class does not exist on <html> tag -->
+    <link rel="stylesheet" type="text/css"
+      {% if THEME_COLOR|default("light") == "dark" %}
+        media="(prefers-color-scheme: dark), (prefers-color-scheme: no-preference)"
+      {% else %}
+        media="(prefers-color-scheme: dark)"
+      {% endif %}
+    href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stylesheet/dark-theme-not-overridden.min.css">
+  {% endif %}
+  {% if THEME_COLOR_ENABLE_USER_OVERRIDE %}
+    <!-- Enable dark mode when .dark-theme class exists on <html> tag -->
+    <link rel="stylesheet" type="text/css"
+        href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stylesheet/dark-theme-has-class.min.css">
+  {% endif %}
 
-  <!--
-    PYGMENTS STYLES
-
-  -->
+  <!-- PYGMENTS STYLES -->
   {% if THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE or THEME_COLOR == "dark" %}
     <link rel="stylesheet" type="text/css"
           {% if THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE %}

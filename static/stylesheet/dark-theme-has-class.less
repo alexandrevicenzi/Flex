@@ -1,0 +1,14 @@
+//
+// Dark Theme CSS that gets activated when the <html> element has the
+// .dark-theme class.
+//
+// To use this, add the .dark-theme class to the <html> element, and add the
+// following <link>:
+//
+// <link rel="stylesheet" type="text/css"
+//       href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stylesheet/dark-theme-class.min.css">
+//
+
+html.dark-theme {
+  @import (multiple) "dark-theme-styles.less";
+}

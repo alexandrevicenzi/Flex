@@ -694,17 +694,3 @@ div.admonition.warning {
   color: @admonition-warning-color;
   background-color: @admonition-warning-bg-color;
 }
-
-//
-// Dark Theme
-//
-
-@media (prefers-color-scheme: dark) {
-  html:not(.light-theme) {
-    @import (multiple) "dark-theme.less";
-  }
-}
-
-html.dark-theme {
-  @import (multiple) "dark-theme.less";
-}

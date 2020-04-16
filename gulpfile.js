@@ -5,8 +5,9 @@ var gulp = require('gulp'),
 
 gulp.task('less', function () {
     return gulp.src([
+            './static/stylesheet/dark-theme-has-class.less',
+            './static/stylesheet/dark-theme-not-overridden.less',
             './static/stylesheet/style.less',
-            './static/stylesheet/dark-theme.less',
         ])
         .pipe(less())
         .pipe(minify())
