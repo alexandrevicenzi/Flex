@@ -1,7 +1,7 @@
 {% if 'jinja2.ext.i18n' not in JINJA_ENVIRONMENT.extensions and 'jinja2.ext.i18n' not in JINJA_EXTENSIONS %}
-  {% macro _(msg) %}
+  {%- macro _(msg) -%}
     {{ msg % kwargs }}
-  {% endmacro %}
+  {%- endmacro -%}
 {% endif %}
 
 <!DOCTYPE html>
@@ -183,18 +183,18 @@
 
     {% if MAIN_MENU %}
     <nav>
-      <a href="{{ SITEURL }}">{{ _('Home').strip() }}</a>
+      <a href="{{ SITEURL }}">{{ _('Home') }}</a>
 
       {% for title, link in MENUITEMS %}
       <a href="{{ link }}">{{ title }}</a>
       {% endfor %}
 
       {% if FEED_ALL_ATOM %}
-      <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">{{ _('Atom').strip() }}</a>
+      <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">{{ _('Atom') }}</a>
       {% endif %}
 
       {% if FEED_ALL_RSS %}
-      <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}">{{ _('RSS').strip() }}</a>
+      <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}">{{ _('RSS') }}</a>
       {% endif %}
     </nav>
     {% endif %}
