@@ -1,7 +1,7 @@
 {% if 'jinja2.ext.i18n' not in JINJA_ENVIRONMENT.extensions and 'jinja2.ext.i18n' not in JINJA_EXTENSIONS %}
-  {% macro _(msg) %}
+  {%- macro _(msg) -%}
     {{ msg % kwargs }}
-  {% endmacro %}
+  {%- endmacro -%}
 {% endif %}
 
 <!DOCTYPE html>
