@@ -20,6 +20,7 @@ The minimalist [Pelican](http://blog.getpelican.com/) theme.
 - Minute read (via [plugin](https://github.com/getpelican/pelican-plugins/tree/master/post_stats)) (new in 2.0)
 - [Multiple Code Highlight Styles](https://github.com/alexandrevicenzi/Flex/wiki/Code-Highlight)
 - [Translation Support](https://github.com/alexandrevicenzi/Flex/wiki/Translations) (new in 2.0)
+- [Dark Mode](https://github.com/alexandrevicenzi/Flex/wiki/Dark-Mode)
 
 ## Integrations
 
