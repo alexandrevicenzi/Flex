@@ -29,7 +29,7 @@
       {% endif %}
 
       {% if 'post_stats' in PLUGINS %}
-        &#8226; {{ article.stats['read_mins'] }} min read
+        &#8226; {{ _('%(minutes) min read', minutes=article.stats['read_mins']) }}
       {% endif %}
     </p>
   </header>
@@ -41,7 +41,10 @@
       {{ article.summary }}
       {% if article.content != article.summary %}
         <br>
-        <a class="btn" href="{{ SITEURL }}/{{ article.url }}{% if not DISABLE_URL_HASH %}#{{ article.slug }}{% endif %}">{{ _('Continue reading') }}</a>
+        <a class="btn"
+           href="{{ SITEURL }}/{{ article.url }}{% if not DISABLE_URL_HASH %}#{{ article.slug }}{% endif %}">
+          {{ _('Continue reading') }}
+        </a>
       {% endif %}
     {% else %}
       {{ article.content }}
@@ -64,6 +67,5 @@
     (adsbygoogle = window.adsbygoogle || []).push({});
   </script>
 {% endif %}
-
 
 {% endblock %}

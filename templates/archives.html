@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+
 {% block title %} &ndash; {{ _('Archives') }}{% endblock %}
 
 {% block content %}
@@ -9,12 +10,16 @@
   <div>
     <dl>
       {% set previous_date = False %}
+
       {% for article in dates %}
         {% if article.locale_date != previous_date %}
           {% set previous_date = article.locale_date %}
-      <dt>{{ article.locale_date }}</dt>
+          <dt>{{ article.locale_date }}</dt>
         {% endif %}
-      <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
+
+        <dd>
+          <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+        </dd>
       {% endfor %}
     </dl>
   </div>

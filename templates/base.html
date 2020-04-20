@@ -136,11 +136,7 @@
     {% include "partial/gtm.html" %}
   {% endif %}
 </head>
-<body
-  {% if not THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE %}
-    class="{{ THEME_COLOR|default('light') }}-theme"
-  {% endif %}
->
+<body {% if not THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE %}class="{{ THEME_COLOR|default('light') }}-theme"{% endif %}>
   {% if GOOGLE_TAG_MANAGER %}
     {% include "partial/gtm_noscript.html" %}
   {% endif %}
@@ -153,22 +149,25 @@
         <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/profile.png" alt="{{ SITETITLE }}" title="{{ SITETITLE }}">
         {% endif %}
       </a>
-      <h1><a href="{{ SITEURL }}">{{ SITETITLE }}</a></h1>
+
+      <h1>
+        <a href="{{ SITEURL }}">{{ SITETITLE }}</a>
+      </h1>
 
       {% if SITESUBTITLE %}<p>{{ SITESUBTITLE }}</p>{% endif %}
+
       {% if 'tipue_search' in PLUGINS %}
         <form class="navbar-search" action="/search.html" role="search">
-            <input type="text" name="q" id="tipue_search_input" placeholder="Search..">
+          <input type="text" name="q" id="tipue_search_input" placeholder="{{ _('Search...') }}">
         </form>
       {% endif %}
+
       {% if pages or LINKS %}
       <nav>
         <ul class="list">
           {# Open links in new window depending on the LINKS_IN_NEW_TAB setting #}
           {% macro get_target(link) -%}
-            {%- if LINKS_IN_NEW_TAB is not defined -%}
-            _blank
-            {%- elif LINKS_IN_NEW_TAB in ('all', none, true) -%}
+            {%- if LINKS_IN_NEW_TAB in ('all', true) -%}
             _blank
             {%- elif LINKS_IN_NEW_TAB == "external" and not link.startswith("/") and not link.startswith(SITEURL) -%}
             _blank
@@ -180,14 +179,22 @@
           {% if PAGES_SORT_ATTRIBUTE -%}
             {% set pages = pages|sort(attribute=PAGES_SORT_ATTRIBUTE) %}
           {%- endif %}
+
           {% if DISPLAY_PAGES_ON_MENU %}
-          {% for page in pages %}
-            <li><a target="{{ get_target(SITEURL) }}" href="{{ SITEURL }}/{{ page.url }}{% if not DISABLE_URL_HASH %}#{{ page.slug }}{% endif %}">{{ page.title }}</a></li>
-          {% endfor %}
+            {% for page in pages %}
+              <li>
+                <a target="{{ get_target(SITEURL) }}"
+                   href="{{ SITEURL }}/{{ page.url }}{% if not DISABLE_URL_HASH %}#{{ page.slug }}{% endif %}">
+                  {{ page.title }}
+                </a>
+              </li>
+            {% endfor %}
           {% endif %}
 
           {% for name, link in LINKS %}
-            <li><a target="{{ get_target(link) }}" href="{{ link }}" >{{ name }}</a></li>
+            <li>
+              <a target="{{ get_target(link) }}" href="{{ link }}" >{{ name }}</a>
+            </li>
           {% endfor %}
         </ul>
       </nav>
@@ -197,9 +204,9 @@
         {% for name, link in SOCIAL %}
           <li>
             <a {% if name == 'mastodon' %}rel="me"{% endif %} class="sc-{{ name }}" href="{{ link }}" target="_blank">
-            <i class="{% if name in ['envelope', 'rss'] %}fas{% else %}fab{% endif %} fa-{{ name }}">
-            </i>
-          </a></li>
+              <i class="{% if name in ['envelope', 'rss'] %}fas{% else %}fab{% endif %} fa-{{ name }}"></i>
+            </a>
+          </li>
         {% endfor %}
       </ul>
     </div>
@@ -213,7 +220,6 @@
         (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
     {% endif %}
-
   </aside>
   <main>
     {% if GOOGLE_ADSENSE and GOOGLE_ADSENSE.ads.main_menu %}
@@ -270,18 +276,18 @@
 
   {% include "partial/jsonld.html" %}
 
-  {% block additional_js %}{% endblock %}
-
   {% if GITHUB_CORNER_URL %}
-  {% include 'partial/github.html' %}
+    {% include 'partial/github.html' %}
   {% endif %}
 
   {% if 'tipue_search' in PLUGINS %}
     <script>
       $(document).ready(function() {
-          $('#tipue_search_input').tipuesearch();
+        $('#tipue_search_input').tipuesearch();
       });
     </script>
   {% endif %}
+
+  {% block additional_js %}{% endblock %}
 </body>
 </html>
