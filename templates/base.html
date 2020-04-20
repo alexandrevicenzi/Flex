@@ -28,6 +28,47 @@
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stylesheet/style.min.css">
   {% endif %}
 
+  {# DARK THEME STYLES #}
+  {% if THEME_COLOR == "dark" or THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE or THEME_COLOR_ENABLE_USER_OVERRIDE %}
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+      {% if THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE %}
+        {% if THEME_COLOR|default("light") == "dark" %}
+          media="(prefers-color-scheme: dark), (prefers-color-scheme: no-preference)"
+        {% else %}
+          media="(prefers-color-scheme: dark)"
+        {% endif %}
+      {% elif THEME_COLOR_ENABLE_USER_OVERRIDE and THEME_COLOR|default("light") == "light" %}
+        disabled="disabled"
+      {% endif %}
+    href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stylesheet/dark-theme.min.css">
+  {% endif %}
+
+  {# PYGMENTS STYLES #}
+  {% if THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE or THEME_COLOR_ENABLE_USER_OVERRIDE or THEME_COLOR == "dark" %}
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+          {% if THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE %}
+            {% if THEME_COLOR|default("light") == "dark" %}
+              media="(prefers-color-scheme: dark), (prefers-color-scheme: no-preference)"
+            {% else %}
+              media="(prefers-color-scheme: dark)"
+            {% endif %}
+          {% elif THEME_COLOR_ENABLE_USER_OVERRIDE and THEME_COLOR|default("light") == "light" %}
+            disabled="disabled"
+          {% endif %}
+          href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/pygments/{{ PYGMENTS_STYLE_DARK or PYGMENTS_STYLE or 'monokai' }}.min.css">
+  {% endif %}
+  {% if THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE or not THEME_COLOR or THEME_COLOR == "light" %}
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          {% if THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE %}
+            {% if THEME_COLOR|default("light") == "dark" %}
+              media="(prefers-color-scheme: light)"
+            {% else %}
+              media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+            {% endif %}
+          {% endif %}
+          href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/pygments/{{ PYGMENTS_STYLE|default('github') }}.min.css">
+  {% endif %}
+
   {% if USE_TIPUE_SEARCH %}
     <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/tipuesearch/jquery.min.js"></script>
     <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/tipuesearch/tipuesearch.min.js"></script>
@@ -37,7 +78,6 @@
     <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/tipuesearch/tipuesearch.min.css" />
   {% endif %}
 
-  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/pygments/{{ PYGMENTS_STYLE|default('github') }}.min.css">
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/font-awesome/css/fontawesome.css">
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/font-awesome/css/brands.css">
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/font-awesome/css/solid.css">
@@ -96,7 +136,11 @@
     {% include "partial/gtm.html" %}
   {% endif %}
 </head>
-<body>
+<body
+  {% if not THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE %}
+    class="{{ THEME_COLOR|default('light') }}-theme"
+  {% endif %}
+>
   {% if GOOGLE_TAG_MANAGER %}
     {% include "partial/gtm_noscript.html" %}
   {% endif %}
