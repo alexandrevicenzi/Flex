@@ -1,4 +1,4 @@
-{% if USE_TIPUE_SEARCH %} {% extends 'base.html' %} {% block title %} {{ _('Search') }} - {{ SITENAME|striptags }} {% endblock title %} {% block content %}
+{% if 'tipue_search' in PLUGINS %} {% extends 'base.html' %} {% block title %} {{ _('Search') }} - {{ SITENAME|striptags }} {% endblock title %} {% block content %}
 <script>
     $(document).ready(function() {
         $('#tipue_search_input').tipuesearch({
