@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Flex 2.1.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-04-20 23:39+0200\n"
+"POT-Creation-Date: 2020-04-21 18:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,13 +22,14 @@ msgstr ""
 msgid "Archives"
 msgstr ""
 
-#: templates/article.html:29 templates/blog.html:20 templates/index.html:20
+#: templates/article.html:29 templates/index.html:20
 #, python-format
 msgid "Posted on %(when)s in %(category)s"
 msgstr ""
 
-#: templates/article.html:34 templates/blog.html:32 templates/index.html:32
-msgid "%(minutes) min read"
+#: templates/article.html:34 templates/index.html:32
+#, python-format
+msgid "%(minutes)s min read"
 msgstr ""
 
 #: templates/article.html:64
@@ -64,14 +65,6 @@ msgstr ""
 msgid "RSS"
 msgstr ""
 
-#: templates/blog.html:25 templates/index.html:25
-msgid "Tagged with"
-msgstr ""
-
-#: templates/blog.html:46 templates/index.html:46
-msgid "Continue reading"
-msgstr ""
-
 #: templates/categories.html:3 templates/categories.html:8
 msgid "Categories"
 msgstr ""
@@ -79,6 +72,14 @@ msgstr ""
 #: templates/category.html:2
 #, python-format
 msgid "Category %(name)s"
+msgstr ""
+
+#: templates/index.html:25
+msgid "Tagged with"
+msgstr ""
+
+#: templates/index.html:46
+msgid "Continue reading"
 msgstr ""
 
 #: templates/search.html:3
