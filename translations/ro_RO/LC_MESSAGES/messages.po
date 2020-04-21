@@ -3,9 +3,6 @@
 # This file is distributed under the same license as the Flex project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 # 
-# Translators:
-# İlker Yürüyen <i.ilker.yuruyen@gmail.com>, 2019
-# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -13,24 +10,23 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2020-04-21 18:03+0200\n"
 "PO-Revision-Date: 2016-08-25 02:15+0000\n"
-"Last-Translator: İlker Yürüyen <i.ilker.yuruyen@gmail.com>, 2019\n"
-"Language-Team: Turkish (Turkey) (https://www.transifex.com/alexandrevicenzi/teams/66327/tr_TR/)\n"
+"Language-Team: Romanian (Romania) (https://www.transifex.com/alexandrevicenzi/teams/66327/ro_RO/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
-"Language: tr_TR\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: ro_RO\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
 
 #: templates/archives.html:3 templates/archives.html:8
 #: templates/period_archives.html:2 templates/period_archives.html:7
 msgid "Archives"
-msgstr "Arşivler"
+msgstr ""
 
 #: templates/article.html:29 templates/index.html:20
 #, python-format
 msgid "Posted on %(when)s in %(category)s"
-msgstr "%(when)s tarihinde %(category)s kategorisinde paylaşıldı"
+msgstr ""
 
 #: templates/article.html:34 templates/index.html:32
 #, python-format
@@ -39,20 +35,20 @@ msgstr ""
 
 #: templates/article.html:64
 msgid "Like this article? Share it with your friends!"
-msgstr "Bu makaleyi sevdiniz mi? Arkadaşlarınızla paylaşın!"
+msgstr ""
 
 #: templates/article.html:75
 msgid "You might enjoy"
-msgstr "Sevebilirsiniz"
+msgstr ""
 
 #: templates/author.html:2
 #, python-format
 msgid "Posts by %(name)s"
-msgstr "%(name)s kişisinin paylaşımları"
+msgstr ""
 
 #: templates/authors.html:3 templates/authors.html:8
 msgid "Authors"
-msgstr "Yazarlar"
+msgstr ""
 
 #: templates/base.html:161
 msgid "Search..."
@@ -60,32 +56,32 @@ msgstr ""
 
 #: templates/base.html:237
 msgid "Home"
-msgstr "Ana Sayfa"
+msgstr ""
 
 #: templates/base.html:244
 msgid "Atom"
-msgstr "Atom"
+msgstr ""
 
 #: templates/base.html:248
 msgid "RSS"
-msgstr "RSS"
+msgstr ""
 
 #: templates/categories.html:3 templates/categories.html:8
 msgid "Categories"
-msgstr "Kategoriler"
+msgstr ""
 
 #: templates/category.html:2
 #, python-format
 msgid "Category %(name)s"
-msgstr "%(name)s Kategorisi"
+msgstr ""
 
 #: templates/index.html:25
 msgid "Tagged with"
-msgstr "Etiket:"
+msgstr ""
 
 #: templates/index.html:46
 msgid "Continue reading"
-msgstr "Okumaya devam et"
+msgstr ""
 
 #: templates/search.html:3
 msgid "Search"
@@ -98,20 +94,20 @@ msgstr ""
 #: templates/tag.html:2
 #, python-format
 msgid "Tag %(name)s"
-msgstr "%(name)s Etiketi"
+msgstr ""
 
 #: templates/tags.html:3 templates/tags.html:8
 msgid "Tags"
-msgstr "Etiketler"
+msgstr ""
 
 #: templates/partial/disqus.html:13 templates/partial/isso.html:20
 msgid "Please enable JavaScript to view comments."
-msgstr "Yorumları görüntülemek için lütfen JavaScript'i etkinleştirin."
+msgstr ""
 
 #: templates/partial/flex.html:3
 #, python-format
 msgid "Built with %(pelican_url)s using %(flex_url)s theme"
-msgstr "%(flex_url)s teması kullanılarak %(pelican_url)s ile yapılmıştır"
+msgstr ""
 
 #: templates/partial/flex.html:10
 #, python-format
@@ -120,16 +116,16 @@ msgstr ""
 
 #: templates/partial/neighbors.html:5
 msgid "Previous Post"
-msgstr "Önceki Paylaşım"
+msgstr ""
 
 #: templates/partial/neighbors.html:10
 msgid "Next Post"
-msgstr "Sonraki Paylaşım"
+msgstr ""
 
 #: templates/partial/pagination.html:5
 msgid "Older Posts"
-msgstr "Eski Paylaşımlar"
+msgstr ""
 
 #: templates/partial/pagination.html:10
 msgid "Newer Posts"
-msgstr "Yeni Paylaşımlar"
+msgstr ""
