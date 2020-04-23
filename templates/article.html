@@ -46,6 +46,12 @@
     </script>
   {% endif %}
 
+  {% if article.toc %}
+  <div class="col-lg-3 hidden-xs hidden-sm">
+        {{article.toc}}
+  </div>
+  {% endif %}
+
   <div>
     {{ article.content }}
   </div>
