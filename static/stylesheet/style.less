@@ -699,3 +699,39 @@ div.admonition.warning {
   color: @admonition-warning-color;
   background-color: @admonition-warning-bg-color;
 }
+
+div.figure {
+  font-size: 90%;
+  color: @figure-color;
+  
+  img {
+    vertical-align: middle;
+    line-height: 1;
+    display: inline;
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  p.caption {
+    font-style: italic;
+  }
+
+  div.legend {
+    text-align: initial;
+  }
+}
+
+div.figure.align-left {
+  text-align: left;
+}
+
+div.figure.align-center {
+  text-align: center;
+}
+
+div.figure.align-right {
+  text-align: right;
+}
