@@ -47,6 +47,12 @@
   {% endif %}
 
   <div>
+    {% if article.cover_image %}
+    <figure>
+      <img src="{{ article.cover_image_url }}" alt="Cover image">
+      <figcaption>Image by <a href="{{ article.cover_image_link }}">{{ article.cover_image_by }}</a></figcaption>
+    </figure>
+    {% endif %}
     {{ article.content }}
   </div>
   <div class="tag-cloud">
