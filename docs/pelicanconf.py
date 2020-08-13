@@ -28,7 +28,7 @@ DATE_FORMATS = {
 }
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
+CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
@@ -58,21 +58,10 @@ DEFAULT_PAGINATION = 10
 DISQUS_SITENAME = "flex-pelican"
 ADD_THIS_ID = 'ra-55adbb025d4f7e55'
 
-STATIC_PATHS = ['images', 'extra']
+STATIC_PATHS = ['images', 'extra/ads.txt']
+EXTRA_PATH_METADATA = {'extra/ads.txt': {'path': 'ads.txt'},}
 
-CUSTOM_CSS = 'static/custom.css'
+THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE = True
+THEME_COLOR_ENABLE_USER_OVERRIDE = True
 
 USE_LESS = True
-
-GOOGLE_ADSENSE = {
-    'ca_id': 'ca-pub-6625957038449899',
-    'page_level_ads': True,
-    'ads': {
-        'aside': '8752710348',
-        'main_menu': '',
-        'index_top': '',
-        'index_bottom': '1124188687',
-        'article_top': '',
-        'article_bottom': '4843941849',
-    }
-}

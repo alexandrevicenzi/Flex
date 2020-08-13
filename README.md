@@ -20,6 +20,7 @@ The minimalist [Pelican](http://blog.getpelican.com/) theme.
 - Minute read (via [plugin](https://github.com/getpelican/pelican-plugins/tree/master/post_stats)) (new in 2.0)
 - [Multiple Code Highlight Styles](https://github.com/alexandrevicenzi/Flex/wiki/Code-Highlight)
 - [Translation Support](https://github.com/alexandrevicenzi/Flex/wiki/Translations) (new in 2.0)
+- [Dark Mode](https://github.com/alexandrevicenzi/Flex/wiki/Dark-Mode)
 
 ## Integrations
 
@@ -31,6 +32,7 @@ The minimalist [Pelican](http://blog.getpelican.com/) theme.
 - [Google Tag Manager](https://www.google.com/tagmanager/)
 - [Matomo Analytics (formerly Piwik)](https://matomo.org/)
 - [StatusCake](https://www.statuscake.com/)
+- [Isso](https://posativ.org/isso/)
 
 ## Plugins Support
 
@@ -40,6 +42,7 @@ The minimalist [Pelican](http://blog.getpelican.com/) theme.
 - [Related Posts](https://github.com/getpelican/pelican-plugins/tree/master/related_posts)
 - [Representative image](https://github.com/getpelican/pelican-plugins/tree/master/representative_image) (new in 2.2.0)
 - [Neighbors](https://github.com/getpelican/pelican-plugins/tree/master/neighbors) (new in 2.2.0)
+- [Tipue Search](https://github.com/getpelican/pelican-plugins/blob/master/tipue_search/)
 
 ## Install
 

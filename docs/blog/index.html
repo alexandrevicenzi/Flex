@@ -12,12 +12,22 @@
 
     <link rel="stylesheet" type="text/css" href="http://flex.alxd.me/blog/theme/stylesheet/style.min.css">
 
-  <link rel="stylesheet" type="text/css" href="http://flex.alxd.me/blog/theme/pygments/monokai.min.css">
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+          media="(prefers-color-scheme: dark)"
+    href="http://flex.alxd.me/blog/theme/stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: dark)"
+          href="http://flex.alxd.me/blog/theme/pygments/monokai.min.css">
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+          href="http://flex.alxd.me/blog/theme/pygments/monokai.min.css">
+
+
   <link rel="stylesheet" type="text/css" href="http://flex.alxd.me/blog/theme/font-awesome/css/fontawesome.css">
   <link rel="stylesheet" type="text/css" href="http://flex.alxd.me/blog/theme/font-awesome/css/brands.css">
   <link rel="stylesheet" type="text/css" href="http://flex.alxd.me/blog/theme/font-awesome/css/solid.css">
 
-    <link href="http://flex.alxd.me/blog/static/custom.css" rel="stylesheet">
 
     <link href="http://flex.alxd.me/blog/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Flex Atom">
 
@@ -63,20 +73,35 @@
     });
   </script>
 </head>
-<body>
+<body >
   <aside>
     <div>
       <a href="http://flex.alxd.me/blog">
         <img src="http://flex.alxd.me/blog/theme/img/profile.png" alt="Flex" title="Flex">
       </a>
-      <h1><a href="http://flex.alxd.me/blog">Flex</a></h1>
+
+      <h1>
+        <a href="http://flex.alxd.me/blog">Flex</a>
+      </h1>
 
 <p>The minimalist Pelican theme</p>
+
       <nav>
         <ul class="list">
 
-            <li><a target="_blank" href="http://flex.alxd.me/blog/pages/about.html#about">About</a></li>
-            <li><a target="_blank" href="http://flex.alxd.me/blog/pages/contact.html#contact">Contact</a></li>
+
+              <li>
+                <a target="_self"
+                   href="http://flex.alxd.me/blog/pages/about.html#about">
+                  About
+                </a>
+              </li>
+              <li>
+                <a target="_self"
+                   href="http://flex.alxd.me/blog/pages/contact.html#contact">
+                  Contact
+                </a>
+              </li>
 
         </ul>
       </nav>
@@ -84,14 +109,14 @@
       <ul class="social">
           <li>
             <a  class="sc-github" href="https://github.com/alexandrevicenzi/Flex" target="_blank">
-            <i class="fab fa-github">
-            </i>
-          </a></li>
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
           <li>
             <a  class="sc-rss" href="/blog/feeds/all.atom.xml" target="_blank">
-            <i class="fas fa-rss">
-            </i>
-          </a></li>
+              <i class="fas fa-rss"></i>
+            </a>
+          </li>
       </ul>
     </div>
 
@@ -102,20 +127,17 @@
       <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
-
   </aside>
   <main>
 
     <nav>
-      <a href="http://flex.alxd.me/blog">    Home
-</a>
+      <a href="http://flex.alxd.me/blog">Home</a>
 
       <a href="/archives.html">Archives</a>
       <a href="/categories.html">Categories</a>
       <a href="/tags.html">Tags</a>
 
-      <a href="http://flex.alxd.me/blog/feeds/all.atom.xml">    Atom
-</a>
+      <a href="http://flex.alxd.me/blog/feeds/all.atom.xml">Atom</a>
 
     </nav>
 
@@ -125,8 +147,7 @@
   <header>
     <h2><a href="http://flex.alxd.me/blog/flex-pelican-theme-update-2-2.html#flex-pelican-theme-update-2-2">Flex 2.2.0</a></h2>
     <p>
-          Posted on June 24, 2018 in <a href="http://flex.alxd.me/blog/category/news.html">News</a>
-
+      Posted on June 24, 2018 in <a href="http://flex.alxd.me/blog/category/news.html">News</a>
 
 
     </p>
@@ -143,8 +164,7 @@
   <header>
     <h2><a href="http://flex.alxd.me/blog/flex-pelican-theme-update-2-1.html#flex-pelican-theme-update-2-1">Flex 2.1.0</a></h2>
     <p>
-          Posted on November 16, 2016 in <a href="http://flex.alxd.me/blog/category/news.html">News</a>
-
+      Posted on November 16, 2016 in <a href="http://flex.alxd.me/blog/category/news.html">News</a>
 
 
     </p>
@@ -154,8 +174,10 @@
 <p>Flex 2.1.0 adds support for Google AdSense.</p>
 <p>If you choose wisely, ads are a way to win some money, but if not, you may loose your users due to excessive use of ads …</p>
         <br>
-        <a class="btn" href="http://flex.alxd.me/blog/flex-pelican-theme-update-2-1.html#flex-pelican-theme-update-2-1">    Continue reading
-</a>
+        <a class="btn"
+           href="http://flex.alxd.me/blog/flex-pelican-theme-update-2-1.html#flex-pelican-theme-update-2-1">
+          Continue reading
+        </a>
   </div>
   <hr />
 </article>
@@ -163,8 +185,7 @@
   <header>
     <h2><a href="http://flex.alxd.me/blog/flex-pelican-theme-update-2-0.html#flex-pelican-theme-update-2-0">Flex 2.0</a></h2>
     <p>
-          Posted on September 13, 2016 in <a href="http://flex.alxd.me/blog/category/news.html">News</a>
-
+      Posted on September 13, 2016 in <a href="http://flex.alxd.me/blog/category/news.html">News</a>
 
 
     </p>
@@ -178,8 +199,10 @@ You can read about <a href="https://github.com/alexandrevicenzi/Flex/wiki/Transl
 <p>The biggest challege was to create a way to translate without breaking old versions.
 If …</p>
         <br>
-        <a class="btn" href="http://flex.alxd.me/blog/flex-pelican-theme-update-2-0.html#flex-pelican-theme-update-2-0">    Continue reading
-</a>
+        <a class="btn"
+           href="http://flex.alxd.me/blog/flex-pelican-theme-update-2-0.html#flex-pelican-theme-update-2-0">
+          Continue reading
+        </a>
   </div>
   <hr />
 </article>
@@ -187,8 +210,7 @@ If …</p>
   <header>
     <h2><a href="http://flex.alxd.me/blog/flex-pelican-theme-update-1-2-0.html#flex-pelican-theme-update-1-2-0">Flex 1.2.0</a></h2>
     <p>
-          Posted on June 10, 2016 in <a href="http://flex.alxd.me/blog/category/news.html">News</a>
-
+      Posted on June 10, 2016 in <a href="http://flex.alxd.me/blog/category/news.html">News</a>
 
 
     </p>
@@ -202,8 +224,10 @@ If …</p>
 <li><a href="https://github.com/alexandrevicenzi/Flex/pull/27">Related posts</a></li>
 <li><a href="https://github.com/alexandrevicenzi/Flex/issues/38">More Pygments Styles …</a></li></ul>
         <br>
-        <a class="btn" href="http://flex.alxd.me/blog/flex-pelican-theme-update-1-2-0.html#flex-pelican-theme-update-1-2-0">    Continue reading
-</a>
+        <a class="btn"
+           href="http://flex.alxd.me/blog/flex-pelican-theme-update-1-2-0.html#flex-pelican-theme-update-1-2-0">
+          Continue reading
+        </a>
   </div>
   <hr />
 </article>
@@ -211,8 +235,7 @@ If …</p>
   <header>
     <h2><a href="http://flex.alxd.me/blog/flex-pelican-theme-update-1-1-1.html#flex-pelican-theme-update-1-1-1">Flex 1.1.1</a></h2>
     <p>
-          Posted on February 27, 2016 in <a href="http://flex.alxd.me/blog/category/news.html">News</a>
-
+      Posted on February 27, 2016 in <a href="http://flex.alxd.me/blog/category/news.html">News</a>
 
 
     </p>
@@ -232,8 +255,7 @@ If …</p>
   <header>
     <h2><a href="http://flex.alxd.me/blog/flex-pelican-theme-update-1-1.html#flex-pelican-theme-update-1-1">Flex 1.1.0</a></h2>
     <p>
-          Posted on October 07, 2015 in <a href="http://flex.alxd.me/blog/category/news.html">News</a>
-
+      Posted on October 07, 2015 in <a href="http://flex.alxd.me/blog/category/news.html">News</a>
 
 
     </p>
@@ -242,8 +264,10 @@ If …</p>
       <p>I've made the <a href="https://github.com/alexandrevicenzi/Flex">Flex theme</a> a time ago. For my surprise, many people are using it. I feel thankful for this.</p>
 <p>So, after some new blogs with this theme, I got issues and PRs on GitHub from these new users. This weekend I had some free time and I release …</p>
         <br>
-        <a class="btn" href="http://flex.alxd.me/blog/flex-pelican-theme-update-1-1.html#flex-pelican-theme-update-1-1">    Continue reading
-</a>
+        <a class="btn"
+           href="http://flex.alxd.me/blog/flex-pelican-theme-update-1-1.html#flex-pelican-theme-update-1-1">
+          Continue reading
+        </a>
   </div>
   <hr />
 </article>
@@ -251,8 +275,7 @@ If …</p>
   <header>
     <h2><a href="http://flex.alxd.me/blog/flex-pelican-theme.html#flex-pelican-theme">Flex: Responsive Pelican theme</a></h2>
     <p>
-          Posted on July 22, 2015 in <a href="http://flex.alxd.me/blog/category/news.html">News</a>
-
+      Posted on July 22, 2015 in <a href="http://flex.alxd.me/blog/category/news.html">News</a>
 
 
     </p>
@@ -261,8 +284,10 @@ If …</p>
       <p>I just start a new fresh blog using <a href="http://getpelican.com">Pelican</a>. Sometimes choosing a theme for a new site is something difficult that takes time.</p>
 <p>In the Pelican <a href="http://www.pelicanthemes.com/">theme gallery</a>, I couldn't find anything that I really liked to feet all my needs. So in the first time of the history, I …</p>
         <br>
-        <a class="btn" href="http://flex.alxd.me/blog/flex-pelican-theme.html#flex-pelican-theme">    Continue reading
-</a>
+        <a class="btn"
+           href="http://flex.alxd.me/blog/flex-pelican-theme.html#flex-pelican-theme">
+          Continue reading
+        </a>
   </div>
 </article>
 
@@ -278,12 +303,20 @@ If …</p>
   </script>
 
 
-
     <footer>
 <p>
-  &copy;  2019 - This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
+  &copy;  2020 - This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
 </p>
-<p>    Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+  <span class="footer-separator">|</span>
+  Switch to the <a href="javascript:void(0)" onclick="theme.switch(`dark`)">dark</a> | <a href="javascript:void(0)" onclick="theme.switch(`light`)">light</a> | <a href="javascript:void(0)" onclick="theme.switch(`browser`)">browser</a> theme
+  <script id="dark-theme-script"
+          src="http://flex.alxd.me/blog/theme/dark-theme/dark-theme.min.js"
+          data-enable-auto-detect-theme="True"
+          data-default-theme="light"
+          type="text/javascript">
+  </script>
 </p><p>
   <a rel="license"
      href="http://creativecommons.org/licenses/by-sa/4.0/"
@@ -312,6 +345,7 @@ If …</p>
   "description": "Flex - The minimalist Pelican theme."
 }
 </script>
+
 
 </body>
 </html>

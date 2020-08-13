@@ -1,7 +1,7 @@
 # Translations template for Flex.
-# Copyright (C) 2019 Alexandre Vicenzi
+# Copyright (C) 2020 Alexandre Vicenzi
 # This file is distributed under the same license as the Flex project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 # 
 # Translators:
 # Jüri Lillemets <lillemetsj@gmail.com>, 2017
@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Flex 2.1.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-01-03 00:10+0100\n"
+"POT-Creation-Date: 2020-04-21 18:03+0200\n"
 "PO-Revision-Date: 2016-08-25 02:15+0000\n"
 "Last-Translator: Jüri Lillemets <lillemetsj@gmail.com>, 2017\n"
 "Language-Team: Estonian (https://www.transifex.com/alexandrevicenzi/teams/66327/et/)\n"
@@ -22,21 +22,26 @@ msgstr ""
 "Language: et\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: templates/archives.html:2 templates/archives.html:7
+#: templates/archives.html:3 templates/archives.html:8
 #: templates/period_archives.html:2 templates/period_archives.html:7
 msgid "Archives"
 msgstr "Arhiiv"
 
-#: templates/article.html:22 templates/index.html:20
+#: templates/article.html:29 templates/index.html:20
 #, python-format
 msgid "Posted on %(when)s in %(category)s"
 msgstr "Avaldatud %(when)s kategoorias %(category)s"
 
-#: templates/article.html:57
+#: templates/article.html:34 templates/index.html:32
+#, python-format
+msgid "%(minutes)s min read"
+msgstr ""
+
+#: templates/article.html:64
 msgid "Like this article? Share it with your friends!"
 msgstr "Kui sulle see artikkel meeldis, siis jaga seda ka sõpradega!"
 
-#: templates/article.html:68
+#: templates/article.html:75
 msgid "You might enjoy"
 msgstr "Sulle võlb meeldida ka"
 
@@ -49,15 +54,19 @@ msgstr "Kõik artiklid %(name)s poolt"
 msgid "Authors"
 msgstr "Autorid"
 
-#: templates/base.html:159
+#: templates/base.html:161
+msgid "Search..."
+msgstr ""
+
+#: templates/base.html:237
 msgid "Home"
 msgstr "Avaleht"
 
-#: templates/base.html:166
+#: templates/base.html:244
 msgid "Atom"
 msgstr "Atom"
 
-#: templates/base.html:170
+#: templates/base.html:248
 msgid "RSS"
 msgstr "RSS"
 
@@ -74,9 +83,17 @@ msgstr "Kategooria %(name)s"
 msgid "Tagged with"
 msgstr "Märksõnadeks"
 
-#: templates/index.html:44
+#: templates/index.html:46
 msgid "Continue reading"
 msgstr "Loe edasi"
+
+#: templates/search.html:3
+msgid "Search"
+msgstr ""
+
+#: templates/search.html:17
+msgid "Search Results"
+msgstr ""
 
 #: templates/tag.html:2
 #, python-format
@@ -87,13 +104,18 @@ msgstr "Märksõna %(name)s"
 msgid "Tags"
 msgstr "Märksõnad"
 
-#: templates/partial/disqus.html:13
+#: templates/partial/disqus.html:13 templates/partial/isso.html:20
 msgid "Please enable JavaScript to view comments."
 msgstr "Kommentaaride nägemiseks võimaldage JavaScript."
 
-#: templates/partial/flex.html:1
+#: templates/partial/flex.html:3
 #, python-format
 msgid "Built with %(pelican_url)s using %(flex_url)s theme"
+msgstr ""
+
+#: templates/partial/flex.html:10
+#, python-format
+msgid "Switch to the %(dark_url)s | %(light_url)s | %(browser_url)s theme"
 msgstr ""
 
 #: templates/partial/neighbors.html:5

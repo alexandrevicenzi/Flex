@@ -1,3 +1,22 @@
-<p>{{ _('Built with %(pelican_url)s using %(flex_url)s theme',
-  pelican_url='<a href="http://getpelican.com" target="_blank">Pelican</a>',
-  flex_url='<a href="http://bit.ly/flex-pelican" target="_blank">Flex</a>'|safe) }}</p>
+<p>
+{{
+  _('Built with %(pelican_url)s using %(flex_url)s theme',
+    pelican_url='<a href="http://getpelican.com" target="_blank">Pelican</a>',
+    flex_url='<a href="http://bit.ly/flex-pelican" target="_blank">Flex</a>'|safe)
+}}
+{% if THEME_COLOR_ENABLE_USER_OVERRIDE %}
+  <span class="footer-separator">|</span>
+  {{
+    _('Switch to the %(dark_url)s | %(light_url)s | %(browser_url)s theme',
+      dark_url='<a href="javascript:void(0)" onclick="theme.switch(`dark`)">dark</a>',
+      light_url='<a href="javascript:void(0)" onclick="theme.switch(`light`)">light</a>',
+      browser_url='<a href="javascript:void(0)" onclick="theme.switch(`browser`)">browser</a>'|safe)
+  }}
+  <script id="dark-theme-script"
+          src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/dark-theme/dark-theme.min.js"
+          data-enable-auto-detect-theme="{{ THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE|default('false') }}"
+          data-default-theme="{{ THEME_COLOR|default('light') }}"
+          type="text/javascript">
+  </script>
+{% endif %}
+</p>

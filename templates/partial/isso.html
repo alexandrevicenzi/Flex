@@ -1,0 +1,23 @@
+{% if ISSO_URL %}
+<!-- Isso -->
+<section id="isso-thread" data-title="{{ article.title|e }}"></section>
+<script
+  type="text/javascript"
+  {% if ISSO_EMBED_JS_PATH %}
+    src="{{ ISSO_EMBED_JS_PATH }}"
+  {% else %}
+    src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/isso/isso.min.js"
+  {% endif %}
+
+  {% if ISSO_URL %}
+    data-isso="{{ ISSO_URL }}"
+  {% endif %}
+  {% for opt, val in ISSO_OPTIONS.items() %}
+    data-isso-{{ opt }}="{{ val }}"
+  {% endfor %}
+></script>
+<noscript>
+    {{ _('Please enable JavaScript to view comments.') }}
+</noscript>
+<!-- End Isso -->
+{% endif %}

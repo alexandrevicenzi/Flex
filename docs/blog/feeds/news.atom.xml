@@ -9,7 +9,7 @@
 &lt;p&gt;If you choose wisely, ads are a way to win some money, but if not, you may loose your users due to excessive use of ads.&lt;/p&gt;
 &lt;p&gt;Flex has six places for ads. Google recommends up to 3 ads per page. There is ads page only, and banner that appears on all pages.
 Below you can see how to enable ads in your pelican configuration file.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;GOOGLE_ADSENSE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;GOOGLE_ADSENSE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="s1"&gt;&amp;#39;ca_id&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;ca-pub-1234567890&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;    &lt;span class="c1"&gt;# Your AdSense ID&lt;/span&gt;
     &lt;span class="s1"&gt;&amp;#39;page_level_ads&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="bp"&gt;True&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;          &lt;span class="c1"&gt;# Allow Page Level Ads (mobile)&lt;/span&gt;
     &lt;span class="s1"&gt;&amp;#39;ads&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
@@ -21,7 +21,7 @@ Below you can see how to enable ads in your pelican configuration file.&lt;/p&gt
         &lt;span class="s1"&gt;&amp;#39;article_bottom&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;1234566&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;# Banner after article content (article only)&lt;/span&gt;
     &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Version 2.1.0 also comes with new translations. You can see available translations &lt;a href="https://github.com/alexandrevicenzi/Flex/wiki/Translations"&gt;here&lt;/a&gt;.&lt;/p&gt;
@@ -40,7 +40,7 @@ You can read about &lt;a href="https://github.com/alexandrevicenzi/Flex/wiki/Tra
 If you use English it changes nothing for you.
 But if you want to use translation you need to add new lines to your pelican configuration file.&lt;/p&gt;
 &lt;p&gt;Here is a small example to use Flex in another language.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Enable i18n plugin, probably you already have some others here.&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# Enable i18n plugin, probably you already have some others here.&lt;/span&gt;
 &lt;span class="n"&gt;PLUGINS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;i18n_subsites&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 &lt;span class="c1"&gt;# Enable Jinja2 i18n extension used to parse translations.&lt;/span&gt;
 &lt;span class="n"&gt;JINJA_EXTENSIONS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;jinja2.ext.i18n&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
@@ -50,7 +50,7 @@ But if you want to use translation you need to add new lines to your pelican con
 &lt;span class="n"&gt;DEFAULT_LANG&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;de&amp;#39;&lt;/span&gt;
 &lt;span class="n"&gt;OG_LOCALE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;de_DE&amp;#39;&lt;/span&gt;
 &lt;span class="n"&gt;LOCALE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;de_DE&amp;#39;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Last but not least, Flex supports the feature "X minute read", similar &lt;a href="https://medium.com/"&gt;Medium&lt;/a&gt;.&lt;/p&gt;
@@ -81,11 +81,11 @@ But if you want to use translation you need to add new lines to your pelican con
 &lt;p&gt;So, after some new blogs with this theme, I got issues and PRs on GitHub from these new users. This weekend I had some free time and I release the &lt;a href="https://github.com/alexandrevicenzi/Flex/releases/tag/v1.1"&gt;second version&lt;/a&gt; of Flex (aka v1.1).&lt;/p&gt;
 &lt;p&gt;This new version doesn't include nothing so special, just some bug fix and a new setting to allow custom CSS stylesheets.&lt;/p&gt;
 &lt;p&gt;The new custom setting can be used like this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;EXTRA_PATH_METADATA&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;EXTRA_PATH_METADATA&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="s1"&gt;&amp;#39;extra/custom.css&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;path&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;static/custom.css&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;},&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;span class="n"&gt;CUSTOM_CSS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;static/custom.css&amp;#39;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;I would like to thank all who helped in this new version.&lt;/p&gt;</content><category term="News"></category><category term="pelican"></category><category term="python"></category><category term="theme"></category></entry><entry><title>Flex: Responsive Pelican theme</title><link href="http://flex.alxd.me/blog/flex-pelican-theme.html" rel="alternate"></link><published>2015-07-22T08:00:00-04:00</published><updated>2015-07-22T08:00:00-04:00</updated><author><name>Alexandre Vicenzi</name></author><id>tag:flex.alxd.me,2015-07-22:/blog/flex-pelican-theme.html</id><summary type="html">&lt;p&gt;I just start a new fresh blog using &lt;a href="http://getpelican.com"&gt;Pelican&lt;/a&gt;. Sometimes choosing a theme for a new site is something difficult that takes time.&lt;/p&gt;
@@ -126,19 +126,19 @@ Mem:          5866       4674       1192        386          0       2404
 Swap:        20480       1267      19213
 &lt;/samp&gt;&lt;/p&gt;
 &lt;p&gt;If you like to share code snippets, you can take advantage of &lt;a href="http://pygments.org/"&gt;Pygments&lt;/a&gt; syntax highlighting:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;// Foo&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;// Foo&lt;/span&gt;
 &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;bar&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Foo&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;object&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Foo&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;object&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
     &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="fm"&gt;__init__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;bar&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
         &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;bar&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;bar&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ls *.jpg &lt;span class="p"&gt;|&lt;/span&gt; xargs -n1 -i cp &lt;span class="o"&gt;{}&lt;/span&gt; /external-hard-drive/directory
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;ls *.jpg &lt;span class="p"&gt;|&lt;/span&gt; xargs -n1 -i cp &lt;span class="o"&gt;{}&lt;/span&gt; /external-hard-drive/directory
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The code block looks like GitHub’s colors.&lt;/p&gt;

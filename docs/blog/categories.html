@@ -12,12 +12,22 @@
 
     <link rel="stylesheet" type="text/css" href="http://flex.alxd.me/blog/theme/stylesheet/style.min.css">
 
-  <link rel="stylesheet" type="text/css" href="http://flex.alxd.me/blog/theme/pygments/monokai.min.css">
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+          media="(prefers-color-scheme: dark)"
+    href="http://flex.alxd.me/blog/theme/stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: dark)"
+          href="http://flex.alxd.me/blog/theme/pygments/monokai.min.css">
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+          href="http://flex.alxd.me/blog/theme/pygments/monokai.min.css">
+
+
   <link rel="stylesheet" type="text/css" href="http://flex.alxd.me/blog/theme/font-awesome/css/fontawesome.css">
   <link rel="stylesheet" type="text/css" href="http://flex.alxd.me/blog/theme/font-awesome/css/brands.css">
   <link rel="stylesheet" type="text/css" href="http://flex.alxd.me/blog/theme/font-awesome/css/solid.css">
 
-    <link href="http://flex.alxd.me/blog/static/custom.css" rel="stylesheet">
 
     <link href="http://flex.alxd.me/blog/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Flex Atom">
 
@@ -53,8 +63,7 @@
 <meta property="og:locale" content="en_US"/>
 <meta property="og:url" content="http://flex.alxd.me/blog"/>
 
-  <title>Flex &ndash;     Categories
-</title>
+  <title>Flex &ndash; Categories</title>
 
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <script>
@@ -64,20 +73,35 @@
     });
   </script>
 </head>
-<body>
+<body >
   <aside>
     <div>
       <a href="http://flex.alxd.me/blog">
         <img src="http://flex.alxd.me/blog/theme/img/profile.png" alt="Flex" title="Flex">
       </a>
-      <h1><a href="http://flex.alxd.me/blog">Flex</a></h1>
+
+      <h1>
+        <a href="http://flex.alxd.me/blog">Flex</a>
+      </h1>
 
 <p>The minimalist Pelican theme</p>
+
       <nav>
         <ul class="list">
 
-            <li><a target="_blank" href="http://flex.alxd.me/blog/pages/about.html#about">About</a></li>
-            <li><a target="_blank" href="http://flex.alxd.me/blog/pages/contact.html#contact">Contact</a></li>
+
+              <li>
+                <a target="_self"
+                   href="http://flex.alxd.me/blog/pages/about.html#about">
+                  About
+                </a>
+              </li>
+              <li>
+                <a target="_self"
+                   href="http://flex.alxd.me/blog/pages/contact.html#contact">
+                  Contact
+                </a>
+              </li>
 
         </ul>
       </nav>
@@ -85,14 +109,14 @@
       <ul class="social">
           <li>
             <a  class="sc-github" href="https://github.com/alexandrevicenzi/Flex" target="_blank">
-            <i class="fab fa-github">
-            </i>
-          </a></li>
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
           <li>
             <a  class="sc-rss" href="/blog/feeds/all.atom.xml" target="_blank">
-            <i class="fas fa-rss">
-            </i>
-          </a></li>
+              <i class="fas fa-rss"></i>
+            </a>
+          </li>
       </ul>
     </div>
 
@@ -103,40 +127,47 @@
       <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
-
   </aside>
   <main>
 
     <nav>
-      <a href="http://flex.alxd.me/blog">    Home
-</a>
+      <a href="http://flex.alxd.me/blog">Home</a>
 
       <a href="/archives.html">Archives</a>
       <a href="/categories.html">Categories</a>
       <a href="/tags.html">Tags</a>
 
-      <a href="http://flex.alxd.me/blog/feeds/all.atom.xml">    Atom
-</a>
+      <a href="http://flex.alxd.me/blog/feeds/all.atom.xml">Atom</a>
 
     </nav>
 
 <article class="single">
   <header>
-    <h1 id="categories">    Categories
-</h1>
+    <h1 id="categories">Categories</h1>
   </header>
   <div>
     <ul class="list">
-      <li><a href="http://flex.alxd.me/blog/category/news.html">News</a> (7)</li>
+      <li>
+        <a href="http://flex.alxd.me/blog/category/news.html">News</a> (7)
+      </li>
     </ul>
   </div>
 </article>
 
     <footer>
 <p>
-  &copy;  2019 - This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
+  &copy;  2020 - This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
 </p>
-<p>    Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+  <span class="footer-separator">|</span>
+  Switch to the <a href="javascript:void(0)" onclick="theme.switch(`dark`)">dark</a> | <a href="javascript:void(0)" onclick="theme.switch(`light`)">light</a> | <a href="javascript:void(0)" onclick="theme.switch(`browser`)">browser</a> theme
+  <script id="dark-theme-script"
+          src="http://flex.alxd.me/blog/theme/dark-theme/dark-theme.min.js"
+          data-enable-auto-detect-theme="True"
+          data-default-theme="light"
+          type="text/javascript">
+  </script>
 </p><p>
   <a rel="license"
      href="http://creativecommons.org/licenses/by-sa/4.0/"
@@ -165,6 +196,7 @@
   "description": "Flex - The minimalist Pelican theme."
 }
 </script>
+
 
 </body>
 </html>
