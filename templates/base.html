@@ -115,6 +115,9 @@
     <meta name="msapplication-TileColor" content="{{ BROWSER_COLOR }}">
   {% endif %}
 
+  {% if REL_CANONICAL %}
+    <link rel="canonical" href="{{ SITEURL }}/{{ output_file }}">
+  {% endif %}
   {% block meta %}
     <meta name="author" content="{{ AUTHOR }}" />
     <meta name="description" content="{{ SITEDESCRIPTION }}" />
