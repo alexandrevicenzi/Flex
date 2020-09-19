@@ -10,10 +10,21 @@ jobs:
       uses: actions/checkout@v2
       with:
         submodules: true
-    - name: Change path
-      run: cd docs
+    - name: Create requirements.txt
+      uses: 1arp/create-a-file-action@0.2
+      with:
+        file: requirements.txt
+        content: |
+          pelican
+          markdown
+    - name: Create build.sh
+      uses: 1arp/create-a-file-action@0.2
+      with:
+        file: build.sh
+        content: |
+          cd docs
     - name: Build and Publish
-      uses: nelsonjchen/gh-pages-pelican-action@master
+      uses: iranzo/gh-pages-pelican-action@1.0.1
       env:
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-        PELICAN_CONFIG_FILE: docs/publishconf.py
+        PELICAN_CONFIG_FILE: publishconf.py
