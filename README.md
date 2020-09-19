@@ -4,9 +4,9 @@ The minimalist [Pelican](http://blog.getpelican.com/) theme.
 
 ## Notes
 
-- If you have questions open an issue.
-- This theme is not under development anymore, it's stable and has a lot of features. This means that new requests (not bug fixes) will be discussed and have lower priorities.
-- If you want a version of this theme to Jekyll or Hugo open an issue and let's discuss it.
+- If you have questions open an issue
+- The theme is not under huge development anymore, it's stable and has a lot of features already
+- If you want a [Hugo](https://gohugo.io/) theme check out [Soho](https://github.com/alexandrevicenzi/soho)
 
 ## Features
 
@@ -20,11 +20,11 @@ The minimalist [Pelican](http://blog.getpelican.com/) theme.
 - Minute read (via [plugin](https://github.com/getpelican/pelican-plugins/tree/master/post_stats)) (new in 2.0)
 - [Multiple Code Highlight Styles](https://github.com/alexandrevicenzi/Flex/wiki/Code-Highlight)
 - [Translation Support](https://github.com/alexandrevicenzi/Flex/wiki/Translations) (new in 2.0)
-- [Dark Mode](https://github.com/alexandrevicenzi/Flex/wiki/Dark-Mode)
+- [Dark Mode](https://github.com/alexandrevicenzi/Flex/wiki/Dark-Mode) (new in 2.3.0)
 
 ## Integrations
 
-- [AddThis](http://www.addthis.com/) Share Buttons and Related Posts
+- [AddThis](http://www.addthis.com/)
 - [Disqus](https://disqus.com/)
 - [Gauges Analytics](http://get.gaug.es/)
 - [Google AdSense](https://www.google.com.br/adsense/start/) (new in 2.1.0)
@@ -32,7 +32,7 @@ The minimalist [Pelican](http://blog.getpelican.com/) theme.
 - [Google Tag Manager](https://www.google.com/tagmanager/)
 - [Matomo Analytics (formerly Piwik)](https://matomo.org/)
 - [StatusCake](https://www.statuscake.com/)
-- [Isso](https://posativ.org/isso/)
+- [Isso](https://posativ.org/isso/) (new in 2.3.0)
 
 ## Plugins Support
 
@@ -42,7 +42,7 @@ The minimalist [Pelican](http://blog.getpelican.com/) theme.
 - [Related Posts](https://github.com/getpelican/pelican-plugins/tree/master/related_posts)
 - [Representative image](https://github.com/getpelican/pelican-plugins/tree/master/representative_image) (new in 2.2.0)
 - [Neighbors](https://github.com/getpelican/pelican-plugins/tree/master/neighbors) (new in 2.2.0)
-- [Tipue Search](https://github.com/getpelican/pelican-plugins/blob/master/tipue_search/)
+- [Tipue Search](https://github.com/getpelican/pelican-plugins/blob/master/tipue_search/) (new in 2.3.0)
 
 ## Install
 
@@ -59,7 +59,7 @@ If something is missing or broken you can open a PR or fix the documentation by 
 
 ## Live example
 
-You can see how this theme looks like at [http://flex.alxd.me/blog/](http://flex.alxd.me/blog/).
+You can see how this theme looks like at [http://flex.alxd.me/](http://flex.alxd.me/).
 
 The code is available in this project under `docs` folder.
 
