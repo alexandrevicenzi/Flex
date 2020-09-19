@@ -5,7 +5,7 @@ sys.path.append(os.curdir)
 
 from pelicanconf import *
 
-SITEURL = 'http://flex.alxd.me/blog'
+SITEURL = 'https://flex.alxd.me/'
 
 RELATIVE_URLS = False
 
