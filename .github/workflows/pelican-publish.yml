@@ -10,15 +10,17 @@ jobs:
       uses: actions/checkout@v2
       with:
         submodules: true
-    - uses: 1arp/create-a-file-action@0.2
+    - name: Create requirements.txt
+      uses: 1arp/create-a-file-action@0.2
       with:
         # path: 'docs'
         file: 'requirements.txt'
         content: |
           pelican
           markdown
-    - name: Publish
-      uses: nelsonjchen/gh-pages-pelican-action@master
+    - name: Build and Publish
+      uses: iranzo/gh-pages-pelican-action@master
       env:
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        SOURCE_FOLDER: docs
         PELICAN_CONFIG_FILE: docs/publishconf.py
