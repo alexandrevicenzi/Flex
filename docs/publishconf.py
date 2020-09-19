@@ -3,7 +3,11 @@ import sys
 
 sys.path.append(os.curdir)
 
-from pelicanconf import *
+try:
+    from pelicanconf import *
+except ImportError:
+    sys.path.append(os.path.join(os.curdir, "docs"))
+    from pelicanconf import *
 
 SITEURL = 'https://flex.alxd.me/'
 
