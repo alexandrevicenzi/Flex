@@ -18,7 +18,7 @@ PATH = 'content'
 OUTPUT_PATH = 'blog/'
 TIMEZONE = 'America/New_York'
 
-PLUGIN_PATHS = ['pelican-plugins']
+# PLUGIN_PATHS = ['pelican-plugins']
 
 # PLUGINS = ['i18n_subsites']
 
@@ -64,8 +64,12 @@ DEFAULT_PAGINATION = 10
 DISQUS_SITENAME = "flex-pelican"
 ADD_THIS_ID = 'ra-55adbb025d4f7e55'
 
-STATIC_PATHS = ['images', 'extra/ads.txt']
-EXTRA_PATH_METADATA = {'extra/ads.txt': {'path': 'ads.txt'},}
+STATIC_PATHS = ['images', 'extra/ads.txt', 'extra/CNAME']
+
+EXTRA_PATH_METADATA = {
+    'extra/ads.txt': {'path': 'ads.txt'},
+    'extra/CNAME': {'path': 'CNAME'},
+}
 
 THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE = True
 THEME_COLOR_ENABLE_USER_OVERRIDE = True
