@@ -18,6 +18,12 @@ PATH = 'content'
 OUTPUT_PATH = 'blog/'
 TIMEZONE = 'America/New_York'
 
+PLUGIN_PATHS = ['pelican-plugins']
+
+# PLUGINS = ['i18n_subsites']
+
+# JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
+
 I18N_TEMPLATES_LANG = 'en'
 DEFAULT_LANG = 'en'
 OG_LOCALE = 'en_US'
