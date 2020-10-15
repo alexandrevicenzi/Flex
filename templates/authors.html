@@ -7,7 +7,7 @@
   <header>
     <h1 id="authors">{{ _('Authors') }}</h1>
   </header>
-  <div>
+  <div class="container">
     <ul class="list">
       {% for author, articles in authors|sort %}
       <li><a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a> ({{ articles|count }})</li>

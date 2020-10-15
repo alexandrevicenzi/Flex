@@ -1,5 +1,5 @@
 {% if PLUGINS and 'neighbors' in PLUGINS %}
-  <div class="neighbors">
+  <div class="neighbors container">
   {% if article.prev_article %}
     <a class="btn float-left" href="{{ SITEURL }}/{{ article.prev_article.url }}" title="{{ article.prev_article.title|striptags }}">
       <i class="fa fa-angle-left"></i> {{ _('Previous Post') }}

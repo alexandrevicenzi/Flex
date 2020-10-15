@@ -14,6 +14,7 @@
 {% block title %} &ndash; {{ page.title }}{% endblock %}
 
 {% block content %}
+<div class="container">
 <article class="single">
   <header>
     {% import 'partial/translations.html' as translations with context %}
@@ -26,4 +27,5 @@
     {% block after_content %}{% endblock %}
   </div>
 </article>
+</div>
 {% endblock %}

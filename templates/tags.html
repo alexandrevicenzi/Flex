@@ -7,7 +7,7 @@
   <header>
     <h1 id="tags">{{ _('Tags') }}</h1>
   </header>
-  <div>
+  <div class="container">
     <ul class="list">
       {%- for tag, articles in tags|sort %}
           <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a> ({{ articles|count }})</li>
