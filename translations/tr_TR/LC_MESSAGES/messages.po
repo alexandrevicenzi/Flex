@@ -2,17 +2,16 @@
 # Copyright (C) 2020 Alexandre Vicenzi
 # This file is distributed under the same license as the Flex project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
-# 
+#
 # Translators:
 # İlker Yürüyen <i.ilker.yuruyen@gmail.com>, 2019
-# 
-#, fuzzy
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Flex 2.1.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2020-04-21 18:03+0200\n"
-"PO-Revision-Date: 2016-08-25 02:15+0000\n"
+"PO-Revision-Date: 2020-10-30 15:20+0300\n"
 "Last-Translator: İlker Yürüyen <i.ilker.yuruyen@gmail.com>, 2019\n"
 "Language-Team: Turkish (Turkey) (https://www.transifex.com/alexandrevicenzi/teams/66327/tr_TR/)\n"
 "MIME-Version: 1.0\n"
@@ -21,6 +20,7 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 "Language: tr_TR\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.4.1\n"
 
 #: templates/archives.html:3 templates/archives.html:8
 #: templates/period_archives.html:2 templates/period_archives.html:7
@@ -56,7 +56,7 @@ msgstr "Yazarlar"
 
 #: templates/base.html:161
 msgid "Search..."
-msgstr ""
+msgstr "Aranıyor…"
 
 #: templates/base.html:237
 msgid "Home"
@@ -89,11 +89,11 @@ msgstr "Okumaya devam et"
 
 #: templates/search.html:3
 msgid "Search"
-msgstr ""
+msgstr "Arama"
 
 #: templates/search.html:17
 msgid "Search Results"
-msgstr ""
+msgstr "Arama sonuçları"
 
 #: templates/tag.html:2
 #, python-format
