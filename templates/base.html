@@ -69,7 +69,7 @@
           href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/pygments/{{ PYGMENTS_STYLE|default('github') }}.min.css">
   {% endif %}
 
-  {% if 'tipue_search' in PLUGINS %}
+  {% if PLUGINS and 'tipue_search' in PLUGINS %}
     <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/tipuesearch/jquery.min.js"></script>
     <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/tipuesearch/tipuesearch.min.js"></script>
     <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/tipuesearch/tipuesearch.min.js"></script>
@@ -169,7 +169,7 @@
 
       {% if SITESUBTITLE %}<p>{{ SITESUBTITLE }}</p>{% endif %}
 
-      {% if 'tipue_search' in PLUGINS %}
+      {% if PLUGINS and 'tipue_search' in PLUGINS %}
         <form class="navbar-search" action="/search.html" role="search">
           <input type="text" name="q" id="tipue_search_input" placeholder="{{ _('Search...') }}">
         </form>
@@ -293,7 +293,7 @@
     {% include 'partial/github.html' %}
   {% endif %}
 
-  {% if 'tipue_search' in PLUGINS %}
+  {% if PLUGINS and 'tipue_search' in PLUGINS %}
     <script>
       $(document).ready(function() {
         $('#tipue_search_input').tipuesearch();

@@ -1,0 +1,3 @@
+[submodule "docs/pelican-plugins"]
+	path = docs/pelican-plugins
+	url = https://github.com/getpelican/pelican-plugins.git
