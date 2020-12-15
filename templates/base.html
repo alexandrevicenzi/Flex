@@ -102,6 +102,10 @@
   {% if GOOGLE_ANALYTICS %}
     {% include "partial/ga.html" %}
   {% endif %}
+  
+  {% if GOOGLE_GLOBAL_SITE_TAG %}
+    {% include "partial/ggst.html" %}
+  {% endif %}
 
   {% if BROWSER_COLOR %}
     <!-- Chrome, Firefox OS and Opera -->
