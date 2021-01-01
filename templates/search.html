@@ -1,0 +1,22 @@
+{% if PLUGINS and 'tipue_search' in PLUGINS %}
+{% extends 'base.html' %}
+{% block title %}{{ _('Search') }} - {{ SITENAME|striptags }}{% endblock title %}
+{% block content %}
+<script>
+    $(document).ready(function() {
+        $('#tipue_search_input').tipuesearch({
+            'show': 10,
+            'mode': 'json',
+            'contentLocation': '{{ SITEURL }}/tipuesearch_content.js'
+        });
+    });
+</script>
+
+<article class="single">
+    <header>
+        <h1 id="categories">{{ _('Search Results') }}</h1>
+    </header>
+    <div id="tipue_search_content"></div>
+</article>
+{% endblock content %}
+{% endif %}

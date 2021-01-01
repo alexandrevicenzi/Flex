@@ -30,8 +30,8 @@
            when=article.locale_date,
            category='<a href="%s/%s">%s</a>'|format(SITEURL, article.category.url, article.category)|safe) }}
 
-      {% if 'post_stats' in PLUGINS %}
-        &#8226; {{ article.stats['read_mins'] }} min read
+      {% if PLUGINS and 'post_stats' in PLUGINS %}
+        &#8226; {{ _('%(minutes)s min read', minutes=article.stats['read_mins']) }}
       {% endif %}
     </p>
   </header>
@@ -94,5 +94,6 @@
   {% endif %}
 
   {% include "partial/disqus.html" %}
+  {% include "partial/isso.html" %}
 </article>
 {% endblock %}

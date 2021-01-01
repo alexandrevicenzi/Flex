@@ -119,20 +119,19 @@ main {
   nav {
     text-align: center;
     text-transform: uppercase;
-    font-size: .72em;
     padding: 14px 0 14px 0;
     border-bottom: @nav-border-color 1px solid;
+
+    // Need to use font-size of 0 so that whitespace between the <a> tags
+    // doesn't have an affect on alignment.
+    font-size: 0;
   }
 
   nav, .translations {
     a {
-      padding: 0 4px 0 4px;
-      border-left: @nav-border-color 1px solid;
+      font-size: 12px;
+      padding: 0 4px;
       border-right: @nav-border-color 1px solid;
-    }
-
-    :first-child {
-      border-left: none;
     }
 
     :last-child {
@@ -270,6 +269,12 @@ main {
         }
       }
     }
+
+    // Add a bit of padding between each of the entry boxes in the Isso auth
+    // section. By default, they are squished together, which looks terrible.
+    section#isso-thread .auth-section .input-wrapper {
+      margin-right: 5px;
+    }
   }
 
   footer {
@@ -282,6 +287,11 @@ main {
       padding: 0 40px 0 40px;
       color: @footer-text-color;
       font-size: 11px;
+    }
+
+    // Flex credits and theme selection separator
+    span.footer-separator {
+      margin: 0 6px;
     }
   }
 }
@@ -304,7 +314,8 @@ main {
   }
 }
 
-a.btn {
+a.btn,
+section#isso-thread section.auth-section p.post-action input {
   background-color: @btn-bg;
   padding: .6em .6em;
   font-size: .8em;
@@ -313,6 +324,7 @@ a.btn {
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
+  border: none;
   border-radius: .25em;
 }
 
@@ -442,6 +454,10 @@ ul.social {
     background-color: @tumblr-bg-color;
   }
 
+  a.sc-twitch {
+    background-color: @twitch-bg-color;
+  }
+
   a.sc-twitter {
     background-color: @twitter-bg-color;
   }
@@ -480,6 +496,11 @@ ul.social {
 
   a.sc-mastodon {
     background-color: @mastodon-bg-color;
+  }
+
+  a.sc-diaspora {
+    color: @diaspora-color;
+    background-color: @diaspora-bg-color;
   }
 
   a.sc-flickr {
@@ -565,4 +586,152 @@ ul.social {
   .ads-responsive {
     height: 90px;
   }
+}
+
+// Admonition
+div.admonition {
+  margin-bottom: 2.5rem;
+  border-radius: 4px;
+  padding: 0.5em 1.25em 1.25em 1.25em;
+
+  p.admonition-title::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    font-family: "Font Awesome 5 Free";
+  }
+
+  p.admonition-title {
+    font-weight: 600;
+    line-height: 1.25em;
+    margin-bottom: 1.25em;
+    margin-top: inherit;
+  }
+
+  p, div, pre {
+    margin-bottom: 0;
+  }
+}
+
+div.admonition {
+  color: @admonition-generic-color;
+  background-color: @admonition-generic-bg-color;
+}
+
+div.admonition.attention {
+  p.admonition-title::before {
+    content: @admonition-attention-icon;
+  }
+
+  color: @admonition-attention-color;
+  background-color: @admonition-attention-bg-color;
+}
+
+div.admonition.caution {
+  p.admonition-title::before {
+    content: @admonition-caution-icon;
+  }
+
+  color: @admonition-caution-color;
+  background-color: @admonition-caution-bg-color;
+}
+
+div.admonition.danger {
+  p.admonition-title::before {
+    content: @admonition-danger-icon;
+  }
+
+  color: @admonition-danger-color;
+  background-color: @admonition-danger-bg-color;
+}
+
+div.admonition.error {
+  p.admonition-title::before {
+    content: @admonition-error-icon;
+  }
+
+  color: @admonition-error-color;
+  background-color: @admonition-error-bg-color;
+}
+
+div.admonition.hint {
+  p.admonition-title::before {
+    content: @admonition-hint-icon;
+  }
+
+  color: @admonition-hint-color;
+  background-color: @admonition-hint-bg-color;
+}
+
+div.admonition.important {
+  p.admonition-title::before {
+    content: @admonition-important-icon;
+  }
+
+  color: @admonition-important-color;
+  background-color: @admonition-important-bg-color;
+}
+
+div.admonition.note {
+  p.admonition-title::before {
+    content: @admonition-note-icon;
+  }
+
+  color: @admonition-note-color;
+  background-color: @admonition-note-bg-color;
+}
+
+div.admonition.tip {
+  p.admonition-title::before {
+    content: @admonition-tip-icon;
+  }
+
+  color: @admonition-tip-color;
+  background-color: @admonition-tip-bg-color;
+}
+
+div.admonition.warning {
+  p.admonition-title::before {
+    content: @admonition-warning-icon;
+  }
+
+  color: @admonition-warning-color;
+  background-color: @admonition-warning-bg-color;
+}
+
+div.figure {
+  font-size: 90%;
+  color: @figure-color;
+  
+  img {
+    vertical-align: middle;
+    line-height: 1;
+    display: inline;
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  p.caption {
+    font-style: italic;
+  }
+
+  div.legend {
+    text-align: initial;
+  }
+}
+
+div.figure.align-left {
+  text-align: left;
+}
+
+div.figure.align-center {
+  text-align: center;
+}
+
+div.figure.align-right {
+  text-align: right;
 }
