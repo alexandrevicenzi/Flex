@@ -33,6 +33,7 @@ The minimalist [Pelican](http://blog.getpelican.com/) theme.
 - [Matomo Analytics (formerly Piwik)](https://matomo.org/)
 - [StatusCake](https://www.statuscake.com/)
 - [Isso](https://posativ.org/isso/) (new in 2.3.0)
+- [Microsoft Clarity](https://clarity.microsoft.com)
 
 ## Plugins Support
 
