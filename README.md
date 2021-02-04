@@ -17,33 +17,33 @@ The minimalist [Pelican](http://blog.getpelican.com/) theme.
 - Open Graph
 - Rich Snippets (JSON-LD)
 - Related Posts (via [plugin](https://github.com/getpelican/pelican-plugins/tree/master/related_posts) or AddThis)
-- Minute read (via [plugin](https://github.com/getpelican/pelican-plugins/tree/master/post_stats)) (new in 2.0)
+- Minute read (via [plugin](https://github.com/getpelican/pelican-plugins/tree/master/post_stats))
 - [Multiple Code Highlight Styles](https://github.com/alexandrevicenzi/Flex/wiki/Code-Highlight)
-- [Translation Support](https://github.com/alexandrevicenzi/Flex/wiki/Translations) (new in 2.0)
-- [Dark Mode](https://github.com/alexandrevicenzi/Flex/wiki/Dark-Mode) (new in 2.3.0)
+- [Translation Support](https://github.com/alexandrevicenzi/Flex/wiki/Translations)
+- [Dark Mode](https://github.com/alexandrevicenzi/Flex/wiki/Dark-Mode)
 
 ## Integrations
 
 - [AddThis](http://www.addthis.com/)
 - [Disqus](https://disqus.com/)
 - [Gauges Analytics](http://get.gaug.es/)
-- [Google AdSense](https://www.google.com.br/adsense/start/) (new in 2.1.0)
+- [Google AdSense](https://www.google.com.br/adsense/start/)
 - [Google Analytics](https://www.google.com/analytics/web/)
 - [Google Tag Manager](https://www.google.com/tagmanager/)
 - [Matomo Analytics (formerly Piwik)](https://matomo.org/)
 - [StatusCake](https://www.statuscake.com/)
-- [Isso](https://posativ.org/isso/) (new in 2.3.0)
+- [Isso](https://posativ.org/isso/)
 - [Microsoft Clarity](https://clarity.microsoft.com)
 
 ## Plugins Support
 
-- [Github Corners](https://github.com/tholman/github-corners) (new in 2.2.0)
-- [I18N Sub-sites](https://github.com/getpelican/pelican-plugins/tree/master/i18n_subsites) (new in 2.0)
-- [Minute read](https://github.com/getpelican/pelican-plugins/tree/master/post_stats) (new in 2.0)
+- [Github Corners](https://github.com/tholman/github-corners)
+- [I18N Sub-sites](https://github.com/getpelican/pelican-plugins/tree/master/i18n_subsites)
+- [Minute read](https://github.com/getpelican/pelican-plugins/tree/master/post_stats)
 - [Related Posts](https://github.com/getpelican/pelican-plugins/tree/master/related_posts)
-- [Representative image](https://github.com/getpelican/pelican-plugins/tree/master/representative_image) (new in 2.2.0)
-- [Neighbors](https://github.com/getpelican/pelican-plugins/tree/master/neighbors) (new in 2.2.0)
-- [Tipue Search](https://github.com/getpelican/pelican-plugins/blob/master/tipue_search/) (new in 2.3.0)
+- [Representative image](https://github.com/getpelican/pelican-plugins/tree/master/representative_image)
+- [Neighbors](https://github.com/getpelican/pelican-plugins/tree/master/neighbors)
+- [Tipue Search](https://github.com/getpelican/pelican-plugins/blob/master/tipue_search/)
 
 ## Install
 

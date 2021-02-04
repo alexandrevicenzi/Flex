@@ -18,6 +18,8 @@ PATH = "content"
 OUTPUT_PATH = "blog/"
 TIMEZONE = "America/New_York"
 
+DISABLE_URL_HASH = True
+
 # PLUGIN_PATHS = ['pelican-plugins']
 
 # PLUGINS = ['i18n_subsites']
@@ -79,7 +81,3 @@ THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE = True
 THEME_COLOR_ENABLE_USER_OVERRIDE = True
 
 USE_LESS = True
-
-# GOOGLE ANALYTICS
-# For Google Analytics 4 use. Note that for old Google Analytics ('UA-XXXXX') the GOOGLE_ANALYTICS variable is included in publishconfig.py
-# GOOGLE_GLOBAL_SITE_TAG = 'G-XXXXX'
