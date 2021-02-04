@@ -58,6 +58,7 @@ CC_LICENSE = {
     "name": "Creative Commons Attribution-ShareAlike",
     "version": "4.0",
     "slug": "by-sa",
+    "icon": True,
 }
 
 COPYRIGHT_YEAR = datetime.now().year

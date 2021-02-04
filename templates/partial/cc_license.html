@@ -3,6 +3,7 @@
 </p>
 {% include "partial/flex.html" %}
 <p>
+  {% if CC_LICENSE['icon'] != False %}
   <a rel="license"
      href="http://creativecommons.org/licenses/{{ CC_LICENSE['slug'] }}/{{ CC_LICENSE['version'] }}/"
      target="_blank">
@@ -17,6 +18,7 @@
          width="80"
          height="15"/>
   </a>
+  {% endif %}
   {% if STATUSCAKE %}
     {% include "partial/statuscake.html" %}
   {% endif %}
