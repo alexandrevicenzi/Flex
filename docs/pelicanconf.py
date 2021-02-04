@@ -55,10 +55,11 @@ MENUITEMS = (
 )
 
 CC_LICENSE = {
-    "name": "Creative Commons Attribution-ShareAlike",
+    "name": "Creative Commons Attribution-ShareAlike 4.0 International License",
     "version": "4.0",
     "slug": "by-sa",
     "icon": True,
+    "language": "en_US",
 }
 
 COPYRIGHT_YEAR = datetime.now().year
