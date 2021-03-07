@@ -182,7 +182,7 @@
         </form>
       {% endif %}
 
-      {% if pages or LINKS %}
+      {% if (pages and DISPLAY_PAGES_ON_MENU) or LINKS %}
       <nav>
         <ul class="list">
           {# Open links in new window depending on the LINKS_IN_NEW_TAB setting #}
