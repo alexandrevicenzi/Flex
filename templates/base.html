@@ -114,19 +114,22 @@
     <meta name="msapplication-TileColor" content="{{ BROWSER_COLOR }}">
   {% endif %}
 
-  {% if REL_CANONICAL %}
-    {% if page %}
-      <link rel="canonical" href="{{ SITEURL }}/{{ page.url }}">
-    {% elif article %}
-      <link rel="canonical" href="{{ SITEURL }}/{{ article.url }}">
-    {% elif page_name == 'index' and not articles_previous_page %}
-      <link rel="canonical" href="{{ SITEURL }}">
-    {% elif author or category or tag or page_name == 'index' %}
-      <link rel="canonical" href="{{ SITEURL }}/{{ articles_page.url }}">
-    {% else %}
-      <link rel="canonical" href="{{ SITEURL }}/{{ output_file }}">
+  {% if not PLUGINS or 'seo' not in PLUGINS %}
+    {% if REL_CANONICAL %}
+      {% if page %}
+        <link rel="canonical" href="{{ SITEURL }}/{{ page.url }}">
+      {% elif article %}
+        <link rel="canonical" href="{{ SITEURL }}/{{ article.url }}">
+      {% elif page_name == 'index' and not articles_previous_page %}
+        <link rel="canonical" href="{{ SITEURL }}">
+      {% elif author or category or tag or page_name == 'index' %}
+        <link rel="canonical" href="{{ SITEURL }}/{{ articles_page.url }}">
+      {% else %}
+        <link rel="canonical" href="{{ SITEURL }}/{{ output_file }}">
+      {% endif %}
     {% endif %}
-  {% endif %}
+  {% endif %} 
+
   {% block meta %}
     <meta name="author" content="{{ AUTHOR }}" />
     <meta name="description" content="{{ SITEDESCRIPTION }}" />
