@@ -190,6 +190,7 @@ main {
     }
 
     blockquote {
+      margin: 0;
       padding: 10px 20px;
       font-weight: 300;
       font-size: 1.1em;
@@ -535,9 +536,9 @@ ul.social {
     width: 25vw;
     height: 100vh;
     position: fixed;
+    z-index: 1000;
     top: 0;
     left: 0;
-    overflow-y: auto;
 
     div {
       padding: 36px 18px;
@@ -558,18 +559,12 @@ ul.social {
   }
 
   main {
-    width: 75vw;
     height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 25vw;
-    overflow-x: hidden;
+    position: relative;
+    padding-left: 25vw;
 
     article {
-
-      &.single {
-        min-height: 80vh;
-      }
+      max-width: 760px;
 
       ul.list {
         li {

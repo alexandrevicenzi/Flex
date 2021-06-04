@@ -1,10 +1,10 @@
-# Russian translations for Flex.
+# Finnish (Finland) translations for Flex.
 # Copyright (C) 2020 Alexandre Vicenzi
 # This file is distributed under the same license as the Flex project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
 # Translators:
-# Roman Saldygashev <sldg.roman@gmail.com>, 2016
+# i r, 2021
 #, fuzzy
 msgid ""
 msgstr ""
@@ -12,10 +12,10 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2020-12-01 20:21+0100\n"
 "PO-Revision-Date: 2016-08-25 02:15+0000\n"
-"Last-Translator: Roman Saldygashev <sldg.roman@gmail.com>, 2016\n"
-"Language: ru\n"
-"Language-Team: Russian (https://www.transifex.com/alexandrevicenzi/teams/66327/ru/)\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3)\n"
+"Last-Translator: i r, 2021\n"
+"Language: fi_FI\n"
+"Language-Team: Finnish (Finland) (https://www.transifex.com/alexandrevicenzi/teams/66327/fi_FI/)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,46 +24,46 @@ msgstr ""
 #: templates/archives.html:3 templates/archives.html:8
 #: templates/period_archives.html:2 templates/period_archives.html:7
 msgid "Archives"
-msgstr "Архивы"
+msgstr "Arkisto"
 
 #: templates/article.html:29 templates/index.html:20
 #, python-format
 msgid "Posted on %(when)s in %(category)s"
-msgstr "Опубликовано %(when)s в %(category)s"
+msgstr "Julkaistu %(when)s kategoriassa %(category)s"
 
 #: templates/article.html:34 templates/index.html:32
 #, python-format
 msgid "%(minutes)s min read"
-msgstr ""
+msgstr "%(minutes)s min"
 
 #: templates/article.html:64
 msgid "Like this article? Share it with your friends!"
-msgstr "Понравилась статья? Поделись с друзьями!"
+msgstr "Piditkö tästä postauksesta? Jaa se kavereillesi!"
 
 #: templates/article.html:75
 msgid "You might enjoy"
-msgstr "Наслаждайся"
+msgstr "Voisit pitää myös näistä"
 
 #: templates/author.html:2
 #, python-format
 msgid "Posts by %(name)s"
-msgstr "Опубликовано %(name)s"
+msgstr "Kirjoittajan %(name)s postaukset"
 
 #: templates/authors.html:3 templates/authors.html:8
 msgid "Authors"
-msgstr "Авторы"
+msgstr "Kirjoittajat"
 
 #: templates/base.html:161
 msgid "Search..."
-msgstr ""
+msgstr "Hae..."
 
 #: templates/base.html:237
 msgid "Home"
-msgstr "Главная"
+msgstr "Koti"
 
 #: templates/base.html:244
 msgid "Atom"
-msgstr "Атом"
+msgstr "Atom"
 
 #: templates/base.html:248
 msgid "RSS"
@@ -71,65 +71,65 @@ msgstr "RSS"
 
 #: templates/categories.html:3 templates/categories.html:8
 msgid "Categories"
-msgstr "Категории"
+msgstr "Kategoriat"
 
 #: templates/category.html:2
 #, python-format
 msgid "Category %(name)s"
-msgstr "Категория %(name)s"
+msgstr "Kategoria %(name)s"
 
 #: templates/index.html:25
 msgid "Tagged with"
-msgstr "Помечено"
+msgstr "Tägit:"
 
 #: templates/index.html:46
 msgid "Continue reading"
-msgstr "Продолжить чтение"
+msgstr "Jatka lukemista"
 
 #: templates/search.html:3
 msgid "Search"
-msgstr ""
+msgstr "Haku"
 
 #: templates/search.html:17
 msgid "Search Results"
-msgstr ""
+msgstr "Hakutulokset"
 
 #: templates/tag.html:2
 #, python-format
 msgid "Tag %(name)s"
-msgstr "Тэг %(name)s"
+msgstr "Tägi %(name)s"
 
 #: templates/tags.html:3 templates/tags.html:8
 msgid "Tags"
-msgstr "Тэги"
+msgstr "Tägit"
 
 #: templates/partial/disqus.html:13 templates/partial/isso.html:20
 msgid "Please enable JavaScript to view comments."
-msgstr "Пожалуйста включите JavaScript, чтобы просмотреть комментарии."
+msgstr "Ole hyvä ja laita JavaScript päälle nähdäksesi kommentit."
 
 #: templates/partial/flex.html:3
 #, python-format
 msgid "Built with %(pelican_url)s using %(flex_url)s theme"
-msgstr ""
+msgstr "Rakennettu %(pelican_url)s-generaattoria ja %(flex_url)s-teemaa käyttäen"
 
 #: templates/partial/flex.html:10
 #, python-format
 msgid "Switch to the %(dark_url)s | %(light_url)s | %(browser_url)s theme"
-msgstr ""
+msgstr "Vaihda teemaa: %(dark_url)s | %(light_url)s | %(browser_url)s"
 
 #: templates/partial/neighbors.html:5
 msgid "Previous Post"
-msgstr ""
+msgstr "Edellinen postaus"
 
 #: templates/partial/neighbors.html:10
 msgid "Next Post"
-msgstr ""
+msgstr "Seuraava postaus"
 
 #: templates/partial/pagination.html:5
 msgid "Older Posts"
-msgstr "Старые сообщения"
+msgstr "Vanhemmat postaukset"
 
 #: templates/partial/pagination.html:10
 msgid "Newer Posts"
-msgstr "Новые сообщения"
+msgstr "Uudemmat postaukset"
 

@@ -18,7 +18,7 @@
   {% endif %}
 
   {% if USE_GOOGLE_FONTS != False %}
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
   {% endif %}
 
   {% if USE_LESS %}
@@ -69,12 +69,7 @@
           href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/pygments/{{ PYGMENTS_STYLE|default('github') }}.min.css">
   {% endif %}
 
-  {% if 'tipue_search' in PLUGINS %}
-    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/tipuesearch/jquery.min.js"></script>
-    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/tipuesearch/tipuesearch.min.js"></script>
-    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/tipuesearch/tipuesearch.min.js"></script>
-    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/tipuesearch/tipuesearch_set.min.js"></script>
-    <script src="{{ SITEURL }}/tipuesearch_content.js"></script>
+  {% if PLUGINS and 'tipue_search' in PLUGINS %}
     <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/tipuesearch/tipuesearch.min.css" />
   {% endif %}
 
@@ -102,6 +97,10 @@
   {% if GOOGLE_ANALYTICS %}
     {% include "partial/ga.html" %}
   {% endif %}
+  
+  {% if GOOGLE_GLOBAL_SITE_TAG %}
+    {% include "partial/ggst.html" %}
+  {% endif %}
 
   {% if BROWSER_COLOR %}
     <!-- Chrome, Firefox OS and Opera -->
@@ -115,6 +114,19 @@
     <meta name="msapplication-TileColor" content="{{ BROWSER_COLOR }}">
   {% endif %}
 
+  {% if REL_CANONICAL %}
+    {% if page %}
+      <link rel="canonical" href="{{ SITEURL }}/{{ page.url }}">
+    {% elif article %}
+      <link rel="canonical" href="{{ SITEURL }}/{{ article.url }}">
+    {% elif page_name == 'index' and not articles_previous_page %}
+      <link rel="canonical" href="{{ SITEURL }}">
+    {% elif author or category or tag or page_name == 'index' %}
+      <link rel="canonical" href="{{ SITEURL }}/{{ articles_page.url }}">
+    {% else %}
+      <link rel="canonical" href="{{ SITEURL }}/{{ output_file }}">
+    {% endif %}
+  {% endif %}
   {% block meta %}
     <meta name="author" content="{{ AUTHOR }}" />
     <meta name="description" content="{{ SITEDESCRIPTION }}" />
@@ -134,6 +146,9 @@
   {% endif %}
   {% if GOOGLE_TAG_MANAGER %}
     {% include "partial/gtm.html" %}
+  {% endif %}
+  {% if MICROSOFT_CLARITY %}
+    {% include "partial/clarity.html" %}
   {% endif %}
 </head>
 <body {% if not THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE %}class="{{ THEME_COLOR|default('light') }}-theme"{% endif %}>
@@ -156,13 +171,13 @@
 
       {% if SITESUBTITLE %}<p>{{ SITESUBTITLE }}</p>{% endif %}
 
-      {% if 'tipue_search' in PLUGINS %}
+      {% if PLUGINS and 'tipue_search' in PLUGINS %}
         <form class="navbar-search" action="/search.html" role="search">
           <input type="text" name="q" id="tipue_search_input" placeholder="{{ _('Search...') }}">
         </form>
       {% endif %}
 
-      {% if pages or LINKS %}
+      {% if (pages and DISPLAY_PAGES_ON_MENU) or LINKS %}
       <nav>
         <ul class="list">
           {# Open links in new window depending on the LINKS_IN_NEW_TAB setting #}
@@ -278,14 +293,6 @@
 
   {% if GITHUB_CORNER_URL %}
     {% include 'partial/github.html' %}
-  {% endif %}
-
-  {% if 'tipue_search' in PLUGINS %}
-    <script>
-      $(document).ready(function() {
-        $('#tipue_search_input').tipuesearch();
-      });
-    </script>
   {% endif %}
 
   {% block additional_js %}{% endblock %}

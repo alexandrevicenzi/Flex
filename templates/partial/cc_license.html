@@ -1,8 +1,15 @@
 <p>
-  &copy; {{ COPYRIGHT_NAME }} {{ COPYRIGHT_YEAR }} - This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/{{ CC_LICENSE['slug'] }}/{{ CC_LICENSE['version'] }}/">{{ CC_LICENSE['name'] }} {{ CC_LICENSE['version'] }} International License</a>
+  {% set cc_slug = CC_LICENSE['slug'] %}
+  {% set cc_name = CC_LICENSE['name'] %}
+  {% set cc_version = CC_LICENSE['version'] %}
+  {% set cc_lang = CC_LICENSE['language'] or "en_US" %}
+  {% set cc_url = "http://creativecommons.org/licenses/{}/{}/deed.{}".format(cc_slug, cc_version, cc_lang) %}
+  &copy; {{ COPYRIGHT_YEAR }} {{ COPYRIGHT_NAME }} - {{ _('This work is licensed under a %(cc)s',
+   cc='<a rel="license" href="{}" target="_blank">{}</a>'.format(cc_url, cc_name)|safe) }}
 </p>
 {% include "partial/flex.html" %}
 <p>
+  {% if CC_LICENSE['icon'] != False %}
   <a rel="license"
      href="http://creativecommons.org/licenses/{{ CC_LICENSE['slug'] }}/{{ CC_LICENSE['version'] }}/"
      target="_blank">
@@ -17,6 +24,7 @@
          width="80"
          height="15"/>
   </a>
+  {% endif %}
   {% if STATUSCAKE %}
     {% include "partial/statuscake.html" %}
   {% endif %}

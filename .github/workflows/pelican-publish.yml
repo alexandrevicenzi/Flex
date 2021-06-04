@@ -1,0 +1,25 @@
+name: Pelican Build
+on:
+  push:
+    branches: [ master ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        submodules: true
+    - name: Create requirements.txt
+      uses: 1arp/create-a-file-action@0.2
+      with:
+        file: requirements.txt
+        content: |
+          pelican
+          markdown
+    - name: Build and Publish
+      uses: iranzo/gh-pages-pelican-action@1.0.1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        SOURCE_FOLDER: docs/content
+        PELICAN_CONFIG_FILE: docs/publishconf.py
