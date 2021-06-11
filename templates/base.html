@@ -1,7 +1,9 @@
-{% if 'jinja2.ext.i18n' not in JINJA_ENVIRONMENT.extensions and 'jinja2.ext.i18n' not in JINJA_EXTENSIONS %}
-  {%- macro _(msg) -%}
-    {{ msg % kwargs }}
-  {%- endmacro -%}
+{% if 'jinja2.ext.i18n' not in JINJA_ENVIRONMENT.extensions %}
+  {% if JINJA_EXTENSIONS is not defined or 'jinja2.ext.i18n' not in JINJA_EXTENSIONS %}
+    {%- macro _(msg) -%}
+      {{ msg % kwargs }}
+    {%- endmacro -%}
+  {% endif %}
 {% endif %}
 
 <!DOCTYPE html>
