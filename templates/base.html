@@ -120,7 +120,7 @@
     {% elif article %}
       <link rel="canonical" href="{{ SITEURL }}/{{ article.url }}">
     {% elif page_name == 'index' and not articles_previous_page %}
-      <link rel="canonical" href="{{ SITEURL }}">
+      <link rel="canonical" href="{{ SITEURL }}/">
     {% elif author or category or tag or page_name == 'index' %}
       <link rel="canonical" href="{{ SITEURL }}/{{ articles_page.url }}">
     {% else %}
@@ -157,7 +157,7 @@
   {% endif %}
   <aside>
     <div>
-      <a href="{{ SITEURL }}">
+      <a href="{{ SITEURL }}/">
         {% if SITELOGO %}
         <img src="{{ SITELOGO }}" alt="{{ SITETITLE }}" title="{{ SITETITLE }}">
         {% else %}
@@ -166,7 +166,7 @@
       </a>
 
       <h1>
-        <a href="{{ SITEURL }}">{{ SITETITLE }}</a>
+        <a href="{{ SITEURL }}/">{{ SITETITLE }}</a>
       </h1>
 
       {% if SITESUBTITLE %}<p>{{ SITESUBTITLE }}</p>{% endif %}
@@ -249,7 +249,7 @@
 
     {% if MAIN_MENU %}
     <nav>
-      <a href="{{ SITEURL }}">{{ _('Home') }}</a>
+      <a href="{{ SITEURL }}/">{{ _('Home') }}</a>
 
       {% for title, link in MENUITEMS %}
       <a href="{{ link }}">{{ _(title) }}</a>
