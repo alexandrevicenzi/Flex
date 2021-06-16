@@ -1,4 +1,4 @@
-{% if 'jinja2.ext.i18n' not in JINJA_ENVIRONMENT.extensions and 'jinja2.ext.i18n' not in JINJA_EXTENSIONS %}
+{% if 'jinja2.ext.i18n' not in JINJA_ENVIRONMENT.extensions %}
   {%- macro _(msg) -%}
     {{ msg % kwargs }}
   {%- endmacro -%}
@@ -160,7 +160,7 @@
   {% endif %}
   <aside>
     <div>
-      <a href="{{ SITEURL }}">
+      <a href="{{ SITEURL }}/">
         {% if SITELOGO %}
         <img src="{{ SITELOGO }}" alt="{{ SITETITLE }}" title="{{ SITETITLE }}">
         {% else %}
@@ -169,7 +169,7 @@
       </a>
 
       <h1>
-        <a href="{{ SITEURL }}">{{ SITETITLE }}</a>
+        <a href="{{ SITEURL }}/">{{ SITETITLE }}</a>
       </h1>
 
       {% if SITESUBTITLE %}<p>{{ SITESUBTITLE }}</p>{% endif %}
@@ -252,7 +252,7 @@
 
     {% if MAIN_MENU %}
     <nav>
-      <a href="{{ SITEURL }}">{{ _('Home') }}</a>
+      <a href="{{ SITEURL }}/">{{ _('Home') }}</a>
 
       {% for title, link in MENUITEMS %}
       <a href="{{ link }}">{{ _(title) }}</a>
