@@ -1,4 +1,4 @@
-{% if 'jinja2.ext.i18n' not in JINJA_ENVIRONMENT.extensions and 'jinja2.ext.i18n' not in JINJA_EXTENSIONS %}
+{% if 'jinja2.ext.i18n' not in JINJA_ENVIRONMENT.extensions %}
   {%- macro _(msg) -%}
     {{ msg % kwargs }}
   {%- endmacro -%}
