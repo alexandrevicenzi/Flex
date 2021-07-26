@@ -38,7 +38,7 @@
       {% if  article.featured_image %}
         <img src="{{ article.featured_image }}">
       {% endif %}
-      <p>{{ article.summary }}</p>
+      <div>{{ article.summary }}</div>
       {% if article.content != article.summary %}
         <br>
         <a class="btn"
