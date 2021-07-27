@@ -52,6 +52,7 @@
   <div class="tag-cloud">
     <p>
       {% if article.tags %}
+      <span>{{ _('Read more about') }}</span>
       {% for tag in article.tags %}
       <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
       {% endfor %}
