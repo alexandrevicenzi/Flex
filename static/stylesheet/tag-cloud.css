@@ -1,0 +1,9 @@
+.tag-cloud span {
+ padding-right: .4em;
+ font-size: 80%;
+}
+
+.tag-cloud p {
+ margin-top: 4em;
+}
+
