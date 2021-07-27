@@ -1,0 +1,29 @@
+ul.tagcloud {
+ list-style: none;
+ padding: 0 3em 0 1.5em;
+ width: fit-content;
+}
+
+ul.tagcloud li {
+ display: inline-block;
+}
+
+li.tag-1 {
+ font-size: 150%;
+}
+
+li.tag-2 {
+ font-size: 120%;
+}
+
+li.tag-3 {
+ font-size: 100%;
+}
+
+li.tag-4 {
+ font-size: 85%;
+}
+
+li.tag-5 {
+ font-size: 75%;
+}
