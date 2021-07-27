@@ -2,12 +2,33 @@
 
 {% block title %} &ndash; {{ _('Tags') }}{% endblock %}
 
+{% block meta %}
+  {% if PLUGINS and 'tag_cloud' in PLUGINS %}
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stylesheet/tag_cloud.css">
+  {% endif %}
+{% endblock %}
+
 {% block content %}
 <article class="single">
   <header>
     <h1 id="tags">{{ _('Tags') }}</h1>
   </header>
-  <div>
+
+  {% if PLUGINS and 'tag_cloud' in PLUGINS %}
+    <div>
+      <h2 id="tag_cloud">{{ _('Tag Cloud') }}</h2>
+      <ul class="tagcloud">
+          {% for tag in tag_cloud %}
+              <li class="tag-{{ tag.1 }}"><a href="{{ SITEURL }}/{{ tag.0.url }}">{{ tag.0 }}</a></li>
+          {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <h2 id="tag_list">{{ _('Tag List') }}</h2>
+  {% endif %}
+  {% if not PLUGINS or 'tag_cloud' not in PLUGINS %}
+    <div>
+  {% endif %}
     <ul class="list">
       {%- for tag, articles in tags|sort %}
           <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a> ({{ articles|count }})</li>
@@ -16,3 +37,4 @@
   </div>
 </article>
 {% endblock %}
+
