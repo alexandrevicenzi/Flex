@@ -1,6 +1,6 @@
 ul.tagcloud {
  list-style: none;
- padding: 0 3em 0 1.5em;
+ padding: 0 3em 0 0;
  width: fit-content;
 }
 
