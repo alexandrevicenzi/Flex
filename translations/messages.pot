@@ -95,16 +95,8 @@ msgstr ""
 msgid "Tag %(name)s"
 msgstr ""
 
-#: templates/tags.html:3 templates/tags.html:14
+#: templates/tags.html:3 templates/tags.html:8
 msgid "Tags"
-msgstr ""
-
-#: templates/tags.html:19
-msgid "Tag Cloud"
-msgstr ""
-
-#: templates/tags.html:27
-msgid "Tag List"
 msgstr ""
 
 #: templates/partial/disqus.html:13 templates/partial/isso.html:20
