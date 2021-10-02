@@ -1,3 +1,11 @@
+## 2.4.0
+
+- Update translations (Italian, Spanish, Portuguese, German, Turkish)
+- Include settings for canonical URLS [#238](https://github.com/alexandrevicenzi/Flex/issues/238)
+- Remove pelican plugins dependency [#255](https://github.com/alexandrevicenzi/Flex/issues/255)
+
+This version includes cs, de, en, es, es_ES, et, fa_IR, fr, hu_HU, id, it, nl_NL, pl_PL, pt, pt_BR, pt_PT, ro_RO, ru, tr_TR, zh_CN translations.
+
 ## 2.3.0
 
 - Support dark theme [#213](https://github.com/alexandrevicenzi/Flex/pull/213)
