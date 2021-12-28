@@ -1,4 +1,4 @@
-{% if PLUGINS and 'tipue_search' in PLUGINS %}
+{% if PLUGINS and ('tipue_search' in PLUGINS or 'pelican.plugins.tipue_search' in PLUGINS) %}
 {% extends 'base.html' %}
 {% block title %}{{ _('Search') }} - {{ SITENAME|striptags }}{% endblock title %}
 {% block content %}
