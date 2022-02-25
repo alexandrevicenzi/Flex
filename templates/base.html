@@ -1,4 +1,4 @@
-{% if 'jinja2.ext.i18n' not in JINJA_ENVIRONMENT.extensions and 'jinja2.ext.i18n' not in JINJA_EXTENSIONS %}
+{% if 'jinja2.ext.i18n' not in JINJA_ENVIRONMENT.extensions %}
   {%- macro _(msg) -%}
     {{ msg % kwargs }}
   {%- endmacro -%}
@@ -70,6 +70,9 @@
   {% endif %}
 
   {% if PLUGINS and 'tipue_search' in PLUGINS %}
+      {% if USE_GOOGLE_FONTS != False %}
+      <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Open+Sans" rel="stylesheet">
+      {% endif %}
     <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/tipuesearch/tipuesearch.min.css" />
   {% endif %}
 
@@ -78,7 +81,7 @@
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/font-awesome/css/solid.css">
 
   {% if CUSTOM_CSS %}
-    <link href="{{ SITEURL }}/{{ CUSTOM_CSS }}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ CUSTOM_CSS }}">
   {% endif %}
 
   {% if FEED_ALL_ATOM %}
@@ -114,19 +117,22 @@
     <meta name="msapplication-TileColor" content="{{ BROWSER_COLOR }}">
   {% endif %}
 
-  {% if REL_CANONICAL %}
-    {% if page %}
-      <link rel="canonical" href="{{ SITEURL }}/{{ page.url }}">
-    {% elif article %}
-      <link rel="canonical" href="{{ SITEURL }}/{{ article.url }}">
-    {% elif page_name == 'index' and not articles_previous_page %}
-      <link rel="canonical" href="{{ SITEURL }}">
-    {% elif author or category or tag or page_name == 'index' %}
-      <link rel="canonical" href="{{ SITEURL }}/{{ articles_page.url }}">
-    {% else %}
-      <link rel="canonical" href="{{ SITEURL }}/{{ output_file }}">
+  {% if not PLUGINS or 'seo' not in PLUGINS %}
+    {% if REL_CANONICAL %}
+      {% if page %}
+        <link rel="canonical" href="{{ SITEURL }}/{{ page.url }}">
+      {% elif article %}
+        <link rel="canonical" href="{{ SITEURL }}/{{ article.url }}">
+      {% elif page_name == 'index' and not articles_previous_page %}
+        <link rel="canonical" href="{{ SITEURL }}">
+      {% elif author or category or tag or page_name == 'index' %}
+        <link rel="canonical" href="{{ SITEURL }}/{{ articles_page.url }}">
+      {% else %}
+        <link rel="canonical" href="{{ SITEURL }}/{{ output_file }}">
+      {% endif %}
     {% endif %}
-  {% endif %}
+  {% endif %} 
+
   {% block meta %}
     <meta name="author" content="{{ AUTHOR }}" />
     <meta name="description" content="{{ SITEDESCRIPTION }}" />
@@ -157,7 +163,7 @@
   {% endif %}
   <aside>
     <div>
-      <a href="{{ SITEURL }}">
+      <a href="{{ SITEURL }}/">
         {% if SITELOGO %}
         <img src="{{ SITELOGO }}" alt="{{ SITETITLE }}" title="{{ SITETITLE }}">
         {% else %}
@@ -166,13 +172,13 @@
       </a>
 
       <h1>
-        <a href="{{ SITEURL }}">{{ SITETITLE }}</a>
+        <a href="{{ SITEURL }}/">{{ SITETITLE }}</a>
       </h1>
 
       {% if SITESUBTITLE %}<p>{{ SITESUBTITLE }}</p>{% endif %}
 
       {% if PLUGINS and 'tipue_search' in PLUGINS %}
-        <form class="navbar-search" action="/search.html" role="search">
+        <form class="navbar-search" action="{{ SITEURL }}/search.html" role="search">
           <input type="text" name="q" id="tipue_search_input" placeholder="{{ _('Search...') }}">
         </form>
       {% endif %}
@@ -249,7 +255,7 @@
 
     {% if MAIN_MENU %}
     <nav>
-      <a href="{{ SITEURL }}">{{ _('Home') }}</a>
+      <a href="{{ SITEURL }}/">{{ _('Home') }}</a>
 
       {% for title, link in MENUITEMS %}
       <a href="{{ link }}">{{ _(title) }}</a>

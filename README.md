@@ -44,6 +44,7 @@ The minimalist [Pelican](http://blog.getpelican.com/) theme.
 - [Representative image](https://github.com/getpelican/pelican-plugins/tree/master/representative_image)
 - [Neighbors](https://github.com/getpelican/pelican-plugins/tree/master/neighbors)
 - [Tipue Search](https://github.com/getpelican/pelican-plugins/blob/master/tipue_search/)
+- [SEO](https://github.com/pelican-plugins/seo)
 
 ## Install
 
