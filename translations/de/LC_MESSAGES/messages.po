@@ -111,7 +111,7 @@ msgstr "Bitte JavaScript aktivieren um die Kommentare zu sehen."
 #: templates/partial/flex.html:3
 #, python-format
 msgid "Built with %(pelican_url)s using %(flex_url)s theme"
-msgstr "Gebaut mit %(pelican_url)s und dem %(flex_url)stheme"
+msgstr "Gebaut mit %(pelican_url)s und dem %(flex_url)s theme"
 
 #: templates/partial/flex.html:10
 #, python-format
