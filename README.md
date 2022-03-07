@@ -43,6 +43,7 @@ The minimalist [Pelican](http://blog.getpelican.com/) theme.
 - [Related Posts](https://github.com/getpelican/pelican-plugins/tree/master/related_posts)
 - [Representative image](https://github.com/getpelican/pelican-plugins/tree/master/representative_image)
 - [Neighbors](https://github.com/getpelican/pelican-plugins/tree/master/neighbors)
+- [Pelican Search](https://github.com/pelican-plugins/search)
 - [Tipue Search](https://github.com/getpelican/pelican-plugins/blob/master/tipue_search/)
 - [SEO](https://github.com/pelican-plugins/seo)
 
