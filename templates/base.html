@@ -78,10 +78,7 @@
   {% endif %}
 
   {% if PLUGINS and 'pelican.plugins.search' in PLUGINS %}
-    {% if THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE or not THEME_COLOR or THEME_COLOR == "light" %}
       <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stork/stork-dark.css" />
-    {% endif %}
-
   {% endif %}
 
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/font-awesome/css/fontawesome.css">
@@ -316,17 +313,6 @@
 
   {% block additional_js %}{% endblock %}
   
-  {% if PLUGINS and 'pelican.plugins.search' in PLUGINS %}
-  {% if STORK_VERSION %}
-  <script src="https://files.stork-search.net/releases/v{{ STORK_VERSION }}/stork.js"></script>
-  <script>
-    {% else %}
-    <script src="{{ SITEURL }}/static/stork.js"></script>
-  <script>
-          stork.initialize("{{ SITEURL }}/static/stork.wasm")
-          {% endif %}
-          stork.register("sitesearch", "{{ SITEURL }}/search-index.st", {showProgress: false})
-  </script>
-  {% endif %}
+  {% include 'partial/stork_search.html' %}
 </body>
 </html>
