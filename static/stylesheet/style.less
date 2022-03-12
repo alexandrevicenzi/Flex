@@ -717,21 +717,26 @@ div.admonition.warning {
   background-color: @admonition-warning-bg-color;
 }
 
-div.figure {
+figure,div.figure {
   font-size: 90%;
   color: @figure-color;
-  
+
+  figcaption {
+    margin-top: 0.5em;
+    text-align: center;
+  }
+
   img {
     vertical-align: middle;
     line-height: 1;
     display: inline;
   }
-  
+
   p {
     margin-top: 0;
     margin-bottom: 0;
   }
-  
+
   p.caption {
     font-style: italic;
   }
@@ -741,14 +746,19 @@ div.figure {
   }
 }
 
-div.figure.align-left {
+figure.align-left,div.figure.align-left {
   text-align: left;
 }
 
-div.figure.align-center {
+figure.align-center,div.figure.align-center {
   text-align: center;
 }
 
-div.figure.align-right {
+figure.align-right,div.figure.align-right {
   text-align: right;
+}
+
+figure.border,div.figure.border {
+  border: 2px solid @med-grey;
+  padding: 7px;
 }
