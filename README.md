@@ -64,6 +64,10 @@ Always open an issue before sending a PR.
 Discuss the problem/feature that you want to code.
 After discussing, send a PR with your changes.
 
+Thank you to all contributors!
+
+- [Loïc Penaud](https://github.com/lpenaud)
+
 ## License
 
 MIT ([full license](LICENSE))
