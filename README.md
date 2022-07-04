@@ -50,7 +50,7 @@ Then point your `THEME` setting in the pelican project to the path of the theme.
 
 ## Settings
 
-Look at [settings documentation](docs/settings) for details.
+Look at [settings documentation](docs/settings.md) for details.
 
 ## Sites using Reflex
 
