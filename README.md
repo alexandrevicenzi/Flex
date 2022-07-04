@@ -64,6 +64,8 @@ Always open an issue before sending a PR.
 Discuss the problem/feature that you want to code.
 After discussing, send a PR with your changes.
 
+See the [development documentation](docs/developing.md).
+
 Thank you to all contributors!
 
 - [Loïc Penaud](https://github.com/lpenaud)
