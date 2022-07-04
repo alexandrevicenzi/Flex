@@ -1,3 +1,3 @@
-# Flex Blog Example
+# Reflex documentation
 
-Visit [http://flex.alxd.me/](http://flex.alxd.me/).
+Some of these files contain content originally written for the [Flex wiki](https://github.com/alexandrevicenzi/Flex/wiki).
