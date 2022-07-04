@@ -276,6 +276,28 @@ main {
     section#isso-thread .auth-section .input-wrapper {
       margin-right: 5px;
     }
+
+    // Table of Contents Markdown extension:
+    // https://python-markdown.github.io/extensions/toc/
+    .toc {
+      border: 1px solid @light-orange;
+      margin-top: 2em;
+      padding: 1em;
+
+      .toctitle {
+        font-size: 1.3em
+      }
+
+      ul {
+        list-style: none;
+        margin-bottom: 0;
+        padding: 0;
+
+        li {
+          padding: 0.3em 0 0.3em 0;
+        }
+      }
+    }
   }
 
   footer {
