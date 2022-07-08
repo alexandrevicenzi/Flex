@@ -73,7 +73,12 @@
       {% if USE_GOOGLE_FONTS != False %}
       <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Open+Sans" rel="stylesheet">
       {% endif %}
-    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/tipuesearch/tipuesearch.min.css" />
+    <link rel="stylesheet" 
+    href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/tipuesearch/tipuesearch.min.css" />
+  {% endif %}
+
+  {% if PLUGINS and 'pelican.plugins.search' in PLUGINS %}
+      <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stork/stork-dark.css" />
   {% endif %}
 
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/font-awesome/css/fontawesome.css">
@@ -182,7 +187,12 @@
           <input type="text" name="q" id="tipue_search_input" placeholder="{{ _('Search...') }}">
         </form>
       {% endif %}
-
+      {% if PLUGINS and 'pelican.plugins.search' in PLUGINS %}
+        <div class="stork-wrapper-dark">
+          <input class="stork-input" type="text" name="q" data-stork="sitesearch" placeholder="{{ _('Search...') }}"/>
+          <div class="stork-output" data-stork="sitesearch-output"></div>
+        </div>
+      {% endif %}
       {% if (pages and DISPLAY_PAGES_ON_MENU) or LINKS %}
       <nav>
         <ul class="list">
@@ -302,5 +312,7 @@
   {% endif %}
 
   {% block additional_js %}{% endblock %}
+  
+  {% include 'partial/stork_search.html' %}
 </body>
 </html>
