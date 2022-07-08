@@ -11,7 +11,7 @@
 {% endif %}
 {% endblock %}
 
-{% block title %} &ndash; {{ page.title }}{% endblock %}
+{% block title %} &ndash; {{ page.title|striptags|escape }}{% endblock %}
 
 {% block content %}
 <article class="single">
