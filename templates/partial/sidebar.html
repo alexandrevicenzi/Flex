@@ -68,11 +68,16 @@
     {% endif %}
 
     {% if SOCIAL %}
+    {% set solid = ['at', 'envelope', 'mailbox', 'rss'] %}
+    {% set relme = ['at', 'envelope', 'mailbox', 'mastodon'] %}
     <ul class="social">
       {% for name, link in SOCIAL %}
       <li>
-        <a {% if name == 'mastodon' %}rel="me"{% endif %} class="sc-{{ name }}" href="{{ link }}" target="_blank">
-          <i class="{% if name in ['envelope', 'rss'] %}fas{% else %}fab{% endif %} fa-{{ name }}"></i>
+        <a class="sc-{{ name }}"
+           {% if name in relme %}rel="me"{% endif %}
+           href="{{ link }}"
+           target="_blank">
+          <i class="{% if name in solid %}fa-solid{% else %}fa-brands{% endif %} fa-{{ name }}"></i>
         </a>
       </li>
       {% endfor %}
