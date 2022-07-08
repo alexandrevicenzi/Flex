@@ -18,7 +18,7 @@
 {% block title %} &ndash; {{ article.title|striptags|escape }}{% endblock %}
 
 {% block content %}
-<article class="single">
+<article>
   <header>
     {% if not ARTICLE_HIDE_TRANSLATION %}
       {% import 'partial/translations.html' as translations with context %}

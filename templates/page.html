@@ -14,7 +14,7 @@
 {% block title %} &ndash; {{ page.title|striptags|escape }}{% endblock %}
 
 {% block content %}
-<article class="single">
+<article>
   <header>
     {% import 'partial/translations.html' as translations with context %}
     {{ translations.translations_for(page) }}
