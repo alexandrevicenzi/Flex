@@ -1,4 +1,4 @@
-<!-- Matomo -->
+{% if (PIWIK_URL and PIWIK_SITE_ID) or (MATOMO_URL and MATOMO_SITE_ID) %}
 <script type="text/javascript">
   var _paq = window._paq || [];
   _paq.push(['trackPageView']);
@@ -12,4 +12,4 @@
   })();
 </script>
 <noscript><p><img src="https://{{ MATOMO_URL or PIWIK_URL }}/matomo.php?idsite={{ MATOMO_SITE_ID or PIWIK_SITE_ID }}&rec=1" style="border:0" alt="" /></p></noscript>
-<!-- End Matomo Code -->
+{% endif %}

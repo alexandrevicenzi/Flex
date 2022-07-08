@@ -1,4 +1,4 @@
-<!-- Google Tag Manager -->
+{% if GOOGLE_TAG_MANAGER %}
 <script>
   (function(w,d,s,l,i){
     w[l]=w[l]||[];
@@ -9,4 +9,4 @@
     f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','{{ GOOGLE_TAG_MANAGER }}');
 </script>
-<!-- End Google Tag Manager -->
+{% endif %}

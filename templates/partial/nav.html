@@ -1,0 +1,17 @@
+{% if MAIN_MENU %}
+<nav>
+  <a href="{{ SITEURL }}/">{{ _('Home') }}</a>
+
+  {% for title, link in MENUITEMS %}
+  <a href="{{ link }}">{{ _(title) }}</a>
+  {% endfor %}
+
+  {% if FEED_ALL_ATOM %}
+  <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">{{ _('Atom') }}</a>
+  {% endif %}
+
+  {% if FEED_ALL_RSS %}
+  <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}">{{ _('RSS') }}</a>
+  {% endif %}
+</nav>
+{% endif %}
