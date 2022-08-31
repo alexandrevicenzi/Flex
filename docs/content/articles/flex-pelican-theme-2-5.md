@@ -9,7 +9,7 @@ Cover: images/flex-screenshot.png
 [Flex theme](https://github.com/alexandrevicenzi/Flex) 2.5.0 comes with minor fixes and big improvments.
 
 - Added support for [Pelican Search](https://github.com/pelican-plugins/search) plugin as [Tipue Search](https://github.com/getpelican/pelican-plugins/tree/master/tipue_search) is deprecated
-  - Tipue Search support will be removed in Flex 3.0
+    - Tipue Search support will be removed in Flex 3.0
 - Added support for [SEO](https://github.com/pelican-plugins/seo) plugin
 - Added support for [Series](https://github.com/pelican-plugins/series) plugin
 - Added support for [Microsoft Clarity](https://clarity.microsoft.com/)
