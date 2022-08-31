@@ -1,0 +1,14 @@
+{% if 'pelican.plugins.related_posts' in PLUGINS %}
+  {% if article.related_posts %}
+  <div class="related-posts">
+    <h5>{{ _('You might enjoy') }}</h5>
+    <ul>
+      {% for related_post in article.related_posts %}
+      <li>
+        <a href="{{ SITEURL }}/{{ related_post.url }}">{{ related_post.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+{% endif %}
