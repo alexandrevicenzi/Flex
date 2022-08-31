@@ -36,6 +36,15 @@ main {
   }
 
   article {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      unicode-bidi:plaintext;
+      text-align:start;
+    }
     kbd {
       background-color: #080808;
       color: @light-grey;
@@ -55,6 +64,12 @@ main {
         color: white;
       }
     }
+
+    p{
+      unicode-bidi:plaintext;
+      text-align:start;
+      }
+    
 
     section#isso-thread {
       div.textarea,
@@ -102,6 +117,11 @@ main {
 
   footer {
     border-top-color: @footer-border-color-dark-theme;
+
+    li{
+      unicode-bidi:plaintext;
+      text-align:start;
+    }
   }
 }
 

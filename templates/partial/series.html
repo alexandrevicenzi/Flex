@@ -1,0 +1,37 @@
+{% if 'pelican.plugins.series' in PLUGINS %}
+  {% if article.series %}
+  <div class="related-posts">
+    <h4>{{ _('Part %(index)s of the "%(name)s" series', index=article.series.index, name=article.series.name) }}</h4>
+
+    {% if article.series.all_previous %}
+    {% if article.series.all_previous|length > 1 %}
+    <h5>{{ _('Previous articles') }}</h5>
+    {% else %}
+    <h5>{{ _('Previous article') }}</h5>
+    {% endif %}
+    <ul>
+      {% for article in article.series.all_previous %}
+      <li>
+        <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    {% if article.series.all_next %}
+    {% if article.series.all_next|length > 1 %}
+    <h5>{{ _('Next articles') }}</h5>
+    {% else %}
+    <h5>{{ _('Next article') }}</h5>
+    {% endif %}
+    <ul>
+      {% for article in article.series.all_next %}
+      <li>
+        <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+  {% endif %}
+{% endif %}

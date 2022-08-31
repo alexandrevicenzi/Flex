@@ -13,6 +13,8 @@ h5,
 h6 {
   font-weight: 300;
   line-height: 1.1;
+  unicode-bidi:plaintext;
+  text-align:start;
 }
 
 h1{
@@ -53,6 +55,11 @@ a {
   color: @link-color;
   text-decoration: none;
 }
+
+p{
+  unicode-bidi:plaintext;
+  text-align:start;
+  }
 
 a:hover {
   color: @link-hover-color;
@@ -114,6 +121,7 @@ aside {
     }
   }
 }
+
 
 main {
   nav {
