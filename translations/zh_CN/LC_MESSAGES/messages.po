@@ -1,12 +1,13 @@
-# Chinese (Simplified, China) translations for Flex.
+# Translations template for Flex.
 # Copyright (C) 2020 Alexandre Vicenzi
 # This file is distributed under the same license as the Flex project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
-#
+# 
 # Translators:
 # Shiao Qu <whisperzzzz@icloud.com>, 2016
 # a2c1471d1cd73a676b800725acec033c_035a6a6 <7c743bc6ac83171e35a5aa8bd66cc1ea_775282>, 2019
 # Qian Gu <guqian110@163.com>, 2020
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -15,13 +16,13 @@ msgstr ""
 "POT-Creation-Date: 2020-12-01 20:21+0100\n"
 "PO-Revision-Date: 2016-08-25 02:15+0000\n"
 "Last-Translator: Qian Gu <guqian110@163.com>, 2020\n"
-"Language: zh_CN\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/alexandrevicenzi/teams/66327/zh_CN/)\n"
-"Plural-Forms: nplurals=1; plural=0\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: templates/archives.html:3 templates/archives.html:8
 #: templates/period_archives.html:2 templates/period_archives.html:7
@@ -134,4 +135,3 @@ msgstr "更旧的文章"
 #: templates/partial/pagination.html:10
 msgid "Newer Posts"
 msgstr "更新的文章"
-
