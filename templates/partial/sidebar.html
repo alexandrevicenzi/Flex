@@ -22,8 +22,8 @@
       <input type="text" name="q" id="tipue_search_input" placeholder="{{ _('Search...') }}">
     </form>
     {% elif 'pelican.plugins.search' in PLUGINS %}
-    <div class="stork-wrapper-dark">
-      <input class="stork-input" type="text" name="q" data-stork="sitesearch" placeholder="{{ _('Search...') }}"/>
+    <div class="stork">
+      <input class="stork-input" type="text" autocomplete="off" name="q" data-stork="sitesearch" placeholder="{{ _('Search...') }}"/>
       <div class="stork-output" data-stork="sitesearch-output"></div>
     </div>
     {% endif %}

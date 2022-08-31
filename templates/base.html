@@ -77,8 +77,10 @@
     href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/tipuesearch/tipuesearch.min.css" />
   {% endif %}
 
-  {% if PLUGINS and 'pelican.plugins.search' in PLUGINS %}
-    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stork/stork-dark.css" />
+  {% if 'pelican.plugins.search' in PLUGINS %}
+  <link rel="stylesheet"
+        type="text/css"
+        href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stork/stork.css" />
   {% endif %}
 
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/font-awesome/css/fontawesome.css">

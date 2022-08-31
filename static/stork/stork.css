@@ -1,0 +1,149 @@
+.stork {
+  position: relative;
+  font-family: inherit;
+  box-sizing: border-box;
+  font-size: 1em;
+  padding: unset;
+}
+
+.stork *,
+.stork *:before,
+.stork *:after {
+  box-sizing: border-box;
+}
+
+.stork .stork-input {
+  width: 100%;
+  padding: 0.4em 0.8em;
+  border: none;
+  font-family: inherit;
+}
+
+.stork .stork-progress {
+  position: absolute;
+  display: block;
+  content: "";
+  bottom: 1px;
+  height: 1px;
+  transition: width 0.25s ease, opacity 0.4s ease 0.4s;
+}
+
+.stork .stork-output {
+  position: absolute;
+  width: 100%;
+  margin-top: 0.5em;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  font-weight: 400;
+  font-family: inherit;
+  text-align: unset;
+  padding: unset;
+}
+
+.stork a:link,
+.stork a:visited {
+  color: #d9421e;
+}
+
+.stork .stork-output-visible {
+  background: #353434;
+  border: 1px solid #d9421e;
+}
+
+.stork .stork-message {
+  width: 100%;
+  padding: 0.5em 1em;
+}
+
+.stork .stork-attribution {
+  width: 100%;
+  padding: 0.5em 1em;
+  font-size: 0.8em;
+}
+
+.stork .stork-results {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+  max-height: 25em;
+  overflow-y: scroll;
+}
+
+.stork .stork-result a:link {
+  padding: 1em;
+  display: block;
+  text-decoration: none;
+}
+
+.stork .stork-result p {
+  margin: 0;
+}
+
+.stork .stork-title {
+  padding: unset;
+  font-weight: bold;
+  font-size: 0.95em;
+  margin: 0;
+
+  /* Flexbox container for the title and the score, when debugging */
+  display: flex;
+  justify-content: space-between;
+}
+
+.stork .stork-excerpt {
+  font-size: 0.8em;
+  line-height: 1;
+  margin: 0;
+  color: var(--text-invert);
+  padding: unset;
+
+  /* Flexbox container for the title and the score, when debugging */
+  display: flex;
+  justify-content: space-between;
+}
+
+.stork .stork-excerpt:not(:last-of-type) {
+  margin-bottom: 0.6em;
+}
+
+.stork .stork-highlight {
+  padding: 0 0.1em;
+}
+
+.stork .stork-error {
+  outline: 2px solid #c92a2a;
+}
+
+.stork .stork-close-button {
+  position: absolute;
+  right: 0;
+  margin: 0.25em 0.25em;
+  height: 1.2em;
+  width: 1.2em;
+  padding: 0px;
+  border: none;
+  font-size: 1em;
+  color: hsl(0, 0%, 50%);
+  line-height: 1;
+}
+
+.stork .stork-close-button svg {
+  width: 0.8em;
+  position: relative;
+  top: 1px;
+}
+
+.stork .stork-close-button:hover {
+  background: hsla(0, 0%, 78%);
+  cursor: pointer;
+}
+
+.stork .stork-close-button:active {
+  background: hsla(0, 0%, 65%);
+}
+
+.stork-excerpt-container {
+  padding: 0;
+}
