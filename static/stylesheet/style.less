@@ -712,21 +712,28 @@ div.admonition.warning {
   background-color: @admonition-warning-bg-color;
 }
 
+figure,
 div.figure {
   font-size: 90%;
   color: @figure-color;
-  
+
+  figcaption {
+    margin-top: 0.5em;
+    text-align: center;
+    color: @text-color;
+  }
+
   img {
     vertical-align: middle;
     line-height: 1;
     display: inline;
   }
-  
+
   p {
     margin-top: 0;
     margin-bottom: 0;
   }
-  
+
   p.caption {
     font-style: italic;
   }
@@ -736,14 +743,17 @@ div.figure {
   }
 }
 
+figure.align-left,
 div.figure.align-left {
   text-align: left;
 }
 
+figure.align-center,
 div.figure.align-center {
   text-align: center;
 }
 
+figure.align-right,
 div.figure.align-right {
   text-align: right;
 }
