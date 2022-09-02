@@ -40,5 +40,14 @@ gulp.task('pygments', function () {
         .pipe(gulp.dest('./static/pygments'));
 });
 
+gulp.task('watch-less', function () {
+    return gulp.watch('static/stylesheet/*.less', gulp.task('less'));
+});
+
+gulp.task('watch-js', function () {
+    return gulp.watch('static/dark-theme/!(*.min).js', gulp.task('uglify'));
+})
 
 gulp.task('default', gulp.series(['less', 'uglify', 'cp', 'pygments']));
+
+gulp.task('watch', gulp.series('default', gulp.parallel('watch-less', 'watch-js')));

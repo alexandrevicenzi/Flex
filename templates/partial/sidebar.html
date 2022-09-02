@@ -1,0 +1,97 @@
+<aside>
+  <div>
+    <a href="{{ SITEURL }}/">
+      {% if SITELOGO %}
+      <img src="{{ SITELOGO }}" alt="{{ SITETITLE }}" title="{{ SITETITLE }}">
+      {% else %}
+      <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/profile.png" alt="{{ SITETITLE }}" title="{{ SITETITLE }}">
+      {% endif %}
+    </a>
+
+    <h1>
+      <a href="{{ SITEURL }}/">{{ SITETITLE }}</a>
+    </h1>
+
+    {% if SITESUBTITLE %}
+    <p>{{ SITESUBTITLE }}</p>
+    {% endif %}
+
+    {% if PLUGINS %}
+    {% if ('tipue_search' in PLUGINS or 'pelican.plugins.tipue_search' in PLUGINS) %}
+    <form class="navbar-search" action="{{ SITEURL }}/search.html" role="search">
+      <input type="text" name="q" id="tipue_search_input" placeholder="{{ _('Search...') }}">
+    </form>
+    {% elif 'pelican.plugins.search' in PLUGINS %}
+    <div class="stork">
+      <input class="stork-input" type="text" autocomplete="off" name="q" data-stork="sitesearch" placeholder="{{ _('Search...') }}"/>
+      <div class="stork-output" data-stork="sitesearch-output"></div>
+    </div>
+    {% endif %}
+    {% endif %}
+
+    {% if (pages and DISPLAY_PAGES_ON_MENU) or LINKS %}
+    <nav>
+      <ul class="list">
+        {# Open links in new window depending on the LINKS_IN_NEW_TAB setting #}
+        {% macro get_target(link) -%}
+          {%- if LINKS_IN_NEW_TAB in ('all', true) -%}
+          _blank
+          {%- elif LINKS_IN_NEW_TAB == "external" and not link.startswith("/") and not link.startswith(SITEURL) -%}
+          _blank
+          {%- else -%}
+          _self
+          {%- endif -%}
+        {%- endmacro %}
+
+        {% if PAGES_SORT_ATTRIBUTE -%}
+          {% set pages = pages|sort(attribute=PAGES_SORT_ATTRIBUTE) %}
+        {%- endif %}
+
+        {% if DISPLAY_PAGES_ON_MENU %}
+          {% for page in pages %}
+            <li>
+              <a target="{{ get_target(SITEURL) }}"
+                 href="{{ SITEURL }}/{{ page.url }}{% if not DISABLE_URL_HASH %}#{{ page.slug }}{% endif %}">
+                {{ page.title }}
+              </a>
+            </li>
+          {% endfor %}
+        {% endif %}
+
+        {% for name, link in LINKS %}
+          <li>
+            <a target="{{ get_target(link) }}" href="{{ link }}" >{{ name }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+    {% endif %}
+
+    {% if SOCIAL %}
+    {% set solid = ['at', 'envelope', 'mailbox', 'rss'] %}
+    {% set relme = ['at', 'envelope', 'mailbox', 'mastodon'] %}
+    <ul class="social">
+      {% for name, link in SOCIAL %}
+      <li>
+        <a class="sc-{{ name }}"
+           {% if name in relme %}rel="me"{% endif %}
+           href="{{ link }}"
+           target="_blank">
+          <i class="{% if name in solid %}fa-solid{% else %}fa-brands{% endif %} fa-{{ name }}"></i>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+
+  {% if GOOGLE_ADSENSE and GOOGLE_ADSENSE.ads.aside %}
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle ads-aside"
+         data-ad-client="{{ GOOGLE_ADSENSE.ca_id }}"
+         data-ad-slot="{{ GOOGLE_ADSENSE.ads.aside }}"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  {% endif %}
+</aside>

@@ -45,6 +45,8 @@ USE_FOLDER_AS_CATEGORY = False
 MAIN_MENU = True
 HOME_HIDE_TAGS = True
 
+GITHUB_CORNER_URL = "https://github.com/alexandrevicenzi/Flex"
+
 SOCIAL = (
     ("github", "https://github.com/alexandrevicenzi/Flex"),
     ("rss", "/blog/feeds/all.atom.xml"),

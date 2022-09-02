@@ -1,0 +1,11 @@
+{% if BROWSER_COLOR %}
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="{{ BROWSER_COLOR }}">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="{{ BROWSER_COLOR }}">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- Microsoft EDGE -->
+  <meta name="msapplication-TileColor" content="{{ BROWSER_COLOR }}">
+{% endif %}

@@ -1,0 +1,13 @@
+{% if 'pelican.plugins.search' in PLUGINS %}
+  {% if STORK_VERSION %}
+  <script src="https://files.stork-search.net/releases/v{{ STORK_VERSION }}/stork.js"></script>
+  <script>
+    stork.register("sitesearch", "{{ SITEURL }}/search-index.st", {showProgress: false});
+  </script>
+  {% else %}
+  <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stork/stork.js"></script>
+  <script>
+    stork.register("sitesearch", "{{ SITEURL }}/search-index.st", {showProgress: false});
+  </script>
+  {% endif %}
+{% endif %}

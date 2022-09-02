@@ -1,10 +1,11 @@
-# Indonesian translations for Flex.
+# Translations template for Flex.
 # Copyright (C) 2020 Alexandre Vicenzi
 # This file is distributed under the same license as the Flex project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
-#
+# 
 # Translators:
 # Yongkie Wiyogo <yongkie.wiyogo@gmail.com>, 2018
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -13,13 +14,13 @@ msgstr ""
 "POT-Creation-Date: 2020-12-01 20:21+0100\n"
 "PO-Revision-Date: 2016-08-25 02:15+0000\n"
 "Last-Translator: Yongkie Wiyogo <yongkie.wiyogo@gmail.com>, 2018\n"
-"Language: id\n"
 "Language-Team: Indonesian (https://www.transifex.com/alexandrevicenzi/teams/66327/id/)\n"
-"Plural-Forms: nplurals=1; plural=0\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
+"Language: id\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: templates/archives.html:3 templates/archives.html:8
 #: templates/period_archives.html:2 templates/period_archives.html:7
@@ -132,4 +133,3 @@ msgstr "Tulisan lama"
 #: templates/partial/pagination.html:10
 msgid "Newer Posts"
 msgstr "Tulisan baru"
-
