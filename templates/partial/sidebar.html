@@ -23,7 +23,7 @@
     </form>
     {% elif 'pelican.plugins.search' in PLUGINS %}
     <div class="stork">
-      <input class="stork-input" type="text" autocomplete="off" name="q" data-stork="sitesearch" placeholder="{{ _('Search...') }}"/>
+      <input class="stork-input" type="text" autocomplete="off" name="q" data-stork="sitesearch" placeholder="{{ _('Search...') }}" onclick="loadStorkIndex()"/>
       <div class="stork-output" data-stork="sitesearch-output"></div>
     </div>
     {% endif %}
