@@ -1,6 +1,9 @@
 {% if 'pelican.plugins.search' in PLUGINS %}
   <script>
     window.loadStorkIndex = function () {
+      {% if not STORK_VERSION %}
+      stork.initialize("{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stork/stork.wasm")
+      {% endif %}
       stork.register("sitesearch", "{{ SITEURL }}/search-index.st", { showProgress: false });
     }
   </script>
