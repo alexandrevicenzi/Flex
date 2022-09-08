@@ -104,6 +104,13 @@
     <link rel="pgpkey" type="application/pgp-keys" href="{{ SITEURL }}/{{ PGP_KEY }}">
   {% endif %}
 
+  {% if WEBMENTION_URL %}
+    <link rel="webmention" href="{{ WEBMENTION_URL }}" />
+  {% endif %}
+  {% if PINGBACK_URL %}
+    <link rel="pingback" href="{{ PINGBACK_URL }}" />
+  {% endif %}
+
   {% if not PLUGINS or 'seo' not in PLUGINS %}
     {% if REL_CANONICAL %}
       {% if page %}
