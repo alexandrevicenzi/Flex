@@ -100,6 +100,10 @@
   {% include "partial/ga.html" %}
   {% include "partial/ggst.html" %}
 
+  {% if PGP_KEY %}
+    <link rel="pgpkey" type="application/pgp-keys" href="{{ SITEURL }}/{{ PGP_KEY }}">
+  {% endif %}
+
   {% if not PLUGINS or 'seo' not in PLUGINS %}
     {% if REL_CANONICAL %}
       {% if page %}
