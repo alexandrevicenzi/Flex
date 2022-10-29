@@ -100,6 +100,8 @@
   {% include "partial/ga.html" %}
   {% include "partial/ggst.html" %}
 
+  {% include "partial/plausible.html" %}
+
   {% if not PLUGINS or 'seo' not in PLUGINS %}
     {% if REL_CANONICAL %}
       {% if page %}
