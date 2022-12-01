@@ -32,6 +32,7 @@ The minimalist [Pelican](http://blog.getpelican.com/) theme.
 - [Google Analytics](https://www.google.com/analytics/web/)
 - [Google Tag Manager](https://www.google.com/tagmanager/)
 - [Matomo Analytics (formerly Piwik)](https://matomo.org/)
+- [Plausible](https://plausible.io/)
 - [StatusCake](https://www.statuscake.com/)
 - [Isso](https://posativ.org/isso/)
 - [Microsoft Clarity](https://clarity.microsoft.com)
