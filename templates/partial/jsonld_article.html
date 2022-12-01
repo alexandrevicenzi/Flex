@@ -1,4 +1,4 @@
-{% if not PLUGINS or 'seo' not in PLUGINS %}
+{% if not PLUGINS or 'seo' not in PLUGINS or 'pelican.plugins.seo' not in PLUGINS%}
   {% if SITELOGO %}
     {% set default_cover = SITELOGO %}
   {% else %}

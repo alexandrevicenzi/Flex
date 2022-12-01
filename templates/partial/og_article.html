@@ -1,4 +1,4 @@
-{% if not PLUGINS or 'seo' not in PLUGINS %}
+{% if not PLUGINS or 'seo' not in PLUGINS or 'pelican.plugins.seo' not in PLUGINS %}
   {% if OG_LOCALE %}
     {% set default_locale = OG_LOCALE %}
   {% else %}

@@ -2,14 +2,14 @@
 {% extends 'base.html' %}
 {% block title %}{{ _('Search') }} - {{ SITENAME|striptags }}{% endblock title %}
 {% block content %}
+
 <article class="single">
   <header>
     <h1 id="categories">{{ _('Search Results') }}</h1>
   </header>
   <div id="tipue_search_content"></div>
 </article>
-{% endblock content %}
-{% block additional_js %}
+{% endblock content %} {% block additional_js %}
 <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/tipuesearch/jquery.min.js"></script>
 <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/tipuesearch/tipuesearch.min.js"></script>
 <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/tipuesearch/tipuesearch_set.min.js"></script>
@@ -23,5 +23,4 @@
     });
   });
 </script>
-{% endblock additional_js %}
-{% endif %}
+{% endblock %} {% endif %}
