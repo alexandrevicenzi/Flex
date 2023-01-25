@@ -155,6 +155,18 @@ main {
     }
   }
 
+  header {
+    max-width: 760px;
+
+    .translations {
+      float: right;
+
+      .active {
+        font-weight: 600;
+      }
+    }
+  }
+
   article {
     margin: 0 8% 2% 8%;
 
@@ -166,14 +178,6 @@ main {
       p {
         color: @header-text-color;
         font-size: 0.86em;
-      }
-
-      .translations {
-        float: right;
-
-        .active {
-          font-weight: 600;
-        }
       }
     }
 

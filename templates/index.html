@@ -12,6 +12,17 @@
   </script>
 {% endif %}
 
+<header>
+{% if extra_siteurls %}
+<div class="translations">
+    <a class="active" href="{{ articles_page.url }}">{{ DEFAULT_LANG }}</a>
+    {% for lang, url in extra_siteurls.items() %}
+      <a href="{{ url }}/{{ articles_page.url }}">{{ lang }}</a>
+    {% endfor %}
+  </div>
+{% endif %}
+</header>
+
 {% for article in articles_page.object_list %}
 <article>
   <header>
