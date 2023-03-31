@@ -3,6 +3,7 @@
 ### Breaking changes
 
 - Removed Tipue Search, use [Pelican Search](https://github.com/pelican-plugins/search) instead.
+- Removed StatusCake integration
 
 ## 2.5.0
 
