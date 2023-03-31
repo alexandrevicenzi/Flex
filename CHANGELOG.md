@@ -1,3 +1,9 @@
+## 3.0.0
+
+### Breaking changes
+
+- Removed Tipue Search, use [Pelican Search](https://github.com/pelican-plugins/search) instead.
+
 ## 2.5.0
 
 - Support Stork Search plugin [#298](https://github.com/alexandrevicenzi/Flex/pull/298)

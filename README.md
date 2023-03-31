@@ -63,7 +63,6 @@ Once 2.6 is out, the `v3` branch will be merged into `master`.
 - [Representative image](https://github.com/getpelican/pelican-plugins/tree/master/representative_image)
 - [Neighbors](https://github.com/getpelican/pelican-plugins/tree/master/neighbors)
 - [Pelican Search](https://github.com/pelican-plugins/search)
-- [Tipue Search](https://github.com/getpelican/pelican-plugins/blob/master/tipue_search/) (deprecated)
 - [SEO](https://github.com/pelican-plugins/seo)
 
 ## Install
