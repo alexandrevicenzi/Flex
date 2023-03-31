@@ -1,0 +1,170 @@
+//
+// Dark Theme CSS styles.
+//
+
+@import "variables.less";
+
+body {
+  background-color: @body-bg-dark-theme;
+  color: @text-color-dark-theme;
+}
+
+hr {
+  background-color: @solid-dark-grey;
+  color: @solid-dark-grey;
+}
+
+aside {
+  background-color: @sidebar-bg-dark-theme;
+  color: @sidebar-text-color;
+
+  form.navbar-search input#tipue_search_input {
+    background-color: @very-dark-grey;
+    color: @light-grey;
+  }
+}
+
+main {
+  nav {
+    border-bottom-color: @nav-border-color-dark-theme;
+  }
+
+  nav, .translations {
+    a {
+      border-color: @nav-border-color-dark-theme;
+    }
+  }
+
+  article {
+    kbd {
+      background-color: #080808;
+      color: @light-grey;
+    }
+
+    blockquote, pre {
+      border-left: 8px solid #ffffff33;
+    }
+
+    *:not(pre) > code {
+      background-color: #080808;
+      border-color: #000;
+    }
+
+    div#tipue_search_content .tipue_search_result {
+      span.tipue_search_content_bold {
+        color: white;
+      }
+    }
+
+    section#isso-thread {
+      div.textarea,
+      .auth-section p.input-wrapper input,
+      .notification-section input {
+        background: @very-dark-grey;
+        color: @light-grey;
+      }
+
+      >h4 {
+        color: @light-grey;
+      }
+
+      .isso-postbox > .form-wrapper .preview {
+        background: repeating-linear-gradient(
+          -45deg,
+          @solid-dark-grey, @solid-dark-grey 10px,
+          @very-dark-grey 10px, @very-dark-grey 20px
+        );
+      }
+
+      .isso-comment > div.text-wrapper {
+        > .isso-comment-header {
+          .author {
+            color: @light-grey;
+          }
+
+          .spacer, a.permalink, .note, a.parent {
+            color: @med-grey;
+
+            &:hover {
+              color: @light-grey;
+            }
+          }
+        }
+
+        > .isso-comment-footer a:hover {
+          // Unfortunately, Isso uses a lot of !important in its styles, so I
+          // have to override that.
+          text-shadow: @dark-grey 0 0 1px !important;
+        }
+      }
+    }
+  }
+
+  footer {
+    border-top-color: @footer-border-color-dark-theme;
+  }
+}
+
+div.related-posts {
+  border-color: @rel-post-border-color-dark-theme;
+}
+
+// Admonition
+div.admonition {
+  color: @admonition-generic-color-dark-theme;
+  background-color: @admonition-generic-bg-color-dark-theme;
+}
+
+div.admonition.attention {
+  color: @admonition-attention-color-dark-theme;
+  background-color: @admonition-attention-bg-color-dark-theme;
+}
+
+div.admonition.caution {
+  color: @admonition-caution-color-dark-theme;
+  background-color: @admonition-caution-bg-color-dark-theme;
+}
+
+div.admonition.danger {
+  color: @admonition-danger-color-dark-theme;
+  background-color: @admonition-danger-bg-color-dark-theme;
+}
+
+div.admonition.error {
+  color: @admonition-error-color-dark-theme;
+  background-color: @admonition-error-bg-color-dark-theme;
+}
+
+div.admonition.hint {
+  color: @admonition-hint-color-dark-theme;
+  background-color: @admonition-hint-bg-color-dark-theme;
+}
+
+div.admonition.important {
+  color: @admonition-important-color-dark-theme;
+  background-color: @admonition-important-bg-color-dark-theme;
+}
+
+div.admonition.note {
+  color: @admonition-note-color-dark-theme;
+  background-color: @admonition-note-bg-color-dark-theme;
+}
+
+div.admonition.tip {
+  color: @admonition-tip-color-dark-theme;
+  background-color: @admonition-tip-bg-color-dark-theme;
+}
+
+div.admonition.warning {
+  color: @admonition-warning-color-dark-theme;
+  background-color: @admonition-warning-bg-color-dark-theme;
+}
+
+figure,
+div.figure {
+  color: @figure-color-dark-theme;
+
+  figcaption {
+    color: @text-color-dark-theme;
+  }
+}

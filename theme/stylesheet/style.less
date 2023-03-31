@@ -1,0 +1,785 @@
+@import "variables.less";
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+h1{
+  font-size: 2.4em
+}
+
+h2 {
+  font-size: 2em
+}
+
+h3 {
+  font-size: 1.6em
+}
+
+h4 {
+  font-size: 1.36em
+}
+
+h5 {
+  font-size: 1.2em
+}
+
+h6 {
+  font-size: 1.1em
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: @body-bg;
+  color: @text-color;
+  font-family: @sans;
+  font-size: 1.02em;
+  line-height: 1.2em;
+}
+
+a {
+  color: @link-color;
+  text-decoration: none;
+}
+
+a:hover {
+  color: @link-hover-color;
+}
+
+hr {
+  color: @light-grey;
+  background-color: @light-grey;
+  height: 1px;
+  border: none;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+img {
+  max-width: 100%;
+}
+
+aside {
+  background-color: @sidebar-bg;
+  color: @sidebar-text-color;
+  text-align: center;
+
+  a {
+    color: @sidebar-link-color;
+  }
+
+  a:hover {
+    color: @sidebar-link-hover-color;
+  }
+
+  div {
+    padding: 20px;
+    margin: 0;
+
+    img {
+      border-radius: 50%;
+      max-width: 140px;
+    }
+
+    h1 {
+      margin: 15px 0 5px 0;
+    }
+
+    p {
+      margin: 0 0 15px 0;
+      font-size: .92em;
+    }
+  }
+
+  nav {
+    ul {
+      li {
+        display: inline;
+        line-height: 1.6em;
+        font-size: 1.28em;
+        text-transform: lowercase;
+      }
+    }
+  }
+}
+
+main {
+  nav {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 14px 0 14px 0;
+    border-bottom: @nav-border-color 1px solid;
+
+    // Need to use font-size of 0 so that whitespace between the <a> tags
+    // doesn't have an affect on alignment.
+    font-size: 0;
+  }
+
+  nav, .translations {
+    a {
+      font-size: 12px;
+      padding: 0 4px;
+      border-right: @nav-border-color 1px solid;
+    }
+
+    :last-child {
+      border-right: none;
+    }
+  }
+
+  .neighbors {
+    margin: 4% 0% 4% 0%;
+    height: 20px;
+  }
+
+  .pagination {
+    margin: 4% 8% 4% 8%;
+    height: 20px;
+  }
+
+  .social-share {
+    p {
+      font-size: .8em;
+    }
+  }
+
+  article {
+    margin: 0 8% 2% 8%;
+
+    header {
+      h1, h2 {
+        margin-bottom: 0;
+      }
+
+      p {
+        color: @header-text-color;
+        font-size: 0.86em;
+      }
+
+      .translations {
+        float: right;
+
+        .active {
+          font-weight: 600;
+        }
+      }
+    }
+
+    code, kbd, samp, pre {
+      font-family: @mono;
+    }
+
+    blockquote, pre {
+      background-color: rgba(128,128,128,0.05);
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border-left: 8px solid rgba(128,128,128,0.075);
+      border-left-width: 10px;
+    }
+
+    blockquote {
+      margin: 0;
+      padding: 10px 20px;
+      font-weight: 300;
+      font-size: 1.1em;
+    }
+
+    pre {
+      padding: 4px;
+      font-size: .9em;
+      overflow-x: auto;
+    }
+
+    samp {
+      white-space: pre;
+      display: block;
+      overflow-x: auto;
+    }
+
+    kbd {
+      padding: .1em .6em;
+      border: 1px solid rgba(63,63,63,0.25);
+      box-shadow: 0 1px 0 rgba(63,63,63,0.25);
+      background-color: #fff;
+      color: #333;
+      border-radius: 3px;
+      display: inline-block;
+      margin: 0 .1em;
+      white-space: nowrap;
+      font-size: .78em;
+    }
+
+    *:not(pre) > code {
+      font-size: .8em;
+      white-space: nowrap;
+      color: #c25;
+      padding: 1px 3px;
+      background-color: #f7f7f9;
+      border: 1px solid #e1e1e8;
+      border-radius: 3px;
+    }
+
+    .comment-count {
+      font-size: .8em;
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+
+      thead:first-child tr:first-child th {
+         border-top: 0;
+      }
+
+      th, td {
+        padding: 8px;
+        line-height: 20px;
+        vertical-align: top;
+        border-top: 1px solid #ddd;
+      }
+    }
+
+    table.highlighttable {
+      width: 100%;
+      table-layout: fixed;
+
+      td {
+        border-style: none;
+        padding: 0px;
+      }
+
+      td.linenos {
+        width: 2.5em;
+
+        pre {
+          padding-right: .8em;
+          background-color: inherit;
+          text-align: right;
+        }
+      }
+    }
+
+    // Add a bit of padding between each of the entry boxes in the Isso auth
+    // section. By default, they are squished together, which looks terrible.
+    section#isso-thread .auth-section .input-wrapper {
+      margin-right: 5px;
+    }
+
+    .toc {
+      margin-top: 2em;
+
+      .toctitle {
+        font-size: 1.3em
+      }
+
+      ul {
+        list-style: none;
+        padding-inline-start: 1rem;
+      }
+
+      > ul {
+        padding: 0;
+      }
+    }
+  }
+
+  footer {
+    padding-top: 4px;
+    border-top: @footer-border-color 1px solid;
+
+    p {
+      margin: 2px;
+      text-align: center;
+      padding: 0 40px 0 40px;
+      color: @footer-text-color;
+      font-size: 11px;
+    }
+
+    // Flex credits and theme selection separator
+    span.footer-separator {
+      margin: 0 6px;
+    }
+  }
+}
+
+.tag-cloud {
+  a {
+    background-color: @tag-bg;
+    padding: .2em .6em .2em;
+    font-size: .74em;
+    line-height: 1;
+    color: @tag-text-color;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+  }
+
+  a:hover {
+    background-color: @tag-hover-color;
+  }
+}
+
+a.btn,
+section#isso-thread section.auth-section p.post-action input {
+  background-color: @btn-bg;
+  padding: .6em .6em;
+  font-size: .8em;
+  line-height: 1;
+  color: @btn-text-color;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border: none;
+  border-radius: .25em;
+}
+
+a.btn:hover {
+  background-color: @btn-hover-color;
+}
+
+.center, .text-center {
+  text-align: center;
+}
+
+.img-center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.align-center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+div.related-posts {
+  margin: 15px 0 15px 0;
+  padding-bottom: 20px;
+  border-top: @rel-post-border-color 1px solid;
+  border-bottom: @rel-post-border-color 1px solid;
+
+  h4 {
+    margin: 20px 0 25px 0;
+  }
+
+  ul {
+    font-size: 1.1em;
+    padding-left: 12px;
+
+    li {
+      padding: 4px 0 4px 0;
+    }
+  }
+}
+
+ul.list, ul.social, ul.related-posts {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.list {
+  padding: 1em 0 1em 0;
+
+  li {
+    padding: 4px;
+  }
+}
+
+ul.social {
+  font-size: 1.6em;
+  padding-top: 20px;
+
+  li {
+    display: inline;
+  }
+
+  a:hover {
+    z-index: 2;
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+
+  a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    text-align: center;
+    font-size: .8em;
+    line-height: 36px;
+  }
+
+  a.sc-facebook {
+    background-color: @facebook-bg-color;
+  }
+
+  a.sc-google {
+    background-color: @google-bg-color;
+  }
+
+  a.sc-instagram {
+    background-color: @instagram-bg-color;
+  }
+
+  a.sc-keybase {
+    background-color: @keybase-bg-color;
+  }
+
+  a.sc-pinterest {
+    background-color: @pinterest-bg-color;
+  }
+
+  a.sc-linkedin {
+    background-color: @linkedin-bg-color;
+  }
+
+  a.sc-medium {
+    background-color: @medium-bg-color;
+  }
+
+  a.sc-rss {
+    background-color: @rss-bg-color;
+  }
+
+  a.sc-stack-overflow {
+    background-color: @stack-overflow-bg-color;
+  }
+
+  a.sc-tumblr {
+    background-color: @tumblr-bg-color;
+  }
+
+  a.sc-twitch {
+    background-color: @twitch-bg-color;
+  }
+
+  a.sc-twitter {
+    background-color: @twitter-bg-color;
+  }
+
+  a.sc-youtube {
+    background-color: @youtube-bg-color;
+  }
+
+  a.sc-github, a.sc-github-alt {
+    background-color: @github-bg-color;
+  }
+
+  a.sc-at, a.sc-mailbox, a.sc-envelope {
+    background-color: @email-bg-color;
+  }
+
+  a.sc-reddit {
+    background-color: @reddit-bg-color;
+  }
+
+  a.sc-soundcloud {
+    background-color: @soundcloud-bg-color;
+  }
+
+  a.sc-gitlab {
+    background-color: @gitlab-bg-color;
+  }
+
+  a.sc-xing {
+    background-color: @xing-bg-color;
+  }
+
+  a.sc-bitbucket {
+    background-color: @bitbucket-bg-color;
+  }
+
+  a.sc-mastodon {
+    background-color: @mastodon-bg-color;
+  }
+
+  a.sc-diaspora {
+    color: @diaspora-color;
+    background-color: @diaspora-bg-color;
+  }
+
+  a.sc-flickr {
+    background-color: @flickr-bg-color;
+  }
+
+  a.sc-lastfm {
+    background-color: @lastfm-bg-color;
+  }
+}
+
+.ads-aside {
+  display: inline-block;
+  height: 90px;
+  width: 70%;
+}
+
+.ads-responsive {
+  display: inline-block;
+  margin: 6px 0 6px 0;
+  width: 90%;
+  height: 70px;
+  margin-left: 5%;
+}
+
+//
+// Desktop
+//
+
+@media screen and (min-width: 768px) {
+  aside {
+    width: 25vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+
+    div {
+      padding: 36px 18px;
+
+      nav {
+        ul {
+          li {
+            padding: 0 !important;
+            display: block;
+          }
+        }
+      }
+
+      ul.social {
+        padding-top: 32px;
+      }
+    }
+  }
+
+  main {
+    height: 100vh;
+    position: relative;
+    padding-left: 25vw;
+
+    article {
+      max-width: 760px;
+
+      ul.list {
+        li {
+          padding: 2px;
+        }
+      }
+    }
+  }
+
+  .ads-aside {
+    height: 250px;
+  }
+
+  .ads-responsive {
+    height: 90px;
+  }
+}
+
+// Admonition
+div.admonition {
+  margin-bottom: 2.5rem;
+  border-radius: 4px;
+  padding: 0.5em 1.25em 1.25em 1.25em;
+
+  p.admonition-title::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    font-family: "Font Awesome 5 Free";
+  }
+
+  p.admonition-title {
+    font-weight: 600;
+    line-height: 1.25em;
+    margin-bottom: 1.25em;
+    margin-top: inherit;
+  }
+
+  p, div, pre {
+    margin-bottom: 0;
+  }
+}
+
+div.admonition {
+  color: @admonition-generic-color;
+  background-color: @admonition-generic-bg-color;
+}
+
+div.admonition.attention {
+  p.admonition-title::before {
+    content: @admonition-attention-icon;
+  }
+
+  color: @admonition-attention-color;
+  background-color: @admonition-attention-bg-color;
+}
+
+div.admonition.caution {
+  p.admonition-title::before {
+    content: @admonition-caution-icon;
+  }
+
+  color: @admonition-caution-color;
+  background-color: @admonition-caution-bg-color;
+}
+
+div.admonition.danger {
+  p.admonition-title::before {
+    content: @admonition-danger-icon;
+  }
+
+  color: @admonition-danger-color;
+  background-color: @admonition-danger-bg-color;
+}
+
+div.admonition.error {
+  p.admonition-title::before {
+    content: @admonition-error-icon;
+  }
+
+  color: @admonition-error-color;
+  background-color: @admonition-error-bg-color;
+}
+
+div.admonition.hint {
+  p.admonition-title::before {
+    content: @admonition-hint-icon;
+  }
+
+  color: @admonition-hint-color;
+  background-color: @admonition-hint-bg-color;
+}
+
+div.admonition.important {
+  p.admonition-title::before {
+    content: @admonition-important-icon;
+  }
+
+  color: @admonition-important-color;
+  background-color: @admonition-important-bg-color;
+}
+
+div.admonition.note {
+  p.admonition-title::before {
+    content: @admonition-note-icon;
+  }
+
+  color: @admonition-note-color;
+  background-color: @admonition-note-bg-color;
+}
+
+div.admonition.tip {
+  p.admonition-title::before {
+    content: @admonition-tip-icon;
+  }
+
+  color: @admonition-tip-color;
+  background-color: @admonition-tip-bg-color;
+}
+
+div.admonition.warning {
+  p.admonition-title::before {
+    content: @admonition-warning-icon;
+  }
+
+  color: @admonition-warning-color;
+  background-color: @admonition-warning-bg-color;
+}
+
+figure,
+div.figure {
+  font-size: 90%;
+  color: @figure-color;
+
+  figcaption {
+    margin-top: 0.5em;
+    text-align: center;
+    color: @text-color;
+  }
+
+  img {
+    vertical-align: middle;
+    line-height: 1;
+    display: inline;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  p.caption {
+    font-style: italic;
+  }
+
+  div.legend {
+    text-align: initial;
+  }
+}
+
+figure.align-left,
+div.figure.align-left {
+  text-align: left;
+}
+
+figure.align-center,
+div.figure.align-center {
+  text-align: center;
+}
+
+figure.align-right,
+div.figure.align-right {
+  text-align: right;
+}
+
+.github-corner:hover .octo-arm {
+  animation:octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+  0%,100% {
+    transform:rotate(0);
+  }
+  20%,60% {
+    transform:rotate(-25deg);
+  }
+  40%,80% {
+    transform:rotate(10deg);
+  }
+}
+
+@media (max-width:500px) {
+  .github-corner:hover .octo-arm {
+    animation:none;
+  }
+
+  .github-corner .octo-arm{
+    animation:octocat-wave 560ms ease-in-out;
+  }
+}
