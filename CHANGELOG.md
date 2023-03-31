@@ -1,3 +1,13 @@
+## 2.5.0
+
+- Support Stork Search plugin [#298](https://github.com/alexandrevicenzi/Flex/pull/298)
+- Support SEO plugin [#254](https://github.com/alexandrevicenzi/Flex/issues/254)
+- Support Series plugin [#290](https://github.com/alexandrevicenzi/Flex/pull/290)
+- Support Microsoft Clarity [#261](https://github.com/alexandrevicenzi/Flex/pull/261)
+- Support for Google Analytics v4 [#257](https://github.com/alexandrevicenzi/Flex/pull/257)
+- Updated translations
+- Improved styles for Table of Contents and Figure with captions, as well other small fixes
+
 ## 2.4.0
 
 - Update translations (Italian, Spanish, Portuguese, German, Turkish)
