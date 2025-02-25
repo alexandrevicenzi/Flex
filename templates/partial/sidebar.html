@@ -71,13 +71,17 @@
     {% set solid = ['at', 'envelope', 'mailbox', 'rss'] %}
     {% set relme = ['at', 'envelope', 'mailbox', 'mastodon'] %}
     <ul class="social">
-      {% for name, link in SOCIAL %}
+      {% for name, icon_source, link in SOCIAL %}
       <li>
         <a class="sc-{{ name }}"
-           {% if name in relme %}rel="me"{% endif %}
-           href="{{ link }}"
-           target="_blank">
-          <i class="{% if name in solid %}fa-solid{% else %}fa-brands{% endif %} fa-{{ name }}"></i>
+          {% if name in relme %}rel="me"{% endif %}
+          href="{{ link }}"
+          target="_blank"
+        >
+            {% if icon_source == "fa" %} <i class="{% if name in solid %}fa-solid{% else %}fa-brands{% endif %} fa-{{ name }}"></i>
+            {% elif icon_source == "si" %} <img src="https://cdn.simpleicons.org/{{ name }}?viewbox=auto" alt="{{ name }} icon">
+            {% elif icon_source == "local" %} <img src="{{ SITEURL }}/images/{{ name }}.svg" alt="{{ name }} icon">
+            {% endif %}
         </a>
       </li>
       {% endfor %}
