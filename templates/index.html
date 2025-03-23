@@ -28,7 +28,7 @@
           {% endfor %}
       {% endif %}
 
-      {% if PLUGINS and 'post_stats' in PLUGINS %}
+      {% if PLUGINS and 'pelican.plugins.statistics' in PLUGINS %}
         &#8226; {{ _('%(minutes)s min read', minutes=article.stats['read_mins']) }}
       {% endif %}
     </p>
