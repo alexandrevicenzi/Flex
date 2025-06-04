@@ -59,6 +59,10 @@
     </p>
   </div>
 
+  {% if article.share_post %}
+  {% include "partial/share_post.html" %}
+  {% endif %}
+
   {% if ADD_THIS_ID %}
   <div class="center social-share">
     <p>{{ _('Like this article? Share it with your friends!') }}</p>
