@@ -8,7 +8,23 @@ body {
   background-color: @body-bg-dark-theme;
   color: @text-color-dark-theme;
 }
+a {
+  color: @link-color-dark-theme;
+  text-decoration: none;
+}
 
+a:hover {
+  color: @link-hover-color-dark-theme;
+}
+
+a.btn {
+  background-color: @btn-bg-dark-theme;
+  color: @btn-text-color-dark-theme;
+}
+
+a.btn:hover {
+  background-color: @btn-hover-color-dark-theme;
+}
 hr {
   background-color: @solid-dark-grey;
   color: @solid-dark-grey;
@@ -36,6 +52,11 @@ main {
   }
 
   article {
+    header {
+      p {
+        color: @header-text-color-dark-theme;
+      }
+    }
     kbd {
       background-color: #080808;
       color: @light-grey;
@@ -102,6 +123,9 @@ main {
 
   footer {
     border-top-color: @footer-border-color-dark-theme;
+    p {
+      color: @footer-text-color-dark-theme;
+    }
   }
 }
 
